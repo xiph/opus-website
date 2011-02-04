@@ -1,0 +1,18 @@
+<!--#include virtual="/ssi/header.include" -->
+
+<h1>Contact</h1>
+<p>
+   Development discussion happens as part of the IETF codec working group.
+   See the <a href="http://tools.ietf.org/wg/codec/">status page</a>
+   for more imformation.
+<p>   
+<p>
+  For archives of recent discussions, try:
+</p>
+<ul>
+   <li><a href="http://www.ietf.org/mail-archive/web/codec/current/maillist.html">Mailing list</a></li>
+   <li><a href="http://www.ietf.org/jabber/logs/codec/">XMPP chat room</a></li>
+   <li><a href="http://tools.ietf.org/wg/codec/minutes">Meeting minutes</a></li>
+</ul>
+
+<!--#include virtual="/ssi/footer.include" -->

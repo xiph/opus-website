@@ -1,0 +1,19 @@
+<!--#include virtual="/ssi/header.include" -->
+
+<h1>The Opus Audio Codec</h1>
+<p>
+   The Opus codec is designed for interactive
+   speech and audio transmission over the Internet,
+   and developed as a standard by the IETF Network Working Group.
+</p>
+<p>
+   To start, you might read the latest
+    <a href="http://tools.ietf.org/html/draft-ietf-codec-opus">Internet Draft</a>
+    or check out the prototype code:
+</p>
+<blockquote class="code">
+    <pre>$ git clone <a href="http://git.xiph.org/?p=users/jm/ietfcodec.git">git://git.xiph.org/users/jm/ietfcodec.git</a></pre>
+</blockquote>
+
+
+<!--#include virtual="/ssi/footer.include" -->
