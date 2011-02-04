@@ -1,11 +1,33 @@
 <!--#include virtual="/ssi/header.include" -->
 
-<h1>The Opus Audio Codec</h1>
+<h1>IETF Opus Interactive Audio Codec</h1>
+
+<h2>Overview</h2>
+
 <p>
    The Opus codec is designed for interactive
-   speech and audio transmission over the Internet,
-   and developed as a standard by the IETF Network Working Group.
+   speech and audio transmission over the Internet.
+   It is designed by the IETF Codec Working Group and incorporates technology from Skype' SILK codec and Xiph.Org's CELT codec. 
 </p>
+
+<h2>Technology</h2>
+
+<p>
+The Opus codec is designed to handle a wide range of interactive audio applications, including Voice over IP, videoconference, in-game chat, and even remote live music performances. It can scale from low bit-rate narrowband speech to very high quality stereo music. The current features are:
+<ul>
+<li>Sampling rates from 8 to 48 kHz</li>
+<li>Bit-rates from 6 kb/s 510 kb/s (*)</li>
+<li>Support for both constant bit-rate (CBR) and variable bit-rate (VBR)</li>
+<li>Audio bandwidth from narrowband to full-band (*)</li>
+<li>Support for speech and music (*)</li>
+<li>Support for mono and stereo (*)</li>
+<li>Frame sizes from 2.5 ms to 60 ms (*)</li>
+<li>Good loss robustness and packet loss concealment (PLC)</li>
+<li>Floating point and fixed-point implementation</li>
+</ul>
+(*) can be changed dynamically during a stream with no signalling required
+</p>
+
 <p>
    To start, you might read the latest
     <a href="http://tools.ietf.org/html/draft-ietf-codec-opus">Internet Draft</a>
