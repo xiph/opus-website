@@ -106,6 +106,12 @@ li {
   line-height: 1.4;
 }
 
+blockquote.code {
+  padding: 0.5em;
+  border: 1px dotted black;
+  background-color: #eee;
+}
+
 #copyright {
   margin-top: 30px;
   line-height: 1.5em;
