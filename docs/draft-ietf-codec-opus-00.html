@@ -1,0 +1,826 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://dublincore.org/documents/2008/08/04/dc-html/">
+    <meta http-equiv="Content-Type" content="text/html; charset=latin-1" />
+    <meta name="robots" content="index,follow" />
+    <meta name="creator" content="rfcmarkup version 1.91" />
+    <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" />
+<meta name="DC.Relation.Replaces" content="draft-ietf-codec-harmony" />
+<meta name="DC.Identifier" content="urn:ietf:id:ietf-codec-opus" />
+<meta name="DC.Date.Issued" content="2010-10-15" />
+<meta name="DC.Creator" content="Valin, Jean-Marc" />
+<meta name="DC.Creator" content="Vos, Koen" />
+<meta name="DC.Description.Abstract" content="This document describes the Opus codec, designed for interactive\nspeech and audio transmission over the Internet." />
+<meta name="DC.Title" content="Definition of the Opus Audio Codec" />
+
+    <link rel="icon" href="/images/id.png" type="image/png" />
+    <link rel="shortcut icon" href="/images/id.png" type="image/png" />
+    <title>draft-ietf-codec-opus-00 - Definition of the Opus Audio Codec</title>
+    
+    
+    <style type="text/css">
+	body {
+	    margin: 0px 8px;
+            font-size: 1em;
+	}
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+	    font-weight: bold;
+            line-height: 0pt;
+            display: inline;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 1em;
+	    font-weight: bold;
+        }
+        pre {
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+	.pre {
+	    white-space: pre;
+	    font-family: monospace;
+	}
+	.header{
+	    font-weight: bold;
+	}
+        .newpage {
+            page-break-before: always;
+        }
+        .invisible {
+            text-decoration: none;
+            color: white;
+        }
+        @media print {
+            body {
+                font-size: 10.5pt;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 10.5pt;
+            }
+        
+            a:link, a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+	@media screen {
+	    .grey, .grey a:link, .grey a:visited {
+		color: #777;
+	    }
+            .docinfo {
+                background-color: #EEE;
+            }
+            .top {
+                border-top: 7px solid #EEE;
+            }
+            .bgwhite  { background-color: white; }
+            .bgred    { background-color: #F44; }
+            .bggrey   { background-color: #666; }
+            .bgbrown  { background-color: #840; }            
+            .bgorange { background-color: #FA0; }
+            .bgyellow { background-color: #EE0; }
+            .bgmagenta{ background-color: #F4F; }
+            .bgblue   { background-color: #66F; }
+            .bgcyan   { background-color: #4DD; }
+            .bggreen  { background-color: #4F4; }
+
+            .legend   { font-size: 90%; }
+            .cplate   { font-size: 70%; border: solid grey 1px; }
+	}
+    </style>
+    <!--[if IE]>
+    <style>
+    body {
+       font-size: 13px;
+       margin: 10px 10px;
+    }
+    </style>
+    <![endif]-->
+
+    <script type="text/javascript"><!--
+    function addHeaderTags() {
+	var spans = document.getElementsByTagName("span");
+	for (var i=0; i < spans.length; i++) {
+	    var elem = spans[i];
+	    if (elem) {
+		var level = elem.getAttribute("class");
+                if (level == "h1" || level == "h2" || level == "h3" || level == "h4" || level == "h5" || level == "h6") {
+                    elem.innerHTML = "<"+level+">"+elem.innerHTML+"</"+level+">";		
+                }
+	    }
+	}
+    }
+    var legend_html = "Colour legend:<br />      <table>         <tr><td>Unknown:</td>          <td><span class='cplate bgwhite'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr>         <tr><td>Draft:</td>            <td><span class='cplate bgred'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr>         <tr><td>Informational:</td>    <td><span class='cplate bgorange'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr>         <tr><td>Experimental:</td>     <td><span class='cplate bgyellow'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr>         <tr><td>Best Common Practice:</td><td><span class='cplate bgmagenta'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr>         <tr><td>Proposed Standard:</td><td><span class='cplate bgblue'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr>         <tr><td>Draft Standard:</td>   <td><span class='cplate bgcyan'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr>         <tr><td>Standard:</td>         <td><span class='cplate bggreen'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr>         <tr><td>Historic:</td>         <td><span class='cplate bggrey'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr>         <tr><td>Obsolete:</td>         <td><span class='cplate bgbrown'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr>     </table>";
+    function showElem(id) {
+        var elem = document.getElementById(id);
+        elem.innerHTML = eval(id+"_html");
+        elem.style.visibility='visible';
+    }
+    function hideElem(id) {
+        var elem = document.getElementById(id);
+        elem.style.visibility='hidden';        
+        elem.innerHTML = "";
+    }
+    // -->
+    </script>
+</head>
+<body onload="addHeaderTags()">
+   <div style="height: 13px;">
+      <div onmouseover="this.style.cursor='pointer';"
+         onclick="showElem('legend');"
+         onmouseout="hideElem('legend')"
+	 style="height: 6px; position: absolute;"
+         class="pre noprint docinfo bgred"
+         title="Click for colour legend." >                                                                        </div>
+      <div id="legend"
+           class="docinfo noprint pre legend"
+           style="position:absolute; top: 4px; left: 4ex; visibility:hidden; background-color: white; padding: 4px 9px 5px 7px; border: solid #345 1px; "
+           onmouseover="showElem('legend');"
+           onmouseout="hideElem('legend');">
+      </div>
+   </div>
+<span class="pre noprint docinfo top">[<a href="../html/" title="Document search and retrieval page">Docs</a>] [<a href="http://tools.ietf.org/id/draft-ietf-codec-opus-00.txt" title="Plaintext version of this document">txt</a>|<a href="/pdf/draft-ietf-codec-opus-00.txt" title="PDF version of this document">pdf</a>] [<a href="../wg/codec" title="The working group handling this document">WG</a>] [<a href="mailto:draft-ietf-codec-opus@tools.ietf.org?subject=draft-ietf-codec-opus%20" title="Send email to the document authors">Email</a>] [<a href="/rfcdiff?difftype=--hwdiff&amp;url2=draft-ietf-codec-opus-00.txt" title="Inline diff (wdiff)">Diff1</a>] [<a href="/rfcdiff?url2=draft-ietf-codec-opus-00.txt" title="Side-by-side diff">Diff2</a>] [<a href="/idnits?url=http://tools.ietf.org/id/draft-ietf-codec-opus-00.txt" title="Run an idnits check of this document">Nits</a>] [<a href="https://datatracker.ietf.org/ipr/search/?option=document_search&document_search=draft-ietf-codec-opus" title="IPR disclosures related to this document">IPR</a>]              </span><br />
+<span class="pre noprint docinfo">                                                                        </span><br />
+<span class="pre noprint docinfo">Versions: (<a href="./draft-ietf-codec-harmony" title="Precursor">draft-ietf-codec-harmony</a>) <a href="./draft-ietf-codec-opus-00">00</a> <a href="./draft-ietf-codec-opus-01">01</a> <a href="./draft-ietf-codec-opus-02">02</a>                                                               </span><br />
+<span class="pre noprint docinfo">                                                                        </span><br />
+<pre>
+Network Working Group                                          JM. Valin
+Internet-Draft                                              Octasic Inc.
+Intended status: Standards Track                                  K. Vos
+Expires: April 18, 2011                          Skype Technologies S.A.
+                                                        October 15, 2010
+
+
+                   <span class="h1">Definition of the Opus Audio Codec</span>
+                        <span class="h1">draft-ietf-codec-opus-00</span>
+
+Abstract
+
+   This document describes the Opus codec, designed for interactive
+   speech and audio transmission over the Internet.
+
+Status of this Memo
+
+   This Internet-Draft is submitted in full conformance with the
+   provisions of <a href="./bcp78">BCP 78</a> and <a href="./bcp79">BCP 79</a>.
+
+   Internet-Drafts are working documents of the Internet Engineering
+   Task Force (IETF).  Note that other groups may also distribute
+   working documents as Internet-Drafts.  The list of current Internet-
+   Drafts is at <a href="http://datatracker.ietf.org/drafts/current/">http://datatracker.ietf.org/drafts/current/</a>.
+
+   Internet-Drafts are draft documents valid for a maximum of six months
+   and may be updated, replaced, or obsoleted by other documents at any
+   time.  It is inappropriate to use Internet-Drafts as reference
+   material or to cite them other than as "work in progress."
+
+   This Internet-Draft will expire on April 18, 2011.
+
+Copyright Notice
+
+   Copyright (c) 2010 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to <a href="./bcp78">BCP 78</a> and the IETF Trust's Legal
+   Provisions Relating to IETF Documents
+   (<a href="http://trustee.ietf.org/license-info">http://trustee.ietf.org/license-info</a>) in effect on the date of
+   publication of this document.  Please review these documents
+   carefully, as they describe your rights and restrictions with respect
+   to this document.  Code Components extracted from this document must
+   include Simplified BSD License text as described in <a href="#section-4">Section 4</a>.e of
+   the Trust Legal Provisions and are provided without warranty as
+   described in the Simplified BSD License.
+
+
+
+
+
+<span class="grey">Valin &amp; Vos              Expires April 18, 2011                 [Page 1]</span>
+</pre><pre class='newpage'><a name="page-2" id="page-2" href="#page-2" class="invisible"> </a>
+<span class="grey">Internet-Draft           Interactive Audio Codec            October 2010</span>
+
+
+Table of Contents
+
+   <a href="#section-1">1</a>.  Introduction . . . . . . . . . . . . . . . . . . . . . . . . .  <a href="#page-3">3</a>
+   <a href="#section-2">2</a>.  Opus Codec . . . . . . . . . . . . . . . . . . . . . . . . . .  <a href="#page-4">4</a>
+     <a href="#section-2.1">2.1</a>.  Source Code  . . . . . . . . . . . . . . . . . . . . . . .  <a href="#page-4">4</a>
+   <a href="#section-3">3</a>.  Codec Modes  . . . . . . . . . . . . . . . . . . . . . . . . .  <a href="#page-5">5</a>
+     <a href="#section-3.1">3.1</a>.  Examples . . . . . . . . . . . . . . . . . . . . . . . . .  <a href="#page-6">6</a>
+   <a href="#section-4">4</a>.  Security Considerations  . . . . . . . . . . . . . . . . . . .  <a href="#page-8">8</a>
+   <a href="#section-5">5</a>.  IANA Considerations  . . . . . . . . . . . . . . . . . . . . .  <a href="#page-9">9</a>
+   <a href="#section-6">6</a>.  Acknowledgments  . . . . . . . . . . . . . . . . . . . . . . . <a href="#page-10">10</a>
+   <a href="#section-7">7</a>.  Informative References . . . . . . . . . . . . . . . . . . . . <a href="#page-11">11</a>
+   Authors' Addresses . . . . . . . . . . . . . . . . . . . . . . . . <a href="#page-12">12</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="grey">Valin &amp; Vos              Expires April 18, 2011                 [Page 2]</span>
+</pre><pre class='newpage'><a name="page-3" id="page-3" href="#page-3" class="invisible"> </a>
+<span class="grey">Internet-Draft           Interactive Audio Codec            October 2010</span>
+
+
+<span class="h2"><a name="section-1">1</a>.  Introduction</span>
+
+   We propose the Opus codec based on a linear prediction layer (LP) and
+   an MDCT-based enhancement layer.  The main idea behind the proposal
+   is that the speech low frequencies are usually more efficiently coded
+   using linear prediction codecs (such as CELP variants), while the
+   higher frequencies are more efficiently coded in the transform domain
+   (e.g.  MDCT).  For low sampling rates, the MDCT layer is not useful
+   and only the LP-based layer is used.  On the other hand, non-speech
+   signals are not always adequately coded using linear prediction, so
+   for music only the MDCT-based layer is used.
+
+   In this proposed prototype, the LP layer is based on the SILK [<a href="#ref-1">1</a>]
+   codec [<a href="#ref-SILK" title='"SILK Speech Codec"'>SILK</a>] and the MDCT layer is based on the CELT [<a href="#ref-2">2</a>] codec
+   [<a href="#ref-CELT" title='"Constrained-Energy Lapped Transform (CELT) Codec"'>CELT</a>].
+
+   This is a work in progress.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="grey">Valin &amp; Vos              Expires April 18, 2011                 [Page 3]</span>
+</pre><pre class='newpage'><a name="page-4" id="page-4" href="#page-4" class="invisible"> </a>
+<span class="grey">Internet-Draft           Interactive Audio Codec            October 2010</span>
+
+
+<span class="h2"><a name="section-2">2</a>.  Opus Codec</span>
+
+   In hybrid mode, each frame is coded first by the LP layer and then by
+   the MDCT layer.  In the current prototype, the cutoff frequency is 8
+   kHz.  In the MDCT layer, all bands below 8 kHz are discarded, such
+   that there is no coding redundancy between the two layers.  Also both
+   layers use the same instance of the range coder to encode the signal,
+   which ensures that no "padding bits" are wasted.  The hybrid approach
+   makes it easy to support both constant bit-rate (CBR) and varaible
+   bit-rate (VBR) coding.  Although the SILK layer used is VBR, it is
+   easy to make the bit allocation of the CELT layer produce a final
+   stream that is CBR by using all the bits left unused by the SILK
+   layer.
+
+   The implementation of SILK-based LP layer is similar to the
+   description in the SILK Internet-Draft [<a href="#ref-SILK" title='"SILK Speech Codec"'>SILK</a>] with the main exception
+   that SILK was modified to use the same range coder as CELT.  The
+   implementation of the CELT-based MDCT layer is available from the
+   CELT website and is a more recent version (0.8.1) of the CELT
+   Internet-Draft [<a href="#ref-CELT" title='"Constrained-Energy Lapped Transform (CELT) Codec"'>CELT</a>].  The main changes include better support for
+   20 ms frames as well as the ability to encode only the higher bands
+   using a range coder partially filled by the SILK layer.
+
+   In addition to their frame size, the SILK and CELT codecs require a
+   look-ahead of 5.2 ms and 2.5 ms, respectively.  SILK's look-ahead is
+   due to noise shaping estimation (5 ms) and the internal resampling
+   (0.2 ms), while CELT's look-ahead is due to the overlapping MDCT
+   windows.  To compensate for the difference, the CELT encoder input is
+   delayed by 2.7 ms.  This ensures that low frequencies and high
+   frequencies arrive at the same time.
+
+<span class="h3"><a name="section-2.1">2.1</a>.  Source Code</span>
+
+   The source code is currently available in a Git repository [<a href="#ref-3">3</a>] which
+   references two other repositories (for SILK and CELT).  Some
+   snapshots are provided for convenience at
+   &lt;<a href="http://people.xiph.org/~jm/ietfcodec/">http://people.xiph.org/~jm/ietfcodec/</a>&gt; along with sample files.
+   Although the build system is very primitive, some instructions are
+   provided in the toplevel README file.  This is very early development
+   so both the quality and feature set should greatly improve over time.
+   In the current version, only 48 kHz audio is supported, but support
+   for all configurations listed in <a href="#section-3">Section 3</a> is planned.
+
+
+
+
+
+
+
+
+
+<span class="grey">Valin &amp; Vos              Expires April 18, 2011                 [Page 4]</span>
+</pre><pre class='newpage'><a name="page-5" id="page-5" href="#page-5" class="invisible"> </a>
+<span class="grey">Internet-Draft           Interactive Audio Codec            October 2010</span>
+
+
+<span class="h2"><a name="section-3">3</a>.  Codec Modes</span>
+
+   There are three possible operating modes for the proposed prototype:
+
+   1.  A linear prediction (LP) mode for use in low bit-rate connections
+       with up to 8 kHz audio bandwidth (16 kHz sampling rate)
+
+   2.  A hybrid (LP+MDCT) mode for full-bandwidth speech at medium
+       bitrates
+
+   3.  An MDCT-only mode for very low delay speech transmission as well
+       as music transmission.
+
+   Each of these modes supports a number of difference frame sizes and
+   sampling rates.  In order to distinguish between the various modes
+   and configurations, we need to define a simple header that can used
+   in the transport layer (e.g RTP) to signal this information.  The
+   following describes the proposed header.
+
+   The LP mode supports the following configurations (numbered from
+   00000...01011 in binary):
+
+   o  8 kHz: 10, 20, 40, 60 ms (00000...00011)
+
+   o  12 kHz: 10, 20, 40, 60 ms (00100...00111)
+
+   o  16 kHz: 10, 20, 40, 60 ms (01000...01011)
+
+   for a total of 12 configurations.
+
+   The hybrid mode supports the following configurations (numbered from
+   01100...01111):
+
+   o  32 kHz: 10, 20 ms (01100...01101)
+
+   o  48 kHz: 10, 20 ms (01110...01111)
+
+   for a total of 4 configurations.
+
+   The MDCT-only mode supports the following configurations (numbered
+   from 10000...11101):
+
+   o  8 kHz: 2.5, 5, 10, 20 ms (10000...10011)
+
+   o  16 kHz: 2.5, 5, 10, 20 ms (10100...10111)
+
+   o  32 kHz: 2.5, 5, 10, 20 ms (11000...11011)
+
+
+
+
+<span class="grey">Valin &amp; Vos              Expires April 18, 2011                 [Page 5]</span>
+</pre><pre class='newpage'><a name="page-6" id="page-6" href="#page-6" class="invisible"> </a>
+<span class="grey">Internet-Draft           Interactive Audio Codec            October 2010</span>
+
+
+   o  48 kHz: 2.5, 5, 10, 20 ms (11100...11111)
+
+   for a total of 16 configurations.
+
+   There is thus a total of 32 configurations, so 5 bits are necessary
+   to indicate the mode, frame size and sampling rate (MFS).  This
+   leaves 3 bits for the number of frames per packets (codes 0 to 7):
+
+   o  0-2: 1-3 frames in the packet, each with equal compressed size
+
+   o  3: arbitrary number of frames in the packet, each with equal
+      compressed size (one size needs to be encoded)
+
+   o  4-5: 2-3 frames in the packet, with different compressed sizes,
+      which need to be encoded (except the last one)
+
+   o  6: arbitrary number of frames in the packet, with different
+      compressed sizes, each of which needs to be encoded
+
+   o  7: The first frame has this MFS, but others have different MFS.
+      Each compressed size needs to be encoded.
+
+   When code 7 is used and the last frames of a packet have the same
+   MFS, it is allowed to switch to another code for them.
+
+   The compressed size of the frames (if needed) is indicated -- usually
+   -- with one byte, with the following meaning:
+
+   o  0: No frame (DTX or lost packet)
+
+   o  1-251: Size of the frame in bytes
+
+   o  252-255: A second byte is needed.  The total size is (size[1]*4)+
+      (size[0]%4)+252
+
+   The maximum size representable is 255*4+3+252=1275 bytes.  For 20 ms
+   frames, that represents a bit-rate of 510 kb/s, which is really the
+   highest rate anyone would want to use in stereo mode (beyond that
+   point, lossless codecs would be more appropriate).
+
+<span class="h3"><a name="section-3.1">3.1</a>.  Examples</span>
+
+   Simplest case: one packet
+
+
+
+
+
+
+
+
+<span class="grey">Valin &amp; Vos              Expires April 18, 2011                 [Page 6]</span>
+</pre><pre class='newpage'><a name="page-7" id="page-7" href="#page-7" class="invisible"> </a>
+<span class="grey">Internet-Draft           Interactive Audio Codec            October 2010</span>
+
+
+    0                   1                   2                   3
+    0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |   MFS   |0|0|0|               compressed data...              |
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+   Four frames of the same compressed size:
+
+
+    0                   1                   2                   3
+    0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |   MFS   |0|1|1|               compressed data...              |
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+   Two frames of different compressed size:
+
+
+    0                   1                   2                   3
+    0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |   MFS   |1|0|1|   frame size  |        compressed data...     |
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+   Three frames of different _durations_:
+
+
+    0                   1                   2                   3
+    0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   | 1st MFS |1|1|1|   frame size  | 2nd MFS |1|1|1|   frame size  |
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   | 3rd MFS |1|1|1|   frame size  |      compressed data...       |
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="grey">Valin &amp; Vos              Expires April 18, 2011                 [Page 7]</span>
+</pre><pre class='newpage'><a name="page-8" id="page-8" href="#page-8" class="invisible"> </a>
+<span class="grey">Internet-Draft           Interactive Audio Codec            October 2010</span>
+
+
+<span class="h2"><a name="section-4">4</a>.  Security Considerations</span>
+
+   The codec needs to take appropriate security considerations into
+   account, as outlined in [<a href="#ref-DOS" title='"Internet Denial-of- Service Considerations"'>DOS</a>] and [<a href="#ref-SECGUIDE" title='"Guidelines for Writing RFC Text on Security Considerations"'>SECGUIDE</a>].  It is extremely
+   important for the decoder to be robust against malicious payloads.
+   Malicious payloads must not cause the decoder to overrun its
+   allocated memory or to take much more resources to decode.  Although
+   problems in encoders are typically rarer, the same applies to the
+   encoder.  Malicious audio stream must not cause the encoder to
+   misbehave because this would allow an attacker to attack transcoding
+   gateways.
+
+   In its current version, the Opus codec likely does NOT meet these
+   security considerations, so it should be used with caution.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="grey">Valin &amp; Vos              Expires April 18, 2011                 [Page 8]</span>
+</pre><pre class='newpage'><a name="page-9" id="page-9" href="#page-9" class="invisible"> </a>
+<span class="grey">Internet-Draft           Interactive Audio Codec            October 2010</span>
+
+
+<span class="h2"><a name="section-5">5</a>.  IANA Considerations</span>
+
+   This document has no actions for IANA.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="grey">Valin &amp; Vos              Expires April 18, 2011                 [Page 9]</span>
+</pre><pre class='newpage'><a name="page-10" id="page-10" href="#page-10" class="invisible"> </a>
+<span class="grey">Internet-Draft           Interactive Audio Codec            October 2010</span>
+
+
+<span class="h2"><a name="section-6">6</a>.  Acknowledgments</span>
+
+   Thanks to all other developers, including Soeren Skak Jensen, Gregory
+   Maxwell, Christopher Montgomery, Karsten Vandborg Soerensen, and
+   Timothy Terriberry.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="grey">Valin &amp; Vos              Expires April 18, 2011                [Page 10]</span>
+</pre><pre class='newpage'><a name="page-11" id="page-11" href="#page-11" class="invisible"> </a>
+<span class="grey">Internet-Draft           Interactive Audio Codec            October 2010</span>
+
+
+<span class="h2"><a name="section-7">7</a>.  Informative References</span>
+
+   [<a name="ref-SILK" id="ref-SILK">SILK</a>]     Vos, K., Jensen, S., and K. Soerensen, "SILK Speech
+              Codec", <a href="./draft-vos-silk-01">draft-vos-silk-01</a> (work in progress), March 2010.
+
+   [<a name="ref-CELT" id="ref-CELT">CELT</a>]     Valin, J-M., Terriberry, T., Maxwell, G., and C.
+              Montgomery, "Constrained-Energy Lapped Transform (CELT)
+              Codec", <a href="./draft-valin-celt-codec-02">draft-valin-celt-codec-02</a> (work in progress),
+              July 2010.
+
+   [<a name="ref-DOS" id="ref-DOS">DOS</a>]      Handley, M., Rescorla, E., and IAB, "Internet Denial-of-
+              Service Considerations", <a href="./rfc4732">RFC 4732</a>, December 2006.
+
+   [<a name="ref-SECGUIDE" id="ref-SECGUIDE">SECGUIDE</a>]
+              Rescorla, E. and B. Korver, "Guidelines for Writing RFC
+              Text on Security Considerations", <a href="./bcp72">BCP 72</a>, <a href="./rfc3552">RFC 3552</a>,
+              July 2003.
+
+   [<a name="ref-1" id="ref-1">1</a>]  &lt;<a href="http://developer.skype.com/silk">http://developer.skype.com/silk</a>&gt;
+
+   [<a name="ref-2" id="ref-2">2</a>]  &lt;<a href="http://www.celt-codec.org/">http://www.celt-codec.org/</a>&gt;
+
+   [<a name="ref-3" id="ref-3">3</a>]  &lt;git://git.xiph.org/users/jm/ietfcodec.git&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="grey">Valin &amp; Vos              Expires April 18, 2011                [Page 11]</span>
+</pre><pre class='newpage'><a name="page-12" id="page-12" href="#page-12" class="invisible"> </a>
+<span class="grey">Internet-Draft           Interactive Audio Codec            October 2010</span>
+
+
+Authors' Addresses
+
+   Jean-Marc Valin
+   Octasic Inc.
+   4101, Molson Street
+   Montreal, Quebec
+   Canada
+
+   Phone: +1 514 282-8858
+   Email: jean-marc.valin@octasic.com
+
+
+   Koen Vos
+   Skype Technologies S.A.
+   Stadsgaarden 6
+   Stockholm,   11645
+   SE
+
+   Phone: +46 855 921 989
+   Email: koen.vos@skype.net
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Valin &amp; Vos              Expires April 18, 2011                [Page 12]
+</pre><pre class='newpage'>
+
+</pre><br />
+<span class="noprint"><small><small>Html markup produced by rfcmarkup 1.91, available from
+<a href="http://tools.ietf.org/tools/rfcmarkup/">http://tools.ietf.org/tools/rfcmarkup/</a>
+</small></small></span>
+</body></html>
