@@ -3,14 +3,35 @@
 <h1>Downloads</h1>
 <p>
    The codec is still under initial development, so there are
-   no stable implementations. The following repositories
-   may offer insight into ongoing work.
+   no stable implementations. 
 <p>   
+
+<h2>Git repository</h2>
+
 
 <ul>
    <li><a href="http://git.xiph.org/?p=users/jm/ietfcodec.git">git://git.xiph.org/users/jm/ietfcodec.git</a> Jean-Marc's merge repository</li>
    <li><a href="http://git.xiph.org/?p=celt.git">git://git.xiph.org/celt.git</a> Offical CELT repository</li>
    <li><a href="http://git.xiph.org/?p=users/jm/silk.git">git://git.xiph.org/users/jm/silk.git</a> Jean-Marc's SILK repository</li>
 </ul>
+
+<h2>Latest <strong style='font-style: italic;'>development</strong> releases</h2>
+
+<h3 id='zero.9.1'>0.9.1</h3>
+<p>Opus 0.9.1 fixes a few minor bugs that were found in version 0.9.0.
+Unfortunately, this has required slight changes to the bit-stream, which
+is thus not compatible with 0.9.0. This release adds support for forward
+error correction (FEC), which improves performance under packet loss. 
+<ul>
+<li>Source code: <a href="http://downloads.xiph.org/releases/opus/opus-0.9.1.tar.gz">celt-0.9.1.tar.gz</a></li>
+<li>Internet-Draft: <a href="http://tools.ietf.org/id/draft-ietf-codec-opus-03.txt">draft-ietf-codec-opus-03.txt</a>
+</ul>
+
+<h2>Older releases</h2>
+
+<ul>
+<li><a href="http://downloads.xiph.org/releases/opus/opus-0.9.0.tar.gz">celt-0.9.0.tar.gz</a></li>
+</ul>
+
 
 <!--#include virtual="/ssi/footer.include" -->
