@@ -10,6 +10,7 @@
 
 
 <ul>
+   <li><a href="http://git.xiph.org/?p=opus.git">git://git.opus-codec.org/opus.git</a> IETF Reference implementation</li>
    <li><a href="http://git.xiph.org/?p=users/jm/ietfcodec.git">git://git.xiph.org/users/jm/ietfcodec.git</a> Jean-Marc's merge repository</li>
    <li><a href="http://git.xiph.org/?p=celt.git">git://git.xiph.org/celt.git</a> Offical CELT repository</li>
    <li><a href="http://git.xiph.org/?p=users/jm/silk.git">git://git.xiph.org/users/jm/silk.git</a> Jean-Marc's SILK repository</li>
