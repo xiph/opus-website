@@ -11,9 +11,6 @@
 
 <ul>
    <li><a href="http://git.xiph.org/?p=opus.git">git://git.opus-codec.org/opus.git</a> IETF Reference implementation</li>
-   <li><a href="http://git.xiph.org/?p=celt.git">git://git.xiph.org/celt.git</a> Official CELT repository</li>
-   <li><a href="http://git.xiph.org/?p=users/jm/silk.git">git://git.xiph.org/users/jm/silk.git</a> Jean-Marc's SILK repository</li>
-   <li><a href="http://git.xiph.org/?p=users/jm/ietfcodec.git">git://git.xiph.org/users/jm/ietfcodec.git</a> Jean-Marc's merge repository</li>
 </ul>
 
 <h2>Latest <strong style='font-style: italic;'>development</strong> releases</h2>
@@ -26,7 +23,7 @@ content. Several bugs were also fixed and the codec and test tools should be mor
 robust in general.
 <ul>
 
-<li>Source code: <a href="http://downloads.xiph.org/releases/opus/opus-0.9.2.tar.gz">celt-0.9.2.tar.gz</a></li>
+<li>Source code: <a href="http://downloads.xiph.org/releases/opus/opus-0.9.2.tar.gz">opus-0.9.2.tar.gz</a></li>
 <li>Internet-Draft: <a href="http://tools.ietf.org/id/draft-ietf-codec-opus-04.txt">draft-ietf-codec-opus-04.txt</a>
 </ul>
 
@@ -36,14 +33,14 @@ Unfortunately, this has required slight changes to the bit-stream, which
 is thus not compatible with 0.9.0. This release adds support for forward
 error correction (FEC), which improves performance under packet loss. 
 <ul>
-<li>Source code: <a href="http://downloads.xiph.org/releases/opus/opus-0.9.1.tar.gz">celt-0.9.1.tar.gz</a></li>
+<li>Source code: <a href="http://downloads.xiph.org/releases/opus/opus-0.9.1.tar.gz">opus-0.9.1.tar.gz</a></li>
 <li>Internet-Draft: <a href="http://tools.ietf.org/id/draft-ietf-codec-opus-03.txt">draft-ietf-codec-opus-03.txt</a>
 </ul>
 
 <h2>Older releases</h2>
 
 <ul>
-<li><a href="http://downloads.xiph.org/releases/opus/opus-0.9.0.tar.gz">celt-0.9.0.tar.gz</a></li>
+<li><a href="http://downloads.xiph.org/releases/opus/opus-0.9.0.tar.gz">opus-0.9.0.tar.gz</a></li>
 </ul>
 
 
