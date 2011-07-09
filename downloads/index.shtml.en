@@ -15,6 +15,18 @@
 
 <h2>Latest <strong style='font-style: italic;'>development</strong> releases</h2>
 
+<h3 id='zero.9.5'>0.9.5</h3>
+<p>
+This is a cleanup release for version -07 of the draft. The bit-stream is 
+tentatively frozen. It will not change unless an major issue is found or
+if for some reason the Working Group decides something needs to be change.
+</p>
+
+<ul>
+<li>Source code: <a href="http://downloads.xiph.org/releases/opus/opus-0.9.5.tar.gz">opus-0.9.5.tar.gz</a></li>
+<li>Internet-Draft: <a href="http://tools.ietf.org/id/draft-ietf-codec-opus-04.txt">draft-ietf-codec-opus-07.txt</a>
+</ul>
+
 <h3 id='zero.9.2'>0.9.2</h3>
 <p>Opus 0.9.2 adds support for glitchless switching between the voice and audio mode. 
 Also, the encoder now defaults to a new "automatic" mode and bandwidth selection and
