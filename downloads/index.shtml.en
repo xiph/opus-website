@@ -15,6 +15,17 @@
 
 <h2>Latest <strong style='font-style: italic;'>development</strong> releases</h2>
 
+<h3 id='zero.9.6'>0.9.6</h3>
+<p>
+This is a cleanup release for version -08 of the draft. The bit-stream remains 
+tentatively frozen.
+</p>
+
+<ul>
+<li>Source code: <a href="http://downloads.xiph.org/releases/opus/opus-0.9.6.tar.gz">opus-0.9.6.tar.gz</a></li>
+<li>Internet-Draft: <a href="http://tools.ietf.org/id/draft-ietf-codec-opus-08.txt">draft-ietf-codec-opus-08.txt</a>
+</ul>
+
 <h3 id='zero.9.5'>0.9.5</h3>
 <p>
 This is a cleanup release for version -07 of the draft. The bit-stream is 
