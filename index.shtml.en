@@ -34,7 +34,7 @@ The Opus codec is designed to handle a wide range of interactive audio applicati
     or check out the prototype code:
 </p>
 <blockquote class="code">
-    <pre>$ git clone <a href="http://git.xiph.org/?opus.git">git://git.opus-codec.org/opus.git</a></pre>
+    <pre>$ git clone <a href="http://git.xiph.org/?p=opus.git;a=summary">git://git.opus-codec.org/opus.git</a></pre>
 </blockquote>
 
 
