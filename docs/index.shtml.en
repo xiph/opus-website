@@ -1,0 +1,21 @@
+<!--#include virtual="/ssi/header.include" -->
+
+<h1>Documentation</h1>
+
+<h2>IETF</h2>
+<p>
+<ul>
+   <li>Latest Opus codec draft: <a href="http://tools.ietf.org/html/draft-ietf-codec-opus">draft-ietf-codec-opus</a></li>
+   <li>Latest Opus RTP draft: <a href="http://tools.ietf.org/html/draft-spittka-payload-rtp-opus">draft-spittka-payload-rtp-opus</a></li>
+</ul>
+</p>
+
+<h2>Opus API reference (doxygen)</h2>
+<p>
+<ul>
+   <li><a href="opus_api.pdf">PDF</a></li>
+   <li><a href="html_api/files.html">HTML</a></li>
+</ul>
+</p>
+
+<!--#include virtual="/ssi/footer.include" -->
