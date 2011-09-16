@@ -19,7 +19,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">Opus&#160;<span id="projectnumber">0.9.6-129-g0ca076d</span></div>
+   <div id="projectname">Opus&#160;<span id="projectnumber">0.9.6-149-g48069bf</span></div>
    <div id="projectbrief">IETFlow-delayaudiocodec</div>
   </td>
  </tr>
@@ -58,6 +58,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="header">
   <div class="summary">
+<a href="#define-members">Defines</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
@@ -71,32 +72,163 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <p><a href="opus__multistream_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr><td colspan="2"><h2><a name="define-members"></a>
+Defines</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="opus__multistream_8h.html#afabd641a2bc6c09c9517294be87351c2">__opus_check_encstate_ptr</a>(ptr)&#160;&#160;&#160;((ptr) + ((ptr) - (<a class="el" href="group__opusencoder.html#gaf461a3ef2f10c2fe8b994a176f06c9bd">OpusEncoder</a>**)(ptr)))</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="opus__multistream_8h.html#afa5a8e09ef3853e1d0a249868e92e730">__opus_check_decstate_ptr</a>(ptr)&#160;&#160;&#160;((ptr) + ((ptr) - (<a class="el" href="group__opusdecoder.html#ga401d8579958d36094715a6b90cd159a6">OpusDecoder</a>**)(ptr)))</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="opus__multistream_8h.html#abf2878d085bb245eb1ae8deb4dc93d3d">OPUS_MULTISTREAM_GET_ENCODER_STATE_REQUEST</a>&#160;&#160;&#160;5120</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="opus__multistream_8h.html#a8791c1bedf0f6d1dcbd2ac91f33fc22a">OPUS_MULTISTREAM_GET_DECODER_STATE_REQUEST</a>&#160;&#160;&#160;5122</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="opus__multistream_8h.html#a4e67607eb691c4314a5de90d8c58aff0">OPUS_MULTISTREAM_GET_ENCODER_STATE</a>(x, y)&#160;&#160;&#160;OPUS_MULTISTREAM_GET_ENCODER_STATE_REQUEST, __opus_check_int(x), __opus_check_encstate_ptr(y)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="opus__multistream_8h.html#af0843831519b4d9b9d73391afef04a53">OPUS_MULTISTREAM_GET_DECODER_STATE</a>(x, y)&#160;&#160;&#160;OPUS_MULTISTREAM_GET_DECODER_STATE_REQUEST, __opus_check_int(x), __opus_check_decstate_ptr(y)</td></tr>
 <tr><td colspan="2"><h2><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="opus__multistream_8h.html#ae5826674d142fc873ebc1d781c507dd7">OpusMSEncoder</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="opus__multistream_8h.html#ae5826674d142fc873ebc1d781c507dd7">OpusMSEncoder</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="opus__multistream_8h.html#ad3497495deb9a8ace82e76cd4f93e0e4">OpusMSDecoder</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="opus__multistream_8h.html#ad3497495deb9a8ace82e76cd4f93e0e4">OpusMSDecoder</a></td></tr>
 <tr><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">OPUS_EXPORT <a class="el" href="opus__multistream_8h.html#ae5826674d142fc873ebc1d781c507dd7">OpusMSEncoder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="opus__multistream_8h.html#aae1647ba619d01cd3504ea79d8383975">opus_multistream_encoder_create</a> (<a class="el" href="opus__types_8h.html#aa4d309d6f80b99dbabebc8f98879ab9a">opus_int32</a> Fs, int channels, int streams, int coupled_streams, unsigned char *mapping, int application, int *error)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">OPUS_EXPORT int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="opus__multistream_8h.html#ab21da2ca6014096a7b27254f4dd44172">opus_multistream_encoder_init</a> (<a class="el" href="opus__multistream_8h.html#ae5826674d142fc873ebc1d781c507dd7">OpusMSEncoder</a> *st, <a class="el" href="opus__types_8h.html#aa4d309d6f80b99dbabebc8f98879ab9a">opus_int32</a> Fs, int channels, int streams, int coupled_streams, unsigned char *mapping, int application)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">OPUS_EXPORT int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="opus__multistream_8h.html#a24ee812ef2b958920e5990d6eadd4561">opus_multistream_encode</a> (<a class="el" href="opus__multistream_8h.html#ae5826674d142fc873ebc1d781c507dd7">OpusMSEncoder</a> *st, const <a class="el" href="opus__types_8h.html#acc9ed7cf60479eb81f9648c6ec27dc26">opus_int16</a> *pcm, int frame_size, unsigned char *data, int max_data_bytes)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns length of the data payload (in bytes)  <a href="#a24ee812ef2b958920e5990d6eadd4561"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">OPUS_EXPORT int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="opus__multistream_8h.html#a948bd79f64290c60b40b5727ce4d4643">opus_multistream_encode_float</a> (<a class="el" href="opus__multistream_8h.html#ae5826674d142fc873ebc1d781c507dd7">OpusMSEncoder</a> *st, const float *pcm, int frame_size, unsigned char *data, int max_data_bytes)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns length of the data payload (in bytes)  <a href="#a948bd79f64290c60b40b5727ce4d4643"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">OPUS_EXPORT void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="opus__multistream_8h.html#a24b8a4ceb20a142069084cb1edd28a30">opus_multistream_encoder_destroy</a> (<a class="el" href="opus__multistream_8h.html#ae5826674d142fc873ebc1d781c507dd7">OpusMSEncoder</a> *st)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">OPUS_EXPORT int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="opus__multistream_8h.html#afa05e449e540032d2f26dd2777897844">opus_multistream_encoder_ctl</a> (<a class="el" href="opus__multistream_8h.html#ae5826674d142fc873ebc1d781c507dd7">OpusMSEncoder</a> *st, int request,...)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">OPUS_EXPORT <a class="el" href="opus__multistream_8h.html#ad3497495deb9a8ace82e76cd4f93e0e4">OpusMSDecoder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="opus__multistream_8h.html#acbaa760237d9906c7256f236eb101f10">opus_multistream_decoder_create</a> (<a class="el" href="opus__types_8h.html#aa4d309d6f80b99dbabebc8f98879ab9a">opus_int32</a> Fs, int channels, int streams, int coupled_streams, unsigned char *mapping, int *error)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">OPUS_EXPORT int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="opus__multistream_8h.html#a6c9a9b20c8670a084964191d6a9f5ee5">opus_multistream_decoder_init</a> (<a class="el" href="opus__multistream_8h.html#ad3497495deb9a8ace82e76cd4f93e0e4">OpusMSDecoder</a> *st, <a class="el" href="opus__types_8h.html#aa4d309d6f80b99dbabebc8f98879ab9a">opus_int32</a> Fs, int channels, int streams, int coupled_streams, unsigned char *mapping)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">OPUS_EXPORT int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="opus__multistream_8h.html#a6bc87c681435433c599051ee4bb82dd9">opus_multistream_decode</a> (<a class="el" href="opus__multistream_8h.html#ad3497495deb9a8ace82e76cd4f93e0e4">OpusMSDecoder</a> *st, const unsigned char *data, int len, <a class="el" href="opus__types_8h.html#acc9ed7cf60479eb81f9648c6ec27dc26">opus_int16</a> *pcm, int frame_size, int decode_fec)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of samples decoded or a negative error code.  <a href="#a6bc87c681435433c599051ee4bb82dd9"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">OPUS_EXPORT int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="opus__multistream_8h.html#abdb9271b5185ecde7524c1a6ab070ed7">opus_multistream_decode_float</a> (<a class="el" href="opus__multistream_8h.html#ad3497495deb9a8ace82e76cd4f93e0e4">OpusMSDecoder</a> *st, const unsigned char *data, int len, float *pcm, int frame_size, int decode_fec)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of samples decoded or a negative error code.  <a href="#abdb9271b5185ecde7524c1a6ab070ed7"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">OPUS_EXPORT int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="opus__multistream_8h.html#a9631895a63105503f18e03e90c205284">opus_multistream_decoder_ctl</a> (<a class="el" href="opus__multistream_8h.html#ad3497495deb9a8ace82e76cd4f93e0e4">OpusMSDecoder</a> *st, int request,...)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">OPUS_EXPORT void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="opus__multistream_8h.html#a314b439b06efd9463caa5039c1198f6c">opus_multistream_decoder_destroy</a> (<a class="el" href="opus__multistream_8h.html#ad3497495deb9a8ace82e76cd4f93e0e4">OpusMSDecoder</a> *st)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="opus__multistream_8h.html#ae5826674d142fc873ebc1d781c507dd7">OpusMSEncoder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="opus__multistream_8h.html#a5432539fcd7146741fd16e64ba1f7a93">opus_multistream_encoder_create</a> (<a class="el" href="opus__types_8h.html#aa4d309d6f80b99dbabebc8f98879ab9a">opus_int32</a> Fs, int channels, int streams, int coupled_streams, unsigned char *mapping, int application, int *error)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate and initialize a multistream encoder state object.  <a href="#a5432539fcd7146741fd16e64ba1f7a93"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="opus__multistream_8h.html#ac29b1055be0cc29af5729ad55b9ead53">opus_multistream_encoder_init</a> (<a class="el" href="opus__multistream_8h.html#ae5826674d142fc873ebc1d781c507dd7">OpusMSEncoder</a> *st, <a class="el" href="opus__types_8h.html#aa4d309d6f80b99dbabebc8f98879ab9a">opus_int32</a> Fs, int channels, int streams, int coupled_streams, unsigned char *mapping, int application)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize an already allocated multistream encoder state.  <a href="#ac29b1055be0cc29af5729ad55b9ead53"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="opus__multistream_8h.html#aba3a87086955dc30d743b5a796d74c39">opus_multistream_encode</a> (<a class="el" href="opus__multistream_8h.html#ae5826674d142fc873ebc1d781c507dd7">OpusMSEncoder</a> *st, const <a class="el" href="opus__types_8h.html#acc9ed7cf60479eb81f9648c6ec27dc26">opus_int16</a> *pcm, int frame_size, unsigned char *data, int max_data_bytes)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns length of the data payload (in bytes) or a negative error code.  <a href="#aba3a87086955dc30d743b5a796d74c39"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="opus__multistream_8h.html#aeca931603150615786a0879f6f766565">opus_multistream_encode_float</a> (<a class="el" href="opus__multistream_8h.html#ae5826674d142fc873ebc1d781c507dd7">OpusMSEncoder</a> *st, const float *pcm, int frame_size, unsigned char *data, int max_data_bytes)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns length of the data payload (in bytes) or a negative error code.  <a href="#aeca931603150615786a0879f6f766565"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="opus__multistream_8h.html#aec819b8d4b38350aba6959cee7d33f94">opus_multistream_encoder_destroy</a> (<a class="el" href="opus__multistream_8h.html#ae5826674d142fc873ebc1d781c507dd7">OpusMSEncoder</a> *st)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Deallocate a multstream encoder state.  <a href="#aec819b8d4b38350aba6959cee7d33f94"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="opus__multistream_8h.html#ae14328330c548dede66c494f51e33707">opus_multistream_encoder_ctl</a> (<a class="el" href="opus__multistream_8h.html#ae5826674d142fc873ebc1d781c507dd7">OpusMSEncoder</a> *st, int request,...)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get or set options on a multistream encoder state.  <a href="#ae14328330c548dede66c494f51e33707"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="opus__multistream_8h.html#ad3497495deb9a8ace82e76cd4f93e0e4">OpusMSDecoder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="opus__multistream_8h.html#afce6f14893f84beb1e8454fa6b03e059">opus_multistream_decoder_create</a> (<a class="el" href="opus__types_8h.html#aa4d309d6f80b99dbabebc8f98879ab9a">opus_int32</a> Fs, int channels, int streams, int coupled_streams, unsigned char *mapping, int *error)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate and initialize a multistream decoder state object.  <a href="#afce6f14893f84beb1e8454fa6b03e059"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="opus__multistream_8h.html#a046170aea687a64b66cb2d1f1b84b865">opus_multistream_decoder_init</a> (<a class="el" href="opus__multistream_8h.html#ad3497495deb9a8ace82e76cd4f93e0e4">OpusMSDecoder</a> *st, <a class="el" href="opus__types_8h.html#aa4d309d6f80b99dbabebc8f98879ab9a">opus_int32</a> Fs, int channels, int streams, int coupled_streams, unsigned char *mapping)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Intialize a previously allocated decoder state object.  <a href="#a046170aea687a64b66cb2d1f1b84b865"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="opus__multistream_8h.html#ac416d43c7b486bae078da254094debdc">opus_multistream_decode</a> (<a class="el" href="opus__multistream_8h.html#ad3497495deb9a8ace82e76cd4f93e0e4">OpusMSDecoder</a> *st, const unsigned char *data, int len, <a class="el" href="opus__types_8h.html#acc9ed7cf60479eb81f9648c6ec27dc26">opus_int16</a> *pcm, int frame_size, int decode_fec)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of samples decoded or a negative error code.  <a href="#ac416d43c7b486bae078da254094debdc"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="opus__multistream_8h.html#a876c27a99fb7e0c04c3cfcc78bf1b4f8">opus_multistream_decode_float</a> (<a class="el" href="opus__multistream_8h.html#ad3497495deb9a8ace82e76cd4f93e0e4">OpusMSDecoder</a> *st, const unsigned char *data, int len, float *pcm, int frame_size, int decode_fec)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of samples decoded or a negative error code.  <a href="#a876c27a99fb7e0c04c3cfcc78bf1b4f8"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="opus__multistream_8h.html#a4b3dca8d46e5868cc133f3f6d2b57688">opus_multistream_decoder_ctl</a> (<a class="el" href="opus__multistream_8h.html#ad3497495deb9a8ace82e76cd4f93e0e4">OpusMSDecoder</a> *st, int request,...)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get or set options on a multistream decoder state.  <a href="#a4b3dca8d46e5868cc133f3f6d2b57688"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="opus__multistream_8h.html#aaec72b484eabc78d7869221c6d2ce080">opus_multistream_decoder_destroy</a> (<a class="el" href="opus__multistream_8h.html#ad3497495deb9a8ace82e76cd4f93e0e4">OpusMSDecoder</a> *st)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Deallocate a multistream decoder state object.  <a href="#aaec72b484eabc78d7869221c6d2ce080"></a><br/></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>Opus reference implementation multistream API. </p>
-</div><hr/><h2>Typedef Documentation</h2>
+</div><hr/><h2>Define Documentation</h2>
+<a class="anchor" id="afa5a8e09ef3853e1d0a249868e92e730"></a><!-- doxytag: member="opus_multistream.h::__opus_check_decstate_ptr" ref="afa5a8e09ef3853e1d0a249868e92e730" args="(ptr)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __opus_check_decstate_ptr</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">ptr</td><td>)</td>
+          <td>&#160;&#160;&#160;((ptr) + ((ptr) - (<a class="el" href="group__opusdecoder.html#ga401d8579958d36094715a6b90cd159a6">OpusDecoder</a>**)(ptr)))</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="afabd641a2bc6c09c9517294be87351c2"></a><!-- doxytag: member="opus_multistream.h::__opus_check_encstate_ptr" ref="afabd641a2bc6c09c9517294be87351c2" args="(ptr)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __opus_check_encstate_ptr</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">ptr</td><td>)</td>
+          <td>&#160;&#160;&#160;((ptr) + ((ptr) - (<a class="el" href="group__opusencoder.html#gaf461a3ef2f10c2fe8b994a176f06c9bd">OpusEncoder</a>**)(ptr)))</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af0843831519b4d9b9d73391afef04a53"></a><!-- doxytag: member="opus_multistream.h::OPUS_MULTISTREAM_GET_DECODER_STATE" ref="af0843831519b4d9b9d73391afef04a53" args="(x, y)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OPUS_MULTISTREAM_GET_DECODER_STATE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">y&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;OPUS_MULTISTREAM_GET_DECODER_STATE_REQUEST, __opus_check_int(x), __opus_check_decstate_ptr(y)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8791c1bedf0f6d1dcbd2ac91f33fc22a"></a><!-- doxytag: member="opus_multistream.h::OPUS_MULTISTREAM_GET_DECODER_STATE_REQUEST" ref="a8791c1bedf0f6d1dcbd2ac91f33fc22a" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OPUS_MULTISTREAM_GET_DECODER_STATE_REQUEST&#160;&#160;&#160;5122</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4e67607eb691c4314a5de90d8c58aff0"></a><!-- doxytag: member="opus_multistream.h::OPUS_MULTISTREAM_GET_ENCODER_STATE" ref="a4e67607eb691c4314a5de90d8c58aff0" args="(x, y)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OPUS_MULTISTREAM_GET_ENCODER_STATE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">y&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;OPUS_MULTISTREAM_GET_ENCODER_STATE_REQUEST, __opus_check_int(x), __opus_check_encstate_ptr(y)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abf2878d085bb245eb1ae8deb4dc93d3d"></a><!-- doxytag: member="opus_multistream.h::OPUS_MULTISTREAM_GET_ENCODER_STATE_REQUEST" ref="abf2878d085bb245eb1ae8deb4dc93d3d" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OPUS_MULTISTREAM_GET_ENCODER_STATE_REQUEST&#160;&#160;&#160;5120</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<hr/><h2>Typedef Documentation</h2>
 <a class="anchor" id="ad3497495deb9a8ace82e76cd4f93e0e4"></a><!-- doxytag: member="opus_multistream.h::OpusMSDecoder" ref="ad3497495deb9a8ace82e76cd4f93e0e4" args="" -->
 <div class="memitem">
 <div class="memproto">
@@ -124,12 +256,12 @@ Functions</h2></td></tr>
 </div>
 </div>
 <hr/><h2>Function Documentation</h2>
-<a class="anchor" id="a6bc87c681435433c599051ee4bb82dd9"></a><!-- doxytag: member="opus_multistream.h::opus_multistream_decode" ref="a6bc87c681435433c599051ee4bb82dd9" args="(OpusMSDecoder *st, const unsigned char *data, int len, opus_int16 *pcm, int frame_size, int decode_fec)" -->
+<a class="anchor" id="ac416d43c7b486bae078da254094debdc"></a><!-- doxytag: member="opus_multistream.h::opus_multistream_decode" ref="ac416d43c7b486bae078da254094debdc" args="(OpusMSDecoder *st, const unsigned char *data, int len, opus_int16 *pcm, int frame_size, int decode_fec)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">OPUS_EXPORT int opus_multistream_decode </td>
+          <td class="memname">int opus_multistream_decode </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="opus__multistream_8h.html#ad3497495deb9a8ace82e76cd4f93e0e4">OpusMSDecoder</a> *&#160;</td>
           <td class="paramname"><em>st</em>, </td>
@@ -179,7 +311,7 @@ Functions</h2></td></tr>
     <tr><td class="paramname">st</td><td>Decoder state </td></tr>
     <tr><td class="paramname">data</td><td>Input payload. Use a NULL pointer to indicate packet loss </td></tr>
     <tr><td class="paramname">len</td><td>Number of bytes in payload </td></tr>
-    <tr><td class="paramname">pcm</td><td>Output signal (interleaved if 2 channels). length is frame_size*channels </td></tr>
+    <tr><td class="paramname">pcm</td><td>Output signal, samples interleaved in channel order . length is frame_size*channels </td></tr>
     <tr><td class="paramname">frame_size</td><td>Number of samples per frame of input signal </td></tr>
     <tr><td class="paramname">decode_fec</td><td>Flag (0/1) to request that any in-band forward error correction data be decoded. If no such data is available the frame is decoded as if it were lost. </td></tr>
   </table>
@@ -188,12 +320,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="abdb9271b5185ecde7524c1a6ab070ed7"></a><!-- doxytag: member="opus_multistream.h::opus_multistream_decode_float" ref="abdb9271b5185ecde7524c1a6ab070ed7" args="(OpusMSDecoder *st, const unsigned char *data, int len, float *pcm, int frame_size, int decode_fec)" -->
+<a class="anchor" id="a876c27a99fb7e0c04c3cfcc78bf1b4f8"></a><!-- doxytag: member="opus_multistream.h::opus_multistream_decode_float" ref="a876c27a99fb7e0c04c3cfcc78bf1b4f8" args="(OpusMSDecoder *st, const unsigned char *data, int len, float *pcm, int frame_size, int decode_fec)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">OPUS_EXPORT int opus_multistream_decode_float </td>
+          <td class="memname">int opus_multistream_decode_float </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="opus__multistream_8h.html#ad3497495deb9a8ace82e76cd4f93e0e4">OpusMSDecoder</a> *&#160;</td>
           <td class="paramname"><em>st</em>, </td>
@@ -241,9 +373,9 @@ Functions</h2></td></tr>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">st</td><td>Decoder state </td></tr>
-    <tr><td class="paramname">data</td><td>Input payload. Use a NULL pointer to indicate packet loss </td></tr>
-    <tr><td class="paramname">len</td><td>Number of bytes in payload </td></tr>
-    <tr><td class="paramname">pcm</td><td>Output signal (interleaved if 2 channels). length is frame_size*channels </td></tr>
+    <tr><td class="paramname">data</td><td>Input payload buffer. Use a NULL pointer to indicate packet loss </td></tr>
+    <tr><td class="paramname">len</td><td>Number of payload bytes in data </td></tr>
+    <tr><td class="paramname">pcm</td><td>Buffer for the output signal (interleaved iin channel order). length is frame_size*channels </td></tr>
     <tr><td class="paramname">frame_size</td><td>Number of samples per frame of input signal </td></tr>
     <tr><td class="paramname">decode_fec</td><td>Flag (0/1) to request that any in-band forward error correction data be decoded. If no such data is available the frame is decoded as if it were lost. </td></tr>
   </table>
@@ -252,12 +384,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="acbaa760237d9906c7256f236eb101f10"></a><!-- doxytag: member="opus_multistream.h::opus_multistream_decoder_create" ref="acbaa760237d9906c7256f236eb101f10" args="(opus_int32 Fs, int channels, int streams, int coupled_streams, unsigned char *mapping, int *error)" -->
+<a class="anchor" id="afce6f14893f84beb1e8454fa6b03e059"></a><!-- doxytag: member="opus_multistream.h::opus_multistream_decoder_create" ref="afce6f14893f84beb1e8454fa6b03e059" args="(opus_int32 Fs, int channels, int streams, int coupled_streams, unsigned char *mapping, int *error)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">OPUS_EXPORT <a class="el" href="opus__multistream_8h.html#ad3497495deb9a8ace82e76cd4f93e0e4">OpusMSDecoder</a>* opus_multistream_decoder_create </td>
+          <td class="memname"><a class="el" href="opus__multistream_8h.html#ad3497495deb9a8ace82e76cd4f93e0e4">OpusMSDecoder</a>* opus_multistream_decoder_create </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="opus__types_8h.html#aa4d309d6f80b99dbabebc8f98879ab9a">opus_int32</a>&#160;</td>
           <td class="paramname"><em>Fs</em>, </td>
@@ -300,10 +432,16 @@ Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Allocate and initialize a multistream decoder state object. </p>
+<p>Call <a class="el" href="opus__multistream_8h.html#aaec72b484eabc78d7869221c6d2ce080" title="Deallocate a multistream decoder state object.">opus_multistream_decoder_destroy()</a> to release this object when finished. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table class="params">
-    <tr><td class="paramname">Fs</td><td>Sampling rate of input signal (Hz) </td></tr>
-    <tr><td class="paramname">channels</td><td>Number of channels (1/2) in input signal </td></tr>
+    <tr><td class="paramname">Fs</td><td>Sampling rate to decode at (Hz) </td></tr>
+    <tr><td class="paramname">channels</td><td>Number of channels to decode </td></tr>
+    <tr><td class="paramname">streams</td><td>Total number of coded streams in the multistream </td></tr>
+    <tr><td class="paramname">coupled_streams</td><td>Number of coupled (stereo) streams in the multistream </td></tr>
+    <tr><td class="paramname">mapping</td><td>Stream to channel mapping table </td></tr>
     <tr><td class="paramname">error</td><td>Error code </td></tr>
   </table>
   </dd>
@@ -311,12 +449,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a9631895a63105503f18e03e90c205284"></a><!-- doxytag: member="opus_multistream.h::opus_multistream_decoder_ctl" ref="a9631895a63105503f18e03e90c205284" args="(OpusMSDecoder *st, int request,...)" -->
+<a class="anchor" id="a4b3dca8d46e5868cc133f3f6d2b57688"></a><!-- doxytag: member="opus_multistream.h::opus_multistream_decoder_ctl" ref="a4b3dca8d46e5868cc133f3f6d2b57688" args="(OpusMSDecoder *st, int request,...)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">OPUS_EXPORT int opus_multistream_decoder_ctl </td>
+          <td class="memname">int opus_multistream_decoder_ctl </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="opus__multistream_8h.html#ad3497495deb9a8ace82e76cd4f93e0e4">OpusMSDecoder</a> *&#160;</td>
           <td class="paramname"><em>st</em>, </td>
@@ -342,14 +480,16 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
+<p>Get or set options on a multistream decoder state. </p>
+
 </div>
 </div>
-<a class="anchor" id="a314b439b06efd9463caa5039c1198f6c"></a><!-- doxytag: member="opus_multistream.h::opus_multistream_decoder_destroy" ref="a314b439b06efd9463caa5039c1198f6c" args="(OpusMSDecoder *st)" -->
+<a class="anchor" id="aaec72b484eabc78d7869221c6d2ce080"></a><!-- doxytag: member="opus_multistream.h::opus_multistream_decoder_destroy" ref="aaec72b484eabc78d7869221c6d2ce080" args="(OpusMSDecoder *st)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">OPUS_EXPORT void opus_multistream_decoder_destroy </td>
+          <td class="memname">void opus_multistream_decoder_destroy </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="opus__multistream_8h.html#ad3497495deb9a8ace82e76cd4f93e0e4">OpusMSDecoder</a> *&#160;</td>
           <td class="paramname"><em>st</em></td><td>)</td>
@@ -359,14 +499,16 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
+<p>Deallocate a multistream decoder state object. </p>
+
 </div>
 </div>
-<a class="anchor" id="a6c9a9b20c8670a084964191d6a9f5ee5"></a><!-- doxytag: member="opus_multistream.h::opus_multistream_decoder_init" ref="a6c9a9b20c8670a084964191d6a9f5ee5" args="(OpusMSDecoder *st, opus_int32 Fs, int channels, int streams, int coupled_streams, unsigned char *mapping)" -->
+<a class="anchor" id="a046170aea687a64b66cb2d1f1b84b865"></a><!-- doxytag: member="opus_multistream.h::opus_multistream_decoder_init" ref="a046170aea687a64b66cb2d1f1b84b865" args="(OpusMSDecoder *st, opus_int32 Fs, int channels, int streams, int coupled_streams, unsigned char *mapping)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">OPUS_EXPORT int opus_multistream_decoder_init </td>
+          <td class="memname">int opus_multistream_decoder_init </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="opus__multistream_8h.html#ad3497495deb9a8ace82e76cd4f93e0e4">OpusMSDecoder</a> *&#160;</td>
           <td class="paramname"><em>st</em>, </td>
@@ -409,23 +551,28 @@ Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Intialize a previously allocated decoder state object. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">st</td><td>Encoder state </td></tr>
-    <tr><td class="paramname">Fs</td><td>Sampling rate of input signal (Hz) </td></tr>
-    <tr><td class="paramname">channels</td><td>Number of channels (1/2) in input signal </td></tr>
+    <tr><td class="paramname">Fs</td><td>Sample rate of input signal (Hz) </td></tr>
+    <tr><td class="paramname">channels</td><td>Number of channels in the input signal </td></tr>
+    <tr><td class="paramname">streams</td><td>Total number of coded streams </td></tr>
+    <tr><td class="paramname">coupled_streams</td><td>Number of coupled (stereo) streams </td></tr>
+    <tr><td class="paramname">mapping</td><td>Stream to channel mapping table </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a class="anchor" id="a24ee812ef2b958920e5990d6eadd4561"></a><!-- doxytag: member="opus_multistream.h::opus_multistream_encode" ref="a24ee812ef2b958920e5990d6eadd4561" args="(OpusMSEncoder *st, const opus_int16 *pcm, int frame_size, unsigned char *data, int max_data_bytes)" -->
+<a class="anchor" id="aba3a87086955dc30d743b5a796d74c39"></a><!-- doxytag: member="opus_multistream.h::opus_multistream_encode" ref="aba3a87086955dc30d743b5a796d74c39" args="(OpusMSEncoder *st, const opus_int16 *pcm, int frame_size, unsigned char *data, int max_data_bytes)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">OPUS_EXPORT int opus_multistream_encode </td>
+          <td class="memname">int opus_multistream_encode </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="opus__multistream_8h.html#ae5826674d142fc873ebc1d781c507dd7">OpusMSEncoder</a> *&#160;</td>
           <td class="paramname"><em>st</em>, </td>
@@ -463,13 +610,13 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Returns length of the data payload (in bytes) </p>
+<p>Returns length of the data payload (in bytes) or a negative error code. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">st</td><td>Encoder state </td></tr>
-    <tr><td class="paramname">pcm</td><td>Input signal (interleaved if 2 channels). length is frame_size*channels </td></tr>
+    <tr><td class="paramname">pcm</td><td>Input signal as interleaved samples. Length is frame_size*channels </td></tr>
     <tr><td class="paramname">frame_size</td><td>Number of samples per frame of input signal </td></tr>
-    <tr><td class="paramname">data</td><td>Output payload (no more than max_data_bytes long) </td></tr>
+    <tr><td class="paramname">data</td><td>Output buffer for the compressed payload (no more than max_data_bytes long) </td></tr>
     <tr><td class="paramname">max_data_bytes</td><td>Allocated memory for payload; don't use for controlling bitrate </td></tr>
   </table>
   </dd>
@@ -477,12 +624,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a948bd79f64290c60b40b5727ce4d4643"></a><!-- doxytag: member="opus_multistream.h::opus_multistream_encode_float" ref="a948bd79f64290c60b40b5727ce4d4643" args="(OpusMSEncoder *st, const float *pcm, int frame_size, unsigned char *data, int max_data_bytes)" -->
+<a class="anchor" id="aeca931603150615786a0879f6f766565"></a><!-- doxytag: member="opus_multistream.h::opus_multistream_encode_float" ref="aeca931603150615786a0879f6f766565" args="(OpusMSEncoder *st, const float *pcm, int frame_size, unsigned char *data, int max_data_bytes)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">OPUS_EXPORT int opus_multistream_encode_float </td>
+          <td class="memname">int opus_multistream_encode_float </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="opus__multistream_8h.html#ae5826674d142fc873ebc1d781c507dd7">OpusMSEncoder</a> *&#160;</td>
           <td class="paramname"><em>st</em>, </td>
@@ -520,13 +667,13 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Returns length of the data payload (in bytes) </p>
+<p>Returns length of the data payload (in bytes) or a negative error code. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">st</td><td>Encoder state </td></tr>
-    <tr><td class="paramname">pcm</td><td>Input signal (interleaved if 2 channels). length is frame_size*channels </td></tr>
+    <tr><td class="paramname">pcm</td><td>Input signal interleaved in channel order. length is frame_size*channels </td></tr>
     <tr><td class="paramname">frame_size</td><td>Number of samples per frame of input signal </td></tr>
-    <tr><td class="paramname">data</td><td>Output payload (no more than max_data_bytes long) </td></tr>
+    <tr><td class="paramname">data</td><td>Output buffer for the compressed payload (no more than max_data_bytes long) </td></tr>
     <tr><td class="paramname">max_data_bytes</td><td>Allocated memory for payload; don't use for controlling bitrate </td></tr>
   </table>
   </dd>
@@ -534,12 +681,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aae1647ba619d01cd3504ea79d8383975"></a><!-- doxytag: member="opus_multistream.h::opus_multistream_encoder_create" ref="aae1647ba619d01cd3504ea79d8383975" args="(opus_int32 Fs, int channels, int streams, int coupled_streams, unsigned char *mapping, int application, int *error)" -->
+<a class="anchor" id="a5432539fcd7146741fd16e64ba1f7a93"></a><!-- doxytag: member="opus_multistream.h::opus_multistream_encoder_create" ref="a5432539fcd7146741fd16e64ba1f7a93" args="(opus_int32 Fs, int channels, int streams, int coupled_streams, unsigned char *mapping, int application, int *error)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">OPUS_EXPORT <a class="el" href="opus__multistream_8h.html#ae5826674d142fc873ebc1d781c507dd7">OpusMSEncoder</a>* opus_multistream_encoder_create </td>
+          <td class="memname"><a class="el" href="opus__multistream_8h.html#ae5826674d142fc873ebc1d781c507dd7">OpusMSEncoder</a>* opus_multistream_encoder_create </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="opus__types_8h.html#aa4d309d6f80b99dbabebc8f98879ab9a">opus_int32</a>&#160;</td>
           <td class="paramname"><em>Fs</em>, </td>
@@ -588,10 +735,16 @@ Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Allocate and initialize a multistream encoder state object. </p>
+<p>Call <a class="el" href="opus__multistream_8h.html#aec819b8d4b38350aba6959cee7d33f94" title="Deallocate a multstream encoder state.">opus_multistream_encoder_destroy()</a> to release this object when finished. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">Fs</td><td>Sampling rate of input signal (Hz) </td></tr>
-    <tr><td class="paramname">channels</td><td>Number of channels (1/2) in input signal </td></tr>
+    <tr><td class="paramname">channels</td><td>Number of channels in the input signal </td></tr>
+    <tr><td class="paramname">streams</td><td>Total number of streams to encode from the input </td></tr>
+    <tr><td class="paramname">coupled_streams</td><td>Number of coupled (stereo) streams to encode </td></tr>
+    <tr><td class="paramname">mapping</td><td>Encoded mapping between channels and streams </td></tr>
     <tr><td class="paramname">application</td><td>Coding mode (OPUS_APPLICATION_VOIP/OPUS_APPLICATION_AUDIO) </td></tr>
     <tr><td class="paramname">error</td><td>Error code </td></tr>
   </table>
@@ -600,12 +753,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="afa05e449e540032d2f26dd2777897844"></a><!-- doxytag: member="opus_multistream.h::opus_multistream_encoder_ctl" ref="afa05e449e540032d2f26dd2777897844" args="(OpusMSEncoder *st, int request,...)" -->
+<a class="anchor" id="ae14328330c548dede66c494f51e33707"></a><!-- doxytag: member="opus_multistream.h::opus_multistream_encoder_ctl" ref="ae14328330c548dede66c494f51e33707" args="(OpusMSEncoder *st, int request,...)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">OPUS_EXPORT int opus_multistream_encoder_ctl </td>
+          <td class="memname">int opus_multistream_encoder_ctl </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="opus__multistream_8h.html#ae5826674d142fc873ebc1d781c507dd7">OpusMSEncoder</a> *&#160;</td>
           <td class="paramname"><em>st</em>, </td>
@@ -631,14 +784,16 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
+<p>Get or set options on a multistream encoder state. </p>
+
 </div>
 </div>
-<a class="anchor" id="a24b8a4ceb20a142069084cb1edd28a30"></a><!-- doxytag: member="opus_multistream.h::opus_multistream_encoder_destroy" ref="a24b8a4ceb20a142069084cb1edd28a30" args="(OpusMSEncoder *st)" -->
+<a class="anchor" id="aec819b8d4b38350aba6959cee7d33f94"></a><!-- doxytag: member="opus_multistream.h::opus_multistream_encoder_destroy" ref="aec819b8d4b38350aba6959cee7d33f94" args="(OpusMSEncoder *st)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">OPUS_EXPORT void opus_multistream_encoder_destroy </td>
+          <td class="memname">void opus_multistream_encoder_destroy </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="opus__multistream_8h.html#ae5826674d142fc873ebc1d781c507dd7">OpusMSEncoder</a> *&#160;</td>
           <td class="paramname"><em>st</em></td><td>)</td>
@@ -648,14 +803,16 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
+<p>Deallocate a multstream encoder state. </p>
+
 </div>
 </div>
-<a class="anchor" id="ab21da2ca6014096a7b27254f4dd44172"></a><!-- doxytag: member="opus_multistream.h::opus_multistream_encoder_init" ref="ab21da2ca6014096a7b27254f4dd44172" args="(OpusMSEncoder *st, opus_int32 Fs, int channels, int streams, int coupled_streams, unsigned char *mapping, int application)" -->
+<a class="anchor" id="ac29b1055be0cc29af5729ad55b9ead53"></a><!-- doxytag: member="opus_multistream.h::opus_multistream_encoder_init" ref="ac29b1055be0cc29af5729ad55b9ead53" args="(OpusMSEncoder *st, opus_int32 Fs, int channels, int streams, int coupled_streams, unsigned char *mapping, int application)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">OPUS_EXPORT int opus_multistream_encoder_init </td>
+          <td class="memname">int opus_multistream_encoder_init </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="opus__multistream_8h.html#ae5826674d142fc873ebc1d781c507dd7">OpusMSEncoder</a> *&#160;</td>
           <td class="paramname"><em>st</em>, </td>
@@ -704,11 +861,16 @@ Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Initialize an already allocated multistream encoder state. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">st</td><td>Encoder state </td></tr>
     <tr><td class="paramname">Fs</td><td>Sampling rate of input signal (Hz) </td></tr>
-    <tr><td class="paramname">channels</td><td>Number of channels (1/2) in input signal </td></tr>
+    <tr><td class="paramname">channels</td><td>Number of channels in the input signal </td></tr>
+    <tr><td class="paramname">streams</td><td>Total number of streams to encode from the input </td></tr>
+    <tr><td class="paramname">coupled_streams</td><td>Number of coupled (stereo) streams to encode </td></tr>
+    <tr><td class="paramname">mapping</td><td>Encoded mapping between channels and streams </td></tr>
     <tr><td class="paramname">application</td><td>Coding mode (OPUS_APPLICATION_VOIP/OPUS_APPLICATION_AUDIO) </td></tr>
   </table>
   </dd>
@@ -731,7 +893,7 @@ Functions</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Sat Sep 10 2011 21:39:02 for Opus by&#160;
+<hr class="footer"/><address class="footer"><small>Generated on Fri Sep 16 2011 00:51:57 for Opus by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.4 </small></address>
 </body>

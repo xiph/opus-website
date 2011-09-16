@@ -19,7 +19,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">Opus&#160;<span id="projectnumber">0.9.6-129-g0ca076d</span></div>
+   <div id="projectname">Opus&#160;<span id="projectnumber">0.9.6-149-g48069bf</span></div>
    <div id="projectbrief">IETFlow-delayaudiocodec</div>
   </td>
  </tr>
@@ -65,19 +65,19 @@ Typedefs</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Opus encoder state.  <a href="#gaf461a3ef2f10c2fe8b994a176f06c9bd"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">OPUS_EXPORT int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__opusencoder.html#gac326a1958cec519aa6485a2d65c43ab2">opus_encoder_get_size</a> (int channels)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">OPUS_EXPORT <a class="el" href="group__opusencoder.html#gaf461a3ef2f10c2fe8b994a176f06c9bd">OpusEncoder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__opusencoder.html#ga05a87a612c5f57c8efdee500fdb5e65b">opus_encoder_create</a> (<a class="el" href="opus__types_8h.html#aa4d309d6f80b99dbabebc8f98879ab9a">opus_int32</a> Fs, int channels, int application, int *error)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocates and initializes an encoder state.  <a href="#ga05a87a612c5f57c8efdee500fdb5e65b"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">OPUS_EXPORT int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__opusencoder.html#ga7a21a7395021b361b52c67e30066743d">opus_encoder_init</a> (<a class="el" href="group__opusencoder.html#gaf461a3ef2f10c2fe8b994a176f06c9bd">OpusEncoder</a> *st, <a class="el" href="opus__types_8h.html#aa4d309d6f80b99dbabebc8f98879ab9a">opus_int32</a> Fs, int channels, int application)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a previously allocated encoder state The memory pointed to by st must be the size returned by opus_encoder_get_size.  <a href="#ga7a21a7395021b361b52c67e30066743d"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">OPUS_EXPORT int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__opusencoder.html#ga74f1bb6adc8fef3adcfb502932e6021b">opus_encode</a> (<a class="el" href="group__opusencoder.html#gaf461a3ef2f10c2fe8b994a176f06c9bd">OpusEncoder</a> *st, const <a class="el" href="opus__types_8h.html#acc9ed7cf60479eb81f9648c6ec27dc26">opus_int16</a> *pcm, int frame_size, unsigned char *data, int max_data_bytes)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Encodes an Opus frame.  <a href="#ga74f1bb6adc8fef3adcfb502932e6021b"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">OPUS_EXPORT int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__opusencoder.html#gabf17f3e2df1d4517b7e56e94ea5659bf">opus_encode_float</a> (<a class="el" href="group__opusencoder.html#gaf461a3ef2f10c2fe8b994a176f06c9bd">OpusEncoder</a> *st, const float *pcm, int frame_size, unsigned char *data, int max_data_bytes)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Encodes an Opus frame from floating point input.  <a href="#gabf17f3e2df1d4517b7e56e94ea5659bf"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">OPUS_EXPORT void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__opusencoder.html#ga899c69582a1cad2a168aedc99cab7be0">opus_encoder_destroy</a> (<a class="el" href="group__opusencoder.html#gaf461a3ef2f10c2fe8b994a176f06c9bd">OpusEncoder</a> *st)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees an OpusEncoder allocated by opus_encoder_create.  <a href="#ga899c69582a1cad2a168aedc99cab7be0"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">OPUS_EXPORT int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__opusencoder.html#gab85837d82b4b4f654c7ad87743c0b7c2">opus_encoder_ctl</a> (<a class="el" href="group__opusencoder.html#gaf461a3ef2f10c2fe8b994a176f06c9bd">OpusEncoder</a> *st, int request,...)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform a CTL function on an Opus encoder.  <a href="#gab85837d82b4b4f654c7ad87743c0b7c2"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__opusencoder.html#gaefeb7dc1d6e3b59dea5ea674c86e9c18">opus_encoder_get_size</a> (int channels)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__opusencoder.html#gaf461a3ef2f10c2fe8b994a176f06c9bd">OpusEncoder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__opusencoder.html#gaa89264fd93c9da70362a0c9b96b9ca88">opus_encoder_create</a> (<a class="el" href="opus__types_8h.html#aa4d309d6f80b99dbabebc8f98879ab9a">opus_int32</a> Fs, int channels, int application, int *error)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocates and initializes an encoder state.  <a href="#gaa89264fd93c9da70362a0c9b96b9ca88"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__opusencoder.html#ga515db1c267a7421dacaad3610f79eb79">opus_encoder_init</a> (<a class="el" href="group__opusencoder.html#gaf461a3ef2f10c2fe8b994a176f06c9bd">OpusEncoder</a> *st, <a class="el" href="opus__types_8h.html#aa4d309d6f80b99dbabebc8f98879ab9a">opus_int32</a> Fs, int channels, int application)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a previously allocated encoder state The memory pointed to by st must be the size returned by opus_encoder_get_size.  <a href="#ga515db1c267a7421dacaad3610f79eb79"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__opusencoder.html#ga88621a963b809ebfc27887f13518c966">opus_encode</a> (<a class="el" href="group__opusencoder.html#gaf461a3ef2f10c2fe8b994a176f06c9bd">OpusEncoder</a> *st, const <a class="el" href="opus__types_8h.html#acc9ed7cf60479eb81f9648c6ec27dc26">opus_int16</a> *pcm, int frame_size, unsigned char *data, int max_data_bytes)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Encodes an Opus frame.  <a href="#ga88621a963b809ebfc27887f13518c966"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__opusencoder.html#gace941e4ef26ed844879fde342ffbe546">opus_encode_float</a> (<a class="el" href="group__opusencoder.html#gaf461a3ef2f10c2fe8b994a176f06c9bd">OpusEncoder</a> *st, const float *pcm, int frame_size, unsigned char *data, int max_data_bytes)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Encodes an Opus frame from floating point input.  <a href="#gace941e4ef26ed844879fde342ffbe546"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__opusencoder.html#ga5f4c05b4b51cdffec5a55dbf17bbfa1c">opus_encoder_destroy</a> (<a class="el" href="group__opusencoder.html#gaf461a3ef2f10c2fe8b994a176f06c9bd">OpusEncoder</a> *st)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees an OpusEncoder allocated by opus_encoder_create.  <a href="#ga5f4c05b4b51cdffec5a55dbf17bbfa1c"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__opusencoder.html#ga164cbb0425238961919adf1db67949df">opus_encoder_ctl</a> (<a class="el" href="group__opusencoder.html#gaf461a3ef2f10c2fe8b994a176f06c9bd">OpusEncoder</a> *st, int request,...)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform a CTL function on an Opus encoder.  <a href="#ga164cbb0425238961919adf1db67949df"></a><br/></td></tr>
 </table>
 <hr/><h2>Typedef Documentation</h2>
 <a class="anchor" id="gaf461a3ef2f10c2fe8b994a176f06c9bd"></a><!-- doxytag: member="opus.h::OpusEncoder" ref="gaf461a3ef2f10c2fe8b994a176f06c9bd" args="" -->
@@ -93,17 +93,17 @@ Functions</h2></td></tr>
 
 <p>Opus encoder state. </p>
 <p>This contains the complete state of an Opus encoder. It is position independent and can be freely copied. </p>
-<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="group__opusencoder.html#ga05a87a612c5f57c8efdee500fdb5e65b" title="Allocates and initializes an encoder state.">opus_encoder_create</a>,<a class="el" href="group__opusencoder.html#ga7a21a7395021b361b52c67e30066743d" title="Initializes a previously allocated encoder state The memory pointed to by st must be the size returne...">opus_encoder_init</a> </dd></dl>
+<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="group__opusencoder.html#gaa89264fd93c9da70362a0c9b96b9ca88" title="Allocates and initializes an encoder state.">opus_encoder_create</a>,<a class="el" href="group__opusencoder.html#ga515db1c267a7421dacaad3610f79eb79" title="Initializes a previously allocated encoder state The memory pointed to by st must be the size returne...">opus_encoder_init</a> </dd></dl>
 
 </div>
 </div>
 <hr/><h2>Function Documentation</h2>
-<a class="anchor" id="ga74f1bb6adc8fef3adcfb502932e6021b"></a><!-- doxytag: member="opus.h::opus_encode" ref="ga74f1bb6adc8fef3adcfb502932e6021b" args="(OpusEncoder *st, const opus_int16 *pcm, int frame_size, unsigned char *data, int max_data_bytes)" -->
+<a class="anchor" id="ga88621a963b809ebfc27887f13518c966"></a><!-- doxytag: member="opus.h::opus_encode" ref="ga88621a963b809ebfc27887f13518c966" args="(OpusEncoder *st, const opus_int16 *pcm, int frame_size, unsigned char *data, int max_data_bytes)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">OPUS_EXPORT int opus_encode </td>
+          <td class="memname">int opus_encode </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__opusencoder.html#gaf461a3ef2f10c2fe8b994a176f06c9bd">OpusEncoder</a> *&#160;</td>
           <td class="paramname"><em>st</em>, </td>
@@ -157,12 +157,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="gabf17f3e2df1d4517b7e56e94ea5659bf"></a><!-- doxytag: member="opus.h::opus_encode_float" ref="gabf17f3e2df1d4517b7e56e94ea5659bf" args="(OpusEncoder *st, const float *pcm, int frame_size, unsigned char *data, int max_data_bytes)" -->
+<a class="anchor" id="gace941e4ef26ed844879fde342ffbe546"></a><!-- doxytag: member="opus.h::opus_encode_float" ref="gace941e4ef26ed844879fde342ffbe546" args="(OpusEncoder *st, const float *pcm, int frame_size, unsigned char *data, int max_data_bytes)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">OPUS_EXPORT int opus_encode_float </td>
+          <td class="memname">int opus_encode_float </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__opusencoder.html#gaf461a3ef2f10c2fe8b994a176f06c9bd">OpusEncoder</a> *&#160;</td>
           <td class="paramname"><em>st</em>, </td>
@@ -216,12 +216,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga05a87a612c5f57c8efdee500fdb5e65b"></a><!-- doxytag: member="opus.h::opus_encoder_create" ref="ga05a87a612c5f57c8efdee500fdb5e65b" args="(opus_int32 Fs, int channels, int application, int *error)" -->
+<a class="anchor" id="gaa89264fd93c9da70362a0c9b96b9ca88"></a><!-- doxytag: member="opus.h::opus_encoder_create" ref="gaa89264fd93c9da70362a0c9b96b9ca88" args="(opus_int32 Fs, int channels, int application, int *error)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">OPUS_EXPORT <a class="el" href="group__opusencoder.html#gaf461a3ef2f10c2fe8b994a176f06c9bd">OpusEncoder</a>* opus_encoder_create </td>
+          <td class="memname"><a class="el" href="group__opusencoder.html#gaf461a3ef2f10c2fe8b994a176f06c9bd">OpusEncoder</a>* opus_encoder_create </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="opus__types_8h.html#aa4d309d6f80b99dbabebc8f98879ab9a">opus_int32</a>&#160;</td>
           <td class="paramname"><em>Fs</em>, </td>
@@ -267,12 +267,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="gab85837d82b4b4f654c7ad87743c0b7c2"></a><!-- doxytag: member="opus.h::opus_encoder_ctl" ref="gab85837d82b4b4f654c7ad87743c0b7c2" args="(OpusEncoder *st, int request,...)" -->
+<a class="anchor" id="ga164cbb0425238961919adf1db67949df"></a><!-- doxytag: member="opus.h::opus_encoder_ctl" ref="ga164cbb0425238961919adf1db67949df" args="(OpusEncoder *st, int request,...)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">OPUS_EXPORT int opus_encoder_ctl </td>
+          <td class="memname">int opus_encoder_ctl </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__opusencoder.html#gaf461a3ef2f10c2fe8b994a176f06c9bd">OpusEncoder</a> *&#160;</td>
           <td class="paramname"><em>st</em>, </td>
@@ -303,12 +303,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga899c69582a1cad2a168aedc99cab7be0"></a><!-- doxytag: member="opus.h::opus_encoder_destroy" ref="ga899c69582a1cad2a168aedc99cab7be0" args="(OpusEncoder *st)" -->
+<a class="anchor" id="ga5f4c05b4b51cdffec5a55dbf17bbfa1c"></a><!-- doxytag: member="opus.h::opus_encoder_destroy" ref="ga5f4c05b4b51cdffec5a55dbf17bbfa1c" args="(OpusEncoder *st)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">OPUS_EXPORT void opus_encoder_destroy </td>
+          <td class="memname">void opus_encoder_destroy </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__opusencoder.html#gaf461a3ef2f10c2fe8b994a176f06c9bd">OpusEncoder</a> *&#160;</td>
           <td class="paramname"><em>st</em></td><td>)</td>
@@ -328,12 +328,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="gac326a1958cec519aa6485a2d65c43ab2"></a><!-- doxytag: member="opus.h::opus_encoder_get_size" ref="gac326a1958cec519aa6485a2d65c43ab2" args="(int channels)" -->
+<a class="anchor" id="gaefeb7dc1d6e3b59dea5ea674c86e9c18"></a><!-- doxytag: member="opus.h::opus_encoder_get_size" ref="gaefeb7dc1d6e3b59dea5ea674c86e9c18" args="(int channels)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">OPUS_EXPORT int opus_encoder_get_size </td>
+          <td class="memname">int opus_encoder_get_size </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>channels</em></td><td>)</td>
@@ -345,12 +345,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga7a21a7395021b361b52c67e30066743d"></a><!-- doxytag: member="opus.h::opus_encoder_init" ref="ga7a21a7395021b361b52c67e30066743d" args="(OpusEncoder *st, opus_int32 Fs, int channels, int application)" -->
+<a class="anchor" id="ga515db1c267a7421dacaad3610f79eb79"></a><!-- doxytag: member="opus.h::opus_encoder_init" ref="ga515db1c267a7421dacaad3610f79eb79" args="(OpusEncoder *st, opus_int32 Fs, int channels, int application)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">OPUS_EXPORT int opus_encoder_init </td>
+          <td class="memname">int opus_encoder_init </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__opusencoder.html#gaf461a3ef2f10c2fe8b994a176f06c9bd">OpusEncoder</a> *&#160;</td>
           <td class="paramname"><em>st</em>, </td>
@@ -384,7 +384,7 @@ Functions</h2></td></tr>
 
 <p>Initializes a previously allocated encoder state The memory pointed to by st must be the size returned by opus_encoder_get_size. </p>
 <p>This is intended for applications which use their own allocator instead of malloc. </p>
-<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="group__opusencoder.html#ga05a87a612c5f57c8efdee500fdb5e65b" title="Allocates and initializes an encoder state.">opus_encoder_create</a>,<a class="el" href="group__opusencoder.html#gac326a1958cec519aa6485a2d65c43ab2">opus_encoder_get_size</a> To reset a previously initialized state use the <a class="el" href="group__genericctls.html#gadc74e4fa8bcdf9994187d52d92207337" title="Resets the codec state to be equivalent to a freshly initialized state.">OPUS_RESET_STATE</a> CTL. </dd></dl>
+<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="group__opusencoder.html#gaa89264fd93c9da70362a0c9b96b9ca88" title="Allocates and initializes an encoder state.">opus_encoder_create</a>,<a class="el" href="group__opusencoder.html#gaefeb7dc1d6e3b59dea5ea674c86e9c18">opus_encoder_get_size</a> To reset a previously initialized state use the <a class="el" href="group__genericctls.html#gadc74e4fa8bcdf9994187d52d92207337" title="Resets the codec state to be equivalent to a freshly initialized state.">OPUS_RESET_STATE</a> CTL. </dd></dl>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">st</td><td><code>OpusEncoder*</code>: Encoder state </td></tr>
@@ -418,7 +418,7 @@ Functions</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Sat Sep 10 2011 21:39:02 for Opus by&#160;
+<hr class="footer"/><address class="footer"><small>Generated on Fri Sep 16 2011 00:51:57 for Opus by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.4 </small></address>
 </body>

@@ -19,7 +19,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">Opus&#160;<span id="projectnumber">0.9.6-129-g0ca076d</span></div>
+   <div id="projectname">Opus&#160;<span id="projectnumber">0.9.6-149-g48069bf</span></div>
    <div id="projectbrief">IETFlow-delayaudiocodec</div>
   </td>
  </tr>
@@ -110,9 +110,7 @@ Defines</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__encoderctls.html#ga21f010167c5dfa1b53f20c46d473e86a">OPUS_GET_FORCE_CHANNELS</a>(x)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the encoder's forced channel configuration,.  <a href="group__encoderctls.html#ga21f010167c5dfa1b53f20c46d473e86a"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__encoderctls.html#ga0178dabe5526d5b0667d81489cc93791">OPUS_SET_BANDWIDTH</a>(x)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures the encoder's bandpass.  <a href="group__encoderctls.html#ga0178dabe5526d5b0667d81489cc93791"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__encoderctls.html#ga29db1d9b5e670debec54d1163ad2ec62">OPUS_GET_BANDWIDTH</a>(x)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the encoder's configured bandpass,.  <a href="group__encoderctls.html#ga29db1d9b5e670debec54d1163ad2ec62"></a><br/></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures the encoder's bandpass,.  <a href="group__encoderctls.html#ga0178dabe5526d5b0667d81489cc93791"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__encoderctls.html#gaaa87ccee4ae46aa6c9528e03c5122b89">OPUS_SET_SIGNAL</a>(x)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures the type of signal being encoded.  <a href="group__encoderctls.html#gaaa87ccee4ae46aa6c9528e03c5122b89"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__encoderctls.html#ga640d434de535e2d2caec991c347303a4">OPUS_GET_SIGNAL</a>(x)</td></tr>
@@ -147,12 +145,16 @@ Defines</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the codec state to be equivalent to a freshly initialized state.  <a href="group__genericctls.html#gadc74e4fa8bcdf9994187d52d92207337"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__genericctls.html#ga1108a508aa475f964d247c1b04d26d89">OPUS_GET_FINAL_RANGE</a>(x)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the final state of the codec's entropy coder.  <a href="group__genericctls.html#ga1108a508aa475f964d247c1b04d26d89"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__genericctls.html#gaa89fc25eb35fc31a02b508562dd83820">OPUS_GET_PITCH</a>(x)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the pitch of the last decoded frame, if available.  <a href="group__genericctls.html#gaa89fc25eb35fc31a02b508562dd83820"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__genericctls.html#ga29db1d9b5e670debec54d1163ad2ec62">OPUS_GET_BANDWIDTH</a>(x)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the encoder's configured bandpass or the decoder's last bandpass,.  <a href="group__genericctls.html#ga29db1d9b5e670debec54d1163ad2ec62"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">OPUS_EXPORT const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__libinfo.html#ga4474c7a5797d39d8a3c3c14f64e9a30f">opus_strerror</a> (int error)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts an opus error code into a human readable string.  <a href="group__libinfo.html#ga4474c7a5797d39d8a3c3c14f64e9a30f"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">OPUS_EXPORT const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__libinfo.html#gabd0ca7be4a4aa3e71ff7862f2c31866a">opus_get_version_string</a> (void)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the libopus version string.  <a href="group__libinfo.html#gabd0ca7be4a4aa3e71ff7862f2c31866a"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__libinfo.html#gafad3bac5a05dc7c3477a5765eb5e1873">opus_strerror</a> (int error)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts an opus error code into a human readable string.  <a href="group__libinfo.html#gafad3bac5a05dc7c3477a5765eb5e1873"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__libinfo.html#ga3cd7aa16259a46f37a44d2e823b131e5">opus_get_version_string</a> (void)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the libopus version string.  <a href="group__libinfo.html#ga3cd7aa16259a46f37a44d2e823b131e5"></a><br/></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>Opus reference implementation constants. </p>
@@ -171,7 +173,7 @@ Functions</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Sat Sep 10 2011 21:39:02 for Opus by&#160;
+<hr class="footer"/><address class="footer"><small>Generated on Fri Sep 16 2011 00:51:57 for Opus by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.4 </small></address>
 </body>

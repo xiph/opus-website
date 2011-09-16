@@ -19,7 +19,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">Opus&#160;<span id="projectnumber">0.9.6-129-g0ca076d</span></div>
+   <div id="projectname">Opus&#160;<span id="projectnumber">0.9.6-149-g48069bf</span></div>
    <div id="projectbrief">IETFlow-delayaudiocodec</div>
   </td>
  </tr>
@@ -99,23 +99,23 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00042"></a>00042 <span class="preprocessor"></span>
 <a name="l00052"></a><a class="code" href="group__opusencoder.html#gaf461a3ef2f10c2fe8b994a176f06c9bd">00052</a> <span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="group__opusencoder.html#gaf461a3ef2f10c2fe8b994a176f06c9bd" title="Opus encoder state.">OpusEncoder</a> <a class="code" href="group__opusencoder.html#gaf461a3ef2f10c2fe8b994a176f06c9bd" title="Opus encoder state.">OpusEncoder</a>;
 <a name="l00053"></a>00053 
-<a name="l00054"></a>00054 OPUS_EXPORT <span class="keywordtype">int</span> <a class="code" href="group__opusencoder.html#gac326a1958cec519aa6485a2d65c43ab2">opus_encoder_get_size</a>(<span class="keywordtype">int</span> channels);
+<a name="l00054"></a>00054 OPUS_EXPORT <span class="keywordtype">int</span> <a class="code" href="group__opusencoder.html#gaefeb7dc1d6e3b59dea5ea674c86e9c18">opus_encoder_get_size</a>(<span class="keywordtype">int</span> channels);
 <a name="l00055"></a>00055 
-<a name="l00079"></a>00079 OPUS_EXPORT <a class="code" href="group__opusencoder.html#gaf461a3ef2f10c2fe8b994a176f06c9bd" title="Opus encoder state.">OpusEncoder</a> *<a class="code" href="group__opusencoder.html#ga05a87a612c5f57c8efdee500fdb5e65b" title="Allocates and initializes an encoder state.">opus_encoder_create</a>(
+<a name="l00079"></a>00079 OPUS_EXPORT <a class="code" href="group__opusencoder.html#gaf461a3ef2f10c2fe8b994a176f06c9bd" title="Opus encoder state.">OpusEncoder</a> *<a class="code" href="group__opusencoder.html#gaa89264fd93c9da70362a0c9b96b9ca88" title="Allocates and initializes an encoder state.">opus_encoder_create</a>(
 <a name="l00080"></a>00080     <a class="code" href="opus__types_8h.html#aa4d309d6f80b99dbabebc8f98879ab9a">opus_int32</a> Fs,
 <a name="l00081"></a>00081     <span class="keywordtype">int</span> channels,
 <a name="l00082"></a>00082     <span class="keywordtype">int</span> application,
 <a name="l00083"></a>00083     <span class="keywordtype">int</span> *error
 <a name="l00084"></a>00084 );
 <a name="l00085"></a>00085 
-<a name="l00096"></a>00096 OPUS_EXPORT <span class="keywordtype">int</span> <a class="code" href="group__opusencoder.html#ga7a21a7395021b361b52c67e30066743d" title="Initializes a previously allocated encoder state The memory pointed to by st must be the size returne...">opus_encoder_init</a>(
+<a name="l00096"></a>00096 OPUS_EXPORT <span class="keywordtype">int</span> <a class="code" href="group__opusencoder.html#ga515db1c267a7421dacaad3610f79eb79" title="Initializes a previously allocated encoder state The memory pointed to by st must be the size returne...">opus_encoder_init</a>(
 <a name="l00097"></a>00097     <a class="code" href="group__opusencoder.html#gaf461a3ef2f10c2fe8b994a176f06c9bd" title="Opus encoder state.">OpusEncoder</a> *st,
 <a name="l00098"></a>00098     <a class="code" href="opus__types_8h.html#aa4d309d6f80b99dbabebc8f98879ab9a">opus_int32</a> Fs,
 <a name="l00099"></a>00099     <span class="keywordtype">int</span> channels,
 <a name="l00100"></a>00100     <span class="keywordtype">int</span> application
 <a name="l00101"></a>00101 );
 <a name="l00102"></a>00102 
-<a name="l00115"></a>00115 OPUS_EXPORT <span class="keywordtype">int</span> <a class="code" href="group__opusencoder.html#ga74f1bb6adc8fef3adcfb502932e6021b" title="Encodes an Opus frame.">opus_encode</a>(
+<a name="l00115"></a>00115 OPUS_EXPORT <span class="keywordtype">int</span> <a class="code" href="group__opusencoder.html#ga88621a963b809ebfc27887f13518c966" title="Encodes an Opus frame.">opus_encode</a>(
 <a name="l00116"></a>00116     <a class="code" href="group__opusencoder.html#gaf461a3ef2f10c2fe8b994a176f06c9bd" title="Opus encoder state.">OpusEncoder</a> *st,
 <a name="l00117"></a>00117     <span class="keyword">const</span> <a class="code" href="opus__types_8h.html#acc9ed7cf60479eb81f9648c6ec27dc26">opus_int16</a> *pcm,
 <a name="l00118"></a>00118     <span class="keywordtype">int</span> frame_size,
@@ -123,7 +123,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00120"></a>00120     <span class="keywordtype">int</span> max_data_bytes
 <a name="l00121"></a>00121 );
 <a name="l00122"></a>00122 
-<a name="l00135"></a>00135 OPUS_EXPORT <span class="keywordtype">int</span> <a class="code" href="group__opusencoder.html#gabf17f3e2df1d4517b7e56e94ea5659bf" title="Encodes an Opus frame from floating point input.">opus_encode_float</a>(
+<a name="l00135"></a>00135 OPUS_EXPORT <span class="keywordtype">int</span> <a class="code" href="group__opusencoder.html#gace941e4ef26ed844879fde342ffbe546" title="Encodes an Opus frame from floating point input.">opus_encode_float</a>(
 <a name="l00136"></a>00136     <a class="code" href="group__opusencoder.html#gaf461a3ef2f10c2fe8b994a176f06c9bd" title="Opus encoder state.">OpusEncoder</a> *st,
 <a name="l00137"></a>00137     <span class="keyword">const</span> <span class="keywordtype">float</span> *pcm,
 <a name="l00138"></a>00138     <span class="keywordtype">int</span> frame_size,
@@ -131,26 +131,26 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00140"></a>00140     <span class="keywordtype">int</span> max_data_bytes
 <a name="l00141"></a>00141 );
 <a name="l00142"></a>00142 
-<a name="l00146"></a>00146 OPUS_EXPORT <span class="keywordtype">void</span> <a class="code" href="group__opusencoder.html#ga899c69582a1cad2a168aedc99cab7be0" title="Frees an OpusEncoder allocated by opus_encoder_create.">opus_encoder_destroy</a>(<a class="code" href="group__opusencoder.html#gaf461a3ef2f10c2fe8b994a176f06c9bd" title="Opus encoder state.">OpusEncoder</a> *st);
+<a name="l00146"></a>00146 OPUS_EXPORT <span class="keywordtype">void</span> <a class="code" href="group__opusencoder.html#ga5f4c05b4b51cdffec5a55dbf17bbfa1c" title="Frees an OpusEncoder allocated by opus_encoder_create.">opus_encoder_destroy</a>(<a class="code" href="group__opusencoder.html#gaf461a3ef2f10c2fe8b994a176f06c9bd" title="Opus encoder state.">OpusEncoder</a> *st);
 <a name="l00147"></a>00147 
-<a name="l00151"></a>00151 OPUS_EXPORT <span class="keywordtype">int</span> <a class="code" href="group__opusencoder.html#gab85837d82b4b4f654c7ad87743c0b7c2" title="Perform a CTL function on an Opus encoder.">opus_encoder_ctl</a>(<a class="code" href="group__opusencoder.html#gaf461a3ef2f10c2fe8b994a176f06c9bd" title="Opus encoder state.">OpusEncoder</a> *st, <span class="keywordtype">int</span> request, ...);
+<a name="l00151"></a>00151 OPUS_EXPORT <span class="keywordtype">int</span> <a class="code" href="group__opusencoder.html#ga164cbb0425238961919adf1db67949df" title="Perform a CTL function on an Opus encoder.">opus_encoder_ctl</a>(<a class="code" href="group__opusencoder.html#gaf461a3ef2f10c2fe8b994a176f06c9bd" title="Opus encoder state.">OpusEncoder</a> *st, <span class="keywordtype">int</span> request, ...);
 <a name="l00163"></a><a class="code" href="group__opusdecoder.html#ga401d8579958d36094715a6b90cd159a6">00163</a> <span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="group__opusdecoder.html#ga401d8579958d36094715a6b90cd159a6" title="Opus decoder state.">OpusDecoder</a> <a class="code" href="group__opusdecoder.html#ga401d8579958d36094715a6b90cd159a6" title="Opus decoder state.">OpusDecoder</a>;
 <a name="l00164"></a>00164 
-<a name="l00169"></a>00169 OPUS_EXPORT <span class="keywordtype">int</span> <a class="code" href="group__opusdecoder.html#ga82f921f43784a6c06558369d84499525" title="Gets the size of an OpusDecoder structure.">opus_decoder_get_size</a>(<span class="keywordtype">int</span> channels);
+<a name="l00169"></a>00169 OPUS_EXPORT <span class="keywordtype">int</span> <a class="code" href="group__opusdecoder.html#gac918415b2ee21add75b7f867ce235011" title="Gets the size of an OpusDecoder structure.">opus_decoder_get_size</a>(<span class="keywordtype">int</span> channels);
 <a name="l00170"></a>00170 
-<a name="l00176"></a>00176 OPUS_EXPORT <a class="code" href="group__opusdecoder.html#ga401d8579958d36094715a6b90cd159a6" title="Opus decoder state.">OpusDecoder</a> *<a class="code" href="group__opusdecoder.html#ga753b02ba5ddbd3df94e201f417e4752f" title="Allocates and initializes a decoder state.">opus_decoder_create</a>(
+<a name="l00176"></a>00176 OPUS_EXPORT <a class="code" href="group__opusdecoder.html#ga401d8579958d36094715a6b90cd159a6" title="Opus decoder state.">OpusDecoder</a> *<a class="code" href="group__opusdecoder.html#ga753f6fe0b699c81cfd47d70c8e15a0bd" title="Allocates and initializes a decoder state.">opus_decoder_create</a>(
 <a name="l00177"></a>00177     <a class="code" href="opus__types_8h.html#aa4d309d6f80b99dbabebc8f98879ab9a">opus_int32</a> Fs,
 <a name="l00178"></a>00178     <span class="keywordtype">int</span> channels,
 <a name="l00179"></a>00179     <span class="keywordtype">int</span> *error
 <a name="l00180"></a>00180 );
 <a name="l00181"></a>00181 
-<a name="l00191"></a>00191 OPUS_EXPORT <span class="keywordtype">int</span> <a class="code" href="group__opusdecoder.html#ga0da93fb1881dc73cfc73d230d2b8db4d" title="Initializes a previously allocated decoder state.">opus_decoder_init</a>(
+<a name="l00191"></a>00191 OPUS_EXPORT <span class="keywordtype">int</span> <a class="code" href="group__opusdecoder.html#ga939156d1f561c4273d5c62fa9c235a01" title="Initializes a previously allocated decoder state.">opus_decoder_init</a>(
 <a name="l00192"></a>00192     <a class="code" href="group__opusdecoder.html#ga401d8579958d36094715a6b90cd159a6" title="Opus decoder state.">OpusDecoder</a> *st,
 <a name="l00193"></a>00193     <a class="code" href="opus__types_8h.html#aa4d309d6f80b99dbabebc8f98879ab9a">opus_int32</a> Fs,
 <a name="l00194"></a>00194     <span class="keywordtype">int</span> channels
 <a name="l00195"></a>00195 );
 <a name="l00196"></a>00196 
-<a name="l00209"></a>00209 OPUS_EXPORT <span class="keywordtype">int</span> <a class="code" href="group__opusdecoder.html#ga4b10038b7466e619f0817c1cab7e0da6" title="Decode an Opus frame.">opus_decode</a>(
+<a name="l00209"></a>00209 OPUS_EXPORT <span class="keywordtype">int</span> <a class="code" href="group__opusdecoder.html#ga1a8b923c1041ad4976ceada237e117ba" title="Decode an Opus frame.">opus_decode</a>(
 <a name="l00210"></a>00210     <a class="code" href="group__opusdecoder.html#ga401d8579958d36094715a6b90cd159a6" title="Opus decoder state.">OpusDecoder</a> *st,
 <a name="l00211"></a>00211     <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *data,
 <a name="l00212"></a>00212     <span class="keywordtype">int</span> len,
@@ -159,7 +159,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00215"></a>00215     <span class="keywordtype">int</span> decode_fec
 <a name="l00216"></a>00216 );
 <a name="l00217"></a>00217 
-<a name="l00230"></a>00230 OPUS_EXPORT <span class="keywordtype">int</span> <a class="code" href="group__opusdecoder.html#ga328df17a6c9dd12d88cbf93e3b5f3a5b" title="Decode an opus frame with floating point output.">opus_decode_float</a>(
+<a name="l00230"></a>00230 OPUS_EXPORT <span class="keywordtype">int</span> <a class="code" href="group__opusdecoder.html#ga53b7fd5621613c4d7fcc17000ff1c9ec" title="Decode an opus frame with floating point output.">opus_decode_float</a>(
 <a name="l00231"></a>00231     <a class="code" href="group__opusdecoder.html#ga401d8579958d36094715a6b90cd159a6" title="Opus decoder state.">OpusDecoder</a> *st,
 <a name="l00232"></a>00232     <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *data,
 <a name="l00233"></a>00233     <span class="keywordtype">int</span> len,
@@ -168,11 +168,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00236"></a>00236     <span class="keywordtype">int</span> decode_fec
 <a name="l00237"></a>00237 );
 <a name="l00238"></a>00238 
-<a name="l00242"></a>00242 OPUS_EXPORT <span class="keywordtype">int</span> <a class="code" href="group__opusdecoder.html#ga276ebf10804c65e74e220ea9fc58cd94" title="Perform a CTL function on an Opus decoder.">opus_decoder_ctl</a>(<a class="code" href="group__opusdecoder.html#ga401d8579958d36094715a6b90cd159a6" title="Opus decoder state.">OpusDecoder</a> *st, <span class="keywordtype">int</span> request, ...);
+<a name="l00242"></a>00242 OPUS_EXPORT <span class="keywordtype">int</span> <a class="code" href="group__opusdecoder.html#ga2d492844b4f66e7f34d85870f13d4846" title="Perform a CTL function on an Opus decoder.">opus_decoder_ctl</a>(<a class="code" href="group__opusdecoder.html#ga401d8579958d36094715a6b90cd159a6" title="Opus decoder state.">OpusDecoder</a> *st, <span class="keywordtype">int</span> request, ...);
 <a name="l00243"></a>00243 
-<a name="l00247"></a>00247 OPUS_EXPORT <span class="keywordtype">void</span> <a class="code" href="group__opusdecoder.html#gae8cba5f0f579a37e09b5fdc6267bf8ed" title="Frees an OpusDecoder allocated by opus_decoder_create.">opus_decoder_destroy</a>(<a class="code" href="group__opusdecoder.html#ga401d8579958d36094715a6b90cd159a6" title="Opus decoder state.">OpusDecoder</a> *st);
+<a name="l00247"></a>00247 OPUS_EXPORT <span class="keywordtype">void</span> <a class="code" href="group__opusdecoder.html#gafebf4cb3c29c9317cac385446a76e36e" title="Frees an OpusDecoder allocated by opus_decoder_create.">opus_decoder_destroy</a>(<a class="code" href="group__opusdecoder.html#ga401d8579958d36094715a6b90cd159a6" title="Opus decoder state.">OpusDecoder</a> *st);
 <a name="l00248"></a>00248 
-<a name="l00262"></a>00262 OPUS_EXPORT <span class="keywordtype">int</span> <a class="code" href="group__opusdecoder.html#gaceb9efac1c9f0e07c5a952e9209bd905" title="Parse an opus packet into one or more frames.">opus_packet_parse</a>(
+<a name="l00262"></a>00262 OPUS_EXPORT <span class="keywordtype">int</span> <a class="code" href="group__opusdecoder.html#gab25a4df8111a9b6342b1f085f848cba9" title="Parse an opus packet into one or more frames.">opus_packet_parse</a>(
 <a name="l00263"></a>00263    <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *data,
 <a name="l00264"></a>00264    <span class="keywordtype">int</span> len,
 <a name="l00265"></a>00265    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *out_toc,
@@ -181,32 +181,32 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00268"></a>00268    <span class="keywordtype">int</span> *payload_offset
 <a name="l00269"></a>00269 );
 <a name="l00270"></a>00270 
-<a name="l00280"></a>00280 OPUS_EXPORT <span class="keywordtype">int</span> <a class="code" href="group__opusdecoder.html#ga489ba345bf1919d350f686400744e248" title="Gets the bandwidth of an Opus packet.">opus_packet_get_bandwidth</a>(<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *data);
+<a name="l00280"></a>00280 OPUS_EXPORT <span class="keywordtype">int</span> <a class="code" href="group__opusdecoder.html#ga89b9375b6ff5e15f07fdc5d0cf4f0053" title="Gets the bandwidth of an Opus packet.">opus_packet_get_bandwidth</a>(<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *data);
 <a name="l00281"></a>00281 
-<a name="l00288"></a>00288 OPUS_EXPORT <span class="keywordtype">int</span> <a class="code" href="group__opusdecoder.html#gaa221f2e563a2026a2f5f152a2db833bc" title="Gets the number of samples per frame from an Opus packet.">opus_packet_get_samples_per_frame</a>(<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *data, <a class="code" href="opus__types_8h.html#aa4d309d6f80b99dbabebc8f98879ab9a">opus_int32</a> Fs);
+<a name="l00288"></a>00288 OPUS_EXPORT <span class="keywordtype">int</span> <a class="code" href="group__opusdecoder.html#gab2a955acced631c6cb7876bbdc7953d4" title="Gets the number of samples per frame from an Opus packet.">opus_packet_get_samples_per_frame</a>(<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *data, <a class="code" href="opus__types_8h.html#aa4d309d6f80b99dbabebc8f98879ab9a">opus_int32</a> Fs);
 <a name="l00289"></a>00289 
-<a name="l00295"></a>00295 OPUS_EXPORT <span class="keywordtype">int</span> <a class="code" href="group__opusdecoder.html#gaeb8f6dcfe3372e3b0c296b17fdee502c" title="Gets the number of channels from an Opus packet.">opus_packet_get_nb_channels</a>(<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *data);
+<a name="l00295"></a>00295 OPUS_EXPORT <span class="keywordtype">int</span> <a class="code" href="group__opusdecoder.html#ga4209376ddf8cc3379767e1749e1ef26d" title="Gets the number of channels from an Opus packet.">opus_packet_get_nb_channels</a>(<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *data);
 <a name="l00296"></a>00296 
-<a name="l00303"></a>00303 OPUS_EXPORT <span class="keywordtype">int</span> <a class="code" href="group__opusdecoder.html#gac97b530a7044a3f6bd4c9dfab2430530" title="Gets the number of frame in an Opus packet.">opus_packet_get_nb_frames</a>(<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> packet[], <span class="keywordtype">int</span> len);
+<a name="l00303"></a>00303 OPUS_EXPORT <span class="keywordtype">int</span> <a class="code" href="group__opusdecoder.html#gaca454596b9deceb6449662c1287d9f90" title="Gets the number of frame in an Opus packet.">opus_packet_get_nb_frames</a>(<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> packet[], <span class="keywordtype">int</span> len);
 <a name="l00304"></a>00304 
-<a name="l00312"></a>00312 OPUS_EXPORT <span class="keywordtype">int</span> <a class="code" href="group__opusdecoder.html#ga4fe69352734598b21ee8021cde7c3b40" title="Gets the number of samples of an Opus packet.">opus_decoder_get_nb_samples</a>(<span class="keyword">const</span> <a class="code" href="group__opusdecoder.html#ga401d8579958d36094715a6b90cd159a6" title="Opus decoder state.">OpusDecoder</a> *dec, <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> packet[], <span class="keywordtype">int</span> len);
+<a name="l00312"></a>00312 OPUS_EXPORT <span class="keywordtype">int</span> <a class="code" href="group__opusdecoder.html#ga895fbdd007bab726ace70be21f88f13e" title="Gets the number of samples of an Opus packet.">opus_decoder_get_nb_samples</a>(<span class="keyword">const</span> <a class="code" href="group__opusdecoder.html#ga401d8579958d36094715a6b90cd159a6" title="Opus decoder state.">OpusDecoder</a> *dec, <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> packet[], <span class="keywordtype">int</span> len);
 <a name="l00319"></a><a class="code" href="group__repacketizer.html#ga1f85070a64bcbf5bf24f5ccb80323e7b">00319</a> <span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="group__repacketizer.html#ga1f85070a64bcbf5bf24f5ccb80323e7b">OpusRepacketizer</a> <a class="code" href="group__repacketizer.html#ga1f85070a64bcbf5bf24f5ccb80323e7b">OpusRepacketizer</a>;
 <a name="l00320"></a>00320 
-<a name="l00321"></a>00321 OPUS_EXPORT <span class="keywordtype">int</span> <a class="code" href="group__repacketizer.html#ga32cdfce26b23c472bf09a8908d378d08">opus_repacketizer_get_size</a>(<span class="keywordtype">void</span>);
+<a name="l00321"></a>00321 OPUS_EXPORT <span class="keywordtype">int</span> <a class="code" href="group__repacketizer.html#ga35c8fc05764748d187c62fc50e812d06">opus_repacketizer_get_size</a>(<span class="keywordtype">void</span>);
 <a name="l00322"></a>00322 
-<a name="l00323"></a>00323 OPUS_EXPORT <a class="code" href="group__repacketizer.html#ga1f85070a64bcbf5bf24f5ccb80323e7b">OpusRepacketizer</a> *<a class="code" href="group__repacketizer.html#gadaa8140d7ce34d5c20679201cdb9748b">opus_repacketizer_init</a>(<a class="code" href="group__repacketizer.html#ga1f85070a64bcbf5bf24f5ccb80323e7b">OpusRepacketizer</a> *rp);
+<a name="l00323"></a>00323 OPUS_EXPORT <a class="code" href="group__repacketizer.html#ga1f85070a64bcbf5bf24f5ccb80323e7b">OpusRepacketizer</a> *<a class="code" href="group__repacketizer.html#gab42ff7c3f8a49ff5029fcf60f3b853f0">opus_repacketizer_init</a>(<a class="code" href="group__repacketizer.html#ga1f85070a64bcbf5bf24f5ccb80323e7b">OpusRepacketizer</a> *rp);
 <a name="l00324"></a>00324 
-<a name="l00325"></a>00325 OPUS_EXPORT <a class="code" href="group__repacketizer.html#ga1f85070a64bcbf5bf24f5ccb80323e7b">OpusRepacketizer</a> *<a class="code" href="group__repacketizer.html#gab7c01881cd1df5e51514839ebc8f0c71">opus_repacketizer_create</a>(<span class="keywordtype">void</span>);
+<a name="l00325"></a>00325 OPUS_EXPORT <a class="code" href="group__repacketizer.html#ga1f85070a64bcbf5bf24f5ccb80323e7b">OpusRepacketizer</a> *<a class="code" href="group__repacketizer.html#ga6f8813666ef851550ecf8658a731ff7d">opus_repacketizer_create</a>(<span class="keywordtype">void</span>);
 <a name="l00326"></a>00326 
-<a name="l00327"></a>00327 OPUS_EXPORT <span class="keywordtype">void</span> <a class="code" href="group__repacketizer.html#gab03f22d1139a42e450761ad99ca3d882">opus_repacketizer_destroy</a>(<a class="code" href="group__repacketizer.html#ga1f85070a64bcbf5bf24f5ccb80323e7b">OpusRepacketizer</a> *rp);
+<a name="l00327"></a>00327 OPUS_EXPORT <span class="keywordtype">void</span> <a class="code" href="group__repacketizer.html#gadb08b25d2a29a559c35774cfe2a1b886">opus_repacketizer_destroy</a>(<a class="code" href="group__repacketizer.html#ga1f85070a64bcbf5bf24f5ccb80323e7b">OpusRepacketizer</a> *rp);
 <a name="l00328"></a>00328 
-<a name="l00329"></a>00329 OPUS_EXPORT <span class="keywordtype">int</span> <a class="code" href="group__repacketizer.html#ga8b31f9e16d896f38d3786bddbd18d732">opus_repacketizer_cat</a>(<a class="code" href="group__repacketizer.html#ga1f85070a64bcbf5bf24f5ccb80323e7b">OpusRepacketizer</a> *rp, <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *data, <span class="keywordtype">int</span> len);
+<a name="l00329"></a>00329 OPUS_EXPORT <span class="keywordtype">int</span> <a class="code" href="group__repacketizer.html#gae81b8d237be0777a18e4a0f0247dd050">opus_repacketizer_cat</a>(<a class="code" href="group__repacketizer.html#ga1f85070a64bcbf5bf24f5ccb80323e7b">OpusRepacketizer</a> *rp, <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *data, <span class="keywordtype">int</span> len);
 <a name="l00330"></a>00330 
-<a name="l00331"></a>00331 OPUS_EXPORT <span class="keywordtype">int</span> <a class="code" href="group__repacketizer.html#ga31af5057518a5334ae0144b6a085d8e6">opus_repacketizer_out_range</a>(<a class="code" href="group__repacketizer.html#ga1f85070a64bcbf5bf24f5ccb80323e7b">OpusRepacketizer</a> *rp, <span class="keywordtype">int</span> begin, <span class="keywordtype">int</span> end, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *data, <span class="keywordtype">int</span> maxlen);
+<a name="l00331"></a>00331 OPUS_EXPORT <span class="keywordtype">int</span> <a class="code" href="group__repacketizer.html#ga31a032d3b3fd2b08c07af808e060060f">opus_repacketizer_out_range</a>(<a class="code" href="group__repacketizer.html#ga1f85070a64bcbf5bf24f5ccb80323e7b">OpusRepacketizer</a> *rp, <span class="keywordtype">int</span> begin, <span class="keywordtype">int</span> end, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *data, <span class="keywordtype">int</span> maxlen);
 <a name="l00332"></a>00332 
-<a name="l00333"></a>00333 OPUS_EXPORT <span class="keywordtype">int</span> <a class="code" href="group__repacketizer.html#ga2141b5a2c4a67f68ad433244a5dbd426">opus_repacketizer_get_nb_frames</a>(<a class="code" href="group__repacketizer.html#ga1f85070a64bcbf5bf24f5ccb80323e7b">OpusRepacketizer</a> *rp);
+<a name="l00333"></a>00333 OPUS_EXPORT <span class="keywordtype">int</span> <a class="code" href="group__repacketizer.html#ga2cad98d04458aafdf6bb9f22f34ea7c0">opus_repacketizer_get_nb_frames</a>(<a class="code" href="group__repacketizer.html#ga1f85070a64bcbf5bf24f5ccb80323e7b">OpusRepacketizer</a> *rp);
 <a name="l00334"></a>00334 
-<a name="l00335"></a>00335 OPUS_EXPORT <span class="keywordtype">int</span> <a class="code" href="group__repacketizer.html#ga3b1250769c49e675cf5497253676ef1d">opus_repacketizer_out</a>(<a class="code" href="group__repacketizer.html#ga1f85070a64bcbf5bf24f5ccb80323e7b">OpusRepacketizer</a> *rp, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *data, <span class="keywordtype">int</span> maxlen);
+<a name="l00335"></a>00335 OPUS_EXPORT <span class="keywordtype">int</span> <a class="code" href="group__repacketizer.html#ga4fbd54e95090558856376139d62008aa">opus_repacketizer_out</a>(<a class="code" href="group__repacketizer.html#ga1f85070a64bcbf5bf24f5ccb80323e7b">OpusRepacketizer</a> *rp, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *data, <span class="keywordtype">int</span> maxlen);
 <a name="l00336"></a>00336 
 <a name="l00339"></a>00339 <span class="preprocessor">#ifdef __cplusplus</span>
 <a name="l00340"></a>00340 <span class="preprocessor"></span>}
@@ -229,7 +229,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Sat Sep 10 2011 21:39:02 for Opus by&#160;
+<hr class="footer"/><address class="footer"><small>Generated on Fri Sep 16 2011 00:51:57 for Opus by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.4 </small></address>
 </body>
