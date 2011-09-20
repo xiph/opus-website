@@ -116,4 +116,5 @@ and <a href="http://people.xiph.org/~greg/opus/ha2011/">Greg Maxwell's analysis 
 
 <p align="center"><a href="opus_ha_results.png"><img src="opus_ha_results.png" width="500" height="350"></a></p>
 
-<!--#include virtual="/ssi/pagebottom.include" -->
+</body>
+<!--#include virtual="/ssi/footer.include" -->
