@@ -11,22 +11,19 @@
 </style>
 </head>
 <body>
-<!--#include virtual="/common/xiphbar.include" -->
-<!--#include virtual="/ssi/pagetop.include" -->
-<!--  All your page content goes here  -->
 <h1>Codec Feature Comparison</h1>
 
 <table border="2" cellpadding="2" width="100%">
 	<thead>
 		<tr>
 			<th>Codec</th>
-			<th>Rate (kHz)</th>
+			<th>Sample rate (kHz)</th>
 
-			<th>bitrate (kbps)</th>
-			<th>frame size (ms)</th>
-			<th>total delay (ms)</th>
+			<th>Bitrate (kbps)</th>
+			<th>Frame size (ms)</th>
+			<th>Total delay (ms)</th>
 			<th>Robustness</th>
-			<th>license</th>
+			<th>License</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -35,8 +32,8 @@
 
 			<td>8-48</td>
 			<td>
-				6 - 128  (mono)<br/>
-				12 - 256 (stereo)
+				6 - 255  (mono)<br/>
+				12 - 510 (stereo)
 			</td>
 			<td>
 				2.5 - 20
@@ -45,7 +42,7 @@
 				5 - 22.5
 			</td>
 			<td>packet loss, limited bit errors</td>
-			<td>open-source/<br/>free software</td>
+			<td>Open-source (BSD)</td>
 		</tr>
 		<tr>
 			<td>Speex</td>
@@ -63,7 +60,7 @@
 				30 - 35
 			</td>
 			<td>packet loss</td>
-			<td>open-source/<br/>free software</td>
+			<td>Open-source (BSD)</td>
 		</tr>
 		<tr>
 			<td>G.722.1C (Siren14)</td>
@@ -87,12 +84,12 @@
 			
 			<td>packet loss</td>
 
-			<td>free with conditions</td>
+			<td>Open-source (BSD)</td>
 		</tr>
 		<tr>
 			<td>AAC-LD</td>
-			<td>16-48</td>
-			<td>16-128</td>
+			<td>16 - 48</td>
+			<td>16 - 128</td>
 			<td>10 - 11.6</td>
 			<td>20 - 50+</td>
 
