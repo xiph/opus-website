@@ -1,0 +1,119 @@
+<!--#include virtual="/ssi/header.include" -->
+<!--  Enter custom page information and styles here -->
+
+<title>Opus Audio Codec: Comparison</title>
+<style type="text/css">
+<!--
+#navlink_ a {
+	text-decoration: underline !important;
+}
+-->
+</style>
+</head>
+<body>
+<!--#include virtual="/common/xiphbar.include" -->
+<!--#include virtual="/ssi/pagetop.include" -->
+<!--  All your page content goes here  -->
+<h1>Codec Feature Comparison</h1>
+
+<table border="2" cellpadding="2" width="100%">
+	<thead>
+		<tr>
+			<th>Codec</th>
+			<th>Rate (kHz)</th>
+
+			<th>bitrate (kbps)</th>
+			<th>frame size (ms)</th>
+			<th>total delay (ms)</th>
+			<th>Robustness</th>
+			<th>license</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Opus</td>
+
+			<td>8-48</td>
+			<td>
+				6 - 128  (mono)<br/>
+				12 - 256 (stereo)
+			</td>
+			<td>
+				2.5 - 20
+			</td>
+			<td>
+				5 - 22.5
+			</td>
+			<td>packet loss, limited bit errors</td>
+			<td>open-source/<br/>free software</td>
+		</tr>
+		<tr>
+			<td>Speex</td>
+
+			<td>8<br/>16<br/>32</td>
+			<td>
+				2.2 - 24.6<br/>
+				4 - 42.2<br/>
+				4.2 - 44
+			</td>
+			<td>
+				20
+			</td>
+			<td>
+				30 - 35
+			</td>
+			<td>packet loss</td>
+			<td>open-source/<br/>free software</td>
+		</tr>
+		<tr>
+			<td>G.722.1C (Siren14)</td>
+			<td>32</td>
+
+			<td>24, 32, 48</td>
+			<td>20</td>
+			<td>40</td>
+			
+			<td>packet loss, bit errors</td>
+
+			<td>no charge, but not open-source</td>
+		</tr>
+		<tr>
+			<td>iLBC</td>
+			<td>8</td>
+
+			<td>15<br/>13.3</td>
+			<td>20<br/>30</td>
+			<td>25<br/>40</td>
+			
+			<td>packet loss</td>
+
+			<td>free with conditions</td>
+		</tr>
+		<tr>
+			<td>AAC-LD</td>
+			<td>16-48</td>
+			<td>16-128</td>
+			<td>10 - 11.6</td>
+			<td>20 - 50+</td>
+
+			<td>packet loss</td>
+			<td>proprietary, MPEG</td>
+		</tr>
+	</tbody>
+</table>
+
+<h1>Bitrate/Latency Comparison</h1>
+
+<p align="center"><a href="opus_comparison.png"><img src="opus_comparison.png" width="516" height="386"></a></p>
+
+<h1>Quality Comparison</h1>
+
+<h2>HydrogenAudio</h2>
+
+<p> These are the results of MUSHRA tests comparing Opus with Vorbis and HE-AAC on 48 kHz stereo music at 64 kb/s. For
+the full details, see <a href="http://listening-tests.hydrogenaudio.org/igorc/results.html">the official results page</a>
+and <a href="http://people.xiph.org/~greg/opus/ha2011/">Greg Maxwell's analysis page</a>.</p>
+
+<p align="center"><a href="opus_ha_results.png"><img src="opus_ha_results.png" width="500" height="350"></a></p>
+
+<!--#include virtual="/ssi/pagebottom.include" -->

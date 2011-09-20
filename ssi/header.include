@@ -17,6 +17,7 @@
     <li id="home_"><a href="/">Home</a></li>
     <li id="downloads_"><a href="/downloads/">Downloads</a></li>
     <li id="documentation_"><a href="/docs/">Documentation</a></li>
+    <li id="comparison_"><a href="/comparison/">Comparison</a></li>
     <li id="contact_"><a href="/contact/">Contact</a></li>
   </ul>
 </div>
