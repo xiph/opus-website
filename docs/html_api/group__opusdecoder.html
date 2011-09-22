@@ -19,7 +19,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">Opus&#160;<span id="projectnumber">0.9.6-149-g48069bf</span></div>
+   <div id="projectname">Opus&#160;<span id="projectnumber">0.9.6-157-g363924e</span></div>
    <div id="projectbrief">IETFlow-delayaudiocodec</div>
   </td>
  </tr>
@@ -58,6 +58,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">Opus Decoder</div>  </div>
 </div>
 <div class="contents">
+
+<p>The decoding process also starts with creating a decoder state.  
+<a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -92,6 +95,38 @@ Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__opusdecoder.html#ga895fbdd007bab726ace70be21f88f13e">opus_decoder_get_nb_samples</a> (const <a class="el" href="group__opusdecoder.html#ga401d8579958d36094715a6b90cd159a6">OpusDecoder</a> *dec, const unsigned char packet[], int len)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the number of samples of an Opus packet.  <a href="#ga895fbdd007bab726ace70be21f88f13e"></a><br/></td></tr>
 </table>
+<hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
+<p>The decoding process also starts with creating a decoder state. </p>
+<p>This can be done with: </p>
+<div class="fragment"><pre class="fragment"> <span class="keywordtype">int</span>          error;
+ <a class="code" href="group__opusdecoder.html#ga401d8579958d36094715a6b90cd159a6" title="Opus decoder state.">OpusDecoder</a> *dec;
+ dec = <a class="code" href="group__opusdecoder.html#ga753f6fe0b699c81cfd47d70c8e15a0bd" title="Allocates and initializes a decoder state.">opus_decoder_create</a>(Fs, channels, &amp;error);
+</pre></div><p> where </p>
+<ul>
+<li>Fs is the sampling rate and must be 8000, 12000, 16000, 24000, or 48000 </li>
+<li>channels is the number of channels (1 or 2) </li>
+<li>error will hold the error code in case or failure (or OPUS_OK on success) </li>
+<li>the return value is a newly created decoder state to be used for decoding</li>
+</ul>
+<p>While <a class="el" href="group__opusdecoder.html#ga753f6fe0b699c81cfd47d70c8e15a0bd" title="Allocates and initializes a decoder state.">opus_decoder_create()</a> allocates memory for the state, it's also possible to initialize pre-allocated memory: </p>
+<div class="fragment"><pre class="fragment"> <span class="keywordtype">int</span>          size;
+ <span class="keywordtype">int</span>          error;
+ <a class="code" href="group__opusdecoder.html#ga401d8579958d36094715a6b90cd159a6" title="Opus decoder state.">OpusDecoder</a> *dec;
+ size = <a class="code" href="group__opusdecoder.html#gac918415b2ee21add75b7f867ce235011" title="Gets the size of an OpusDecoder structure.">opus_decoder_get_size</a>(channels);
+ dec = malloc(size);
+ error = <a class="code" href="group__opusdecoder.html#ga939156d1f561c4273d5c62fa9c235a01" title="Initializes a previously allocated decoder state.">opus_decoder_init</a>(dec, Fs, channels);
+</pre></div><p> where <a class="el" href="group__opusdecoder.html#gac918415b2ee21add75b7f867ce235011" title="Gets the size of an OpusDecoder structure.">opus_decoder_get_size()</a> returns the required size for the decoder state. Note that future versions of this code may change the size, so no assuptions should be made about it.</p>
+<p>The decoder state is always continuous in memory and only a shallow copy is sufficient to copy it (e.g. memcpy())</p>
+<p>To decode a frame, <a class="el" href="group__opusdecoder.html#ga1a8b923c1041ad4976ceada237e117ba" title="Decode an Opus frame.">opus_decode()</a> or <a class="el" href="group__opusdecoder.html#ga53b7fd5621613c4d7fcc17000ff1c9ec" title="Decode an opus frame with floating point output.">opus_decode_float()</a> must be called with a packet of compressed audio data: </p>
+<div class="fragment"><pre class="fragment"> frame_size = <a class="code" href="group__opusdecoder.html#ga1a8b923c1041ad4976ceada237e117ba" title="Decode an Opus frame.">opus_decode</a>(enc, packet, len, decoded, max_size);
+</pre></div><p> where</p>
+<ul>
+<li>packet is the byte array containing the compressed data </li>
+<li>len is the exact number of bytes contained in the packet </li>
+<li>decoded is the decoded audio data in opus_int16 (or float for <a class="el" href="group__opusdecoder.html#ga53b7fd5621613c4d7fcc17000ff1c9ec" title="Decode an opus frame with floating point output.">opus_decode_float()</a>) </li>
+<li>max_size is the max duration of the frame in samples (per channel) that can fit into the decoded_frame array</li>
+</ul>
+<p><a class="el" href="group__opusdecoder.html#ga1a8b923c1041ad4976ceada237e117ba" title="Decode an Opus frame.">opus_decode()</a> and opus_decode_frame() return the number of samples ()per channel) decoded from the packet. If that value is negative, then an error has occured. This can occur if the packet is corrupted or if the audio buffer is too small to hold the decoded audio. </p>
 <hr/><h2>Typedef Documentation</h2>
 <a class="anchor" id="ga401d8579958d36094715a6b90cd159a6"></a><!-- doxytag: member="opus.h::OpusDecoder" ref="ga401d8579958d36094715a6b90cd159a6" args="" -->
 <div class="memitem">
@@ -707,7 +742,7 @@ Functions</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Fri Sep 16 2011 00:51:57 for Opus by&#160;
+<hr class="footer"/><address class="footer"><small>Generated on Thu Sep 22 2011 17:58:07 for Opus by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.4 </small></address>
 </body>

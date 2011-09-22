@@ -19,7 +19,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">Opus&#160;<span id="projectnumber">0.9.6-149-g48069bf</span></div>
+   <div id="projectname">Opus&#160;<span id="projectnumber">0.9.6-157-g363924e</span></div>
    <div id="projectbrief">IETFlow-delayaudiocodec</div>
   </td>
  </tr>
@@ -58,6 +58,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">Opus Encoder</div>  </div>
 </div>
 <div class="contents">
+
+<p>Since Opus is a stateful codec, the encoding process starts with creating an encoder state.  
+<a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -79,6 +82,65 @@ Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__opusencoder.html#ga164cbb0425238961919adf1db67949df">opus_encoder_ctl</a> (<a class="el" href="group__opusencoder.html#gaf461a3ef2f10c2fe8b994a176f06c9bd">OpusEncoder</a> *st, int request,...)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform a CTL function on an Opus encoder.  <a href="#ga164cbb0425238961919adf1db67949df"></a><br/></td></tr>
 </table>
+<hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
+<p>Since Opus is a stateful codec, the encoding process starts with creating an encoder state. </p>
+<p>This can be done with:</p>
+<div class="fragment"><pre class="fragment"> <span class="keywordtype">int</span>          error;
+ <a class="code" href="group__opusencoder.html#gaf461a3ef2f10c2fe8b994a176f06c9bd" title="Opus encoder state.">OpusEncoder</a> *enc;
+ enc = <a class="code" href="group__opusencoder.html#gaa89264fd93c9da70362a0c9b96b9ca88" title="Allocates and initializes an encoder state.">opus_encoder_create</a>(Fs, channels, application, &amp;error);
+</pre></div><p>where </p>
+<ul>
+<li>
+Fs is the sampling rate and must be 8000, 12000, 16000, 24000, or 48000 </li>
+<li>
+channels is the number of channels (1 or 2) </li>
+<li>
+application is either OPUS_APPLICATION_VOIP or OPUS_APPLICATION_AUDIO </li>
+<li>
+error will hold the error code in case or failure (or OPUS_OK on success) </li>
+<li>
+the return value is a newly created encoder state to be used for encoding </li>
+</ul>
+<p>While <a class="el" href="group__opusencoder.html#gaa89264fd93c9da70362a0c9b96b9ca88" title="Allocates and initializes an encoder state.">opus_encoder_create()</a> allocates memory for the state, it's also possible to initialize pre-allocated memory:</p>
+<div class="fragment"><pre class="fragment"> <span class="keywordtype">int</span>          size;
+ <span class="keywordtype">int</span>          error;
+ <a class="code" href="group__opusencoder.html#gaf461a3ef2f10c2fe8b994a176f06c9bd" title="Opus encoder state.">OpusEncoder</a> *enc;
+ size = <a class="code" href="group__opusencoder.html#gaefeb7dc1d6e3b59dea5ea674c86e9c18">opus_encoder_get_size</a>(channels);
+ enc = malloc(size);
+ error = <a class="code" href="group__opusencoder.html#ga515db1c267a7421dacaad3610f79eb79" title="Initializes a previously allocated encoder state The memory pointed to by st must be the size returne...">opus_encoder_init</a>(enc, Fs, channels, application);
+</pre></div><p>where <a class="el" href="group__opusencoder.html#gaefeb7dc1d6e3b59dea5ea674c86e9c18">opus_encoder_get_size()</a> returns the required size for the encoder state. Note that future versions of this code may change the size, so no assuptions should be made about it.</p>
+<p>The encoder state is always continuous in memory and only a shallow copy is sufficient to copy it (e.g. memcpy())</p>
+<p>It is possible to change some of the encoder's settings using the <a class="el" href="group__opusencoder.html#ga164cbb0425238961919adf1db67949df" title="Perform a CTL function on an Opus encoder.">opus_encoder_ctl()</a> interface. All these settings already default to the recommended value, so they should only be changed when necessary. The most common settings one may want to change are:</p>
+<div class="fragment"><pre class="fragment"> <a class="code" href="group__opusencoder.html#ga164cbb0425238961919adf1db67949df" title="Perform a CTL function on an Opus encoder.">opus_encoder_ctl</a>(enc, <a class="code" href="group__encoderctls.html#ga0bb51947e355b33d0cb358463b5101a7" title="Configures the bitrate in the encoder.">OPUS_SET_BITRATE</a>(bitrate));
+ <a class="code" href="group__opusencoder.html#ga164cbb0425238961919adf1db67949df" title="Perform a CTL function on an Opus encoder.">opus_encoder_ctl</a>(enc, <a class="code" href="group__encoderctls.html#ga3483877bf1687a75dd4a1de6f85f291c" title="Configures the encoder&#39;s computational complexity.">OPUS_SET_COMPLEXITY</a>(complexity));
+ <a class="code" href="group__opusencoder.html#ga164cbb0425238961919adf1db67949df" title="Perform a CTL function on an Opus encoder.">opus_encoder_ctl</a>(enc, <a class="code" href="group__encoderctls.html#gaaa87ccee4ae46aa6c9528e03c5122b89" title="Configures the type of signal being encoded.">OPUS_SET_SIGNAL</a>(signal_type));
+</pre></div><p>where </p>
+<ul>
+<li>
+bitrate is in bits per second (b/s) </li>
+<li>
+complexity is a value from 1 to 10 where 1 is the lowest complexity and 10 is the highest </li>
+<li>
+signal_type is either OPUS_AUTO (default), OPUS_SIGNAL_VOICE, or OPUS_SIGNAL_MUSIC </li>
+</ul>
+<p>See <a class="el" href="group__encoderctls.html">Encoder related CTLs</a> and <a class="el" href="group__genericctls.html">Generic CTLs</a> for a complete list of parameters that can be set or queried. Most parameters can be set or changed at any time during a stream.</p>
+<p>To encode a frame, <a class="el" href="group__opusencoder.html#ga88621a963b809ebfc27887f13518c966" title="Encodes an Opus frame.">opus_encode()</a> or <a class="el" href="group__opusencoder.html#gace941e4ef26ed844879fde342ffbe546" title="Encodes an Opus frame from floating point input.">opus_encode_float()</a> must be called with exactly one frame (2.5, 5, 10, 20, 40 or 60 ms) of audio data: </p>
+<div class="fragment"><pre class="fragment"> len = <a class="code" href="group__opusencoder.html#ga88621a963b809ebfc27887f13518c966" title="Encodes an Opus frame.">opus_encode</a>(enc, audio_frame, frame_size, packet, max_packet);
+</pre></div><p>where </p>
+<ul>
+<li>
+audio_frame is the audio data in opus_int16 (or float for <a class="el" href="group__opusencoder.html#gace941e4ef26ed844879fde342ffbe546" title="Encodes an Opus frame from floating point input.">opus_encode_float()</a>) </li>
+<li>
+frame_size is the duration of the frame in samples (per channel) </li>
+<li>
+packet is the byte array to which the compressed data is written </li>
+<li>
+max_packet is the maximum number of bytes that can be written in the packet (1276 bytes is recommended) </li>
+</ul>
+<p><a class="el" href="group__opusencoder.html#ga88621a963b809ebfc27887f13518c966" title="Encodes an Opus frame.">opus_encode()</a> and opus_encode_frame() return the number of bytes actually written to the packet. If that value is negative, then an error has occured. If the value is 1, then the packet does not need to be transmitted (DTX)</p>
+<p>Once the encoder state if no longer needed, it can be destroyed with</p>
+<div class="fragment"><pre class="fragment"> <a class="code" href="group__opusencoder.html#ga5f4c05b4b51cdffec5a55dbf17bbfa1c" title="Frees an OpusEncoder allocated by opus_encoder_create.">opus_encoder_destroy</a>(enc);
+</pre></div><p>If the encoder was created with <a class="el" href="group__opusencoder.html#ga515db1c267a7421dacaad3610f79eb79" title="Initializes a previously allocated encoder state The memory pointed to by st must be the size returne...">opus_encoder_init()</a> rather than <a class="el" href="group__opusencoder.html#gaa89264fd93c9da70362a0c9b96b9ca88" title="Allocates and initializes an encoder state.">opus_encoder_create()</a>, then no action is required aside from potentially freeing the memory that was manually allocated for it (calling free(enc) for the example above) </p>
 <hr/><h2>Typedef Documentation</h2>
 <a class="anchor" id="gaf461a3ef2f10c2fe8b994a176f06c9bd"></a><!-- doxytag: member="opus.h::OpusEncoder" ref="gaf461a3ef2f10c2fe8b994a176f06c9bd" args="" -->
 <div class="memitem">
@@ -418,7 +480,7 @@ Functions</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Fri Sep 16 2011 00:51:57 for Opus by&#160;
+<hr class="footer"/><address class="footer"><small>Generated on Thu Sep 22 2011 17:58:07 for Opus by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.4 </small></address>
 </body>

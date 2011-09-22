@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<title>Opus: Main Page</title>
+<title>Opus: Opus</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
@@ -19,7 +19,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">Opus&#160;<span id="projectnumber">0.9.6-149-g48069bf</span></div>
+   <div id="projectname">Opus&#160;<span id="projectnumber">0.9.6-157-g363924e</span></div>
    <div id="projectbrief">IETFlow-delayaudiocodec</div>
   </td>
  </tr>
@@ -52,10 +52,30 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="header">
   <div class="headertitle">
-<div class="title">Opus Documentation</div>  </div>
+<div class="title">Opus </div>  </div>
 </div>
 <div class="contents">
-</div>
+<div class="textblock"><p>The Opus codec is designed for interactive speech and audio transmission over the Internet. It is designed by the IETF Codec Working Group and incorporates technology from Skype's SILK codec and Xiph.Org's CELT codec.</p>
+<p>The Opus codec is designed to handle a wide range of interactive audio applications, including Voice over IP, videoconferencing, in-game chat, and even remote live music performances. It can scale from low bit-rate narrowband speech to very high quality stereo music. Its main features are:</p>
+<ul>
+<li>Sampling rates from 8 to 48 kHz </li>
+<li>Bit-rates from 6 kb/s 510 kb/s </li>
+<li>Support for both constant bit-rate (CBR) and variable bit-rate (VBR) </li>
+<li>Audio bandwidth from narrowband to full-band </li>
+<li>Support for speech and music </li>
+<li>Support for mono and stereo </li>
+<li>Frame sizes from 2.5 ms to 60 ms </li>
+<li>Good loss robustness and packet loss concealment (PLC) </li>
+<li>Floating point and fixed-point implementation</li>
+</ul>
+<p>Documentation sections: </p>
+<ul>
+<li><a class="el" href="group__opusencoder.html">Opus Encoder</a> </li>
+<li><a class="el" href="group__opusdecoder.html">Opus Decoder</a> </li>
+<li><a class="el" href="group__repacketizer.html">Repacketizer</a> </li>
+<li><a class="el" href="group__libinfo.html">Opus library information functions</a> </li>
+</ul>
+</div></div>
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -70,7 +90,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Fri Sep 16 2011 00:51:57 for Opus by&#160;
+<hr class="footer"/><address class="footer"><small>Generated on Thu Sep 22 2011 17:58:07 for Opus by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.4 </small></address>
 </body>
