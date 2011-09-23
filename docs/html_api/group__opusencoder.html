@@ -88,19 +88,7 @@ Functions</h2></td></tr>
 <div class="fragment"><pre class="fragment"> <span class="keywordtype">int</span>          error;
  <a class="code" href="group__opusencoder.html#gaf461a3ef2f10c2fe8b994a176f06c9bd" title="Opus encoder state.">OpusEncoder</a> *enc;
  enc = <a class="code" href="group__opusencoder.html#gaa89264fd93c9da70362a0c9b96b9ca88" title="Allocates and initializes an encoder state.">opus_encoder_create</a>(Fs, channels, application, &amp;error);
-</pre></div><p>where </p>
-<ul>
-<li>
-Fs is the sampling rate and must be 8000, 12000, 16000, 24000, or 48000 </li>
-<li>
-channels is the number of channels (1 or 2) </li>
-<li>
-application is either OPUS_APPLICATION_VOIP or OPUS_APPLICATION_AUDIO </li>
-<li>
-error will hold the error code in case or failure (or OPUS_OK on success) </li>
-<li>
-the return value is a newly created encoder state to be used for encoding </li>
-</ul>
+</pre></div><p>From this point, <code>enc</code> can be used for encoding an audio stream. An encoder state <b>must</b> <b>not</b> be used for more than one stream at the same time. Similarly, the encoder state <b>must</b> <b>not</b> be re-initialized for each frame.</p>
 <p>While <a class="el" href="group__opusencoder.html#gaa89264fd93c9da70362a0c9b96b9ca88" title="Allocates and initializes an encoder state.">opus_encoder_create()</a> allocates memory for the state, it's also possible to initialize pre-allocated memory:</p>
 <div class="fragment"><pre class="fragment"> <span class="keywordtype">int</span>          size;
  <span class="keywordtype">int</span>          error;
@@ -114,14 +102,11 @@ the return value is a newly created encoder state to be used for encoding </li>
 <div class="fragment"><pre class="fragment"> <a class="code" href="group__opusencoder.html#ga164cbb0425238961919adf1db67949df" title="Perform a CTL function on an Opus encoder.">opus_encoder_ctl</a>(enc, <a class="code" href="group__encoderctls.html#ga0bb51947e355b33d0cb358463b5101a7" title="Configures the bitrate in the encoder.">OPUS_SET_BITRATE</a>(bitrate));
  <a class="code" href="group__opusencoder.html#ga164cbb0425238961919adf1db67949df" title="Perform a CTL function on an Opus encoder.">opus_encoder_ctl</a>(enc, <a class="code" href="group__encoderctls.html#ga3483877bf1687a75dd4a1de6f85f291c" title="Configures the encoder&#39;s computational complexity.">OPUS_SET_COMPLEXITY</a>(complexity));
  <a class="code" href="group__opusencoder.html#ga164cbb0425238961919adf1db67949df" title="Perform a CTL function on an Opus encoder.">opus_encoder_ctl</a>(enc, <a class="code" href="group__encoderctls.html#gaaa87ccee4ae46aa6c9528e03c5122b89" title="Configures the type of signal being encoded.">OPUS_SET_SIGNAL</a>(signal_type));
-</pre></div><p>where </p>
+</pre></div><p>where</p>
 <ul>
-<li>
-bitrate is in bits per second (b/s) </li>
-<li>
-complexity is a value from 1 to 10 where 1 is the lowest complexity and 10 is the highest </li>
-<li>
-signal_type is either OPUS_AUTO (default), OPUS_SIGNAL_VOICE, or OPUS_SIGNAL_MUSIC </li>
+<li>bitrate is in bits per second (b/s) </li>
+<li>complexity is a value from 1 to 10, where 1 is the lowest complexity and 10 is the highest </li>
+<li>signal_type is either OPUS_AUTO (default), OPUS_SIGNAL_VOICE, or OPUS_SIGNAL_MUSIC</li>
 </ul>
 <p>See <a class="el" href="group__encoderctls.html">Encoder related CTLs</a> and <a class="el" href="group__genericctls.html">Generic CTLs</a> for a complete list of parameters that can be set or queried. Most parameters can be set or changed at any time during a stream.</p>
 <p>To encode a frame, <a class="el" href="group__opusencoder.html#ga88621a963b809ebfc27887f13518c966" title="Encodes an Opus frame.">opus_encode()</a> or <a class="el" href="group__opusencoder.html#gace941e4ef26ed844879fde342ffbe546" title="Encodes an Opus frame from floating point input.">opus_encode_float()</a> must be called with exactly one frame (2.5, 5, 10, 20, 40 or 60 ms) of audio data: </p>
@@ -137,7 +122,7 @@ packet is the byte array to which the compressed data is written </li>
 <li>
 max_packet is the maximum number of bytes that can be written in the packet (1276 bytes is recommended) </li>
 </ul>
-<p><a class="el" href="group__opusencoder.html#ga88621a963b809ebfc27887f13518c966" title="Encodes an Opus frame.">opus_encode()</a> and opus_encode_frame() return the number of bytes actually written to the packet. If that value is negative, then an error has occured. If the value is 1, then the packet does not need to be transmitted (DTX)</p>
+<p><a class="el" href="group__opusencoder.html#ga88621a963b809ebfc27887f13518c966" title="Encodes an Opus frame.">opus_encode()</a> and opus_encode_frame() return the number of bytes actually written to the packet. The return value <b>can be negative</b>, which indicates that an error has occurred. If the return value is 1 byte, then the packet does not need to be transmitted (DTX).</p>
 <p>Once the encoder state if no longer needed, it can be destroyed with</p>
 <div class="fragment"><pre class="fragment"> <a class="code" href="group__opusencoder.html#ga5f4c05b4b51cdffec5a55dbf17bbfa1c" title="Frees an OpusEncoder allocated by opus_encoder_create.">opus_encoder_destroy</a>(enc);
 </pre></div><p>If the encoder was created with <a class="el" href="group__opusencoder.html#ga515db1c267a7421dacaad3610f79eb79" title="Initializes a previously allocated encoder state The memory pointed to by st must be the size returne...">opus_encoder_init()</a> rather than <a class="el" href="group__opusencoder.html#gaa89264fd93c9da70362a0c9b96b9ca88" title="Allocates and initializes an encoder state.">opus_encoder_create()</a>, then no action is required aside from potentially freeing the memory that was manually allocated for it (calling free(enc) for the example above) </p>
@@ -215,7 +200,7 @@ max_packet is the maximum number of bytes that can be written in the packet (127
   </table>
   </dd>
 </dl>
-<dl class="return"><dt><b>Returns:</b></dt><dd>length of the data payload (in bytes) </dd></dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>length of the data payload (in bytes) or <a class="el" href="group__errorcodes.html">Error codes</a> </dd></dl>
 
 </div>
 </div>
@@ -274,7 +259,7 @@ max_packet is the maximum number of bytes that can be written in the packet (127
   </table>
   </dd>
 </dl>
-<dl class="return"><dt><b>Returns:</b></dt><dd>length of the data payload (in bytes) </dd></dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>length of the data payload (in bytes) or <a class="el" href="group__errorcodes.html">Error codes</a> </dd></dl>
 
 </div>
 </div>
@@ -316,16 +301,21 @@ max_packet is the maximum number of bytes that can be written in the packet (127
 <div class="memdoc">
 
 <p>Allocates and initializes an encoder state. </p>
-<p>There are three coding modes: OPUS_APPLICATION_VOIP gives best quality at a given bitrate for voice signals. It enhances the input signal by high-pass filtering and emphasizing formants and harmonics. Optionally it includes in-band forward error correction to protect against packet loss. Use this mode for typical VoIP applications. Because of the enhancement, even at high bitrates the output may sound different from the input. OPUS_APPLICATION_AUDIO gives best quality at a given bitrate for most non-voice signals like music. Use this mode for music and mixed (music/voice) content, broadcast, and applications requiring less than 15 ms of coding delay. OPUS_APPLICATION_RESTRICTED_LOWDELAY configures low-delay mode that disables the speech-optimized mode in exchange for slightly reduced delay. This is useful when the caller knows that the speech-optimized modes will not be needed (use with caution). </p>
+<p>There are three coding modes:</p>
+<p><a class="el" href="group__ctlvalues.html#ga07884aa018303a419d1f7acb2f3fa669">OPUS_APPLICATION_VOIP</a> gives best quality at a given bitrate for voice signals. It enhances the input signal by high-pass filtering and emphasizing formants and harmonics. Optionally it includes in-band forward error correction to protect against packet loss. Use this mode for typical VoIP applications. Because of the enhancement, even at high bitrates the output may sound different from the input.</p>
+<p><a class="el" href="group__ctlvalues.html#ga5909f7cb35c04f1110026c6889edd345">OPUS_APPLICATION_AUDIO</a> gives best quality at a given bitrate for most non-voice signals like music. Use this mode for music and mixed (music/voice) content, broadcast, and applications requiring less than 15 ms of coding delay.</p>
+<p><a class="el" href="group__ctlvalues.html#ga592232fb39db60c1369989c5c5d19a07">OPUS_APPLICATION_RESTRICTED_LOWDELAY</a> configures low-delay mode that disables the speech-optimized mode in exchange for slightly reduced delay.</p>
+<p>This is useful when the caller knows that the speech-optimized modes will not be needed (use with caution). </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">Fs</td><td><code>opus_int32</code>: Sampling rate of input signal (Hz) </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">channels</td><td><code>int</code>: Number of channels (1/2) in input signal </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">application</td><td><code>int</code>: Coding mode (OPUS_APPLICATION_VOIP/OPUS_APPLICATION_AUDIO/OPUS_APPLICATION_RESTRICTED_LOWDELAY) </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td><code>int*</code>: Error code </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">application</td><td><code>int</code>: Coding mode (<a class="el" href="group__ctlvalues.html#ga07884aa018303a419d1f7acb2f3fa669">OPUS_APPLICATION_VOIP</a>/<a class="el" href="group__ctlvalues.html#ga5909f7cb35c04f1110026c6889edd345">OPUS_APPLICATION_AUDIO</a>/<a class="el" href="group__ctlvalues.html#ga592232fb39db60c1369989c5c5d19a07">OPUS_APPLICATION_RESTRICTED_LOWDELAY</a>) </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td><code>int*</code>: <a class="el" href="group__errorcodes.html">Error codes</a> </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="note"><dt><b>Note:</b></dt><dd>Regardless of the sampling rate and number channels selected, the Opus encoder can switch to a lower audio audio bandwidth or number of channels if the bitrate selected is too low. This also means that it is safe to always use 48 kHz stereo input and let the encoder optimize the encoding. </dd></dl>
 
 </div>
 </div>
@@ -446,7 +436,7 @@ max_packet is the maximum number of bytes that can be written in the packet (127
 
 <p>Initializes a previously allocated encoder state The memory pointed to by st must be the size returned by opus_encoder_get_size. </p>
 <p>This is intended for applications which use their own allocator instead of malloc. </p>
-<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="group__opusencoder.html#gaa89264fd93c9da70362a0c9b96b9ca88" title="Allocates and initializes an encoder state.">opus_encoder_create</a>,<a class="el" href="group__opusencoder.html#gaefeb7dc1d6e3b59dea5ea674c86e9c18">opus_encoder_get_size</a> To reset a previously initialized state use the <a class="el" href="group__genericctls.html#gadc74e4fa8bcdf9994187d52d92207337" title="Resets the codec state to be equivalent to a freshly initialized state.">OPUS_RESET_STATE</a> CTL. </dd></dl>
+<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="group__opusencoder.html#gaa89264fd93c9da70362a0c9b96b9ca88" title="Allocates and initializes an encoder state.">opus_encoder_create()</a>,<a class="el" href="group__opusencoder.html#gaefeb7dc1d6e3b59dea5ea674c86e9c18">opus_encoder_get_size()</a> To reset a previously initialized state use the <a class="el" href="group__genericctls.html#gadc74e4fa8bcdf9994187d52d92207337" title="Resets the codec state to be equivalent to a freshly initialized state.">OPUS_RESET_STATE</a> CTL. </dd></dl>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">st</td><td><code>OpusEncoder*</code>: Encoder state </td></tr>
@@ -458,7 +448,7 @@ max_packet is the maximum number of bytes that can be written in the packet (127
 </dl>
 <dl><dt><b>Return values:</b></dt><dd>
   <table class="retval">
-    <tr><td class="paramname">OPUS_OK</td><td>Success. </td></tr>
+    <tr><td class="paramname">OPUS_OK</td><td>Success or <a class="el" href="group__errorcodes.html">Error codes</a> </td></tr>
   </table>
   </dd>
 </dl>
@@ -480,7 +470,7 @@ max_packet is the maximum number of bytes that can be written in the packet (127
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Thu Sep 22 2011 17:58:07 for Opus by&#160;
+<hr class="footer"/><address class="footer"><small>Generated on Thu Sep 22 2011 22:12:06 for Opus by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.4 </small></address>
 </body>

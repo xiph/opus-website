@@ -94,10 +94,6 @@ Defines</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures the encoder's intended application.  <a href="#ga18fa17dae52ff8f3eaea314204bf1a36"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__encoderctls.html#ga062ebbc209caf6832fe4a309a459fd4c">OPUS_GET_APPLICATION</a>(x)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the encoder's configured application,.  <a href="#ga062ebbc209caf6832fe4a309a459fd4c"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__encoderctls.html#gaf1a119a7182206404ca53b8cddbae1bb">OPUS_SET_RESTRICTED_LOWDELAY</a>(x)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures low-delay mode that disables the speech-optimized mode in exchange for slightly reduced delay.  <a href="#gaf1a119a7182206404ca53b8cddbae1bb"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__encoderctls.html#ga5bd619e0544859ef69e5b96b9a159f11">OPUS_GET_RESTRICTED_LOWDELAY</a>(x)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the encoder's forced channel configuration,.  <a href="#ga5bd619e0544859ef69e5b96b9a159f11"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__encoderctls.html#gaf81b9e01501910adc67195ebb42b4a54">OPUS_GET_LOOKAHEAD</a>(x)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the total samples of delay added by the entire codec.  <a href="#gaf81b9e01501910adc67195ebb42b4a54"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__encoderctls.html#ga5b67dc832aa46c1c2f35752c46380545">OPUS_SET_INBAND_FEC</a>(x)</td></tr>
@@ -325,32 +321,6 @@ Defines</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga5bd619e0544859ef69e5b96b9a159f11"></a><!-- doxytag: member="opus_defines.h::OPUS_GET_RESTRICTED_LOWDELAY" ref="ga5bd619e0544859ef69e5b96b9a159f11" args="(x)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define OPUS_GET_RESTRICTED_LOWDELAY</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">x</td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Gets the encoder's forced channel configuration,. </p>
-<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="group__encoderctls.html#gaf1a119a7182206404ca53b8cddbae1bb" title="Configures low-delay mode that disables the speech-optimized mode in exchange for slightly reduced de...">OPUS_SET_RESTRICTED_LOWDELAY</a> </dd></dl>
-<dl><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">x</td><td><code>int*</code>: 0; 1 </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a class="anchor" id="ga640d434de535e2d2caec991c347303a4"></a><!-- doxytag: member="opus_defines.h::OPUS_GET_SIGNAL" ref="ga640d434de535e2d2caec991c347303a4" args="(x)" -->
 <div class="memitem">
 <div class="memproto">
@@ -502,12 +472,12 @@ Defines</h2></td></tr>
 
 <p>Configures the encoder's bandpass,. </p>
 <dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="group__genericctls.html#ga29db1d9b5e670debec54d1163ad2ec62" title="Gets the encoder&#39;s configured bandpass or the decoder&#39;s last bandpass,.">OPUS_GET_BANDWIDTH</a> The supported values are:<ul>
-<li>OPUS_BANDWIDTH_AUTO (default)</li>
-<li>OPUS_BANDWIDTH_NARROWBAND 4kHz passband</li>
-<li>OPUS_BANDWIDTH_MEDIUMBAND 6kHz passband</li>
-<li>OPUS_BANDWIDTH_WIDEBAND 8kHz passband</li>
-<li>OPUS_BANDWIDTH_SUPERWIDEBAND 12kHz passband</li>
-<li>OPUS_BANDWIDTH_FULLBAND 20kHz passband </li>
+<li><a class="el" href="group__ctlvalues.html#ga1c5b3244b018ff4548d2d6bffa418472" title="Auto/default setting.">OPUS_AUTO</a> (default)</li>
+<li><a class="el" href="group__ctlvalues.html#ga607dd310958b9c7d545d005e4572d47f" title="4kHz bandpass">OPUS_BANDWIDTH_NARROWBAND</a> 4kHz passband</li>
+<li><a class="el" href="group__ctlvalues.html#ga53a2aff4dc0ee23682927ca568c422a3" title="6kHz bandpass">OPUS_BANDWIDTH_MEDIUMBAND</a> 6kHz passband</li>
+<li><a class="el" href="group__ctlvalues.html#gac698e5d1281a3632251d2a4ead48afb9" title="8kHz bandpass">OPUS_BANDWIDTH_WIDEBAND</a> 8kHz passband</li>
+<li><a class="el" href="group__ctlvalues.html#ga41f86df35af0033a7361895da88671c1" title="12kHz bandpass">OPUS_BANDWIDTH_SUPERWIDEBAND</a> 12kHz passband</li>
+<li><a class="el" href="group__ctlvalues.html#ga74cb052d8ec36cbcc9708c417558ebdd" title="20kHz bandpass">OPUS_BANDWIDTH_FULLBAND</a> 20kHz passband </li>
 </ul>
 </dd></dl>
 <dl><dt><b>Parameters:</b></dt><dd>
@@ -675,32 +645,6 @@ Defines</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="gaf1a119a7182206404ca53b8cddbae1bb"></a><!-- doxytag: member="opus_defines.h::OPUS_SET_RESTRICTED_LOWDELAY" ref="gaf1a119a7182206404ca53b8cddbae1bb" args="(x)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define OPUS_SET_RESTRICTED_LOWDELAY</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">x</td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Configures low-delay mode that disables the speech-optimized mode in exchange for slightly reduced delay. </p>
-<p>This is useful when the caller knows that the speech-optimized modes will not be needed (use with caution). The setting can only be changed right after initialization or after a reset and changes the lookahead. </p>
-<dl><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td><code>int</code>: 0 (default); 1 (lowdelay) </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a class="anchor" id="gaaa87ccee4ae46aa6c9528e03c5122b89"></a><!-- doxytag: member="opus_defines.h::OPUS_SET_SIGNAL" ref="gaaa87ccee4ae46aa6c9528e03c5122b89" args="(x)" -->
 <div class="memitem">
 <div class="memproto">
@@ -835,7 +779,7 @@ Defines</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Thu Sep 22 2011 17:58:07 for Opus by&#160;
+<hr class="footer"/><address class="footer"><small>Generated on Thu Sep 22 2011 22:12:06 for Opus by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.4 </small></address>
 </body>
