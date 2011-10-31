@@ -2,8 +2,11 @@
 
 <h1>Test Vectors</h1>
 <p>
-   Test vectors to verify Opus decoder implementations will be available
-   here soon.
-<p>   
+   Test vectors to verify Opus decoder implementations are now available. 
+</p>   
+<p>
+   Test are the <a href="opus_testvectors-draft09.tar.gz">test vectors for
+   version -09 of the draft</a>.
+</p>   
 
 <!--#include virtual="/ssi/footer.include" -->
