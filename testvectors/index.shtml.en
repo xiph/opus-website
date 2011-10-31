@@ -5,7 +5,7 @@
    Test vectors to verify Opus decoder implementations are now available. 
 </p>   
 <p>
-   Test are the <a href="opus_testvectors-draft09.tar.gz">test vectors for
+   These are the <a href="opus_testvectors-draft09.tar.gz">test vectors for
    version -09 of the draft</a>.
 </p>   
 
