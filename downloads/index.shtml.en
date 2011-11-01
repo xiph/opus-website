@@ -15,6 +15,25 @@
 
 <h2>Latest <strong style='font-style: italic;'>development</strong> releases</h2>
 
+<h3 id='zero.9.8'>0.9.8</h3>
+<p>
+This version matches version -10 of the draft and fixes several glitches caused by mode 
+switching and other corner cases. This required breaking the bit-stream for the SILK-only
+stereo and hybrid stereo modes. Fortunately, these modes are not often used, so few users
+should be affected. This release also implements a CBR mode for SILK mode. This release
+includes a much better test suite and has been extensively tested in multiple configurations.
+See the <a href="https://mf4.xiph.org/jenkins/">Jenkins build system</a> and the resulting
+<a href="https://mf4.xiph.org/jenkins/job/opus-coverage/ws/coverage/index.html">floating-point coverage</a> 
+and <a href="https://mf4.xiph.org/jenkins/job/opus-coverage-fixed/ws/coverage/index.html">fixed-point coverage</a>.
+Now that the analysis and documentation of the code has been completed, further changes to the
+bit-stream unfil the final freeze are unlikely. 
+</p>
+
+<ul>
+<li>Source code: <a href="http://downloads.xiph.org/releases/opus/opus-0.9.8.tar.gz">opus-0.9.8.tar.gz</a></li>
+<li>Internet-Draft: <a href="http://tools.ietf.org/id/draft-ietf-codec-opus-10.txt">draft-ietf-codec-opus-10.txt</a>
+</ul>
+
 <h3 id='zero.9.6'>0.9.6</h3>
 <p>
 This is a cleanup release for version -08 of the draft. The bit-stream remains 
