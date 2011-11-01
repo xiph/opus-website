@@ -29,6 +29,12 @@ img {
   text-decoration: underline;
 }
 
+#thelogo img {
+  vertical-align: middle;
+  margin-left: 8px;
+  padding-right: 8px;
+}
+
 #navbar {
   border: 0;
   margin-top: 0px
