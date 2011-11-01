@@ -19,7 +19,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">Opus&#160;<span id="projectnumber">0.9.6-157-g363924e</span></div>
+   <div id="projectname">Opus&#160;<span id="projectnumber">0.9.8</span></div>
    <div id="projectbrief">IETFlow-delayaudiocodec</div>
   </td>
  </tr>
@@ -133,16 +133,16 @@ Defines</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures mono/stereo forcing in the encoder.  <a href="group__encoderctls.html#ga8450a745bd919a8de522afec115f3b5f"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__encoderctls.html#ga21f010167c5dfa1b53f20c46d473e86a">OPUS_GET_FORCE_CHANNELS</a>(x)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the encoder's forced channel configuration,.  <a href="group__encoderctls.html#ga21f010167c5dfa1b53f20c46d473e86a"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__encoderctls.html#ga4f88288e89c595c07c61db316cc45289">OPUS_SET_MAX_BANDWIDTH</a>(x)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures the encoder's maximum bandpass allowed,.  <a href="group__encoderctls.html#ga4f88288e89c595c07c61db316cc45289"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__encoderctls.html#gaa3b5736de64792e1144ce12dfb87613c">OPUS_GET_MAX_BANDWIDTH</a>(x)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the encoder's configured maximum bandpass allowed,.  <a href="group__encoderctls.html#gaa3b5736de64792e1144ce12dfb87613c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__encoderctls.html#ga0178dabe5526d5b0667d81489cc93791">OPUS_SET_BANDWIDTH</a>(x)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures the encoder's bandpass,.  <a href="group__encoderctls.html#ga0178dabe5526d5b0667d81489cc93791"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__encoderctls.html#gaaa87ccee4ae46aa6c9528e03c5122b89">OPUS_SET_SIGNAL</a>(x)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures the type of signal being encoded.  <a href="group__encoderctls.html#gaaa87ccee4ae46aa6c9528e03c5122b89"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__encoderctls.html#ga640d434de535e2d2caec991c347303a4">OPUS_GET_SIGNAL</a>(x)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the encoder's configured signal type,.  <a href="group__encoderctls.html#ga640d434de535e2d2caec991c347303a4"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__encoderctls.html#ga0025148365da7cc471ebf6998ad95a4a">OPUS_SET_VOICE_RATIO</a>(x)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures the encoder's expected percentage of voice opposed to music or other signals.  <a href="group__encoderctls.html#ga0025148365da7cc471ebf6998ad95a4a"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__encoderctls.html#ga4bf892d2763fda77a72650ab34e31ecf">OPUS_GET_VOICE_RATIO</a>(x)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the encoder's configured voice ratio value,.  <a href="group__encoderctls.html#ga4bf892d2763fda77a72650ab34e31ecf"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__encoderctls.html#ga18fa17dae52ff8f3eaea314204bf1a36">OPUS_SET_APPLICATION</a>(x)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures the encoder's intended application.  <a href="group__encoderctls.html#ga18fa17dae52ff8f3eaea314204bf1a36"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__encoderctls.html#ga062ebbc209caf6832fe4a309a459fd4c">OPUS_GET_APPLICATION</a>(x)</td></tr>
@@ -193,7 +193,7 @@ Functions</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Thu Sep 22 2011 22:12:06 for Opus by&#160;
+<hr class="footer"/><address class="footer"><small>Generated on Mon Oct 31 2011 23:49:19 for Opus by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.4 </small></address>
 </body>

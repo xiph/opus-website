@@ -19,7 +19,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">Opus&#160;<span id="projectnumber">0.9.6-157-g363924e</span></div>
+   <div id="projectname">Opus&#160;<span id="projectnumber">0.9.8</span></div>
    <div id="projectbrief">IETFlow-delayaudiocodec</div>
   </td>
  </tr>
@@ -80,16 +80,16 @@ Defines</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures mono/stereo forcing in the encoder.  <a href="#ga8450a745bd919a8de522afec115f3b5f"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__encoderctls.html#ga21f010167c5dfa1b53f20c46d473e86a">OPUS_GET_FORCE_CHANNELS</a>(x)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the encoder's forced channel configuration,.  <a href="#ga21f010167c5dfa1b53f20c46d473e86a"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__encoderctls.html#ga4f88288e89c595c07c61db316cc45289">OPUS_SET_MAX_BANDWIDTH</a>(x)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures the encoder's maximum bandpass allowed,.  <a href="#ga4f88288e89c595c07c61db316cc45289"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__encoderctls.html#gaa3b5736de64792e1144ce12dfb87613c">OPUS_GET_MAX_BANDWIDTH</a>(x)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the encoder's configured maximum bandpass allowed,.  <a href="#gaa3b5736de64792e1144ce12dfb87613c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__encoderctls.html#ga0178dabe5526d5b0667d81489cc93791">OPUS_SET_BANDWIDTH</a>(x)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures the encoder's bandpass,.  <a href="#ga0178dabe5526d5b0667d81489cc93791"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__encoderctls.html#gaaa87ccee4ae46aa6c9528e03c5122b89">OPUS_SET_SIGNAL</a>(x)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures the type of signal being encoded.  <a href="#gaaa87ccee4ae46aa6c9528e03c5122b89"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__encoderctls.html#ga640d434de535e2d2caec991c347303a4">OPUS_GET_SIGNAL</a>(x)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the encoder's configured signal type,.  <a href="#ga640d434de535e2d2caec991c347303a4"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__encoderctls.html#ga0025148365da7cc471ebf6998ad95a4a">OPUS_SET_VOICE_RATIO</a>(x)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures the encoder's expected percentage of voice opposed to music or other signals.  <a href="#ga0025148365da7cc471ebf6998ad95a4a"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__encoderctls.html#ga4bf892d2763fda77a72650ab34e31ecf">OPUS_GET_VOICE_RATIO</a>(x)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the encoder's configured voice ratio value,.  <a href="#ga4bf892d2763fda77a72650ab34e31ecf"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__encoderctls.html#ga18fa17dae52ff8f3eaea314204bf1a36">OPUS_SET_APPLICATION</a>(x)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures the encoder's intended application.  <a href="#ga18fa17dae52ff8f3eaea314204bf1a36"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__encoderctls.html#ga062ebbc209caf6832fe4a309a459fd4c">OPUS_GET_APPLICATION</a>(x)</td></tr>
@@ -295,6 +295,32 @@ Defines</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="gaa3b5736de64792e1144ce12dfb87613c"></a><!-- doxytag: member="opus_defines.h::OPUS_GET_MAX_BANDWIDTH" ref="gaa3b5736de64792e1144ce12dfb87613c" args="(x)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OPUS_GET_MAX_BANDWIDTH</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Gets the encoder's configured maximum bandpass allowed,. </p>
+<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="group__encoderctls.html#ga4f88288e89c595c07c61db316cc45289" title="Configures the encoder&#39;s maximum bandpass allowed,.">OPUS_SET_MAX_BANDWIDTH</a> </dd></dl>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">x</td><td><code>int*</code>: Bandwidth value </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="gaa79261c6a55444993fca8d3a3a29d519"></a><!-- doxytag: member="opus_defines.h::OPUS_GET_PACKET_LOSS_PERC" ref="gaa79261c6a55444993fca8d3a3a29d519" args="(x)" -->
 <div class="memitem">
 <div class="memproto">
@@ -393,32 +419,6 @@ Defines</h2></td></tr>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">x</td><td><code>int*</code>: 0; 1 </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="ga4bf892d2763fda77a72650ab34e31ecf"></a><!-- doxytag: member="opus_defines.h::OPUS_GET_VOICE_RATIO" ref="ga4bf892d2763fda77a72650ab34e31ecf" args="(x)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define OPUS_GET_VOICE_RATIO</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">x</td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Gets the encoder's configured voice ratio value,. </p>
-<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="group__encoderctls.html#ga0025148365da7cc471ebf6998ad95a4a" title="Configures the encoder&#39;s expected percentage of voice opposed to music or other signals.">OPUS_SET_VOICE_RATIO</a></dd></dl>
-<dl><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">x</td><td><code>int*</code>: Voice percentage in the range 0-100, inclusive. </td></tr>
   </table>
   </dd>
 </dl>
@@ -619,6 +619,39 @@ Defines</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ga4f88288e89c595c07c61db316cc45289"></a><!-- doxytag: member="opus_defines.h::OPUS_SET_MAX_BANDWIDTH" ref="ga4f88288e89c595c07c61db316cc45289" args="(x)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OPUS_SET_MAX_BANDWIDTH</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Configures the encoder's maximum bandpass allowed,. </p>
+<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="group__encoderctls.html#gaa3b5736de64792e1144ce12dfb87613c" title="Gets the encoder&#39;s configured maximum bandpass allowed,.">OPUS_GET_MAX_BANDWIDTH</a> The supported values are:<ul>
+<li><a class="el" href="group__ctlvalues.html#ga607dd310958b9c7d545d005e4572d47f" title="4kHz bandpass">OPUS_BANDWIDTH_NARROWBAND</a> 4kHz passband</li>
+<li><a class="el" href="group__ctlvalues.html#ga53a2aff4dc0ee23682927ca568c422a3" title="6kHz bandpass">OPUS_BANDWIDTH_MEDIUMBAND</a> 6kHz passband</li>
+<li><a class="el" href="group__ctlvalues.html#gac698e5d1281a3632251d2a4ead48afb9" title="8kHz bandpass">OPUS_BANDWIDTH_WIDEBAND</a> 8kHz passband</li>
+<li><a class="el" href="group__ctlvalues.html#ga41f86df35af0033a7361895da88671c1" title="12kHz bandpass">OPUS_BANDWIDTH_SUPERWIDEBAND</a> 12kHz passband</li>
+<li><a class="el" href="group__ctlvalues.html#ga74cb052d8ec36cbcc9708c417558ebdd" title="20kHz bandpass">OPUS_BANDWIDTH_FULLBAND</a> 20kHz passband (default) </li>
+</ul>
+</dd></dl>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td><code>int</code>: Bandwidth value </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="gafda1c951dea919ba54432cd03827f1a9"></a><!-- doxytag: member="opus_defines.h::OPUS_SET_PACKET_LOSS_PERC" ref="gafda1c951dea919ba54432cd03827f1a9" args="(x)" -->
 <div class="memitem">
 <div class="memproto">
@@ -738,32 +771,6 @@ Defines</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga0025148365da7cc471ebf6998ad95a4a"></a><!-- doxytag: member="opus_defines.h::OPUS_SET_VOICE_RATIO" ref="ga0025148365da7cc471ebf6998ad95a4a" args="(x)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define OPUS_SET_VOICE_RATIO</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">x</td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Configures the encoder's expected percentage of voice opposed to music or other signals. </p>
-<dl class="note"><dt><b>Note:</b></dt><dd>This interface is currently more aspiration than actuality. It's ultimately expected to bias an automatic signal classifier, but it currently just shifts the static bitrate to mode mapping around a little bit.</dd></dl>
-<dl><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td><code>int</code>: Voice percentage in the range 0-100, inclusive. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 </div>
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -779,7 +786,7 @@ Defines</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Thu Sep 22 2011 22:12:06 for Opus by&#160;
+<hr class="footer"/><address class="footer"><small>Generated on Mon Oct 31 2011 23:49:19 for Opus by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.4 </small></address>
 </body>

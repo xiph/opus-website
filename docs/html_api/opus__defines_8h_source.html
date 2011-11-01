@@ -19,7 +19,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">Opus&#160;<span id="projectnumber">0.9.6-157-g363924e</span></div>
+   <div id="projectname">Opus&#160;<span id="projectnumber">0.9.8</span></div>
    <div id="projectbrief">IETFlow-delayaudiocodec</div>
   </td>
  </tr>
@@ -124,119 +124,121 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00075"></a>00075 <span class="preprocessor"></span><span class="preprocessor"># define OPUS_EXPORT</span>
 <a name="l00076"></a>00076 <span class="preprocessor"></span><span class="preprocessor">#endif</span>
 <a name="l00077"></a>00077 <span class="preprocessor"></span>
-<a name="l00080"></a>00080 <span class="preprocessor">#define OPUS_SET_COMPLEXITY_REQUEST          4010</span>
-<a name="l00081"></a>00081 <span class="preprocessor"></span><span class="preprocessor">#define OPUS_GET_COMPLEXITY_REQUEST          4011</span>
+<a name="l00080"></a>00080 <span class="preprocessor">#define OPUS_SET_APPLICATION_REQUEST         4000</span>
+<a name="l00081"></a>00081 <span class="preprocessor"></span><span class="preprocessor">#define OPUS_GET_APPLICATION_REQUEST         4001</span>
 <a name="l00082"></a>00082 <span class="preprocessor"></span><span class="preprocessor">#define OPUS_SET_BITRATE_REQUEST             4002</span>
 <a name="l00083"></a>00083 <span class="preprocessor"></span><span class="preprocessor">#define OPUS_GET_BITRATE_REQUEST             4003</span>
-<a name="l00084"></a>00084 <span class="preprocessor"></span><span class="preprocessor">#define OPUS_SET_VBR_REQUEST                 4006</span>
-<a name="l00085"></a>00085 <span class="preprocessor"></span><span class="preprocessor">#define OPUS_GET_VBR_REQUEST                 4007</span>
-<a name="l00086"></a>00086 <span class="preprocessor"></span><span class="preprocessor">#define OPUS_SET_VBR_CONSTRAINT_REQUEST      4020</span>
-<a name="l00087"></a>00087 <span class="preprocessor"></span><span class="preprocessor">#define OPUS_GET_VBR_CONSTRAINT_REQUEST      4021</span>
-<a name="l00088"></a>00088 <span class="preprocessor"></span><span class="preprocessor">#define OPUS_SET_FORCE_CHANNELS_REQUEST      4022</span>
-<a name="l00089"></a>00089 <span class="preprocessor"></span><span class="preprocessor">#define OPUS_GET_FORCE_CHANNELS_REQUEST      4023</span>
-<a name="l00090"></a>00090 <span class="preprocessor"></span><span class="preprocessor">#define OPUS_SET_BANDWIDTH_REQUEST           4008</span>
-<a name="l00091"></a>00091 <span class="preprocessor"></span><span class="preprocessor">#define OPUS_GET_BANDWIDTH_REQUEST           4009</span>
-<a name="l00092"></a>00092 <span class="preprocessor"></span><span class="preprocessor">#define OPUS_SET_SIGNAL_REQUEST              4024</span>
-<a name="l00093"></a>00093 <span class="preprocessor"></span><span class="preprocessor">#define OPUS_GET_SIGNAL_REQUEST              4025</span>
-<a name="l00094"></a>00094 <span class="preprocessor"></span><span class="preprocessor">#define OPUS_SET_VOICE_RATIO_REQUEST         4018</span>
-<a name="l00095"></a>00095 <span class="preprocessor"></span><span class="preprocessor">#define OPUS_GET_VOICE_RATIO_REQUEST         4019</span>
-<a name="l00096"></a>00096 <span class="preprocessor"></span><span class="preprocessor">#define OPUS_SET_APPLICATION_REQUEST         4000</span>
-<a name="l00097"></a>00097 <span class="preprocessor"></span><span class="preprocessor">#define OPUS_GET_APPLICATION_REQUEST         4001</span>
-<a name="l00098"></a>00098 <span class="preprocessor"></span><span class="preprocessor">#define OPUS_GET_LOOKAHEAD_REQUEST           4027</span>
-<a name="l00099"></a>00099 <span class="preprocessor"></span><span class="preprocessor">#define OPUS_SET_INBAND_FEC_REQUEST          4012</span>
-<a name="l00100"></a>00100 <span class="preprocessor"></span><span class="preprocessor">#define OPUS_GET_INBAND_FEC_REQUEST          4013</span>
-<a name="l00101"></a>00101 <span class="preprocessor"></span><span class="preprocessor">#define OPUS_SET_PACKET_LOSS_PERC_REQUEST    4014</span>
-<a name="l00102"></a>00102 <span class="preprocessor"></span><span class="preprocessor">#define OPUS_GET_PACKET_LOSS_PERC_REQUEST    4015</span>
-<a name="l00103"></a>00103 <span class="preprocessor"></span><span class="preprocessor">#define OPUS_SET_DTX_REQUEST                 4016</span>
-<a name="l00104"></a>00104 <span class="preprocessor"></span><span class="preprocessor">#define OPUS_GET_DTX_REQUEST                 4017</span>
-<a name="l00105"></a>00105 <span class="preprocessor"></span><span class="preprocessor">#define OPUS_GET_FINAL_RANGE_REQUEST         4031</span>
-<a name="l00106"></a>00106 <span class="preprocessor"></span><span class="preprocessor">#define OPUS_GET_PITCH_REQUEST               4033</span>
-<a name="l00107"></a>00107 <span class="preprocessor"></span>
-<a name="l00108"></a>00108 <span class="comment">/* Macros to trigger compilation errors when the wrong types are provided to a CTL */</span>
-<a name="l00109"></a>00109 <span class="preprocessor">#define __opus_check_int(x) (((void)((x) == (opus_int32)0)), (opus_int32)(x))</span>
-<a name="l00110"></a>00110 <span class="preprocessor"></span><span class="preprocessor">#define __opus_check_int_ptr(ptr) ((ptr) + ((ptr) - (opus_int32*)(ptr)))</span>
-<a name="l00111"></a>00111 <span class="preprocessor"></span><span class="preprocessor">#define __opus_check_uint_ptr(ptr) ((ptr) + ((ptr) - (opus_uint32*)(ptr)))</span>
-<a name="l00112"></a>00112 <span class="preprocessor"></span>
-<a name="l00118"></a>00118 <span class="comment">/* Values for the various encoder CTLs */</span>
-<a name="l00119"></a><a class="code" href="group__ctlvalues.html#ga1c5b3244b018ff4548d2d6bffa418472">00119</a> <span class="preprocessor">#define OPUS_AUTO                           -1000 </span>
-<a name="l00120"></a><a class="code" href="group__ctlvalues.html#gaeadbaa3b4b9e15d39cd1d6e7d91519e5">00120</a> <span class="preprocessor">#define OPUS_BITRATE_MAX                       -1 </span>
-<a name="l00124"></a><a class="code" href="group__ctlvalues.html#ga07884aa018303a419d1f7acb2f3fa669">00124</a> <span class="preprocessor">#define OPUS_APPLICATION_VOIP                2048</span>
-<a name="l00125"></a>00125 <span class="preprocessor"></span>
-<a name="l00127"></a><a class="code" href="group__ctlvalues.html#ga5909f7cb35c04f1110026c6889edd345">00127</a> <span class="preprocessor">#define OPUS_APPLICATION_AUDIO               2049</span>
-<a name="l00128"></a>00128 <span class="preprocessor"></span>
-<a name="l00130"></a><a class="code" href="group__ctlvalues.html#ga592232fb39db60c1369989c5c5d19a07">00130</a> <span class="preprocessor">#define OPUS_APPLICATION_RESTRICTED_LOWDELAY 2051</span>
-<a name="l00131"></a>00131 <span class="preprocessor"></span>
-<a name="l00132"></a><a class="code" href="group__ctlvalues.html#ga085a116fed816373d3b9eae28df49404">00132</a> <span class="preprocessor">#define OPUS_SIGNAL_VOICE                    3001 </span>
-<a name="l00133"></a><a class="code" href="group__ctlvalues.html#gaa0c228c664b6d426f4c213e3a5350889">00133</a> <span class="preprocessor">#define OPUS_SIGNAL_MUSIC                    3002 </span>
-<a name="l00134"></a><a class="code" href="group__ctlvalues.html#ga607dd310958b9c7d545d005e4572d47f">00134</a> <span class="preprocessor">#define OPUS_BANDWIDTH_NARROWBAND            1101 </span>
-<a name="l00135"></a><a class="code" href="group__ctlvalues.html#ga53a2aff4dc0ee23682927ca568c422a3">00135</a> <span class="preprocessor">#define OPUS_BANDWIDTH_MEDIUMBAND            1102 </span>
-<a name="l00136"></a><a class="code" href="group__ctlvalues.html#gac698e5d1281a3632251d2a4ead48afb9">00136</a> <span class="preprocessor">#define OPUS_BANDWIDTH_WIDEBAND              1103 </span>
-<a name="l00137"></a><a class="code" href="group__ctlvalues.html#ga41f86df35af0033a7361895da88671c1">00137</a> <span class="preprocessor">#define OPUS_BANDWIDTH_SUPERWIDEBAND         1104 </span>
-<a name="l00138"></a><a class="code" href="group__ctlvalues.html#ga74cb052d8ec36cbcc9708c417558ebdd">00138</a> <span class="preprocessor">#define OPUS_BANDWIDTH_FULLBAND              1105 </span>
-<a name="l00153"></a><a class="code" href="group__encoderctls.html#ga3483877bf1687a75dd4a1de6f85f291c">00153</a> <span class="preprocessor">#define OPUS_SET_COMPLEXITY(x) OPUS_SET_COMPLEXITY_REQUEST, __opus_check_int(x)</span>
-<a name="l00154"></a>00154 <span class="preprocessor"></span>
-<a name="l00157"></a><a class="code" href="group__encoderctls.html#ga89755ee721a38d964c7630a920eb27d2">00157</a> <span class="preprocessor">#define OPUS_GET_COMPLEXITY(x) OPUS_GET_COMPLEXITY_REQUEST, __opus_check_int_ptr(x)</span>
-<a name="l00158"></a>00158 <span class="preprocessor"></span>
-<a name="l00167"></a><a class="code" href="group__encoderctls.html#ga0bb51947e355b33d0cb358463b5101a7">00167</a> <span class="preprocessor">#define OPUS_SET_BITRATE(x) OPUS_SET_BITRATE_REQUEST, __opus_check_int(x)</span>
-<a name="l00168"></a>00168 <span class="preprocessor"></span>
-<a name="l00171"></a><a class="code" href="group__encoderctls.html#ga1427a5560cbc7e9a59f986d89c05082c">00171</a> <span class="preprocessor">#define OPUS_GET_BITRATE(x) OPUS_GET_BITRATE_REQUEST, __opus_check_int_ptr(x)</span>
-<a name="l00172"></a>00172 <span class="preprocessor"></span>
-<a name="l00182"></a><a class="code" href="group__encoderctls.html#ga34d09ae06cab7e1a6c49876249b67892">00182</a> <span class="preprocessor">#define OPUS_SET_VBR(x) OPUS_SET_VBR_REQUEST, __opus_check_int(x)</span>
-<a name="l00183"></a>00183 <span class="preprocessor"></span>
-<a name="l00186"></a><a class="code" href="group__encoderctls.html#ga58feba30c167962305ec268e6abe8c08">00186</a> <span class="preprocessor">#define OPUS_GET_VBR(x) OPUS_GET_VBR_REQUEST, __opus_check_int_ptr(x)</span>
-<a name="l00187"></a>00187 <span class="preprocessor"></span>
-<a name="l00199"></a><a class="code" href="group__encoderctls.html#gab1b534a4fe55373f1be407ad4b2b22bd">00199</a> <span class="preprocessor">#define OPUS_SET_VBR_CONSTRAINT(x) OPUS_SET_VBR_CONSTRAINT_REQUEST, __opus_check_int(x)</span>
-<a name="l00200"></a>00200 <span class="preprocessor"></span>
-<a name="l00203"></a><a class="code" href="group__encoderctls.html#gab35fa5691ba0dd932031b7839c47513c">00203</a> <span class="preprocessor">#define OPUS_GET_VBR_CONSTRAINT(x) OPUS_GET_VBR_CONSTRAINT_REQUEST, __opus_check_int_ptr(x)</span>
-<a name="l00204"></a>00204 <span class="preprocessor"></span>
-<a name="l00210"></a><a class="code" href="group__encoderctls.html#ga8450a745bd919a8de522afec115f3b5f">00210</a> <span class="preprocessor">#define OPUS_SET_FORCE_CHANNELS(x) OPUS_SET_FORCE_CHANNELS_REQUEST, __opus_check_int(x)</span>
-<a name="l00211"></a>00211 <span class="preprocessor"></span>
-<a name="l00214"></a><a class="code" href="group__encoderctls.html#ga21f010167c5dfa1b53f20c46d473e86a">00214</a> <span class="preprocessor">#define OPUS_GET_FORCE_CHANNELS(x) OPUS_GET_FORCE_CHANNELS_REQUEST, __opus_check_int_ptr(x)</span>
-<a name="l00215"></a>00215 <span class="preprocessor"></span>
-<a name="l00226"></a><a class="code" href="group__encoderctls.html#ga0178dabe5526d5b0667d81489cc93791">00226</a> <span class="preprocessor">#define OPUS_SET_BANDWIDTH(x) OPUS_SET_BANDWIDTH_REQUEST, __opus_check_int(x)</span>
+<a name="l00084"></a>00084 <span class="preprocessor"></span><span class="preprocessor">#define OPUS_SET_MAX_BANDWIDTH_REQUEST       4004</span>
+<a name="l00085"></a>00085 <span class="preprocessor"></span><span class="preprocessor">#define OPUS_GET_MAX_BANDWIDTH_REQUEST       4005</span>
+<a name="l00086"></a>00086 <span class="preprocessor"></span><span class="preprocessor">#define OPUS_SET_VBR_REQUEST                 4006</span>
+<a name="l00087"></a>00087 <span class="preprocessor"></span><span class="preprocessor">#define OPUS_GET_VBR_REQUEST                 4007</span>
+<a name="l00088"></a>00088 <span class="preprocessor"></span><span class="preprocessor">#define OPUS_SET_BANDWIDTH_REQUEST           4008</span>
+<a name="l00089"></a>00089 <span class="preprocessor"></span><span class="preprocessor">#define OPUS_GET_BANDWIDTH_REQUEST           4009</span>
+<a name="l00090"></a>00090 <span class="preprocessor"></span><span class="preprocessor">#define OPUS_SET_COMPLEXITY_REQUEST          4010</span>
+<a name="l00091"></a>00091 <span class="preprocessor"></span><span class="preprocessor">#define OPUS_GET_COMPLEXITY_REQUEST          4011</span>
+<a name="l00092"></a>00092 <span class="preprocessor"></span><span class="preprocessor">#define OPUS_SET_INBAND_FEC_REQUEST          4012</span>
+<a name="l00093"></a>00093 <span class="preprocessor"></span><span class="preprocessor">#define OPUS_GET_INBAND_FEC_REQUEST          4013</span>
+<a name="l00094"></a>00094 <span class="preprocessor"></span><span class="preprocessor">#define OPUS_SET_PACKET_LOSS_PERC_REQUEST    4014</span>
+<a name="l00095"></a>00095 <span class="preprocessor"></span><span class="preprocessor">#define OPUS_GET_PACKET_LOSS_PERC_REQUEST    4015</span>
+<a name="l00096"></a>00096 <span class="preprocessor"></span><span class="preprocessor">#define OPUS_SET_DTX_REQUEST                 4016</span>
+<a name="l00097"></a>00097 <span class="preprocessor"></span><span class="preprocessor">#define OPUS_GET_DTX_REQUEST                 4017</span>
+<a name="l00098"></a>00098 <span class="preprocessor"></span><span class="preprocessor">#define OPUS_SET_VBR_CONSTRAINT_REQUEST      4020</span>
+<a name="l00099"></a>00099 <span class="preprocessor"></span><span class="preprocessor">#define OPUS_GET_VBR_CONSTRAINT_REQUEST      4021</span>
+<a name="l00100"></a>00100 <span class="preprocessor"></span><span class="preprocessor">#define OPUS_SET_FORCE_CHANNELS_REQUEST      4022</span>
+<a name="l00101"></a>00101 <span class="preprocessor"></span><span class="preprocessor">#define OPUS_GET_FORCE_CHANNELS_REQUEST      4023</span>
+<a name="l00102"></a>00102 <span class="preprocessor"></span><span class="preprocessor">#define OPUS_SET_SIGNAL_REQUEST              4024</span>
+<a name="l00103"></a>00103 <span class="preprocessor"></span><span class="preprocessor">#define OPUS_GET_SIGNAL_REQUEST              4025</span>
+<a name="l00104"></a>00104 <span class="preprocessor"></span><span class="preprocessor">#define OPUS_GET_LOOKAHEAD_REQUEST           4027</span>
+<a name="l00105"></a>00105 <span class="preprocessor"></span><span class="comment">/* #define OPUS_RESET_STATE 4028 */</span>
+<a name="l00106"></a>00106 <span class="preprocessor">#define OPUS_GET_FINAL_RANGE_REQUEST         4031</span>
+<a name="l00107"></a>00107 <span class="preprocessor"></span><span class="preprocessor">#define OPUS_GET_PITCH_REQUEST               4033</span>
+<a name="l00108"></a>00108 <span class="preprocessor"></span>
+<a name="l00109"></a>00109 <span class="comment">/* Macros to trigger compilation errors when the wrong types are provided to a CTL */</span>
+<a name="l00110"></a>00110 <span class="preprocessor">#define __opus_check_int(x) (((void)((x) == (opus_int32)0)), (opus_int32)(x))</span>
+<a name="l00111"></a>00111 <span class="preprocessor"></span><span class="preprocessor">#define __opus_check_int_ptr(ptr) ((ptr) + ((ptr) - (opus_int32*)(ptr)))</span>
+<a name="l00112"></a>00112 <span class="preprocessor"></span><span class="preprocessor">#define __opus_check_uint_ptr(ptr) ((ptr) + ((ptr) - (opus_uint32*)(ptr)))</span>
+<a name="l00113"></a>00113 <span class="preprocessor"></span>
+<a name="l00119"></a>00119 <span class="comment">/* Values for the various encoder CTLs */</span>
+<a name="l00120"></a><a class="code" href="group__ctlvalues.html#ga1c5b3244b018ff4548d2d6bffa418472">00120</a> <span class="preprocessor">#define OPUS_AUTO                           -1000 </span>
+<a name="l00121"></a><a class="code" href="group__ctlvalues.html#gaeadbaa3b4b9e15d39cd1d6e7d91519e5">00121</a> <span class="preprocessor">#define OPUS_BITRATE_MAX                       -1 </span>
+<a name="l00125"></a><a class="code" href="group__ctlvalues.html#ga07884aa018303a419d1f7acb2f3fa669">00125</a> <span class="preprocessor">#define OPUS_APPLICATION_VOIP                2048</span>
+<a name="l00126"></a>00126 <span class="preprocessor"></span>
+<a name="l00128"></a><a class="code" href="group__ctlvalues.html#ga5909f7cb35c04f1110026c6889edd345">00128</a> <span class="preprocessor">#define OPUS_APPLICATION_AUDIO               2049</span>
+<a name="l00129"></a>00129 <span class="preprocessor"></span>
+<a name="l00131"></a><a class="code" href="group__ctlvalues.html#ga592232fb39db60c1369989c5c5d19a07">00131</a> <span class="preprocessor">#define OPUS_APPLICATION_RESTRICTED_LOWDELAY 2051</span>
+<a name="l00132"></a>00132 <span class="preprocessor"></span>
+<a name="l00133"></a><a class="code" href="group__ctlvalues.html#ga085a116fed816373d3b9eae28df49404">00133</a> <span class="preprocessor">#define OPUS_SIGNAL_VOICE                    3001 </span>
+<a name="l00134"></a><a class="code" href="group__ctlvalues.html#gaa0c228c664b6d426f4c213e3a5350889">00134</a> <span class="preprocessor">#define OPUS_SIGNAL_MUSIC                    3002 </span>
+<a name="l00135"></a><a class="code" href="group__ctlvalues.html#ga607dd310958b9c7d545d005e4572d47f">00135</a> <span class="preprocessor">#define OPUS_BANDWIDTH_NARROWBAND            1101 </span>
+<a name="l00136"></a><a class="code" href="group__ctlvalues.html#ga53a2aff4dc0ee23682927ca568c422a3">00136</a> <span class="preprocessor">#define OPUS_BANDWIDTH_MEDIUMBAND            1102 </span>
+<a name="l00137"></a><a class="code" href="group__ctlvalues.html#gac698e5d1281a3632251d2a4ead48afb9">00137</a> <span class="preprocessor">#define OPUS_BANDWIDTH_WIDEBAND              1103 </span>
+<a name="l00138"></a><a class="code" href="group__ctlvalues.html#ga41f86df35af0033a7361895da88671c1">00138</a> <span class="preprocessor">#define OPUS_BANDWIDTH_SUPERWIDEBAND         1104 </span>
+<a name="l00139"></a><a class="code" href="group__ctlvalues.html#ga74cb052d8ec36cbcc9708c417558ebdd">00139</a> <span class="preprocessor">#define OPUS_BANDWIDTH_FULLBAND              1105 </span>
+<a name="l00154"></a><a class="code" href="group__encoderctls.html#ga3483877bf1687a75dd4a1de6f85f291c">00154</a> <span class="preprocessor">#define OPUS_SET_COMPLEXITY(x) OPUS_SET_COMPLEXITY_REQUEST, __opus_check_int(x)</span>
+<a name="l00155"></a>00155 <span class="preprocessor"></span>
+<a name="l00158"></a><a class="code" href="group__encoderctls.html#ga89755ee721a38d964c7630a920eb27d2">00158</a> <span class="preprocessor">#define OPUS_GET_COMPLEXITY(x) OPUS_GET_COMPLEXITY_REQUEST, __opus_check_int_ptr(x)</span>
+<a name="l00159"></a>00159 <span class="preprocessor"></span>
+<a name="l00168"></a><a class="code" href="group__encoderctls.html#ga0bb51947e355b33d0cb358463b5101a7">00168</a> <span class="preprocessor">#define OPUS_SET_BITRATE(x) OPUS_SET_BITRATE_REQUEST, __opus_check_int(x)</span>
+<a name="l00169"></a>00169 <span class="preprocessor"></span>
+<a name="l00172"></a><a class="code" href="group__encoderctls.html#ga1427a5560cbc7e9a59f986d89c05082c">00172</a> <span class="preprocessor">#define OPUS_GET_BITRATE(x) OPUS_GET_BITRATE_REQUEST, __opus_check_int_ptr(x)</span>
+<a name="l00173"></a>00173 <span class="preprocessor"></span>
+<a name="l00183"></a><a class="code" href="group__encoderctls.html#ga34d09ae06cab7e1a6c49876249b67892">00183</a> <span class="preprocessor">#define OPUS_SET_VBR(x) OPUS_SET_VBR_REQUEST, __opus_check_int(x)</span>
+<a name="l00184"></a>00184 <span class="preprocessor"></span>
+<a name="l00187"></a><a class="code" href="group__encoderctls.html#ga58feba30c167962305ec268e6abe8c08">00187</a> <span class="preprocessor">#define OPUS_GET_VBR(x) OPUS_GET_VBR_REQUEST, __opus_check_int_ptr(x)</span>
+<a name="l00188"></a>00188 <span class="preprocessor"></span>
+<a name="l00200"></a><a class="code" href="group__encoderctls.html#gab1b534a4fe55373f1be407ad4b2b22bd">00200</a> <span class="preprocessor">#define OPUS_SET_VBR_CONSTRAINT(x) OPUS_SET_VBR_CONSTRAINT_REQUEST, __opus_check_int(x)</span>
+<a name="l00201"></a>00201 <span class="preprocessor"></span>
+<a name="l00204"></a><a class="code" href="group__encoderctls.html#gab35fa5691ba0dd932031b7839c47513c">00204</a> <span class="preprocessor">#define OPUS_GET_VBR_CONSTRAINT(x) OPUS_GET_VBR_CONSTRAINT_REQUEST, __opus_check_int_ptr(x)</span>
+<a name="l00205"></a>00205 <span class="preprocessor"></span>
+<a name="l00211"></a><a class="code" href="group__encoderctls.html#ga8450a745bd919a8de522afec115f3b5f">00211</a> <span class="preprocessor">#define OPUS_SET_FORCE_CHANNELS(x) OPUS_SET_FORCE_CHANNELS_REQUEST, __opus_check_int(x)</span>
+<a name="l00212"></a>00212 <span class="preprocessor"></span>
+<a name="l00215"></a><a class="code" href="group__encoderctls.html#ga21f010167c5dfa1b53f20c46d473e86a">00215</a> <span class="preprocessor">#define OPUS_GET_FORCE_CHANNELS(x) OPUS_GET_FORCE_CHANNELS_REQUEST, __opus_check_int_ptr(x)</span>
+<a name="l00216"></a>00216 <span class="preprocessor"></span>
+<a name="l00226"></a><a class="code" href="group__encoderctls.html#ga4f88288e89c595c07c61db316cc45289">00226</a> <span class="preprocessor">#define OPUS_SET_MAX_BANDWIDTH(x) OPUS_SET_MAX_BANDWIDTH_REQUEST, __opus_check_int(x)</span>
 <a name="l00227"></a>00227 <span class="preprocessor"></span>
-<a name="l00236"></a><a class="code" href="group__encoderctls.html#gaaa87ccee4ae46aa6c9528e03c5122b89">00236</a> <span class="preprocessor">#define OPUS_SET_SIGNAL(x) OPUS_SET_SIGNAL_REQUEST, __opus_check_int(x)</span>
-<a name="l00237"></a>00237 <span class="preprocessor"></span>
-<a name="l00241"></a><a class="code" href="group__encoderctls.html#ga640d434de535e2d2caec991c347303a4">00241</a> <span class="preprocessor">#define OPUS_GET_SIGNAL(x) OPUS_GET_SIGNAL_REQUEST, __opus_check_int_ptr(x)</span>
-<a name="l00242"></a>00242 <span class="preprocessor"></span>
-<a name="l00252"></a><a class="code" href="group__encoderctls.html#ga0025148365da7cc471ebf6998ad95a4a">00252</a> <span class="preprocessor">#define OPUS_SET_VOICE_RATIO(x) OPUS_SET_VOICE_RATIO_REQUEST, __opus_check_int(x)</span>
-<a name="l00253"></a>00253 <span class="preprocessor"></span>
-<a name="l00257"></a><a class="code" href="group__encoderctls.html#ga4bf892d2763fda77a72650ab34e31ecf">00257</a> <span class="preprocessor">#define OPUS_GET_VOICE_RATIO(x) OPUS_GET_VOICE_RATIO_REQUEST, __opus_check_int_ptr(x)</span>
-<a name="l00258"></a>00258 <span class="preprocessor"></span>
-<a name="l00266"></a><a class="code" href="group__encoderctls.html#ga18fa17dae52ff8f3eaea314204bf1a36">00266</a> <span class="preprocessor">#define OPUS_SET_APPLICATION(x) OPUS_SET_APPLICATION_REQUEST, __opus_check_int(x)</span>
-<a name="l00267"></a>00267 <span class="preprocessor"></span>
-<a name="l00271"></a><a class="code" href="group__encoderctls.html#ga062ebbc209caf6832fe4a309a459fd4c">00271</a> <span class="preprocessor">#define OPUS_GET_APPLICATION(x) OPUS_GET_APPLICATION_REQUEST, __opus_check_int_ptr(x)</span>
-<a name="l00272"></a>00272 <span class="preprocessor"></span>
-<a name="l00286"></a><a class="code" href="group__encoderctls.html#gaf81b9e01501910adc67195ebb42b4a54">00286</a> <span class="preprocessor">#define OPUS_GET_LOOKAHEAD(x) OPUS_GET_LOOKAHEAD_REQUEST, __opus_check_int_ptr(x)</span>
-<a name="l00287"></a>00287 <span class="preprocessor"></span>
-<a name="l00293"></a><a class="code" href="group__encoderctls.html#ga5b67dc832aa46c1c2f35752c46380545">00293</a> <span class="preprocessor">#define OPUS_SET_INBAND_FEC(x) OPUS_SET_INBAND_FEC_REQUEST, __opus_check_int(x)</span>
-<a name="l00294"></a>00294 <span class="preprocessor"></span>
-<a name="l00298"></a><a class="code" href="group__encoderctls.html#gaf792b27a6277ddf786413dbf472d0ac8">00298</a> <span class="preprocessor">#define OPUS_GET_INBAND_FEC(x) OPUS_GET_INBAND_FEC_REQUEST, __opus_check_int_ptr(x)</span>
-<a name="l00299"></a>00299 <span class="preprocessor"></span>
-<a name="l00307"></a><a class="code" href="group__encoderctls.html#gafda1c951dea919ba54432cd03827f1a9">00307</a> <span class="preprocessor">#define OPUS_SET_PACKET_LOSS_PERC(x) OPUS_SET_PACKET_LOSS_PERC_REQUEST, __opus_check_int(x)</span>
-<a name="l00308"></a>00308 <span class="preprocessor"></span>
-<a name="l00312"></a><a class="code" href="group__encoderctls.html#gaa79261c6a55444993fca8d3a3a29d519">00312</a> <span class="preprocessor">#define OPUS_GET_PACKET_LOSS_PERC(x) OPUS_GET_PACKET_LOSS_PERC_REQUEST, __opus_check_int_ptr(x)</span>
-<a name="l00313"></a>00313 <span class="preprocessor"></span>
-<a name="l00319"></a><a class="code" href="group__encoderctls.html#ga4f053b2db8c5162293213aabfe123773">00319</a> <span class="preprocessor">#define OPUS_SET_DTX(x) OPUS_SET_DTX_REQUEST, __opus_check_int(x)</span>
-<a name="l00320"></a>00320 <span class="preprocessor"></span>
-<a name="l00324"></a><a class="code" href="group__encoderctls.html#gaafbb44454e9f57232b85e4e087337ded">00324</a> <span class="preprocessor">#define OPUS_GET_DTX(x) OPUS_GET_DTX_REQUEST, __opus_check_int_ptr(x)</span>
-<a name="l00325"></a>00325 <span class="preprocessor"></span>
-<a name="l00337"></a><a class="code" href="group__genericctls.html#gadc74e4fa8bcdf9994187d52d92207337">00337</a> <span class="preprocessor">#define OPUS_RESET_STATE 4028</span>
-<a name="l00338"></a>00338 <span class="preprocessor"></span>
-<a name="l00347"></a><a class="code" href="group__genericctls.html#ga1108a508aa475f964d247c1b04d26d89">00347</a> <span class="preprocessor">#define OPUS_GET_FINAL_RANGE(x) OPUS_GET_FINAL_RANGE_REQUEST, __opus_check_uint_ptr(x)</span>
-<a name="l00348"></a>00348 <span class="preprocessor"></span>
-<a name="l00357"></a><a class="code" href="group__genericctls.html#gaa89fc25eb35fc31a02b508562dd83820">00357</a> <span class="preprocessor">#define OPUS_GET_PITCH(x) OPUS_GET_PITCH_REQUEST, __opus_check_int_ptr(x)</span>
-<a name="l00358"></a>00358 <span class="preprocessor"></span>
-<a name="l00362"></a><a class="code" href="group__genericctls.html#ga29db1d9b5e670debec54d1163ad2ec62">00362</a> <span class="preprocessor">#define OPUS_GET_BANDWIDTH(x) OPUS_GET_BANDWIDTH_REQUEST, __opus_check_int_ptr(x)</span>
-<a name="l00363"></a>00363 <span class="preprocessor"></span>
-<a name="l00375"></a>00375 OPUS_EXPORT <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="group__libinfo.html#gafad3bac5a05dc7c3477a5765eb5e1873" title="Converts an opus error code into a human readable string.">opus_strerror</a>(<span class="keywordtype">int</span> error);
-<a name="l00376"></a>00376 
-<a name="l00381"></a>00381 OPUS_EXPORT <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="group__libinfo.html#ga3cd7aa16259a46f37a44d2e823b131e5" title="Gets the libopus version string.">opus_get_version_string</a>(<span class="keywordtype">void</span>);
-<a name="l00384"></a>00384 <span class="preprocessor">#ifdef __cplusplus</span>
-<a name="l00385"></a>00385 <span class="preprocessor"></span>}
-<a name="l00386"></a>00386 <span class="preprocessor">#endif</span>
-<a name="l00387"></a>00387 <span class="preprocessor"></span>
-<a name="l00388"></a>00388 <span class="preprocessor">#endif </span><span class="comment">/* OPUS_DEFINES_H */</span>
+<a name="l00231"></a><a class="code" href="group__encoderctls.html#gaa3b5736de64792e1144ce12dfb87613c">00231</a> <span class="preprocessor">#define OPUS_GET_MAX_BANDWIDTH(x) OPUS_GET_MAX_BANDWIDTH_REQUEST, __opus_check_int_ptr(x)</span>
+<a name="l00232"></a>00232 <span class="preprocessor"></span>
+<a name="l00243"></a><a class="code" href="group__encoderctls.html#ga0178dabe5526d5b0667d81489cc93791">00243</a> <span class="preprocessor">#define OPUS_SET_BANDWIDTH(x) OPUS_SET_BANDWIDTH_REQUEST, __opus_check_int(x)</span>
+<a name="l00244"></a>00244 <span class="preprocessor"></span>
+<a name="l00253"></a><a class="code" href="group__encoderctls.html#gaaa87ccee4ae46aa6c9528e03c5122b89">00253</a> <span class="preprocessor">#define OPUS_SET_SIGNAL(x) OPUS_SET_SIGNAL_REQUEST, __opus_check_int(x)</span>
+<a name="l00254"></a>00254 <span class="preprocessor"></span>
+<a name="l00258"></a><a class="code" href="group__encoderctls.html#ga640d434de535e2d2caec991c347303a4">00258</a> <span class="preprocessor">#define OPUS_GET_SIGNAL(x) OPUS_GET_SIGNAL_REQUEST, __opus_check_int_ptr(x)</span>
+<a name="l00259"></a>00259 <span class="preprocessor"></span>
+<a name="l00260"></a>00260 
+<a name="l00268"></a><a class="code" href="group__encoderctls.html#ga18fa17dae52ff8f3eaea314204bf1a36">00268</a> <span class="preprocessor">#define OPUS_SET_APPLICATION(x) OPUS_SET_APPLICATION_REQUEST, __opus_check_int(x)</span>
+<a name="l00269"></a>00269 <span class="preprocessor"></span>
+<a name="l00273"></a><a class="code" href="group__encoderctls.html#ga062ebbc209caf6832fe4a309a459fd4c">00273</a> <span class="preprocessor">#define OPUS_GET_APPLICATION(x) OPUS_GET_APPLICATION_REQUEST, __opus_check_int_ptr(x)</span>
+<a name="l00274"></a>00274 <span class="preprocessor"></span>
+<a name="l00288"></a><a class="code" href="group__encoderctls.html#gaf81b9e01501910adc67195ebb42b4a54">00288</a> <span class="preprocessor">#define OPUS_GET_LOOKAHEAD(x) OPUS_GET_LOOKAHEAD_REQUEST, __opus_check_int_ptr(x)</span>
+<a name="l00289"></a>00289 <span class="preprocessor"></span>
+<a name="l00295"></a><a class="code" href="group__encoderctls.html#ga5b67dc832aa46c1c2f35752c46380545">00295</a> <span class="preprocessor">#define OPUS_SET_INBAND_FEC(x) OPUS_SET_INBAND_FEC_REQUEST, __opus_check_int(x)</span>
+<a name="l00296"></a>00296 <span class="preprocessor"></span>
+<a name="l00300"></a><a class="code" href="group__encoderctls.html#gaf792b27a6277ddf786413dbf472d0ac8">00300</a> <span class="preprocessor">#define OPUS_GET_INBAND_FEC(x) OPUS_GET_INBAND_FEC_REQUEST, __opus_check_int_ptr(x)</span>
+<a name="l00301"></a>00301 <span class="preprocessor"></span>
+<a name="l00309"></a><a class="code" href="group__encoderctls.html#gafda1c951dea919ba54432cd03827f1a9">00309</a> <span class="preprocessor">#define OPUS_SET_PACKET_LOSS_PERC(x) OPUS_SET_PACKET_LOSS_PERC_REQUEST, __opus_check_int(x)</span>
+<a name="l00310"></a>00310 <span class="preprocessor"></span>
+<a name="l00314"></a><a class="code" href="group__encoderctls.html#gaa79261c6a55444993fca8d3a3a29d519">00314</a> <span class="preprocessor">#define OPUS_GET_PACKET_LOSS_PERC(x) OPUS_GET_PACKET_LOSS_PERC_REQUEST, __opus_check_int_ptr(x)</span>
+<a name="l00315"></a>00315 <span class="preprocessor"></span>
+<a name="l00321"></a><a class="code" href="group__encoderctls.html#ga4f053b2db8c5162293213aabfe123773">00321</a> <span class="preprocessor">#define OPUS_SET_DTX(x) OPUS_SET_DTX_REQUEST, __opus_check_int(x)</span>
+<a name="l00322"></a>00322 <span class="preprocessor"></span>
+<a name="l00326"></a><a class="code" href="group__encoderctls.html#gaafbb44454e9f57232b85e4e087337ded">00326</a> <span class="preprocessor">#define OPUS_GET_DTX(x) OPUS_GET_DTX_REQUEST, __opus_check_int_ptr(x)</span>
+<a name="l00327"></a>00327 <span class="preprocessor"></span>
+<a name="l00339"></a><a class="code" href="group__genericctls.html#gadc74e4fa8bcdf9994187d52d92207337">00339</a> <span class="preprocessor">#define OPUS_RESET_STATE 4028</span>
+<a name="l00340"></a>00340 <span class="preprocessor"></span>
+<a name="l00349"></a><a class="code" href="group__genericctls.html#ga1108a508aa475f964d247c1b04d26d89">00349</a> <span class="preprocessor">#define OPUS_GET_FINAL_RANGE(x) OPUS_GET_FINAL_RANGE_REQUEST, __opus_check_uint_ptr(x)</span>
+<a name="l00350"></a>00350 <span class="preprocessor"></span>
+<a name="l00359"></a><a class="code" href="group__genericctls.html#gaa89fc25eb35fc31a02b508562dd83820">00359</a> <span class="preprocessor">#define OPUS_GET_PITCH(x) OPUS_GET_PITCH_REQUEST, __opus_check_int_ptr(x)</span>
+<a name="l00360"></a>00360 <span class="preprocessor"></span>
+<a name="l00364"></a><a class="code" href="group__genericctls.html#ga29db1d9b5e670debec54d1163ad2ec62">00364</a> <span class="preprocessor">#define OPUS_GET_BANDWIDTH(x) OPUS_GET_BANDWIDTH_REQUEST, __opus_check_int_ptr(x)</span>
+<a name="l00365"></a>00365 <span class="preprocessor"></span>
+<a name="l00377"></a>00377 OPUS_EXPORT <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="group__libinfo.html#gafad3bac5a05dc7c3477a5765eb5e1873" title="Converts an opus error code into a human readable string.">opus_strerror</a>(<span class="keywordtype">int</span> error);
+<a name="l00378"></a>00378 
+<a name="l00383"></a>00383 OPUS_EXPORT <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="group__libinfo.html#ga3cd7aa16259a46f37a44d2e823b131e5" title="Gets the libopus version string.">opus_get_version_string</a>(<span class="keywordtype">void</span>);
+<a name="l00386"></a>00386 <span class="preprocessor">#ifdef __cplusplus</span>
+<a name="l00387"></a>00387 <span class="preprocessor"></span>}
+<a name="l00388"></a>00388 <span class="preprocessor">#endif</span>
+<a name="l00389"></a>00389 <span class="preprocessor"></span>
+<a name="l00390"></a>00390 <span class="preprocessor">#endif </span><span class="comment">/* OPUS_DEFINES_H */</span>
 </pre></div></div>
 </div>
 <!-- window showing the filter options -->
@@ -253,7 +255,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Thu Sep 22 2011 22:12:06 for Opus by&#160;
+<hr class="footer"/><address class="footer"><small>Generated on Mon Oct 31 2011 23:49:19 for Opus by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.4 </small></address>
 </body>

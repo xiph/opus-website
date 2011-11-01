@@ -19,7 +19,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">Opus&#160;<span id="projectnumber">0.9.6-157-g363924e</span></div>
+   <div id="projectname">Opus&#160;<span id="projectnumber">0.9.8</span></div>
    <div id="projectbrief">IETFlow-delayaudiocodec</div>
   </td>
  </tr>
@@ -195,6 +195,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>OPUS_GET_LOOKAHEAD
 : <a class="el" href="group__encoderctls.html#gaf81b9e01501910adc67195ebb42b4a54">opus_defines.h</a>
 </li>
+<li>OPUS_GET_MAX_BANDWIDTH
+: <a class="el" href="group__encoderctls.html#gaa3b5736de64792e1144ce12dfb87613c">opus_defines.h</a>
+</li>
 <li>OPUS_GET_PACKET_LOSS_PERC
 : <a class="el" href="group__encoderctls.html#gaa79261c6a55444993fca8d3a3a29d519">opus_defines.h</a>
 </li>
@@ -212,9 +215,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>opus_get_version_string()
 : <a class="el" href="group__libinfo.html#ga3cd7aa16259a46f37a44d2e823b131e5">opus_defines.h</a>
-</li>
-<li>OPUS_GET_VOICE_RATIO
-: <a class="el" href="group__encoderctls.html#ga4bf892d2763fda77a72650ab34e31ecf">opus_defines.h</a>
 </li>
 <li>opus_int
 : <a class="el" href="opus__types_8h.html#af3ad92331bd12b4fb4ffd0f63599d76a">opus_types.h</a>
@@ -255,6 +255,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>opus_multistream_decoder_destroy()
 : <a class="el" href="opus__multistream_8h.html#aaec72b484eabc78d7869221c6d2ce080">opus_multistream.h</a>
 </li>
+<li>opus_multistream_decoder_get_size()
+: <a class="el" href="opus__multistream_8h.html#a38d745963e7903890c80278bc2569c39">opus_multistream.h</a>
+</li>
 <li>opus_multistream_decoder_init()
 : <a class="el" href="opus__multistream_8h.html#a046170aea687a64b66cb2d1f1b84b865">opus_multistream.h</a>
 </li>
@@ -272,6 +275,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>opus_multistream_encoder_destroy()
 : <a class="el" href="opus__multistream_8h.html#aec819b8d4b38350aba6959cee7d33f94">opus_multistream.h</a>
+</li>
+<li>opus_multistream_encoder_get_size()
+: <a class="el" href="opus__multistream_8h.html#a8642aa9cf16115229a655574d832293b">opus_multistream.h</a>
 </li>
 <li>opus_multistream_encoder_init()
 : <a class="el" href="opus__multistream_8h.html#ac29b1055be0cc29af5729ad55b9ead53">opus_multistream.h</a>
@@ -325,10 +331,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="group__repacketizer.html#gab42ff7c3f8a49ff5029fcf60f3b853f0">opus.h</a>
 </li>
 <li>opus_repacketizer_out()
-: <a class="el" href="group__repacketizer.html#ga4fbd54e95090558856376139d62008aa">opus.h</a>
+: <a class="el" href="group__repacketizer.html#ga56f7ba1b6aba671c86fb6ca169be21ae">opus.h</a>
 </li>
 <li>opus_repacketizer_out_range()
-: <a class="el" href="group__repacketizer.html#ga31a032d3b3fd2b08c07af808e060060f">opus.h</a>
+: <a class="el" href="group__repacketizer.html#ga2b65deef101c8b9277a8a94d4efdc141">opus.h</a>
 </li>
 <li>OPUS_RESET_STATE
 : <a class="el" href="group__genericctls.html#gadc74e4fa8bcdf9994187d52d92207337">opus_defines.h</a>
@@ -354,6 +360,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>OPUS_SET_INBAND_FEC
 : <a class="el" href="group__encoderctls.html#ga5b67dc832aa46c1c2f35752c46380545">opus_defines.h</a>
 </li>
+<li>OPUS_SET_MAX_BANDWIDTH
+: <a class="el" href="group__encoderctls.html#ga4f88288e89c595c07c61db316cc45289">opus_defines.h</a>
+</li>
 <li>OPUS_SET_PACKET_LOSS_PERC
 : <a class="el" href="group__encoderctls.html#gafda1c951dea919ba54432cd03827f1a9">opus_defines.h</a>
 </li>
@@ -365,9 +374,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>OPUS_SET_VBR_CONSTRAINT
 : <a class="el" href="group__encoderctls.html#gab1b534a4fe55373f1be407ad4b2b22bd">opus_defines.h</a>
-</li>
-<li>OPUS_SET_VOICE_RATIO
-: <a class="el" href="group__encoderctls.html#ga0025148365da7cc471ebf6998ad95a4a">opus_defines.h</a>
 </li>
 <li>OPUS_SIGNAL_MUSIC
 : <a class="el" href="group__ctlvalues.html#gaa0c228c664b6d426f4c213e3a5350889">opus_defines.h</a>
@@ -427,7 +433,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Thu Sep 22 2011 22:12:06 for Opus by&#160;
+<hr class="footer"/><address class="footer"><small>Generated on Mon Oct 31 2011 23:49:19 for Opus by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.4 </small></address>
 </body>
