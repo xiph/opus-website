@@ -11,8 +11,11 @@
 </p>
 <ul>
    <li><a href="http://www.ietf.org/mail-archive/web/codec/current/maillist.html">Mailing list archives</a></li>
-   <li><a href="http://www.ietf.org/jabber/logs/codec/">XMPP chat room logs</a></li>
    <li><a href="http://tools.ietf.org/wg/codec/minutes">Meeting minutes</a></li>
+   <li>Development chat in <a href="irc://irc.freenode.net/opus">#opus on irc.freenode.net</a>
+       (<a href="" onclick="document.getElementById('chatbox').innerHTML='<iframe src=\'http://webchat.freenode.net/?channels=opus\' width=800 height=600/>';return false;">web interface</a>)
 </ul>
+
+<center><div id="chatbox"/></center>
 
 <!--#include virtual="/ssi/footer.include" -->
