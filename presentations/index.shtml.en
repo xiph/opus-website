@@ -19,6 +19,7 @@ vlcActiveX = (IsObject(CreateObject("VideoLAN.VLCPlugin.2")))
 <!--  All your page content goes here  -->
 <h1>Presentations</h1>
 <h2><a href="http://linux.conf.au/">linux.conf.au</a> 2012 &mdash; Jean-Marc Valin</h2>
+<p>Also <a href="https://www.youtube.com/watch?v=iaAD71h9gDU">available on YouTube</a></p>
   <table width="496" border="0"><tr><td><video id="lcaopusvideo" width="496" height="372"
    poster="LCA-opus-video-thumb.png" controls duration="3892"
    src="http://jmvalin.ca/jmvalin_Opus_codec.ogv"/></td></tr><tr>
