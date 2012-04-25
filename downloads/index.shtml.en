@@ -15,6 +15,30 @@
 
 <h2>Latest <strong style='font-style: italic;'>development</strong> releases</h2>
 
+<h3 id='zero.9.10'>0.9.10</h3>
+<p>
+This version matches version -12 of the draft and fixes minor issues brought up before the upcoming IETF last call.
+There is no change to the bit-stream.
+</p>
+
+<ul>
+<li>Source code: <a href="http://downloads.xiph.org/releases/opus/opus-0.9.10.tar.gz">opus-0.9.10.tar.gz</a></li>
+<li>Internet-Draft: <a href="http://tools.ietf.org/id/draft-ietf-codec-opus-12.txt">draft-ietf-codec-opus-12.txt</a>
+</ul>
+
+
+<h3 id='zero.9.9'>0.9.9</h3>
+<p>
+This version matches version -11 of the draft.
+The bit-stream has not changed, except for some corner cases that are unlikely to happen in the real world.
+</p>
+
+<ul>
+<li>Source code: <a href="http://downloads.xiph.org/releases/opus/opus-0.9.9.tar.gz">opus-0.9.9.tar.gz</a></li>
+<li>Internet-Draft: <a href="http://tools.ietf.org/id/draft-ietf-codec-opus-11.txt">draft-ietf-codec-opus-11.txt</a>
+</ul>
+
+
 <h3 id='zero.9.8'>0.9.8</h3>
 <p>
 This version matches version -10 of the draft and fixes several glitches caused by mode 
