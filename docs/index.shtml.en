@@ -2,20 +2,21 @@
 
 <h1>Documentation</h1>
 
-<h2>IETF</h2>
-<p>
-<ul>
-   <li>Latest Opus codec draft: <a href="http://tools.ietf.org/html/draft-ietf-codec-opus">draft-ietf-codec-opus</a></li>
-   <li>Latest Opus RTP draft: <a href="http://tools.ietf.org/html/draft-spittka-payload-rtp-opus">draft-spittka-payload-rtp-opus</a></li>
-</ul>
-</p>
+<h2>IETF specifications</h2>
+<blockquote>
+<table style="border-spacing: 0;">
+<tr><td style="border-bottom: 1px solid;padding-right:0.5em;"><b>Latest Opus RTP draft</b><br/><span style="float:right;"><small><i>(draft-spittka-payload-rtp-opus)</i></small></span></td><td style="border-bottom: 1px solid;"><a href="http://tools.ietf.org/html/draft-spittka-payload-rtp-opus">HTML</a>, </td><td style="border-bottom: 1px solid;"><a href="http://tools.ietf.org/pdf/draft-spittka-payload-rtp-opus.pdf">PDF</a>, </td><td style="border-bottom: 1px solid;"><a href="http://tools.ietf.org/id/draft-spittka-payload-rtp-opus.txt">TXT</a></td></tr>
+<tr><td style="border-bottom: 1px solid;padding-right:0.5em;"><b>Latest Opus codec draft</b><br/><span style="float:right;"><small><i>(draft-ietf-codec-opus)</i></small></span></td><td style="border-bottom: 1px solid;"><a href="http://tools.ietf.org/html/draft-ietf-codec-opus">HTML</a>, </td><td style="border-bottom: 1px solid;"><a href="http://tools.ietf.org/pdf/draft-ietf-codec-opus.pdf">PDF</a>, </td><td style="border-bottom: 1px solid;"><a href="http://tools.ietf.org/id/draft-ietf-codec-opus.txt">TXT</a></td></tr>
+</table>
+</blockquote>
+
 
 <h2>Opus API reference (doxygen)</h2>
-<p>
-<ul>
-   <li><a href="opus_api.pdf">PDF</a></li>
-   <li><a href="html_api/">HTML</a></li>
-</ul>
-</p>
+<blockquote>
+<table style="border-spacing: 0;">
+<tr><td style="border-bottom: 1px solid;padding-right:0.5em;"><b>API documentation</b><br/><span style="float:right;"><small><i>(from the 0.9.8 development release)</i></small></span></td><td style="border-bottom: 1px solid;"><a href="opus_api.pdf">PDF</a>, </td><td style="border-bottom: 1px solid;"><a href="html_api/">HTML</a></td></tr>
+<tr><td style="border-bottom: 1px solid;padding-right:0.5em;"><b>Pre-release API documentation</b><br/><span style="float:right;"><small><i>(from the <a href="http://git.xiph.org/?p=opus.git">GIT repository</a>)</i></small></span></td><td style="border-bottom: 1px solid;"><a href="https://mf4.xiph.org/jenkins/view/opus/job/opus/ws/doc/latex/refman.pdf">PDF</a>, </td><td style="border-bottom: 1px solid;"><a href="https://mf4.xiph.org/jenkins/view/opus/job/opus/ws/doc/html/index.html">HTML</a></td></tr>
+</table>
+</blockquote>
 
 <!--#include virtual="/ssi/footer.include" -->

@@ -1,0 +1,135 @@
+a.CI {
+    color: #FFF;
+    text-decoration:none;
+    white-space: nowrap;
+}    
+li.CI  {
+    color: #FFF;
+    background-color: gray;
+    float: left;
+    display: block;
+    text-decoration: none;
+    white-space: nowrap;
+    text-align: center;
+    padding: 5px;
+    margin: 6px 8px 6px 8px;
+    -moz-box-shadow: 3px 3px 3px #333333;
+    -webkit-box-shadow: 3px 3px 6px #333333;
+    -o-box-shadow: 3px 3px 6px #333333;
+    -ms-box-shadow: 3px 3px 6px #333333;
+    box-shadow: 5px 3px 6px #333333;
+    border-radius: 7px;
+}
+			
+li.CIblue {
+    background:#5382ba;
+}
+
+li.CIblue_anime {
+    background:#5382ba;
+    background-image: -webkit-gradient(linear, 0 100%, 100% 0,
+			color-stop(.25, rgba(255, 255, 255, .2)), color-stop(.25, transparent),
+			color-stop(.5, transparent), color-stop(.5, rgba(255, 255, 255, .2)),
+  		        color-stop(.75, rgba(255, 255, 255, .2)), color-stop(.75, transparent),
+			 						to(transparent));
+			background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%,
+								transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%,
+								transparent 75%, transparent);
+			background-image: -moz-linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%,
+								transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%,
+								transparent 75%, transparent);
+			background-image: -ms-linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%,
+								transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%,
+								transparent 75%, transparent);
+			background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%,
+								transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%,
+								transparent 75%, transparent);
+			background-image: linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%,
+								transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%,
+								transparent 75%, transparent);
+			background-size: 10px 10px; /* Controls the size of the stripes */
+			
+}
+
+li.CIyellow {
+	color: black;
+	background: yellow;
+}
+
+li.CIyellow_anime {
+	color: black;
+	background: yellow;
+    background-image: -webkit-gradient(linear, 0 100%, 100% 0,
+			color-stop(.25, rgba(255, 255, 255, .2)), color-stop(.25, transparent),
+			color-stop(.5, transparent), color-stop(.5, rgba(255, 255, 255, .2)),
+  		        color-stop(.75, rgba(255, 255, 255, .2)), color-stop(.75, transparent),
+			 						to(transparent));
+			background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%,
+								transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%,
+								transparent 75%, transparent);
+			background-image: -moz-linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%,
+								transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%,
+								transparent 75%, transparent);
+			background-image: -ms-linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%,
+								transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%,
+								transparent 75%, transparent);
+			background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%,
+								transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%,
+								transparent 75%, transparent);
+			background-image: linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%,
+								transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%,
+								transparent 75%, transparent);
+			background-size: 10px 10px; /* Controls the size of the stripes */
+}
+
+
+li.CIred{
+    background: #a01208;
+}
+
+li.CIred_anime{
+    background: #a01208;
+    background-image: -webkit-gradient(linear, 0 100%, 100% 0,
+			color-stop(.25, rgba(255, 255, 255, .2)), color-stop(.25, transparent),
+			color-stop(.5, transparent), color-stop(.5, rgba(255, 255, 255, .2)),
+  		        color-stop(.75, rgba(255, 255, 255, .2)), color-stop(.75, transparent),
+			 						to(transparent));
+			background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%,
+								transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%,
+								transparent 75%, transparent);
+			background-image: -moz-linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%,
+								transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%,
+								transparent 75%, transparent);
+			background-image: -ms-linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%,
+								transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%,
+								transparent 75%, transparent);
+			background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%,
+								transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%,
+								transparent 75%, transparent);
+			background-image: linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%,
+								transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%,
+								transparent 75%, transparent);
+			background-size: 10px 10px; /* Controls the size of the stripes */
+}
+
+span.CItime{
+        float:right;
+	background: none;
+	color: black;
+	box-shadow: none;
+}
+
+span.CIcon{
+        position:relative;
+        top:1em;
+        right:2px;
+}
+
+img.CIcon{
+    position:absolute;
+    -moz-box-shadow: 4px 4px 6px #333333;
+    -webkit-box-shadow: 4px 4px 6px #333333;
+    -o-box-shadow: 4px 4px 6px #333333;
+    -ms-box-shadow: 4px 4px 6px #333333;
+    box-shadow: 4px 4px 6px #333333;
+}

@@ -2,18 +2,11 @@
 
 <h1>Downloads</h1>
 <p>
-   The codec is still under development, so there are
+   The codec is still under <a href="../development/">development</a> so there are
    no stable implementations. 
 <p>   
 
-<h2>Git repository</h2>
-
-
-<ul>
-   <li><a href="http://git.xiph.org/?p=opus.git">git://git.opus-codec.org/opus.git</a> IETF Reference implementation</li>
-</ul>
-
-<h2>Latest <strong style='font-style: italic;'>development</strong> releases</h2>
+<h2>Latest <strong style='font-style: italic;'>development</strong> release</h2>
 
 <h3 id='zero.9.10'>0.9.10</h3>
 <p>
@@ -26,6 +19,7 @@ There is no change to the bit-stream.
 <li>Internet-Draft: <a href="http://tools.ietf.org/id/draft-ietf-codec-opus-12.txt">draft-ietf-codec-opus-12.txt</a>
 </ul>
 
+<h2>Historic <strong style='font-style: italic;'>development</strong> releases</h2>
 
 <h3 id='zero.9.9'>0.9.9</h3>
 <p>
@@ -38,7 +32,6 @@ The bit-stream has not changed, except for some corner cases that are unlikely t
 <li>Internet-Draft: <a href="http://tools.ietf.org/id/draft-ietf-codec-opus-11.txt">draft-ietf-codec-opus-11.txt</a>
 </ul>
 
-
 <h3 id='zero.9.8'>0.9.8</h3>
 <p>
 This version matches version -10 of the draft and fixes several glitches caused by mode 
@@ -46,7 +39,7 @@ switching and other corner cases. This required breaking the bit-stream for the 
 stereo and hybrid stereo modes. Fortunately, these modes are not often used, so few users
 should be affected. This release also implements a CBR mode for SILK mode. This release
 includes a much better test suite and has been extensively tested in multiple configurations.
-See the <a href="https://mf4.xiph.org/jenkins/">Jenkins build system</a> and the resulting
+See the <a href="https://mf4.xiph.org/jenkins/view/opus/">Jenkins build system</a> and the resulting
 <a href="https://mf4.xiph.org/jenkins/job/opus-coverage/ws/coverage/index.html">floating-point coverage</a> 
 and <a href="https://mf4.xiph.org/jenkins/job/opus-coverage-fixed/ws/coverage/index.html">fixed-point coverage</a>.
 Now that the analysis and documentation of the code has been completed, further changes to the
@@ -108,6 +101,5 @@ error correction (FEC), which improves performance under packet loss.
 <ul>
 <li><a href="http://downloads.xiph.org/releases/opus/opus-0.9.0.tar.gz">opus-0.9.0.tar.gz</a></li>
 </ul>
-
 
 <!--#include virtual="/ssi/footer.include" -->

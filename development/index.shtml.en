@@ -1,0 +1,122 @@
+<!--#include virtual="/ssi/header.include" -->
+
+<h1>Development</h1>
+
+<h2>Discussion</h2>
+
+Development chat takes place on <a href="irc://irc.freenode.net/opus">#opus on irc.freenode.net</a>
+       (&rarr;<a href="" onclick="document.getElementById('chatbox').innerHTML='<iframe src=\'http://webchat.freenode.net/?channels=opus\' width=800 height=600/>';return false;">web interface</a>)
+
+<center><div id="chatbox"/></center>
+
+<h2>Source code repository</h2>
+
+<b><a href="http://git.xiph.org/?p=opus.git" style="text-decoration:none;color:black;">Master git repository</a></b>: &nbsp;&nbsp;&nbsp;<tt>$ git clone <a href="http://git.xiph.org/?p=opus.git">git://git.opus-codec.org/opus.git</a></tt>
+<ul style="margin-top:0;list-style-type: none;background-image:url('tree.png');background-repeat:no-repeat;padding-left:26px">
+   <li>Branch <a href="http://git.xiph.org/?p=opus.git;a=shortlog;h=refs/heads/ietf-draft">ietf-draft</a> and the
+       <a href="http://tools.ietf.org/html/draft-ietf-codec-opus">latest draft</a> contain the IETF reference implementation.</li>
+   <li>Branch <a href="http://git.xiph.org/?p=opus.git;a=shortlog;h=refs/heads/exp_wip4">exp_wip4</a> has experimental encoder perceptual tuning.</li>
+   <li><b>Snapshots:</b>
+       <ul>
+          <li><a href="http://git.xiph.org/?p=opus.git;a=snapshot;h=HEAD;sf=tgz">opus-master.tar.gz</a></li>
+          <li><a href="http://git.xiph.org/?p=opus.git;a=snapshot;h=ietf-draft;sf=tgz">opus-ietf-draft-branch.tar.gz</a></li>
+          <li><a href="http://git.xiph.org/?p=opus.git;a=snapshot;h=exp_wip4;sf=tgz">opus-exp_wip4-branch.tar.gz</a></li>
+       </ul></li>
+    <li><b>Developer personal trees:</b>
+      <ul>
+         <li><a href="http://git.xiph.org/?p=users/jm/opus.git">Jean-Marc Valin</a></li>
+         <li><a href="http://git.xiph.org/?p=users/greg/opus.git">Greg Maxwell</a></li>
+         <li><a href="http://git.xiph.org/?p=users/giles/opus.git">Ralph Giles</a></li>
+      </ul></li>
+</ul>
+
+<h2>Opus-tools</h2>
+<p>Opus-tools includes a set of tools for encoding/decoding Opus to and from wav. 
+The files the tools produce are suitable for distribution with support for seeking, metadata, and multichannel. 
+See also: the <a href="//wiki.xiph.org/OggOpus">OggOpus mapping</a>.</p>
+
+<blockquote><tt>$ git clone <a href="http://git.xiph.org/?p=users/greg/opus-tools.git">git://git.xiph.org/users/greg/opus-tools.git</a></tt></blockquote>
+
+<h2>Continuous integration</h2>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.jsonp-2.1.4.min.js"></script>
+<link rel="stylesheet" type="text/css" href="dashboard.css" />
+
+<p>The <a href="https://mf4.xiph.org/jenkins/view/opus/">Opus continuous integration server</a>
+performs automated builds and tests of Opus on many platforms and configurations.<br/>
+Some of the builds run on remote systems and may fail from time to time due to connectivity problems.
+The console output is available and usually very informative when builds fail.
+
+<ul>
+  <li>Test coverage reports: <a href="https://mf4.xiph.org/jenkins/job/opus-coverage/ws/coverage/index.html">
+    Floating-point</a>, <a href="https://mf4.xiph.org/jenkins/job/opus-coverage-fixed/ws/coverage/index.html">fixed-point</a></li>
+  <li>Latest rendered codec specification: <a href="https://mf4.xiph.org/jenkins/view/opus/job/opus-draft/ws/doc/draft-ietf-codec-opus.txt">Text</a>,
+    <a href="https://mf4.xiph.org/jenkins/view/opus/job/opus-draft/ws/doc/draft-ietf-codec-opus.html">HTML</a></li>
+  <li>Static analysis results: <a href="https://mf4.xiph.org/jenkins/view/opus/job/opus-scan-build/ws/scan-build/current/index.html">scan-build</a>,
+    <a href="https://mf4.xiph.org/jenkins/job/opus-cppcheck/cppcheckResult">cppcheck</a>.</li>
+  <li>Libopus API documentation: <a href="https://mf4.xiph.org/jenkins/view/opus/job/opus/ws/doc/html/index.html">HTML</a>, 
+<a href="https://mf4.xiph.org/jenkins/view/opus/job/opus/ws/doc/latex/refman.pdf">PDF</a></li>
+</ul>
+
+</p>
+  <div id="CIcontent"></div>
+<br/>
+
+<!--#include virtual="../ssi/footer.include" -->
+<script>
+//Loosely based on https://github.com/tuo/jenkins-monitor
+var base_url = "https://mf4.xiph.org/jenkins/view/opus";
+var jobs_to_be_excluded = ["baz"];
+
+var jenkinsDashboard = {
+	composeHtmlFragement: function(jobs){
+		var fragment = document.createDocumentFragment();
+		var fragment = "<div><ul>";
+		$.each(jobs, function(){
+			if(($.inArray(this.name, jobs_to_be_excluded) == -1)){
+				if(this.color=="red"){
+                                 fragment += ("<li class='CI CI" + this.color + "'><a href=" + this.url + " class='CI'>" + this.name + "</a><span class='CIcon'><a href='" + this.url +"lastBuild/console'><img src='terminal.png' class='CIcon' width=16 height=16 alt='[console]'/></a></span></li>");
+                                } else {
+                                 fragment += ("<li class='CI CI" + this.color + "'><a href=" + this.url + " class='CI'>" + this.name + "</a></li>");
+                                }
+			}
+		});
+		dashboardLastUpdatedTime = new Date();
+		fragment +="</ul></div><br style='clear:both;' /><span class='CItime'>Updated: " + dashboardLastUpdatedTime.toString()  + "</span>";
+		$("#CIcontent").html(fragment);
+	},
+	updateBuildStatus : function(data) {
+		jenkinsDashboard.composeHtmlFragement(data.jobs);
+	}
+}
+
+$(document).ready(function(){	
+	ci_url = base_url + "/api/json";
+	var counter = 0;
+	var lastData = null;
+	var monitor = function(){
+	 counter++;
+	 $.jsonp({
+	        url: ci_url + "?format=json&jsonp=?",
+	        dataType: "jsonp",
+	        // callbackParameter: "jsonp",
+	        timeout: 10000,
+	        beforeSend: function(xhr) {
+	        	if(counter == 1){
+	        	        $("#CIcontent").html("<h2 id='loading'>Opus CI monitor loading...</h2>");
+	        	};  	
+	        },
+	        success: function(data, status){
+	        	jenkinsDashboard.updateBuildStatus(data);
+	        },
+	        error: function(XHR, textStatus, errorThrown){
+	        	if($("#error_loading").length <= 0){
+	        		$("#CIcontent").html('<h1 id="error_loading"> Connection failed, reloading Retrying........</h1>');
+	        	}
+	        }
+	    });
+	};
+	monitor();
+        var auto_refresh = setInterval(monitor, 30000);
+})
+</script>
