@@ -21,6 +21,11 @@
 
 <div id="chatbox" style="text-align:center;"></div>
 
+<p>The Xiph.Org wiki has an <a href="https://wiki.xiph.org/OPUS_TODO">Opus TODO</a> page, and the <a href="http://tools.ietf.org/wg/codec/">IETF Codec WG page</a> has
+list archives, meeting minutes, and technical presentations. Monty's <a href="http://people.xiph.org/~xiphmont/demo/celt/demo.html">CELT demo page</a> provides a broad
+overview of the MDCT layer of Opus.</p>
+
+
 <h2>Source code repository</h2>
 
 <b><a href="http://git.xiph.org/?p=opus.git" style="text-decoration:none;color:black;">Master git repository</a></b>: &nbsp;&nbsp;&nbsp;<tt>$ git clone <a href="http://git.xiph.org/?p=opus.git">git://git.opus-codec.org/opus.git</a></tt>
