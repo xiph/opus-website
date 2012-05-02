@@ -26,7 +26,7 @@ vlcActiveX = (IsObject(CreateObject("VideoLAN.VLCPlugin.2")))
 <h2><a href="http://linux.conf.au/">linux.conf.au</a> 2012 &mdash; Jean-Marc Valin</h2>
 <p>Also <a href="https://www.youtube.com/watch?v=iaAD71h9gDU">available on YouTube</a></p>
   <table style="border:0; width:496px;"><tr><td><video id="lcaopusvideo" width="496" height="372"
-   poster="LCA-opus-video-thumb.png" controls duration="3892"
+   poster="LCA-opus-video-thumb.png" controls duration="2738"
    src="http://jmvalin.ca/jmvalin_Opus_codec.ogv"></video></td></tr><tr>
    <td><a href="http://jmvalin.ca/jmvalin_Opus_codec.ogv">Download video</a> <small>(Ogg/<a href="http://www.theora.org/">Theora</a>; 45 minutes; 222 MiB)</small><br/>
    <a href="misc/lca-opus-audio.tar.gz">Audio/Video files</a> <small>(tar.gz; 10 MiB)</small><br/>
