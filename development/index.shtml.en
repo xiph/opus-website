@@ -28,7 +28,7 @@ overview of the MDCT layer of Opus.</p>
 
 <h2>Source code repository</h2>
 
-<b><a href="http://git.xiph.org/?p=opus.git" style="text-decoration:none;color:black;">Master git repository</a></b>: &nbsp;&nbsp;&nbsp;<tt>$ git clone <a href="http://git.xiph.org/?p=opus.git">git://git.opus-codec.org/opus.git</a></tt>
+<b><a href="http://git.xiph.org/?p=opus.git" style="text-decoration:none;color:black;">Master git repository</a></b>: &nbsp;&nbsp;&nbsp;<span style="white-space: pre;font-family: monospace;">$ git clone <a href="http://git.xiph.org/?p=opus.git">git://git.opus-codec.org/opus.git</a></span>
 <ul style="margin-top:0;list-style-type: none;background-image:url('tree.png');background-repeat:no-repeat;padding-left:26px">
    <li>Branch <a href="http://git.xiph.org/?p=opus.git;a=shortlog;h=refs/heads/ietf-draft">ietf-draft</a> and the
        <a href="http://tools.ietf.org/html/draft-ietf-codec-opus">latest draft</a> contain the IETF reference implementation.</li>
@@ -52,7 +52,7 @@ overview of the MDCT layer of Opus.</p>
 The files the tools produce are suitable for distribution with support for seeking, metadata, and multichannel. 
 See also: the <a href="//wiki.xiph.org/OggOpus">OggOpus mapping</a>.</p>
 
-<blockquote><tt>$ git clone <a href="http://git.xiph.org/?p=users/greg/opus-tools.git">git://git.xiph.org/users/greg/opus-tools.git</a></tt></blockquote>
+<blockquote><span style="white-space: pre;font-family: monospace;">$ git clone <a href="http://git.xiph.org/?p=users/greg/opus-tools.git">git://git.xiph.org/users/greg/opus-tools.git</a></span></blockquote>
 
 <h2>Continuous integration</h2>
 
