@@ -20,8 +20,6 @@
 </p>
 <center><div id="chatbox"></div></center>
 
-<p>There is an <a href="http://www.ohloh.net/p/opus-codec">ohloh project page</a> for Opus.</p>
-
 <h2>Source code repository</h2>
 
 <b><a href="http://git.xiph.org/?p=opus.git" style="text-decoration:none;color:black;">Master git repository</a></b>: &nbsp;&nbsp;&nbsp;<tt>$ git clone <a href="http://git.xiph.org/?p=opus.git">git://git.opus-codec.org/opus.git</a></tt>
