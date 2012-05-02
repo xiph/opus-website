@@ -18,7 +18,8 @@
 <p>Development chat takes place on <a href="irc://irc.freenode.net/opus">#opus on irc.freenode.net</a>
        (&rarr;<a href="" onclick="document.getElementById('chatbox').innerHTML='<iframe src=\'http://webchat.freenode.net/?channels=opus\' width=800 height=600/>';return false;">web interface</a>)
 </p>
-<center><div id="chatbox"></div></center>
+
+<div id="chatbox" style="text-align:center;"></div>
 
 <h2>Source code repository</h2>
 

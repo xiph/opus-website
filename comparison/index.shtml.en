@@ -1,8 +1,9 @@
 <!--#include virtual="/ssi/header.include" -->
 <!--#include virtual="/ssi/contentheader.include" -->
+
 <h1>Codec Feature Comparison</h1>
 
-<table border="2" cellpadding="2" width="100%">
+<table border="1" style="border:1px solid black; padding:2px; width:100%;">
 	<thead>
 		<tr>
 			<th>Codec</th>
@@ -90,7 +91,7 @@
 
 <h1>Bitrate/Latency Comparison</h1>
 
-<p align="center"><a href="opus_comparison.png"><img src="opus_comparison.png" width="516" height="386"></a></p>
+<div style="text-align:center;"><a href="opus_comparison.png"><img src="opus_comparison.png" alt="Illustration showing overlapping circles against delay/quality to suggest applications where Opus is useful." width="516" height="386"></a></div>
 
 <h1>Quality Comparison</h1>
 
@@ -100,6 +101,6 @@
 the full details, see <a href="http://listening-tests.hydrogenaudio.org/igorc/results.html">the official results page</a>
 and <a href="http://people.xiph.org/~greg/opus/ha2011/">Greg Maxwell's analysis page</a>.</p>
 
-<p align="center"><a href="opus_ha_results.png"><img src="opus_ha_results.png" width="500" height="350"></a></p>
+<div style="text-align:center;"><a href="opus_ha_results.png"><img src="opus_ha_results.png" width="500" height="350" alt="Bar chart showing Opus outperforming two AAC-HE encoders and libvorbis."></a></div>
 
 <!--#include virtual="/ssi/footer.include" -->
