@@ -4,10 +4,12 @@
 
 <h2>Discussion</h2>
 
-Development chat takes place on <a href="irc://irc.freenode.net/opus">#opus on irc.freenode.net</a>
+<p>Development chat takes place on <a href="irc://irc.freenode.net/opus">#opus on irc.freenode.net</a>
        (&rarr;<a href="" onclick="document.getElementById('chatbox').innerHTML='<iframe src=\'http://webchat.freenode.net/?channels=opus\' width=800 height=600/>';return false;">web interface</a>)
-
+</p>
 <center><div id="chatbox"/></center>
+
+<p>There is an <a href="http://www.ohloh.net/p/opus-codec">ohloh project page</a> for Opus.</p>
 
 <h2>Source code repository</h2>
 
