@@ -1,5 +1,16 @@
-<!--#include virtual="/ssi/header.include" -->
-
+<!DOCTYPE html>
+<html>
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+ <link rel="stylesheet" title="Default" media="screen"
+       href="/css/screen.css" type="text/css">
+ <link rel="stylesheet" type="text/css" href="dashboard.css" />
+ <script type="text/javascript" src="js/jquery.min.js"></script>
+ <script type="text/javascript" src="js/jquery.jsonp-2.1.4.min.js"></script>
+ <title>Opus Audio Codec</title>
+</head>
+<body>
+<!--#include virtual="/ssi/contentheader.include" -->
 <h1>Development</h1>
 
 <h2>Discussion</h2>
@@ -7,7 +18,7 @@
 <p>Development chat takes place on <a href="irc://irc.freenode.net/opus">#opus on irc.freenode.net</a>
        (&rarr;<a href="" onclick="document.getElementById('chatbox').innerHTML='<iframe src=\'http://webchat.freenode.net/?channels=opus\' width=800 height=600/>';return false;">web interface</a>)
 </p>
-<center><div id="chatbox"/></center>
+<center><div id="chatbox"></div></center>
 
 <p>There is an <a href="http://www.ohloh.net/p/opus-codec">ohloh project page</a> for Opus.</p>
 
@@ -40,14 +51,11 @@ See also: the <a href="//wiki.xiph.org/OggOpus">OggOpus mapping</a>.</p>
 <blockquote><tt>$ git clone <a href="http://git.xiph.org/?p=users/greg/opus-tools.git">git://git.xiph.org/users/greg/opus-tools.git</a></tt></blockquote>
 
 <h2>Continuous integration</h2>
-<script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/jquery.jsonp-2.1.4.min.js"></script>
-<link rel="stylesheet" type="text/css" href="dashboard.css" />
 
 <p>The <a href="https://mf4.xiph.org/jenkins/view/opus/">Opus continuous integration server</a>
 performs automated builds and tests of Opus on many platforms and configurations.<br/>
 Some of the builds run on remote systems and may fail from time to time due to connectivity problems.
-The console output is available and usually very informative when builds fail.
+The console output is available and usually very informative when builds fail.</p>
 
 <ul>
   <li>Test coverage reports: <a href="https://mf4.xiph.org/jenkins/job/opus-coverage/ws/coverage/index.html">
@@ -60,12 +68,10 @@ The console output is available and usually very informative when builds fail.
 <a href="https://mf4.xiph.org/jenkins/view/opus/job/opus/ws/doc/latex/refman.pdf">PDF</a></li>
 </ul>
 
-</p>
-  <div id="CIcontent"></div>
+<div id="CIcontent"></div>
 <br/>
 
-<!--#include virtual="../ssi/footer.include" -->
-<script>
+<script type="text/javascript">
 //Loosely based on https://github.com/tuo/jenkins-monitor
 var base_url = "https://mf4.xiph.org/jenkins/view/opus";
 var jobs_to_be_excluded = ["baz"];
@@ -122,3 +128,5 @@ $(document).ready(function(){
         var auto_refresh = setInterval(monitor, 30000);
 })
 </script>
+
+<!--#include virtual="../ssi/footer.include" -->

@@ -1,16 +1,4 @@
 <!--#include virtual="/ssi/header.include" -->
-<!--  Enter custom page information and styles here -->
-
-<title>Opus Audio Codec: Comparison</title>
-<style type="text/css">
-<!--
-#navlink_ a {
-	text-decoration: underline !important;
-}
--->
-</style>
-</head>
-<body>
 <h1>Codec Feature Comparison</h1>
 
 <table border="2" cellpadding="2" width="100%">
@@ -113,5 +101,4 @@ and <a href="http://people.xiph.org/~greg/opus/ha2011/">Greg Maxwell's analysis 
 
 <p align="center"><a href="opus_ha_results.png"><img src="opus_ha_results.png" width="500" height="350"></a></p>
 
-</body>
 <!--#include virtual="/ssi/footer.include" -->

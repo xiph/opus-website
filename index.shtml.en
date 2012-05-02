@@ -14,6 +14,7 @@
 
 <p>
 The Opus codec is designed to handle a wide range of interactive audio applications, including Voice over IP, videoconferencing, in-game chat, and even remote live music performances. It can scale from low bit-rate narrowband speech to very high quality stereo music. The current features are:
+</p>
 <ul>
 <li>Sampling rates from 8 to 48 kHz</li>
 <li>Bit-rates from 6 kb/s 510 kb/s (*)</li>
@@ -25,8 +26,7 @@ The Opus codec is designed to handle a wide range of interactive audio applicati
 <li>Good loss robustness and packet loss concealment (PLC)</li>
 <li>Floating point and fixed-point implementation</li>
 </ul>
-(*) can be changed dynamically during a stream with no signalling required
-</p>
+<p>(*) can be changed dynamically during a stream with no signalling required</p>
 
 <p>
    To start, you might read the latest

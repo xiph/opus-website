@@ -16,6 +16,6 @@
        (<a href="" onclick="document.getElementById('chatbox').innerHTML='<iframe src=\'http://webchat.freenode.net/?channels=opus\' width=800 height=600/>';return false;">web interface</a>)
 </ul>
 
-<center><div id="chatbox"/></center>
+<center><div id="chatbox"></div></center>
 
 <!--#include virtual="/ssi/footer.include" -->

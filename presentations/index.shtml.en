@@ -1,5 +1,10 @@
-<!--#include virtual="/ssi/header.include" -->
-
+<!DOCTYPE html>
+<html>
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+ <link rel="stylesheet" title="Default" media="screen"
+       href="/css/screen.css" type="text/css">
+ <title>Opus Audio Codec</title>
 <style type="text/css">
 <!--
 #navlink_ a {
@@ -14,6 +19,8 @@ vlcActiveX = (IsObject(CreateObject("VideoLAN.VLCPlugin.2")))
 </script>
 </head>
 <body onload="initVideo();">
+
+<!--#include virtual="/ssi/contentheader.include" -->
 
 <h1>Presentations</h1>
 <h2><a href="http://linux.conf.au/">linux.conf.au</a> 2012 &mdash; Jean-Marc Valin</h2>
