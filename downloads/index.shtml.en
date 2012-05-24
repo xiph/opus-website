@@ -5,9 +5,24 @@
 <p>
    The codec is still under <a href="../development/">development</a>,
    in the final stages preparing the first release.
-<p>   
+<p>
 
 <h2>Latest <strong style='font-style: italic;'>development</strong> release</h2>
+
+<h3 id='zero.9.14'>0.9.14</h3>
+<p>
+This version matches version -14 of the draft and fixes minor issues brought up before the upcoming IETF last call.
+There is no change to the bit-stream.
+</p>
+
+<ul>
+<li>Source code: <a href="http://downloads.xiph.org/releases/opus/opus-0.9.14.tar.gz">opus-0.9.14.tar.gz</a></li>
+<li>Internet-Draft: <a href="http://tools.ietf.org/id/draft-ietf-codec-opus-14.txt">draft-ietf-codec-opus-14.txt</a>
+</ul>
+
+<h2>Historic <strong style='font-style: italic;'>development</strong> releases</h2>
+
+<small>Versions 11-13 were skipped to synchronize release and draft numbering.</small>
 
 <h3 id='zero.9.10'>0.9.10</h3>
 <p>
@@ -19,8 +34,6 @@ There is no change to the bit-stream.
 <li>Source code: <a href="http://downloads.xiph.org/releases/opus/opus-0.9.10.tar.gz">opus-0.9.10.tar.gz</a></li>
 <li>Internet-Draft: <a href="http://tools.ietf.org/id/draft-ietf-codec-opus-12.txt">draft-ietf-codec-opus-12.txt</a>
 </ul>
-
-<h2>Historic <strong style='font-style: italic;'>development</strong> releases</h2>
 
 <h3 id='zero.9.9'>0.9.9</h3>
 <p>
@@ -35,16 +48,16 @@ The bit-stream has not changed, except for some corner cases that are unlikely t
 
 <h3 id='zero.9.8'>0.9.8</h3>
 <p>
-This version matches version -10 of the draft and fixes several glitches caused by mode 
+This version matches version -10 of the draft and fixes several glitches caused by mode
 switching and other corner cases. This required breaking the bit-stream for the SILK-only
 stereo and hybrid stereo modes. Fortunately, these modes are not often used, so few users
 should be affected. This release also implements a CBR mode for SILK mode. This release
 includes a much better test suite and has been extensively tested in multiple configurations.
 See the <a href="https://mf4.xiph.org/jenkins/view/opus/">Jenkins build system</a> and the resulting
-<a href="https://mf4.xiph.org/jenkins/job/opus-coverage/ws/coverage/index.html">floating-point coverage</a> 
+<a href="https://mf4.xiph.org/jenkins/job/opus-coverage/ws/coverage/index.html">floating-point coverage</a>
 and <a href="https://mf4.xiph.org/jenkins/job/opus-coverage-fixed/ws/coverage/index.html">fixed-point coverage</a>.
 Now that the analysis and documentation of the code has been completed, further changes to the
-bit-stream unfil the final freeze are unlikely. 
+bit-stream unfil the final freeze are unlikely.
 </p>
 
 <ul>
@@ -54,7 +67,7 @@ bit-stream unfil the final freeze are unlikely.
 
 <h3 id='zero.9.6'>0.9.6</h3>
 <p>
-This is a cleanup release for version -08 of the draft. The bit-stream remains 
+This is a cleanup release for version -08 of the draft. The bit-stream remains
 tentatively frozen.
 </p>
 
@@ -65,7 +78,7 @@ tentatively frozen.
 
 <h3 id='zero.9.5'>0.9.5</h3>
 <p>
-This is a cleanup release for version -07 of the draft. The bit-stream is 
+This is a cleanup release for version -07 of the draft. The bit-stream is
 tentatively frozen. It will not change unless an major issue is found or
 if for some reason the Working Group decides something needs to be change.
 </p>
@@ -76,7 +89,7 @@ if for some reason the Working Group decides something needs to be change.
 </ul>
 
 <h3 id='zero.9.2'>0.9.2</h3>
-<p>Opus 0.9.2 adds support for glitchless switching between the voice and audio mode. 
+<p>Opus 0.9.2 adds support for glitchless switching between the voice and audio mode.
 Also, the encoder now defaults to a new "automatic" mode and bandwidth selection and
 attempts to select the optimal mode and bandwidth considering the bit-rate and voice
 content. Several bugs were also fixed and the codec and test tools should be more
@@ -91,7 +104,7 @@ robust in general.
 <p>Opus 0.9.1 fixes a few minor bugs that were found in version 0.9.0.
 Unfortunately, this has required slight changes to the bit-stream, which
 is thus not compatible with 0.9.0. This release adds support for forward
-error correction (FEC), which improves performance under packet loss. 
+error correction (FEC), which improves performance under packet loss.
 <ul>
 <li>Source code: <a href="http://downloads.xiph.org/releases/opus/opus-0.9.1.tar.gz">opus-0.9.1.tar.gz</a></li>
 <li>Internet-Draft: <a href="http://tools.ietf.org/id/draft-ietf-codec-opus-03.txt">draft-ietf-codec-opus-03.txt</a>
