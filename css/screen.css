@@ -43,6 +43,8 @@ img {
 #navbar ul {
   margin: 0 0 1em 0;
   padding: 0;
+  position:relative;
+  top:-24px;
 }
 
 #navbar li {

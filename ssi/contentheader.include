@@ -3,8 +3,8 @@
 <div id="navbar">
 
 <div id="thelogo">
-  <h1><a href="/"><img src="/images/opus-128.png" alt="Opus Codec"
-         width=128 height=64></a></h1>
+  <h1><a href="/"><img src="/images/opus-112.png" alt="Opus Codec"
+         width=112 height=64></a></h1>
 </div>
 
   <ul>
