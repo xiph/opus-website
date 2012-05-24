@@ -19,4 +19,9 @@
 
 <div id="chatbox" style="text-align:center;"></div>
 
+<!-- hack a vspace to help with the sidebar layout -->
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
 <!--#include virtual="/ssi/footer.include" -->

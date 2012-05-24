@@ -1,9 +1,12 @@
 <div id="thepage">
-<div id="thelogo">
-  <h1><a href="/">Opus Codec</a></h1>
-</div>
 
 <div id="navbar">
+
+<div id="thelogo">
+  <h1><a href="/"><img src="/images/opus-128.png" alt="Opus Codec"
+         width=128 height=64></a></h1>
+</div>
+
   <ul>
     <li id="home_"><a href="/">Home</a></li>
     <li id="downloads_"><a href="/downloads/">Downloads</a></li>
@@ -14,6 +17,7 @@
     <li id="presentations_"><a href="/presentations/">Presentations</a></li>
     <li id="contact_"><a href="/contact/">Contact</a></li>
   </ul>
+
 </div>
 
 <div id="main">
