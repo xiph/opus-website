@@ -94,7 +94,7 @@
 <div style="text-align:center;"><a href="opus_comparison.png"><img src="opus_comparison.png" alt="Illustration showing overlapping circles against delay/quality to suggest applications where Opus is useful." width="516" height="386"></a></div>
 
 <h1>Quality Comparison</h1>
-<div style="float:right;"><a href="opus_ha_results.png"><img src="opus_ha_results.png" width="240" height="200" alt="Bar chart showing Opus outperforming two AAC-HE encoders and libvorbis."></a></div>
+<div style="float:right;"><a href="http://people.xiph.org/~greg/opus/ha2011/"><img src="opus_ha_results.png" width="240" height="200" alt="Bar chart showing Opus outperforming two AAC-HE encoders and libvorbis."></a></div>
 
 <h2>HydrogenAudio</h2>
 
