@@ -52,7 +52,7 @@ overview of the MDCT layer of Opus.</p>
 The files the tools produce are suitable for distribution with support for seeking, metadata, and multichannel. 
 See also: the <a href="//wiki.xiph.org/OggOpus">OggOpus mapping</a>.</p>
 
-<blockquote><span style="white-space: pre;font-family: monospace;">$ git clone <a href="http://git.xiph.org/opus-tools.git">git://git.xiph.org/opus-tools.git</a></span></blockquote>
+<blockquote><span style="white-space: pre;font-family: monospace;">$ git clone <a href="http://git.xiph.org/?p=opus-tools.git">git://git.xiph.org/opus-tools.git</a></span></blockquote>
 
 <h2>Continuous integration</h2>
 
