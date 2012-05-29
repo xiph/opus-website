@@ -54,6 +54,8 @@ See also: the <a href="//wiki.xiph.org/OggOpus">OggOpus mapping</a>.</p>
 
 <blockquote><span style="white-space: pre;font-family: monospace;">$ git clone <a href="http://git.xiph.org/?p=opus-tools.git">git://git.xiph.org/opus-tools.git</a></span></blockquote>
 
+<p>Manpages: <a href="https://mf4.xiph.org/jenkins/view/opus/job/opus-tools/ws/man/opusenc.html">opusenc</a>, <a href="https://mf4.xiph.org/jenkins/view/opus/job/opus-tools/ws/man/opusdec.html">opusdec</a>, <a href="https://mf4.xiph.org/jenkins/view/opus/job/opus-tools/ws/man/opusinfo.html">opusinfo</a></p>
+
 <h2>Continuous integration</h2>
 
 <p>The <a href="https://mf4.xiph.org/jenkins/view/opus/">Opus continuous integration server</a>
