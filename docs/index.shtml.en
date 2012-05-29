@@ -11,12 +11,20 @@
 </table>
 </blockquote>
 
-
 <h2>Opus API reference (doxygen)</h2>
 <blockquote>
 <table style="border-spacing: 0;">
 <tr><td style="border-bottom: 1px solid;padding-right:0.5em;"><b>API documentation</b><br/><span style="float:right;"><small><i>(from the 0.9.14 development release)</i></small></span></td><td style="border-bottom: 1px solid;"><a href="opus_api.pdf">PDF</a>, </td><td style="border-bottom: 1px solid;"><a href="html_api/">HTML</a></td></tr>
 <tr><td style="border-bottom: 1px solid;padding-right:0.5em;"><b>Pre-release API documentation</b><br/><span style="float:right;"><small><i>(from the <a href="http://git.xiph.org/?p=opus.git">GIT repository</a>)</i></small></span></td><td style="border-bottom: 1px solid;"><a href="https://mf4.xiph.org/jenkins/view/opus/job/opus/ws/doc/latex/refman.pdf">PDF</a>, </td><td style="border-bottom: 1px solid;"><a href="https://mf4.xiph.org/jenkins/view/opus/job/opus/ws/doc/html/index.html">HTML</a></td></tr>
+</table>
+</blockquote>
+
+<h2>Opus-tools man-pages</h2>
+<blockquote>
+<table style="border-spacing: 0;">
+<tr><td style="border-bottom: 1px solid;padding-right:0.5em;"><b>opusenc (.wav->.opus)</b><br/><span style="float:right;"><small><i>(from the <a href="http://git.xiph.org/?p=opus-tools.git">GIT repository</a>)</i></small></span></td><td style="border-bottom: 1px solid;"><a href="https://mf4.xiph.org/jenkins/view/opus/job/opus-tools/ws/man/opusenc.html">HTML</a></td></tr>
+<tr><td style="border-bottom: 1px solid;padding-right:0.5em;"><b>opusdec (.opus->.wav)</b><br/><span style="float:right;"><small><i>(from the <a href="http://git.xiph.org/?p=opus-tools.git">GIT repository</a>)</i></small></span></td><td style="border-bottom: 1px solid;"><a href="https://mf4.xiph.org/jenkins/view/opus/job/opus-tools/ws/man/opusdec.html">HTML</a></td></tr>
+<tr><td style="border-bottom: 1px solid;padding-right:0.5em;"><b>opusinfo (.opus file info)</b><br/><span style="float:right;"><small><i>(from the <a href="http://git.xiph.org/?p=opus-tools.git">GIT repository</a>)</i></small></span></td><td style="border-bottom: 1px solid;"><a href="https://mf4.xiph.org/jenkins/view/opus/job/opus-tools/ws/man/opusinfo.html">HTML</a></td></tr>
 </table>
 </blockquote>
 
