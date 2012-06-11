@@ -18,11 +18,12 @@ The Opus codec is designed to handle a wide range of interactive audio applicati
 </p>
 <ul>
 <li>Sampling rates from 8 to 48 kHz</li>
-<li>Bit-rates from 6 kb/s 510 kb/s</li>
+<li>Bit-rates from 6 kb/s to 510 kb/s</li>
 <li>Support for both constant bit-rate (CBR) and variable bit-rate (VBR)</li>
 <li>Audio bandwidth from narrowband to full-band</li>
 <li>Support for speech and music</li>
 <li>Support for mono and stereo</li>
+<li>Support for multichannel (up to 255 channels)</li>
 <li>Frame sizes from 2.5 ms to 60 ms</li>
 <li>Dynamically adjustable bitrate, audio bandwidth, and frame size</li>
 <li>Good loss robustness and packet loss concealment (PLC)</li>
