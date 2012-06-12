@@ -9,12 +9,12 @@
 
   <ul>
     <li id="home_"><a href="/">Home</a></li>
-    <li id="downloads_"><a href="/downloads/">Downloads</a></li>
     <li id="documentation_"><a href="/docs/">Documentation</a></li>
+    <li id="presentations_"><a href="/presentations/">Presentations</a></li>
     <li id="development_"><a href="/development/">Development</a></li>
     <li id="testvectors"><a href="/testvectors/">Test Vectors</a></li>
     <li id="comparison_"><a href="/comparison/">Comparison</a></li>
-    <li id="presentations_"><a href="/presentations/">Presentations</a></li>
+    <li id="downloads_"><a href="/downloads/">Downloads</a></li>
     <li id="contact_"><a href="/contact/">Contact</a></li>
   </ul>
 

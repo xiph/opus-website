@@ -6,6 +6,11 @@ body {
   color: #333333;
 }
 
+a:link{color: #2E2EE6;}
+a:visited{color: #4A4AB8;}
+a:active{color: #4A4AB8;}
+a:hover{color: #4A4AB8;}
+
 img {
   border: 0;
 }
@@ -44,13 +49,14 @@ img {
   margin: 0 0 1em 0;
   padding: 0;
   position:relative;
-  top:-24px;
+  top:-30px;
 }
 
 #navbar li {
   text-align: right;
   font-size: .7em;
-  line-height: 1.4;
+  line-height: 1.5;
+  font-family: sans-serif;
   list-style: none;
 }
 
