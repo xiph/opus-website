@@ -9,7 +9,7 @@
 
 <img src="mozilla-small.png" width=145 height=100 alt="Mozilla logo" style="float:right;padding:0;"/>
 <h3><strong style='font-style: italic;'>Development</strong> binary builds</h3>
-In addition to support in Firefox, Mozilla provides binary builds of Opus utilities.
+In addition to <a href="https://developer.mozilla.org/En/Media_formats_supported_by_the_audio_and_video_elements#Ogg_Opus">support in Firefox</a>, Mozilla provides binary builds of Opus utilities.
 <style type="text/css">
 tr.vbottom td { border-bottom: thin solid;}
 tr.vbottoml td { border-bottom: thin solid;}
