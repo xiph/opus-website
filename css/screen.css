@@ -119,6 +119,10 @@ blockquote.code {
   background-color: #eee;
 }
 
+tr.underline td {
+  border-bottom: 1px solid;
+}
+
 #copyright {
   margin-top: 30px;
   line-height: 1.5em;

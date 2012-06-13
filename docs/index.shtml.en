@@ -5,16 +5,27 @@
 
 <h2>IETF specifications</h2>
 <blockquote>
-<table style="border-spacing: 0;">
-<tr><td style="border-bottom: 1px solid;padding-right:0.5em;"><b>Latest Opus RTP draft</b><br/><span style="float:right;"><small><i>(draft-spittka-payload-rtp-opus)</i></small></span></td><td style="border-bottom: 1px solid;"><a href="http://tools.ietf.org/html/draft-spittka-payload-rtp-opus">HTML</a>, </td><td style="border-bottom: 1px solid;"><a href="http://tools.ietf.org/pdf/draft-spittka-payload-rtp-opus.pdf">PDF</a>, </td><td style="border-bottom: 1px solid;"><a href="http://tools.ietf.org/id/draft-spittka-payload-rtp-opus.txt">TXT</a></td></tr>
-<tr><td style="border-bottom: 1px solid;padding-right:0.5em;"><b>Latest Opus codec draft</b><br/><span style="float:right;"><small><i>(draft-ietf-codec-opus)</i></small></span></td><td style="border-bottom: 1px solid;"><a href="http://tools.ietf.org/html/draft-ietf-codec-opus">HTML</a>, </td><td style="border-bottom: 1px solid;"><a href="http://tools.ietf.org/pdf/draft-ietf-codec-opus.pdf">PDF</a>, </td><td style="border-bottom: 1px solid;"><a href="http://tools.ietf.org/id/draft-ietf-codec-opus.txt">TXT</a></td></tr>
+<table style="border-spacing: 0">
+<tr class="underline">
+    <td style="padding-right:0.5em;"><b>Latest Opus codec draft</b><br/><span style="float:right;"><small><i>(draft-ietf-codec-opus)</i></small></span></td>
+    <td><a href="http://tools.ietf.org/html/draft-ietf-codec-opus">HTML</a>, </td>
+    <td><a href="http://tools.ietf.org/pdf/draft-ietf-codec-opus.pdf">PDF</a>, </td>
+    <td><a href="http://tools.ietf.org/id/draft-ietf-codec-opus.txt">TXT</a></td>
+</tr>
+<tr class="underline">
+    <td style="padding-right:0.5em;"><b>Latest Opus RTP draft</b><br/><span style="float:right;"><small><i>(draft-spittka-payload-rtp-opus)</i></small></span></td>
+    <td><a href="http://tools.ietf.org/html/draft-spittka-payload-rtp-opus">HTML</a>, </td>
+    <td><a href="http://tools.ietf.org/pdf/draft-spittka-payload-rtp-opus.pdf">PDF</a>, </td>
+    <td><a href="http://tools.ietf.org/id/draft-spittka-payload-rtp-opus.txt">TXT</a></td>
+</tr>
 </table>
 </blockquote>
 
 <h2>Opus API reference (doxygen)</h2>
 <blockquote>
 <table style="border-spacing: 0;">
-<tr><td style="border-bottom: 1px solid;padding-right:0.5em;"><b>Pre-release API documentation</b></td>
+<tr class="underline">
+    <td style="padding-right:0.5em;"><b>Pre-release API documentation</b></td>
     <td style="border-bottom: 1px solid;"><a href="https://mf4.xiph.org/jenkins/view/opus/job/opus/ws/doc/html/index.html">HTML</a>,</td>
     <td style="border-bottom: 1px solid;"><a href="https://mf4.xiph.org/jenkins/view/opus/job/opus/ws/doc/latex/refman.pdf">PDF</a></td>
 </tr>
@@ -24,12 +35,18 @@
 <h2>Opus-tools man-pages</h2>
 <blockquote>
 <table style="border-spacing: 0;">
-<tr><td style="border-bottom: 1px solid;padding-right:0.5em;"><b>opusenc (.wav->.opus)</b>
-</td><td style="border-bottom: 1px solid;"><a href="https://mf4.xiph.org/jenkins/view/opus/job/opus-tools/ws/man/opusenc.html">HTML</a></td></tr>
-<tr><td style="border-bottom: 1px solid;padding-right:0.5em;"><b>opusdec (.opus->.wav)</b>
-</td><td style="border-bottom: 1px solid;"><a href="https://mf4.xiph.org/jenkins/view/opus/job/opus-tools/ws/man/opusdec.html">HTML</a></td></tr>
-<tr><td style="border-bottom: 1px solid;padding-right:0.5em;"><b>opusinfo (.opus file info)</b>
-</td><td style="border-bottom: 1px solid;"><a href="https://mf4.xiph.org/jenkins/view/opus/job/opus-tools/ws/man/opusinfo.html">HTML</a></td></tr>
+<tr class="underline">
+    <td style="padding-right:0.5em;"><b>opusenc</b> (.wav->.opus)
+</td>
+    <td><a href="https://mf4.xiph.org/jenkins/view/opus/job/opus-tools/ws/man/opusenc.html">HTML</a></td></tr>
+<tr class="underline">
+    <td><b>opusdec</b> (.opus->.wav)</td>
+    <td><a href="https://mf4.xiph.org/jenkins/view/opus/job/opus-tools/ws/man/opusdec.html">HTML</a></td>
+</tr>
+<tr class="underline">
+    <td style="padding-right:0.5em;"><b>opusinfo</b> (.opus file info)</td>
+    <td><a href="https://mf4.xiph.org/jenkins/view/opus/job/opus-tools/ws/man/opusinfo.html">HTML</a></td>
+</tr>
 </table>
 </blockquote>
 
