@@ -15,7 +15,9 @@
 <blockquote>
 <table style="border-spacing: 0;">
 <tr><td style="border-bottom: 1px solid;padding-right:0.5em;"><b>Pre-release API documentation</b></td>
-    <td style="border-bottom: 1px solid;"><a href="https://mf4.xiph.org/jenkins/view/opus/job/opus/ws/doc/latex/refman.pdf">PDF</a>, </td><td style="border-bottom: 1px solid;"><a href="https://mf4.xiph.org/jenkins/view/opus/job/opus/ws/doc/html/index.html">HTML</a></td></tr>
+    <td style="border-bottom: 1px solid;"><a href="https://mf4.xiph.org/jenkins/view/opus/job/opus/ws/doc/html/index.html">HTML</a>,</td>
+    <td style="border-bottom: 1px solid;"><a href="https://mf4.xiph.org/jenkins/view/opus/job/opus/ws/doc/latex/refman.pdf">PDF</a></td>
+</tr>
 </table>
 </blockquote>
 
