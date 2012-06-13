@@ -50,4 +50,23 @@
 </table>
 </blockquote>
 
+<h2 id="testvectors">Test Vectors</h2>
+<p>
+  Test files to verify the Opus decoders are operating properly.
+</p>
+<blockquote>
+<p><a href="/testvectors/opus_testvectors-draft11.tar.gz">Conformance set</a> for versions 11 through 14 of the codec draft.
+<br>Also available from
+ <a href="http://downloads.xiph.org/releases/opus/opus_testvectors-draft11.tar.gz">Xiph.Org</a> and 
+ <a href="https://ftp.mozilla.org/pub/mozilla.org/opus/opus_testvectors-draft11.tar.gz">Mozilla</a>.</p>
+</blockquote>
+
+<p>
+  Development versions of a larger test suite for .opus files in the Ogg
+  container are available <a href="http://people.xiph.org/~greg/opus_testvectors/">here</a>.
+  These are suitable for testing opusdec and other playback software.
+  Note that these files are designed to exercise all aspects of an
+implementation, not necessarily to advertise the best quality audio
+the codec is capable of.
+</p>
 <!--#include virtual="/ssi/footer.include" -->
