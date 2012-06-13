@@ -24,7 +24,7 @@ The Opus codec is designed to handle a wide range of interactive audio applicati
 <li>Audio bandwidth from narrowband to full-band</li>
 <li>Support for speech and music</li>
 <li>Support for mono and stereo</li>
-<li>Support for multichannel <small>(Up to 255 channels w/ multistream frames)</small></li>
+<li>Support for up to 255 channels (multistream frames)</li>
 <li>Dynamically adjustable bitrate, audio bandwidth, and frame size</li>
 <li>Good loss robustness and packet loss concealment (PLC)</li>
 <li>Floating point and fixed-point implementation</li>
