@@ -63,7 +63,7 @@ Numerous small fixes including piped audio on Windows and clicking on resampled 
 </p>
 
 <ul>
-<li>Source code: <a href="https://ftp.mozilla.org/pub/mozilla.org/opus/opus-tools-0.1.2.tar.gz">opus-tools-0.1.2.tar.gz</a></li>
+<li>Source code: <a href="http://downloads.xiph.org/releases/opus/opus-tools-0.1.2.tar.gz">opus-tools-0.1.2.tar.gz</a></li>
 </ul>
 
 <h3>Historic <strong style='font-style: italic;'>development</strong> releases</h3>
