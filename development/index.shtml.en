@@ -47,6 +47,9 @@ overview of the MDCT layer of Opus.</p>
       </ul></li>
 </ul>
 
+<p>See the <a href="/docs/">documentation</a> for an API reference
+and test vectors for verifying your implementation.</p>
+
 <h2>Opus-tools</h2>
 <p>Opus-tools includes a set of tools for encoding/decoding Opus to and from wav. 
 The files the tools produce are suitable for distribution with support for seeking, metadata, and multichannel. 
