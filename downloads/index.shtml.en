@@ -10,13 +10,7 @@
 <img src="mozilla-small.png" width=145 height=100 alt="Mozilla logo" style="float:right;padding:0;"/>
 <h3><strong style='font-style: italic;'>Development</strong> binary builds</h3>
 In addition to <a href="https://developer.mozilla.org/En/Media_formats_supported_by_the_audio_and_video_elements#Ogg_Opus">support in Firefox</a>, Mozilla provides binary builds of Opus utilities.
-<style type="text/css">
-tr.vbottom td { border-bottom: thin solid;}
-tr.vbottoml td { border-bottom: thin solid;}
-td.vbottom { border-bottom: thin solid; border-right: thin solid;padding-right:0.75em;}
-tr.vbottom th { border-bottom: thin solid;}
-</style>
-<center>
+<div style="text-align:center;">
 <table style="border-spacing:0;margin:2em;">
 <tbody>
 <tr class="vbottom"><th style="text-align:left;">Package</th>
@@ -27,9 +21,9 @@ tr.vbottom th { border-bottom: thin solid;}
 </tr>
 <tr class="vbottoml">
     <td rowspan=2 class="vbottom">opus-tools</td>
-    <td style="text-align:center;">0.1.2</td>
-    <td style="text-align:center;">Windows</td>
-    <td><a href="https://ftp.mozilla.org/pub/mozilla.org/opus/win32/opus-tools-0.1.2.zip">opus-tools-0.1.2.zip</a></td>
+    <td>0.1.2</td>
+    <td>Windows</td>
+    <td style="text-align:left;"><a href="https://ftp.mozilla.org/pub/mozilla.org/opus/win32/opus-tools-0.1.2.zip">opus-tools-0.1.2.zip</a></td>
     <td style="text-align:right;">1MiB</td>
 </tr>
 <tr class="vbottom">
@@ -40,7 +34,7 @@ tr.vbottom th { border-bottom: thin solid;}
 </tr>
 </tbody>
 </table>
-</center>
+</div>
 
 <h2>Source code</h2>
 
