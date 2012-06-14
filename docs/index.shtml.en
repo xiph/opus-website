@@ -66,7 +66,6 @@
   container are available <a href="http://people.xiph.org/~greg/opus_testvectors/">here</a>.
   These are suitable for testing opusdec and other playback software.
   Note that these files are designed to exercise all aspects of an
-implementation, not necessarily to advertise the best quality audio
-the codec is capable of.
+  implementation, the fact that they sound terrible is an intended consequence.
 </p>
 <!--#include virtual="/ssi/footer.include" -->
