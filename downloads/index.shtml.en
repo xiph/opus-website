@@ -29,8 +29,8 @@ In addition to <a href="https://developer.mozilla.org/En/Media_formats_supported
 <tr class="vbottom">
     <td colspan=4 style="padding-left:1em;text-align:justify;">Opus-tools provides command-line utilities to
      <a href="https://mf4.xiph.org/jenkins/view/opus/job/opus-tools/ws/man/opusenc.html">encode</a>,
-     <a href="https://mf4.xiph.org/jenkins/view/opus/job/opus-tools/ws/man/opusdec.html">inspect</a>, and
-     <a href="https://mf4.xiph.org/jenkins/view/opus/job/opus-tools/ws/man/opusinfo.html">decode</a> <b>.</b>opus files.</td>
+     <a href="https://mf4.xiph.org/jenkins/view/opus/job/opus-tools/ws/man/opusinfo.html">inspect</a>, and
+     <a href="https://mf4.xiph.org/jenkins/view/opus/job/opus-tools/ws/man/opusdec.html">decode</a> <b>.</b>opus files.</td>
 </tr>
 </tbody>
 </table>
