@@ -55,16 +55,17 @@
   Test files to verify the Opus decoders are operating properly.
 </p>
 <blockquote>
-<p><a href="/testvectors/opus_testvectors-draft11.tar.gz">Conformance set</a> for versions 11 through 14 of the codec draft.
+<p><a href="/testvectors/opus_testvectors-draft11.tar.gz">Bitstream conformance set</a> for versions 11 through 14 of the codec draft.<br/>
+    This set of bitstreams is used to measure codec implementations for conformance with the specification.
 <br>Also available from
  <a href="http://downloads.xiph.org/releases/opus/opus_testvectors-draft11.tar.gz">Xiph.Org</a> and 
  <a href="https://ftp.mozilla.org/pub/mozilla.org/opus/opus_testvectors-draft11.tar.gz">Mozilla</a>.</p>
 </blockquote>
-
+<blockquote><a href="http://people.xiph.org/~greg/opus_testvectors/">The .opus test set</a> an in-development larger test suite for .opus files.<br/>
+  These are suitable for testing opusdec and other media-player software.<br/>
+  Files prefixed with 'broken' and 'failure' are intentionally malformed and at least the latter should be rejected.
+</blockquote>
 <p>
-  Development versions of a larger test suite for .opus files in the Ogg
-  container are available <a href="http://people.xiph.org/~greg/opus_testvectors/">here</a>.
-  These are suitable for testing opusdec and other playback software.
   Note that these files are designed to exercise all aspects of an
   implementation, the fact that they sound terrible is an intended consequence.
 </p>
