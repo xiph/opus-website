@@ -131,3 +131,8 @@ tr.underline td {
   color: #888888;
   clear: both;
 }
+
+tr.vbottom td { border-bottom: thin solid;}
+tr.vbottoml td { border-bottom: thin solid;}
+td.vbottom { border-bottom: thin solid; border-right: thin solid;padding-right:0.75em;}
+tr.vbottom th { border-bottom: thin solid;}

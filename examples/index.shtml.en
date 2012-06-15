@@ -1,0 +1,44 @@
+<!--#include virtual="/ssi/header.include" -->
+<!--#include virtual="/ssi/contentheader.include" -->
+
+<h1>Opus Examples</h1>
+
+<h2>Live HTTP streams</h2>
+
+These streams can be played in using Firefox, Gstreamer/Totem (in Linux), or using opusdec from the command-line.<br/><br/>
+
+To play these streams in Firefox Opus support <a href="firefox.shtml.en">must be enabled</a>.
+<br/>
+<center>
+<table style="margin:20px;width:75%;">
+<tbody>
+<tr>
+<td style="text-align:center;"><a href="http://ec2-50-112-77-171.us-west-2.compute.amazonaws.com:8000/temporalfugue.opus">Hypnotic&nbsp;torture&nbsp;clock</a>
+<br/>Mono 12kbit/sec</td>
+<td style="text-align:right;"><audio controls width=200 src="http://ec2-50-112-77-171.us-west-2.compute.amazonaws.com:8000/temporalfugue.opus"></audio></td>
+</tr>
+<tr><td colspan=2 style="text-align:justified; border-bottom: thin solid;">A rhythmic electronic chant of the current time. Prolonged exposure to this Temporal Fugue is not recommended.
+The stream is synthesized in real-time using <a href="http://boodler.org/">boodler</a> and encoded using opusenc and streamed using oggfwd and icecast.</td>
+</tr>
+
+<tr style="padding: 10px;">
+<td style="text-align:center;"><a href="http://ec2-50-112-77-171.us-west-2.compute.amazonaws.com:8000/clock.opus">Endless drone</a>
+<br/>Stereo 64kbit/sec</td>
+<td style="text-align:right;"><audio controls width=200 src="http://ec2-50-112-77-171.us-west-2.compute.amazonaws.com:8000/clock.opus"></audio></td>
+</tr>
+<tr><td colspan=2 style="text-align:justified; border-bottom: thin solid;">A simulation of an <a href="http://en.wikipedia.org/wiki/FM3">FM3 Buddha Machine</a>,
+this stream produces an endless stream of peaceful droning. The stream is synthesized in real-time using <a href="http://boodler.org/">boodler</a> and encoded using opusenc and streamed using oggfwd and icecast.</td>
+</tr>
+</tbody>
+</table>
+</center>
+
+<h2>Interactive Demos</h2>
+
+<h2>Speech recordings</h2>
+
+<h2>Music recordings</h2>
+
+
+
+<!--#include virtual="/ssi/footer.include" -->
