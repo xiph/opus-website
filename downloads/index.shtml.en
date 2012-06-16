@@ -20,11 +20,16 @@ In addition to <a href="https://developer.mozilla.org/En/Media_formats_supported
     <th style="text-align:right;">Size</th>
 </tr>
 <tr class="vbottoml">
-    <td rowspan=2 class="vbottom">opus-tools</td>
-    <td>0.1.2</td>
+    <td rowspan=3 class="vbottom">opus-tools</td>
+    <td rowspan=2>0.1.2</td>
     <td>Windows</td>
     <td style="text-align:left;"><a href="https://ftp.mozilla.org/pub/mozilla.org/opus/win32/opus-tools-0.1.2.zip">opus-tools-0.1.2.zip</a></td>
     <td style="text-align:right;">1MiB</td>
+</tr>
+<tr class="vbottoml">
+    <td>Mac OS X</td>
+    <td style="text-align:left;"><a href="https://ftp.mozilla.org/pub/mozilla.org/opus/macos/opus-tools-0.1.2-macos.tar.gz">opus-tools-0.1.2-macos.tar.gz</a></td>
+    <td style="text-align:right;">342KiB</td>
 </tr>
 <tr class="vbottom">
     <td colspan=4 style="padding-left:1em;text-align:justify;">Opus-tools provides command-line utilities to
