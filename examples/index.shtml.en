@@ -34,6 +34,10 @@ this stream produces an endless stream of peaceful droning. The stream is synthe
 </center>
 
 <h2>Interactive Demos</h2>
+<ul>
+  <li><a href="http://phobos.kradradio.com/">Krad Radio web DJ</a><br/>Requires browser opus support and websockets (e.g. firefox nightly)<br/>
+  The latency is high due to buffering in the browser's audio tag and doesn't represent Opus' low latency.</li>
+</ul>
 
 <h2>Speech recordings</h2>
 
