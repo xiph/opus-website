@@ -32,12 +32,12 @@ overview of the MDCT layer of Opus.</p>
 <ul style="margin-top:0;list-style-type: none;background-image:url('tree.png');background-repeat:no-repeat;padding-left:26px">
    <li>Branch <a href="http://git.xiph.org/?p=opus.git;a=shortlog;h=refs/heads/ietf-draft">ietf-draft</a> and the
        <a href="http://tools.ietf.org/html/draft-ietf-codec-opus">latest draft</a> contain the IETF reference implementation.</li>
-   <li>Branch <a href="http://git.xiph.org/?p=opus.git;a=shortlog;h=refs/heads/exp_wip6">exp_wip6</a> has experimental encoder perceptual tuning.</li>
+   <li>Branch <a href="http://git.xiph.org/?p=opus.git;a=shortlog;h=refs/heads/exp_analysis6">exp_analysis6</a> has experimental encoder perceptual tuning.</li>
    <li><b>Snapshots:</b>
        <ul>
           <li><a href="http://git.xiph.org/?p=opus.git;a=snapshot;h=HEAD;sf=tgz">opus-master.tar.gz</a></li>
           <li><a href="http://git.xiph.org/?p=opus.git;a=snapshot;h=ietf-draft;sf=tgz">opus-ietf-draft-branch.tar.gz</a></li>
-          <li><a href="http://git.xiph.org/?p=opus.git;a=snapshot;h=exp_wip6;sf=tgz">opus-exp_wip6-branch.tar.gz</a></li>
+          <li><a href="http://git.xiph.org/?p=opus.git;a=snapshot;h=exp_analysis6;sf=tgz">opus-exp_analysis6-branch.tar.gz</a></li>
        </ul></li>
     <li><b>Developer personal trees:</b>
       <ul>
