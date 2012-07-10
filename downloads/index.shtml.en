@@ -21,14 +21,14 @@ In addition to <a href="https://developer.mozilla.org/En/Media_formats_supported
 </tr>
 <tr class="vbottoml">
     <td rowspan=3 class="vbottom">opus-tools</td>
-    <td rowspan=2>0.1.2</td>
+    <td rowspan=2>0.1.3</td>
     <td>Windows</td>
-    <td style="text-align:left;"><a href="https://ftp.mozilla.org/pub/mozilla.org/opus/win32/opus-tools-0.1.2.zip">opus-tools-0.1.2.zip</a></td>
+    <td style="text-align:left;"><a href="https://ftp.mozilla.org/pub/mozilla.org/opus/win32/opus-tools-0.1.3-win32.zip">opus-tools-0.1.3-win32.zip</a></td>
     <td style="text-align:right;">1MiB</td>
 </tr>
 <tr class="vbottoml">
     <td>Mac OS X</td>
-    <td style="text-align:left;"><a href="https://ftp.mozilla.org/pub/mozilla.org/opus/macos/opus-tools-0.1.2-macos.tar.gz">opus-tools-0.1.2-macos.tar.gz</a></td>
+    <td style="text-align:left;"><a href="https://ftp.mozilla.org/pub/mozilla.org/opus/macos/opus-tools-0.1.3-macos.tar.gz">opus-tools-0.1.3-macos.tar.gz</a></td>
     <td style="text-align:right;">342KiB</td>
 </tr>
 <tr class="vbottom">
@@ -55,6 +55,19 @@ There is no change to the bit-stream.
 <li>Source code: <a href="http://downloads.xiph.org/releases/opus/opus-0.9.14.tar.gz">opus-0.9.14.tar.gz</a></li>
 <li>Internet-Draft: <a href="http://tools.ietf.org/id/draft-ietf-codec-opus-14.txt">draft-ietf-codec-opus-14.txt</a>
 </ul>
+
+<h4 id='ot-0.1.3'>opus-tools 0.1.3</h4>
+<p>
+This release adds proper multichannel WAV output from opusdec,
+disables the non-working --stereo and --mono mixdown switches,
+and uses linear predictive coding to generate padding on
+the final frame to reduce pre-echo artefacts.
+</p>
+
+<ul>
+<li>Source code: <a href="http://downloads.xiph.org/releases/opus/opus-tools-0.1.3.tar.gz">opus-tools-0.1.3.tar.gz</a></li>
+</ul>
+
 
 <h4 id='ot-0.1.2'>opus-tools 0.1.2</h4>
 <p>
