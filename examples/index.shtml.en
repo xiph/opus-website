@@ -7,7 +7,8 @@
 
 These streams can be played in using Firefox, Gstreamer/Totem (in Linux), or using opusdec from the command-line.<br/><br/>
 
-To play these streams in Firefox Opus support <a href="firefox.shtml.en">must be enabled</a>.
+To play these streams in a browser install <a href="http://nightly.mozilla.org/">Firefox Nightly</a> or <a href="http://www.mozilla.org/en-US/firefox/aurora/">Firefox Aurora</a>.
+<br/>Older versions required <a href="firefox.shtml.en">enabling a preference</a> but this shouldn't be needed in current versions.
 <br/>
 <center>
 <table style="margin:20px;width:75%;">

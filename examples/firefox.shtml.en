@@ -3,7 +3,7 @@
 
 <h1>Playing Opus in Firefox</h1>
 
-The very latest nightly builds of Firefox have Opus support, so playing Opus in Firefox only takes a few simple steps.
+Older nightly and aurora builds of Firefox have Opus support but it's deactivated by default, so playing Opus in Firefox takes a few simple steps.
 
 <ol>
   <li>Get <a href="http://nightly.mozilla.org/">Firefox Nightly</a></li>
