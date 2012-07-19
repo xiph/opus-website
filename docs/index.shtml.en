@@ -56,6 +56,17 @@
 </table>
 </blockquote>
 
+<h2>Tutorials</h2>
+<blockquote>
+<table style="border-spacing: 0;">
+<tr class="underline">
+    <td style="padding-right:0.5em;"><a href="http://www.saunalahti.fi/~cse/Opus/">Encoding Opus from foobar2000</a>
+</td>
+    <td><img src="ico-win.png" width=16 height=16 alt="Windows"/></td></tr>
+</table>
+</blockquote>
+
+
 <h2 id="testvectors">Test Vectors</h2>
 <p>
   Test files to verify the Opus decoders are operating properly.
