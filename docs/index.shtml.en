@@ -3,24 +3,6 @@
 
 <h1>Documentation</h1>
 
-<h2>IETF specifications</h2>
-<blockquote>
-<table style="border-spacing: 0">
-<tr class="underline">
-    <td style="padding-right:0.5em;"><b>Latest Opus codec draft</b><br/><span style="float:right;"><small><i>(draft-ietf-codec-opus)</i></small></span></td>
-    <td><a href="http://tools.ietf.org/html/draft-ietf-codec-opus">HTML</a>, </td>
-    <td><a href="http://tools.ietf.org/pdf/draft-ietf-codec-opus.pdf">PDF</a>, </td>
-    <td><a href="http://tools.ietf.org/id/draft-ietf-codec-opus.txt">TXT</a></td>
-</tr>
-<tr class="underline">
-    <td style="padding-right:0.5em;"><b>Latest Opus RTP draft</b><br/><span style="float:right;"><small><i>(draft-spittka-payload-rtp-opus)</i></small></span></td>
-    <td><a href="http://tools.ietf.org/html/draft-spittka-payload-rtp-opus">HTML</a>, </td>
-    <td><a href="http://tools.ietf.org/pdf/draft-spittka-payload-rtp-opus.pdf">PDF</a>, </td>
-    <td><a href="http://tools.ietf.org/id/draft-spittka-payload-rtp-opus.txt">TXT</a></td>
-</tr>
-</table>
-</blockquote>
-
 <h2>Opus API reference (doxygen)</h2>
 <blockquote>
 <table style="border-spacing: 0;">
@@ -46,6 +28,30 @@
 <tr class="underline">
     <td style="padding-right:0.5em;"><b>opusinfo</b> (.opus file info)</td>
     <td><a href="https://mf4.xiph.org/jenkins/view/opus/job/opus-tools/ws/man/opusinfo.html">HTML</a></td>
+</tr>
+</table>
+</blockquote>
+
+<h2>IETF specifications</h2>
+<blockquote>
+<table style="border-spacing: 0">
+<tr class="underline">
+    <td style="padding-right:0.5em;"><b>Latest Opus codec draft</b><br/><span style="float:right;"><small><i>(draft-ietf-codec-opus)</i></small></span></td>
+    <td><a href="http://tools.ietf.org/html/draft-ietf-codec-opus">HTML</a>, </td>
+    <td><a href="http://tools.ietf.org/pdf/draft-ietf-codec-opus.pdf">PDF</a>, </td>
+    <td><a href="http://tools.ietf.org/id/draft-ietf-codec-opus.txt">TXT</a></td>
+</tr>
+<tr class="underline">
+    <td style="padding-right:0.5em;"><b>Latest Opus RTP draft</b><br/><span style="float:right;"><small><i>(draft-spittka-payload-rtp-opus)</i></small></span></td>
+    <td><a href="http://tools.ietf.org/html/draft-spittka-payload-rtp-opus">HTML</a>, </td>
+    <td><a href="http://tools.ietf.org/pdf/draft-spittka-payload-rtp-opus.pdf">PDF</a>, </td>
+    <td><a href="http://tools.ietf.org/id/draft-spittka-payload-rtp-opus.txt">TXT</a></td>
+</tr>
+<tr class="underline">
+    <td style="padding-right:0.5em;"><b>Latest OggOpus container draft</b><br/><span style="float:right;"><small><i>(draft-terriberry-oggopus)</i></small></span></td>
+    <td><a href="http://tools.ietf.org/html/draft-terriberry-oggopus">HTML</a>, </td>
+    <td><a href="http://tools.ietf.org/pdf/draft-terriberry-oggopus.pdf">PDF</a>, </td>
+    <td><a href="http://tools.ietf.org/id/draft-terriberry-oggopus.txt">TXT</a></td>
 </tr>
 </table>
 </blockquote>
