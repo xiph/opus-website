@@ -1,99 +1,17 @@
 <!--#include virtual="/ssi/header.include" -->
 <!--#include virtual="/ssi/contentheader.include" -->
 
-<h1>Codec Feature Comparison</h1>
+<h1>Codec Landscape</h1>
 
-<table border="1" style="border:1px solid black; padding:2px; width:100%;">
-	<thead>
-		<tr>
-			<th>Codec</th>
-			<th>Sample rate (kHz)</th>
+<h2>Quality vs Bit-rate</h2>
 
-			<th>Bitrate (kbps)</th>
-			<th>Frame size (ms)</th>
-			<th>Total delay (ms)</th>
-			<th>Robustness</th>
-			<th>License</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Opus</td>
+<div style="text-align:center;"><a href="quality.png"><img src="quality.png" alt="Illustration of the quality of different codecs" width="516" height="386"></a></div>
 
-			<td>8-48</td>
-			<td>
-				6 - 255  (mono)<br/>
-				12 - 510 (stereo)
-			</td>
-			<td>
-				2.5 - 20
-			</td>
-			<td>
-				5 - 22.5
-			</td>
-			<td>packet loss, limited bit errors</td>
-			<td>Open-source (BSD)</td>
-		</tr>
-		<tr>
-			<td>Speex</td>
-
-			<td>8<br/>16<br/>32</td>
-			<td>
-				2.2 - 24.6<br/>
-				4 - 42.2<br/>
-				4.2 - 44
-			</td>
-			<td>
-				20
-			</td>
-			<td>
-				30 - 35
-			</td>
-			<td>packet loss</td>
-			<td>Open-source (BSD)</td>
-		</tr>
-		<tr>
-			<td>G.722.1C (Siren14)</td>
-			<td>32</td>
-
-			<td>24, 32, 48</td>
-			<td>20</td>
-			<td>40</td>
-			
-			<td>packet loss, bit errors</td>
-
-			<td>no charge, but not open-source</td>
-		</tr>
-		<tr>
-			<td>iLBC</td>
-			<td>8</td>
-
-			<td>15<br/>13.3</td>
-			<td>20<br/>30</td>
-			<td>25<br/>40</td>
-			
-			<td>packet loss</td>
-
-			<td>Open-source (BSD)</td>
-		</tr>
-		<tr>
-			<td>AAC-LD</td>
-			<td>16 - 48</td>
-			<td>16 - 128</td>
-			<td>10 - 11.6</td>
-			<td>20 - 50+</td>
-
-			<td>packet loss</td>
-			<td>proprietary, MPEG</td>
-		</tr>
-	</tbody>
-</table>
-
-<h1>Bitrate/Latency Comparison</h1>
+<h2>Bitrate/Latency Comparison</h2>
 
 <div style="text-align:center;"><a href="opus_comparison.png"><img src="opus_comparison.png" alt="Illustration showing overlapping circles against delay/quality to suggest applications where Opus is useful." width="516" height="386"></a></div>
 
-<h1>Quality Comparison</h1>
+<h1>Listening Tests</h1>
 <div style="float:right;"><a href="http://people.xiph.org/~greg/opus/ha2011/"><img src="opus_ha_results.png" width="240" height="200" alt="Bar chart showing Opus outperforming two AAC-HE encoders and libvorbis."></a></div>
 
 <h2>HydrogenAudio</h2>
