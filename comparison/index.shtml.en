@@ -5,14 +5,13 @@
 
 <h2>Quality vs Bit-rate</h2>
 
-<div style="text-align:center;"><a href="quality.png"><img src="quality.png" alt="Illustration of the quality of different codecs" width="516" height="386"></a></div>
+<div style="text-align:center;"><a href="quality.png"><img src="quality.png" alt="Illustration of the quality of different codecs" width="640" height="474"></a></div>
 
 <h2>Bitrate/Latency Comparison</h2>
 
 <div style="text-align:center;"><a href="opus_comparison.png"><img src="opus_comparison.png" alt="Illustration showing overlapping circles against delay/quality to suggest applications where Opus is useful." width="516" height="386"></a></div>
 
 <h1>Listening Tests</h1>
-<div style="float:right;"><a href="http://people.xiph.org/~greg/opus/ha2011/"><img src="opus_ha_results.png" width="240" height="200" alt="Bar chart showing Opus outperforming two AAC-HE encoders and libvorbis."></a></div>
 
 <h2>HydrogenAudio</h2>
 
@@ -20,5 +19,6 @@
 the full details, see <a href="http://listening-tests.hydrogenaudio.org/igorc/results.html">the official results page</a>
 and <a href="http://people.xiph.org/~greg/opus/ha2011/">Greg Maxwell's analysis/listening page</a>.</p>
 
+<div style="text-align:center;"><a href="http://people.xiph.org/~greg/opus/ha2011/"><img src="opus_ha_results.png" width="240" height="200" alt="Bar chart showing Opus outperforming two AAC-HE encoders and libvorbis."></a></div>
 
 <!--#include virtual="/ssi/footer.include" -->
