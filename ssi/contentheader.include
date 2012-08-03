@@ -14,7 +14,6 @@
     <li id="documentation_"><a href="/docs/">Documentation</a></li>
     <li id="presentations_"><a href="/presentations/">Presentations</a></li>
     <li id="development_"><a href="/development/">Development</a></li>
-    <li id="testvectors_"><a href="/docs/#testvectors">Test Vectors</a></li>
     <li id="comparison_"><a href="/comparison/">Comparison</a></li>
     <li id="faq_"><a href="https://wiki.xiph.org/OpusFAQ">FAQ</a></li>
   </ul>
