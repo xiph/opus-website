@@ -64,26 +64,5 @@ The Opus codec is designed to handle a wide range of interactive audio applicati
 </ul>
 
 
-<h2 id="contact">Contact</h2>
-
-<p>
-   Development discussion happens as part of the IETF codec working group.
-   See the <a href="http://tools.ietf.org/wg/codec/">status page</a>
-   for more information.
-<p>
-<p>
-  For archives of recent discussions, try:
-</p>
-<ul>
-   <li><a href="http://www.ietf.org/mail-archive/web/codec/current/maillist.html">Mailing list archives</a></li>
-   <li><a href="http://tools.ietf.org/wg/codec/minutes">Meeting minutes</a></li>
-</ul>
-
-<p>Informal development chat and support happens in <a href="irc://irc.freenode.net/opus">#opus on irc.freenode.net</a>
-You can join the chat room through the <a href="" onclick="document.getElementById('chatbox').innerHTML='<iframe src=\'http://webchat.freenode.net/?channels=opus\' width=800 height=600/>';return false;">web interface</a> if you don't have an irc client.</p>
-
-<div id="chatbox" style="text-align:center;"></div>
-
-
 
 <!--#include virtual="/ssi/footer.include" -->
