@@ -1,0 +1,32 @@
+<!--#include virtual="/ssi/header.include" -->
+<!--#include virtual="/ssi/contentheader.include" -->
+<title>Opus Codec: News</title>
+<h1>Opus News</h1>
+
+<ul class="descriptivelist">
+   <li>
+      <h3>WebRTC Adopts Opus as MTI Codec</h3>
+      <p class="submitdate">27 July, 2012</p>
+      <div class="description">
+         <p>Participants to the IETF rtcweb working group have accepted (through typical IETF strong consensus) a <a href="http://www.ietf.org/proceedings/84/slides/slides-84-rtcweb-6.pdf">proposal</a> to select both Opus and G.711 as mandatory-to-implement (MTI) audio codecs. This means that all browsers that implement that standard will have to ship Opus support.</p>
+      </div>
+   </li>
+
+   <li>
+      <h3>Opus Ships in Firefox 15 (beta)</h3>
+      <p class="submitdate">19 July, 2012</p>
+      <div class="description">
+         <p>The latest Firefox beta <a href="https://hacks.mozilla.org/2012/07/firefox-beta-15-supports-the-new-opus-audio-format/">now ships with support for Opus</a>.</p>
+      </div>
+   </li>
+
+   <li>
+      <h3>Opus Approved by the IETF</h3>
+      <p class="submitdate">2 July, 2012</p>
+      <div class="description">
+         <p>The IETF has just <a href="http://www.ietf.org/mail-archive/web/codec/current/msg02880.html">approved</a> Opus for publication as an RFC. This should happen in the next few weeks, along with release 1.0.</p>
+      </div>
+   </li>
+</ul>
+
+<!--#include virtual="/ssi/footer.include" -->
