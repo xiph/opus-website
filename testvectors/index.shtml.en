@@ -3,12 +3,27 @@
 
 <h1>Test Vectors</h1>
 <p>
-   Test vectors to verify Opus decoder implementations are now available. 
-</p>   
+   These are the <a href="opus_testvectors.tar.gz">test vectors for the
+   final version of the Opus codec</a>. A copy of these test vectors is
+   <a href="http://www.ietf.org/proceedings/83/slides/slides-83-codec-0.gz">
+   available from the IETF</a>.
+</p>
+
 <p>
-   These are the <a href="opus_testvectors-draft11.tar.gz">test vectors for
-   version -11, -12, -13, and -14 of the draft</a>.
-</p>   
+On POSIX environments, the run_vectors.sh script can be used to
+verify all test vectors.  This can be done with
+</p>
+
+<blockquote>
+      run_vectors.sh &lt;exec path&gt; &lt;vector path&gt; &lt;rate&gt;
+</blockquote>
+
+<p>
+   where &lt;exec path&gt; is the directory where the opus_demo and
+   opus_compare executables are built, &lt;vector path&gt; is the directory
+   containing the test vectors, and &lt;rate&gt; is the sampling rate to test
+   (8000, 12000, 16000, 24000, or 48000).
+</p>
 
 <!-- hack a vspace to help with the sidebar layout -->
 <p>&nbsp;</p>
