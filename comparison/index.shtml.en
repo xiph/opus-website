@@ -15,6 +15,10 @@ The figure below illustrates the quality of various codecs as a funciton of the 
 
 <h1>Listening Tests</h1>
 
+<p>Several tests were conducted on Opus, but only the ones conducted on the final bit-stream are listed below. Although these should
+give a good idea of the quality of Opus at the time of its standardization (and 1.0 release), we are hoping that newer and more advanced
+encoders will reach even better quality.</p>
+
 <h2>HydrogenAudio</h2>
 
 <p> These are the results of MUSHRA tests comparing Opus with Vorbis and HE-AAC on 48 kHz stereo music at 64 kb/s. For
@@ -22,5 +26,19 @@ the full details, see <a href="http://listening-tests.hydrogenaudio.org/igorc/re
 and <a href="http://people.xiph.org/~greg/opus/ha2011/">Greg Maxwell's analysis/listening page</a>.</p>
 
 <div style="text-align:center;"><a href="http://people.xiph.org/~greg/opus/ha2011/"><img src="opus_ha_results.png" width="240" height="200" alt="Bar chart showing Opus outperforming two AAC-HE encoders and libvorbis."></a></div>
+
+<h2>Google listening tests</h2>
+
+<p>Jan Skoglund from Google organized two sets of listening tests. The <a href="GoogleTest1.pdf">first set of listening tests</a> includes a narrowband speech test, a wideband-fullband speech test, and a stereo music test.</p>
+
+<p>The <a href="GoogleTest1.pdf">second set of listening tests</a> measures the narrowband and wideband/fullband speech quality on Mandarin and the transcoding quality in narrowband and wideband. </p>
+
+<h2>Nokia listening test</h2>
+
+<p>Anssi Ramo and Henri Toukomaa from Nokia measured the Opus speech quality at various rates and published their results in this conference paper:</p>
+
+<ul><li><p>Anssi Ramo and Henri Toukomaa, <a href="http://research.nokia.com/files/public/%5B16%5D_InterSpeech2011_Voice_Quality_Characterization_of_IETF_Opus_Codec.pdf">Voice Quality Characterization of IETF Opus Codec</a>, <i>Proc. Interspeech 2011</i>, Florence, Italy, August 2011.</p></li></ul>
+
+<p>In this paper, the Opus "hybrid" and "MDCT" curves measure the constant bit-rate (CBR) quality, which is not as good as the quality Opus achieves with variable bit-rate (VBR).</p>
 
 <!--#include virtual="/ssi/footer.include" -->
