@@ -38,6 +38,15 @@ The Opus codec is designed to handle a wide range of interactive audio applicati
 <h2 id="news">News</h2>
 
 <ul class="descriptivelist">
+
+   <li>
+      <h3>Release Candidates for Opus 1.0.0 and 1.0.1</h3>
+      <p class="submitdate">8 August, 2012</p>
+      <div class="description">
+         <p>Release candidates for the upcoming 1.0.0 and 1.0.1 releases are now available. Expect the final 1.0.0 release in the next few weeks along with the final Opus RFC. Version 1.0.1 will be released at the same time and includes minor fixes that did not make it to the RFC. Source code is available from the <a href="downloads/">downloads page</a>.</p>
+      </div>
+   </li>
+
    <li>
       <h3>WebRTC Adopts Opus as MTI Codec</h3>
       <p class="submitdate">27 July, 2012</p>
