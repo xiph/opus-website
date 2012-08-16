@@ -58,16 +58,6 @@ This is a second release candidate for the upcoming 1.0.1 release. This release 
 <li>Source code: <a href="http://downloads.xiph.org/releases/opus/opus-1.0.1-rc2.tar.gz">opus-1.0.1-rc2.tar.gz</a></li>
 </ul>
 
-<h4 id='one.0.1'>libopus 1.0.1-RC</h4>
-<p>
-This is a release candidate for the upcoming 1.0.1 release. The release includes minor updates
-(mostly related to the build system) that did not make it to the upcoming RFC.
-</p>
-
-<ul>
-<li>Source code: <a href="http://downloads.xiph.org/releases/opus/opus-1.0.1-rc.tar.gz">opus-1.0.1-rc.tar.gz</a></li>
-</ul>
-
 <h4 id='one.0.0'>libopus 1.0.0-RC</h4>
 <p>
 This is a release candidate for the final 1.0 release. Other than the RFC number in the comments,

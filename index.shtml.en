@@ -40,7 +40,7 @@ The Opus codec is designed to handle a wide range of interactive audio applicati
 <ul class="descriptivelist">
 
    <li>
-      <h3>Second release candidate for Opus 1.0.1</h3>
+      <h3>Second Release Candidate for Opus 1.0.1</h3>
       <p class="submitdate">15 August, 2012</p>
       <div class="description">
          <p>This second release candidate for 1.0.1 includes documentation fixes and a Windows build system. Source code is available from the <a href="downloads/">downloads page</a>.</p>
