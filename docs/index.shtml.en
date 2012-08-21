@@ -78,7 +78,7 @@
  <a href="http://downloads.xiph.org/releases/opus/opus_testvectors.tar.gz">Xiph.Org</a> and 
  <a href="https://ftp.mozilla.org/pub/mozilla.org/opus/opus_testvectors.tar.gz">Mozilla</a>.</p>
 </blockquote>
-<blockquote><a href="http://people.xiph.org/~greg/opus_testvectors/">The .opus test set</a> an in-development larger test suite for .opus files.<br/>
+<blockquote><a href="http://people.xiph.org/~greg/opus_testvectors/">The .opus test set</a> is an in-development larger test suite for .opus files.<br/>
   These are suitable for testing opusdec and other media-player software.<br/>
   Files prefixed with 'broken' and 'failure' are intentionally malformed and at least the latter should be rejected.
 </blockquote>
