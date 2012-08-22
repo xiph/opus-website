@@ -6,7 +6,9 @@
 <p>Opus has a freely available specification, a BSD licensed, high-quality reference
 encoder and decoder, and protective, royalty-free licenses for the required patents.
 The copyright and patent licenses for Opus are automatically granted to everyone and
-do not require application or approval.</p>
+do not require application or approval. The Opus FAQ has
+more information on <a href="https://wiki.xiph.org/OpusFAQ#Why_make_Opus_free.3F">why
+Opus is freely licensed</a>.</p>
 
 <br/>
 <div style="background-color: #CCCCFF;-moz-border-radius: 15px;border-radius: 15px;padding:1em;max-width:550px;margin-left:auto; margin-right:auto;">
