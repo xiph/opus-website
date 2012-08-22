@@ -94,15 +94,15 @@ covers the listed patent applications, along with any other patent or applicatio
 </div>
 
 <blockquote>
-<div style="font-family:monospace;white-space:pre-wrap;">
-License Grant. Xiph.Org Foundation (“Xiph”) hereby grants to you a
+<div style="font-family:monospace;">
+<p>License Grant. Xiph.Org Foundation (“Xiph”) hereby grants to you a
 perpetual, worldwide, non-exclusive, no-charge, royalty-free, irrevocable
 (except as stated in this license) license under Licensed Patents to make,
 have made, use, offer to sell, sell, import, transfer, and otherwise
 run, modify (in a way that still complies with the Specification),
-and reproduce any Implementation.
+and reproduce any Implementation.</p>
 
-Definitions. Specification means, and includes the following, both
+<p>Definitions. Specification means, and includes the following, both
 individually and collectively, (a) any standard specification of the Opus
 codec adopted by the IETF Codec Working Group (“Standard”) and (b)
 any reference implementation (each, a “Reference Implementation”)
@@ -117,9 +117,9 @@ necessarily infringed by the Specification, where “necessarily
 infringed” means: in the case of (a) above, there is no commercially
 viable means of implementing the Specification without infringing such
 patent; in the case of (b) above, use of the reference implementation
-to the extent it infringes such patent.
+to the extent it infringes such patent.</p>
 
-Termination. If you, directly or indirectly via controlled affiliate
+<p>Termination. If you, directly or indirectly via controlled affiliate
 or subsidiary, agent, or exclusive licensee, file a Claim for patent
 infringement against any entity alleging that an Implementation in whole
 or in part constitutes direct or contributory patent infringement,
@@ -131,7 +131,7 @@ the grant. Claims made against an Implementation in part will only trigger
 termination if the Implementation in part was done for the purpose of
 combining it with other technology that complies with the Specification
 so that the technology’s ultimate use will be consistent with the
-Standard as a whole.
+Standard as a whole.</p>
 
 </div>
 This license is also filed on the
@@ -154,15 +154,15 @@ covers the listed patents and patent applications, along with any other patent o
 </div>
 
 <blockquote>
-<div style="font-family:monospace;white-space:pre-wrap;">
-License Grant. Broadcom Corporation (“Broadcom”) hereby grants to
+<div style="font-family:monospace;">
+<p>License Grant. Broadcom Corporation (“Broadcom”) hereby grants to
 you a perpetual, worldwide, non-exclusive, no-charge, royalty-free,
 irrevocable (except as stated in this license) license under Licensed
 Patents to make, have made, use, offer to sell, sell, import, transfer,
 and otherwise run, modify (in a way that still complies with the
-Specification), and reproduce any Implementation.
+Specification), and reproduce any Implementation.</p>
 
-Definitions. Specification means, and includes the following, both
+<p>Definitions. Specification means, and includes the following, both
 individually and collectively, (a) any standard specification of the Opus
 codec adopted by the IETF Codec Working Group (“Standard”) and (b)
 any reference implementation (each, a “Reference Implementation”)
@@ -177,9 +177,9 @@ are necessarily infringed by the Specification, where “necessarily
 infringed” means: in the case of (a) above, there is no commercially
 viable means of implementing the Specification without infringing such
 patent; in the case of (b) above, use of the reference implementation
-to the extent it infringes such patent.
+to the extent it infringes such patent.</p>
 
-Termination. If you, directly or indirectly via controlled affiliate
+<p>Termination. If you, directly or indirectly via controlled affiliate
 or subsidiary, agent, or exclusive licensee, file a Claim for patent
 infringement against any entity alleging that an Implementation in whole
 or in part constitutes direct or contributory patent infringement,
@@ -191,7 +191,7 @@ the grant.  Claims made against an Implementation in part will only
 trigger termination if the Implementation in part was done for the
 purpose of combining it with other technology that complies with the
 Specification so that the technology’s ultimate use will be consistent
-with the Standard as a whole.
+with the Standard as a whole.</p>
 
 </div>
 This license is also filed on the
@@ -223,15 +223,15 @@ covers the listed patent applications, along with any other patent or applicatio
 </div>
 
 <blockquote>
-<div style="font-family:monospace;white-space:pre-wrap;">
-Microsoft Patent Terms for draft-ietf-codec-opus-10 Date: 1-25-12
+<div style="font-family:monospace;">
+<p>Microsoft Patent Terms for draft-ietf-codec-opus-10 Date: 1-25-12</p>
 
-1. Patent Promise.
+<p>1. Patent Promise.</p>
 
-1.1. Patent Promise Grant. Subject to all the terms and conditions of
-this Agreement, I make the following promises:
+<p>1.1. Patent Promise Grant. Subject to all the terms and conditions of
+this Agreement, I make the following promises:</p>
 
-1.1.1. Decoder Patent Promise. I, on behalf of myself and my successors
+<p>1.1.1. Decoder Patent Promise. I, on behalf of myself and my successors
 in interest and assigns, irrevocably promise not to assert my Necessary
 Decoder Claims against you for your Decoder Implementation, subject to the
 following. This is a personal promise directly from me to you, and you
@@ -244,9 +244,9 @@ Codec Working Group 1) only to the extent that it implements the Decoder
 Specification, and 2) so long as all required portions of the Decoder
 Specification are implemented. This promise does not extend to any portion
 of a subsequent version of the Decoder Specification published by the IETF
-Codec Working Group that was not included in the Decoder Specification.
+Codec Working Group that was not included in the Decoder Specification.</p>
 
-1.1.2. Encoder Patent Promise. I, on behalf of myself and my successors
+<p>1.1.2. Encoder Patent Promise. I, on behalf of myself and my successors
 in interest and assigns, irrevocably promise not to assert my Necessary
 Encoder Claims against you for your Encoder Implementation, subject
 to the following. This is a personal promise directly from me to you,
@@ -259,11 +259,11 @@ subsequent version of the Decoder Specification published by the IETF
 Codec Working Group only to the extent that the Encoder Implementation
 produces a bitstream that can be decoded by a Decoder Implementation. This
 promise does not extend to any portion of an Encoder Implementation that
-is not included in the Reference Implementation.
+is not included in the Reference Implementation.</p>
 
-1.2. Conditions.
+<p>1.2. Conditions.</p>
 
-1.2.1. Availability. If you have Necessary Decoder Claims or
+<p>1.2.1. Availability. If you have Necessary Decoder Claims or
 Necessary Encoder Claims, the promises set forth in Section 1 will
 become effective starting on the date that you make your Necessary
 Decoder Claims available, via a publicly available written statement,
@@ -273,18 +273,18 @@ to all implementers for Encoder Implementations on reasonable and
 non-discriminatory royalty-free licensing terms. The promises set forth
 in Section 1 will remain in effect so long as you continue to make such
 claims available for Decoder Implementations and Encoder Implementations
-under reasonable and non-discriminatory royalty-free licensing terms.
+under reasonable and non-discriminatory royalty-free licensing terms.</p>
 
-1.2.2. Additional Conditions. This promise is not an assurance (i)
+<p>1.2.2. Additional Conditions. This promise is not an assurance (i)
 that any of my issued patent claims covers a Decoder Implementation or
 an Encoder Implementation or are enforceable or (ii) that a Decoder
 Implementation or an Encoder Implementation would not infringe
 intellectual property rights of any third party. Notwithstanding the
 personal nature of my promise, this promise is intended to be binding
 on any future owner, assignee or exclusive licensee who has been given
-the right to enforce any Necessary Claims against third parties.
+the right to enforce any Necessary Claims against third parties.</p>
 
-1.3. Termination. All rights, grants, and promises made by me to you
+<p>1.3. Termination. All rights, grants, and promises made by me to you
 under Section 1 are immediately terminated if you or your agent file,
 maintain, or voluntarily participate in a lawsuit against me or any person
 or entity asserting that its Decoder Implementation infringes Necessary
@@ -296,32 +296,32 @@ Section 1 are terminated if you or your agent seek to license Necessary
 Decoder Claims for Decoder Implementations or Necessary Encoder Claims
 for Encoder Implementations on a royalty-bearing basis. This Agreement may
 also be terminated, including back to the date of non-compliance, because
-of non-compliance with any other term or condition of this Agreement.
+of non-compliance with any other term or condition of this Agreement.</p>
 
-1.4. Bankruptcy. Solely for purposes of Section 365(n) of Title 11, United
+<p>1.4. Bankruptcy. Solely for purposes of Section 365(n) of Title 11, United
 States Bankruptcy Code and any equivalent law in any foreign jurisdiction,
 this promise will be treated as if it were a license and you may elect to
 retain your rights under this promise if I (or any owner of any patents
 or patent applications referenced herein), as a debtor in possession,
-or a bankruptcy trustee, reject this non-assert.
+or a bankruptcy trustee, reject this non-assert.</p>
 
-2. Patent License Commitment. On behalf of me and my successors in
+<p>2. Patent License Commitment. On behalf of me and my successors in
 interest and assigns, I agree to offer alternative reasonable and
 non-discriminatory royalty-bearing licensing terms 1) to my Necessary
 Decoder Claims solely for your Decoder Implementation and 2) to my
-Necessary Encoder Claims solely for your Encoder Implementation.
+Necessary Encoder Claims solely for your Encoder Implementation.</p>
 
-3. Past Skype Declarations. You may, at your option, continue to rely
+<p>3. Past Skype Declarations. You may, at your option, continue to rely
 on the terms set forth in Skype’s past declarations made to IETF for
 the Opus Audio Codec, subject to the terms of those declarations and in
 lieu of the terms of this Agreement solely for the patents set forth in
-those declarations.
+those declarations.</p>
 
-4. Good Faith Obligation. I agree that I have not and will not knowingly
+<p>4. Good Faith Obligation. I agree that I have not and will not knowingly
 take any action for the purpose of circumventing my obligations under
-this Agreement.
+this Agreement.</p>
 
-5. Disclaimers. I expressly disclaim any warranties (express, implied,
+<p>5. Disclaimers. I expressly disclaim any warranties (express, implied,
 or otherwise), including implied warranties of merchantability,
 non-infringement, fitness for a particular purpose, or title, related to
 the Decoder Specification or Reference Implementation. The entire risk
@@ -338,62 +338,61 @@ transfer, successors in interest, or assignment of Necessary Claims will
 be satisfied if I notify the transferee or assignee of any patent that
 I know contains Necessary Decoder Claims or Necessary Encoder Claims
 of the obligations under Sections 1 and 2. Nothing in this Agreement
-requires me to undertake a patent search.
+requires me to undertake a patent search.</p>
 
-6. Definitions.
+<p>6. Definitions.</p>
 
-6.1. Agreement. “Agreement” means this document, which sets forth
+<p>6.1. Agreement. “Agreement” means this document, which sets forth
 the rights, grants, promises, limitations, conditions, obligations,
-and disclaimers made available for the particular Specification.
+and disclaimers made available for the particular Specification.</p>
 
-6.2. Control. “Control” means direct or indirect control of more
+<p>6.2. Control. “Control” means direct or indirect control of more
 than 50% of the voting power to elect directors of that corporation,
-or for any other entity, the power to direct management of such entity.
+or for any other entity, the power to direct management of such entity.</p>
 
-6.3. Decoder Implementation. “Decoder Implementation” means making,
+<p>6.3. Decoder Implementation. “Decoder Implementation” means making,
 using, selling, offering for sale, importing or distributing any
 conformant implementation of the Decoder Specification 1) only to the
 extent it implements the Decoder Specification and 2) so long as all
-required portions of the Decoder Specification are implemented.
+required portions of the Decoder Specification are implemented.</p>
 
-6.4. Decoder Specification. “Specification” means
-draft-ietf-codec-opus-10 specification.
+<p>6.4. Decoder Specification. “Specification” means
+draft-ietf-codec-opus-10 specification.</p>
 
-6.5. Encoder Implementation. “Encoder Implementation” means making,
+<p>6.5. Encoder Implementation. “Encoder Implementation” means making,
 using, selling, offering for sale, importing or distributing a 1) software
 implementation that produces a bitstream that can be decoded by a Decoder
 Implementation, and 2) where the purpose of the Encoder Implementation
-is to produce a bitstream for decoding by a Decoder Implementation.
+is to produce a bitstream for decoding by a Decoder Implementation.</p>
 
-6.6. I, Me, or My. “I,” “me,” or “my” refers to the party
-making this declaration, and any entity that I Control.
+<p>6.6. I, Me, or My. “I,” “me,” or “my” refers to the party
+making this declaration, and any entity that I Control.</p>
 
-6.7. Necessary Decoder Claims. “Necessary Claims” are those patent
+<p>6.7. Necessary Decoder Claims. “Necessary Claims” are those patent
 claims that a party owns or controls, including those claims acquired
 after the date of this declaration, that are necessary to implement the
 required portions (including the required elements of optional portions)
 of the Decoder Specification that are described in detail and not merely
-referenced in the Specification.
+referenced in the Specification.</p>
 
-6.8. Necessary Encoder Claims. “Necessary Encoder Claims” are those
+<p>6.8. Necessary Encoder Claims. “Necessary Encoder Claims” are those
 patent claims that a party owns or controls, including those claims
 acquired after the date of this declaration, that are necessarily
-infringed by the Reference Implementation.
+infringed by the Reference Implementation.</p>
 
-6.9. Reference Implementation. “Reference Implementation” means the
+<p>6.9. Reference Implementation. “Reference Implementation” means the
 reference encoder version in draft-ietf-codec-opus-10 as published by
-the IETF Codec Working Group as of October 31, 2011.
+the IETF Codec Working Group as of October 31, 2011.</p>
 
-6.10. You or Your. “You,” “you,” or “your” means any person
+<p>6.10. You or Your. “You,” “you,” or “your” means any person
 or entity who exercises patent rights granted under this Agreement,
-and any person or entity you Control.
+and any person or entity you Control.</p>
 
-------------------------------------------------------
-
+<p>------------------------------------------------------<br/>
 Attribution: This patent grant is based on the
 Open Web Foundation Agreement 0.9, available at
 http://www.openwebfoundation.org/legal/the-0-9-agreements---necessary-claims/agreement-09.
-
+</p>
 </div>
 This license is also filed on the
 <a href="https://datatracker.ietf.org/ipr/1670/">IETF site</a>
