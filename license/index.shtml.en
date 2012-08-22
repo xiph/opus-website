@@ -33,7 +33,7 @@ under the three-clause BSD license (see below).</p>
 <p>Both the reference implementation and the revised implementations on opus-codec.org are available under the three-clause BSD license. This BSD license is compatible with all common open source and commercial software licenses.</p>
 
 <blockquote>
-<pre>
+<div style="font-family:monospace;white-space:pre-wrap;">
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions
 are met:
@@ -61,7 +61,7 @@ PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
 LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
 NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-</pre>
+</div>
 </blockquote>
 
 <h2>Tools</h2>
@@ -94,7 +94,7 @@ covers the listed patent applications, along with any other patent or applicatio
 </div>
 
 <blockquote>
-<pre>
+<div style="font-family:monospace;white-space:pre-wrap;">
 License Grant. Xiph.Org Foundation (“Xiph”) hereby grants to you a
 perpetual, worldwide, non-exclusive, no-charge, royalty-free, irrevocable
 (except as stated in this license) license under Licensed Patents to make,
@@ -132,7 +132,8 @@ termination if the Implementation in part was done for the purpose of
 combining it with other technology that complies with the Specification
 so that the technology’s ultimate use will be consistent with the
 Standard as a whole.
-</pre>
+
+</div>
 This license is also filed on the
 <a href="https://datatracker.ietf.org/ipr/1524/">IETF site</a>
 </blockquote>
@@ -142,7 +143,7 @@ This license is also filed on the
 <p>Broadcom has both issued patents and outstanding applications covering Opus. These are available under the same license as the Xiph.Org patents. The license
 covers the listed patents and patent applications, along with any other patent or application covering Opus that is owned by Broadcom.</p>
 
-<div style="float:right;background-color: #CCCCFF;-moz-border-radius: 15px;border-radius: 15px;padding:1em;">
+<div style="float:right;background-color: #CCCCFF;-moz-border-radius: 15px;border-radius: 15px;padding:1em;overflow:visible;">
 <b>Broadcom</b><br/>Patents/Applications covered
 <ul style="list-style-type: none;margin:0;padding:0.5em 0 0 0.5em;">
    <li>US 61/406,106</li>
@@ -153,7 +154,7 @@ covers the listed patents and patent applications, along with any other patent o
 </div>
 
 <blockquote>
-<pre>
+<div style="font-family:monospace;white-space:pre-wrap;">
 License Grant. Broadcom Corporation (“Broadcom”) hereby grants to
 you a perpetual, worldwide, non-exclusive, no-charge, royalty-free,
 irrevocable (except as stated in this license) license under Licensed
@@ -191,7 +192,8 @@ trigger termination if the Implementation in part was done for the
 purpose of combining it with other technology that complies with the
 Specification so that the technology’s ultimate use will be consistent
 with the Standard as a whole.
-</pre>
+
+</div>
 This license is also filed on the
 <a href="https://datatracker.ietf.org/ipr/1526/">IETF site</a>
 </blockquote>
@@ -202,7 +204,7 @@ This license is also filed on the
 under a different, but still royalty-free, license detailed below. The license
 covers the listed patent applications, along with any other patent or application covering Opus that is owned by Microsoft.</p>
 
-<div style="float:right;background-color: #CCCCFF;-moz-border-radius: 15px;border-radius: 15px;padding:1em;">
+<div style="float:right;background-color: #CCCCFF;-moz-border-radius: 15px;border-radius: 15px;padding:1em;overflow:visible;">
 <b>Microsoft</b><br/>Patents/Applications covered
 <ul style="list-style-type: none;margin:0;padding:0.5em 0 0 0.5em;">
    <li>US-2008-0201137-A1</li>
@@ -221,7 +223,7 @@ covers the listed patent applications, along with any other patent or applicatio
 </div>
 
 <blockquote>
-<pre>
+<div style="font-family:monospace;white-space:pre-wrap;">
 Microsoft Patent Terms for draft-ietf-codec-opus-10 Date: 1-25-12
 
 1. Patent Promise.
@@ -391,7 +393,8 @@ and any person or entity you Control.
 Attribution: This patent grant is based on the
 Open Web Foundation Agreement 0.9, available at
 http://www.openwebfoundation.org/legal/the-0-9-agreements---necessary-claims/agreement-09.
-</pre>
+
+</div>
 This license is also filed on the
 <a href="https://datatracker.ietf.org/ipr/1670/">IETF site</a>
 </blockquote>
