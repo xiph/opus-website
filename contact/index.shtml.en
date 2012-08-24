@@ -4,17 +4,17 @@
 <h1>Contact</h1>
 
 <p>
+   Development discussions and questions take place on the <a href="http://lists.xiph.org/mailman/listinfo/opus">Xiph.Org Opus mailing list</a> (<a href="mailto:opus@xiph.org">opus@xiph.org</a>).
    Discussion related to the IETF process happen on the
    <a href="http://tools.ietf.org/wg/codec/">IETF codec working group mailing list</a> (<a href="mailto:codec@ietf.org">codec@ietf.org</a>.
-   Development discussions and questions take place on the <a href="http://lists.xiph.org/mailman/listinfo/opus">Xiph.Org Opus mailing list</a> (<a href="mailto:opus@xiph.org">opus@xiph.org</a>).
 </p>
 
 <p>
   For archives of recent discussions, try:
 </p>
 <ul>
-   <li><a href="http://www.ietf.org/mail-archive/web/codec/current/maillist.html">IETF codec mailing list archives</a></li>
    <li><a href="http://lists.xiph.org/pipermail/opus/">Xiph.Org Opus mailing list archives</a></li>
+   <li><a href="http://www.ietf.org/mail-archive/web/codec/current/maillist.html">IETF codec mailing list archives</a></li>
    <li><a href="http://tools.ietf.org/wg/codec/minutes">Meeting minutes</a></li>
 </ul>
 
@@ -22,6 +22,8 @@
 You can join the chat room through the <a href="" onclick="document.getElementById('chatbox').innerHTML='<iframe src=\'http://webchat.freenode.net/?channels=opus\' width=800 height=600/>';return false;">web interface</a> if you don't have an irc client.</p>
 
 <div id="chatbox" style="text-align:center;"></div>
+
+<p>If you find a bug, please report it in <a href="https://trac.xiph.org/newticket?component=Opus">trac</a>.
 
 <p>For confidential enquiries, you can contact one of the following developers:</p>
 <ul>
