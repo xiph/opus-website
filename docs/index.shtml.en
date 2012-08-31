@@ -86,4 +86,38 @@
   Note that these files are designed to exercise all aspects of an
   implementation, the fact that they sound terrible is an intended consequence.
 </p>
+
+<h2>Inside Opus</h2>
+
+<p>
+Beyond the RFC itself, there are a several documents out there that describe Opus or parts of Opus.
+Not everything in them applies to the final version of Opus, but they should still be useful to
+those who want to understand how Opus works. For an overview of the codec, see the 
+<a href="http://www.opus-codec.org/presentations/">linux.conf.au 2012 Opus presentation</a>.
+For historical reasons, most of the information on the algorithmic details is specific to either SILK or CELT.
+</p>
+
+<h3>SILK</h3>
+
+<p>For information on SILK, see the <a href="https://www.ietf.org/proceedings/79/slides/codec-4.pdf">these slides</a>
+by Koen Vos from the 79th IETF meeting.</p>
+
+<h3>CELT</h3>
+
+<p>The most accessible descriptions of CELT are probaly Monty's
+<a href="people.xiph.org/~xiphmont/demo/celt/demo.html">CELT demo</a>. You can also see
+Tim Terriberry's <a href="http://celt-codec.org/presentations/">linux.conf.au 2009 CELT
+presentation</a>. Those with a signal processing background can also read two papers that
+were published on CELT:
+<p>
+
+<ol>
+ <li>J.-M. Valin, T. B. Terriberry, C. Montgomery, G. Maxwell, <a href="http://jmvalin.ca/papers/celt_tasl.pdf">A High-Quality Speech and Audio Codec With Less Than 10 ms delay</a>, <i>IEEE Transactions on Audio, Speech and Language Processing</i>, Vol. 18, No. 1, pp. 58-67, 2010. </li>
+<li>J.-M. Valin, T. B. Terriberry, G. Maxwell, <a href="http://jmvalin.ca/papers/celt_eusipco2009.pdf">A Full-Bandwidth Audio Codec with Low Complexity and Very Low Delay</a>, <i>Proc. EUSIPCO</i>, 2009.</li>
+</ol>
+
+<p>Paper 1 describes CELT version 0.3.2, while paper 2 applies to 0.5.2. The main things that
+changed since these papers were written are the pitch prediction/filtering and the
+birdie avoidance method.</p> 
+
 <!--#include virtual="/ssi/footer.include" -->
