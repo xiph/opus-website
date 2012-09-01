@@ -105,7 +105,7 @@ by Koen Vos from the 79th IETF meeting. See also the <a href="https://developer.
 <h3>CELT</h3>
 
 <p>The most accessible descriptions of CELT are probaly Monty's
-<a href="people.xiph.org/~xiphmont/demo/celt/demo.html">CELT demo</a>. You can also see
+<a href="http://people.xiph.org/~xiphmont/demo/celt/demo.html">CELT demo</a>. You can also see
 Tim Terriberry's <a href="http://celt-codec.org/presentations/">linux.conf.au 2009 CELT
 presentation</a>. Those with a signal processing background can also read two papers that
 were published on CELT:
