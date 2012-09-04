@@ -1,6 +1,11 @@
 <!--#include virtual="/ssi/header.include" -->
 <!--#include virtual="/ssi/contentheader.include" -->
 
+<head>
+    <script type="text/javascript" src="../jquery.js"></script>
+    <script type="text/javascript" src="../audiodemo.js"></script>
+</head>
+
 <h1>Opus Examples</h1>
 
 <h2>Audio samples</h2>
@@ -18,14 +23,14 @@ Opus and then decoded back to wav so that any browser can play them.</p>
 
       <p><b>Playback: [</b>
       <a style="background: none repeat scroll 0% 0% rgb(255, 224, 128);" value="samples/speech_orig.wav">uncompressed</a> <b>|</b>
-      <a style="background: none repeat scroll 0% 0% transparent;" value="samples/speech_8kbps.wav">8 kb/s (narrowband)</a> <b>|</b>
+      <a style="background: none repeat scroll 0% 0% transparent;" value="samples/speech_8kbps_nb.wav">8 kb/s (narrowband)</a> <b>|</b>
       <a style="background: none repeat scroll 0% 0% transparent;" value="samples/speech_12kbps_mb.wav">12 kb/s (mediumband)</a> <b>|</b>
       <a style="background: none repeat scroll 0% 0% transparent;" value="samples/speech_16kbps_wb.wav">16 kb/s (wideband)</a> <b>|</b>
       <a style="background: none repeat scroll 0% 0% transparent;" value="samples/speech_24kbps_swb.wav">24 kb/s (super-wideband)</a> <b>|</b>
       <a style="background: none repeat scroll 0% 0% transparent;" value="samples/speech_32kbps_fb.wav">32 kb/s (fullband)</a> <b>|</b>
       </p><p><b>Download: [</b>
       <a style="background: none repeat scroll 0% 0% transparent;" href="samples/speech_orig.wav">uncompressed</a> <b>|</b>
-      <a style="background: none repeat scroll 0% 0% transparent;" href="samples/speech_8kbps.wav">8 kb/s (narrowband)</a> <b>|</b>
+      <a style="background: none repeat scroll 0% 0% transparent;" href="samples/speech_8kbps_nb.wav">8 kb/s (narrowband)</a> <b>|</b>
       <a style="background: none repeat scroll 0% 0% transparent;" href="samples/speech_12kbps_mb.wav">12 kb/s (mediumband)</a> <b>|</b>
       <a style="background: none repeat scroll 0% 0% transparent;" href="samples/speech_16kbps_wb.wav">16 kb/s (wideband)</a> <b>|</b>
       <a style="background: none repeat scroll 0% 0% transparent;" href="samples/speech_24kbps_swb.wav">24 kb/s (super-wideband)</a> <b>|</b>
