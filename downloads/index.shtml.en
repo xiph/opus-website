@@ -21,15 +21,15 @@ In addition to <a href="https://developer.mozilla.org/En/Media_formats_supported
 </tr>
 <tr class="vbottoml">
     <td rowspan=3 class="vbottom">opus-tools</td>
-    <td rowspan=2>0.1.4</td>
+    <td rowspan=2>0.1.5</td>
     <td>Windows</td>
-    <td style="text-align:left;"><a href="https://ftp.mozilla.org/pub/mozilla.org/opus/win32/opus-tools-0.1.4-win32.zip">opus-tools-0.1.4-win32.zip</a></td>
-    <td style="text-align:right;">423KiB</td>
+    <td style="text-align:left;"><a href="https://ftp.mozilla.org/pub/mozilla.org/opus/win32/opus-tools-0.1.5-win32.zip">opus-tools-0.1.5-win32.zip</a></td>
+    <td style="text-align:right;">425KiB</td>
 </tr>
 <tr class="vbottoml">
     <td>Mac OS X</td>
-    <td style="text-align:left;"><a href="https://ftp.mozilla.org/pub/mozilla.org/opus/macos/opus-tools-0.1.4-macos.tar.gz">opus-tools-0.1.4-macos.tar.gz</a></td>
-    <td style="text-align:right;">345KiB</td>
+    <td style="text-align:left;"><a href="https://ftp.mozilla.org/pub/mozilla.org/opus/macos/opus-tools-0.1.5-macos.tar.gz">opus-tools-0.1.5-macos.tar.gz</a></td>
+    <td style="text-align:right;">336KiB</td>
 </tr>
 <tr class="vbottom">
     <td colspan=4 style="padding-left:1em;text-align:justify;">Opus-tools provides command-line utilities to
@@ -70,16 +70,14 @@ this code is expected to be the same as the final RFC and 1.0 release.
 <li>Source code: <a href="http://downloads.xiph.org/releases/opus/opus-1.0.0-rc.tar.gz">opus-1.0.0-rc.tar.gz</a></li>
 </ul>
 
-<h4 id='ot-0.1.4'>opus-tools 0.1.4</h4>
+<h4 id='ot-0.1.5'>opus-tools 0.1.5/h4>
 <p>
-This release fixes several resampling bugs and greatly increases
-resampler performance. It also provides working unicode filename
-and tag support for Windows (Unicode worked for mac and *nix
-previously).
+This release removes the confusing and ineffective '--speech' and
+'--music' options to opusenc, and improves build system support.
 </p>
 
 <ul>
-<li>Source code: <a href="http://downloads.xiph.org/releases/opus/opus-tools-0.1.4.tar.gz">opus-tools-0.1.4.tar.gz</a></li>
+<li>Source code: <a href="http://downloads.xiph.org/releases/opus/opus-tools-0.1.5.tar.gz">opus-tools-0.1.5.tar.gz</a></li>
 </ul>
 
 

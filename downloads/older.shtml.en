@@ -35,6 +35,18 @@ There is no change to the bit-stream.
 
 <p>Libopus versions 11-13 were skipped to synchronize release and draft numbering.</p>
 
+<h4 id='ot-0.1.4'>opus-tools 0.1.4</h4>
+<p>
+This release fixes several resampling bugs and greatly increases
+resampler performance. It also provides working unicode filename
+and tag support for Windows (Unicode worked for mac and *nix
+previously).
+</p>
+
+<ul>
+<li>Source code: <a href="http://downloads.xiph.org/releases/opus/opus-tools-0.1.4.tar.gz">opus-tools-0.1.4.tar.gz</a></li>
+</ul>
+
 <h4 id='ot-0.1.3'>opus-tools 0.1.3</h4>
 <p>
 This release adds proper multichannel WAV output from opusdec,
