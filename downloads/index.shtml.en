@@ -70,7 +70,7 @@ this code is expected to be the same as the final RFC and 1.0 release.
 <li>Source code: <a href="http://downloads.xiph.org/releases/opus/opus-1.0.0-rc.tar.gz">opus-1.0.0-rc.tar.gz</a></li>
 </ul>
 
-<h4 id='ot-0.1.5'>opus-tools 0.1.5/h4>
+<h4 id='ot-0.1.5'>opus-tools 0.1.5</h4>
 <p>
 This release removes the confusing and ineffective '--speech' and
 '--music' options to opusenc, and improves build system support.
