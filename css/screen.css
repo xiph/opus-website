@@ -113,6 +113,33 @@ li {
   line-height: 1.4;
 }
 
+
+      .audiowrapper audio {
+          padding: 0px;
+          width: 100%;
+          position: absolute;
+          bottom: 0px;
+          z-index: 1;
+      }
+
+      .caption .demowrapper {
+          float: none;
+          clear: both;
+          background: none;
+          padding: 0px;
+          margin: 0px;
+          width: 100%;
+      }
+
+      .audiowrapper {
+          background: none;
+          padding: 0px;
+          margin-bottom: .5em;
+          height: 2em;
+          width: 100%;
+      }
+
+
 blockquote.code {
   padding: 0.5em;
   border: 1px dotted black;
