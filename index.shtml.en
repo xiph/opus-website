@@ -42,10 +42,23 @@ Opus can handle a wide range of audio applications, including Voice over IP, vid
 <ul class="descriptivelist">
 
    <li>
+      <h3>Third Release Candidate for Opus 1.0.1</h3>
+      <p class="submitdate">4 September, 2012</p>
+      <div class="description">
+         <p>This third release candidate for 1.0.1 has documenation and
+         minor portability fixes as part of the final polish before
+         release.
+         Source code is available from the <a href="downloads/">downloads page</a>.</p>
+      </div>
+   </li>
+
+
+   <li>
       <h3>Second Release Candidate for Opus 1.0.1</h3>
       <p class="submitdate">15 August, 2012</p>
       <div class="description">
-         <p>This second release candidate for 1.0.1 includes documentation fixes and a Windows build system. Source code is available from the <a href="downloads/">downloads page</a>.</p>
+         <p>This second release candidate for 1.0.1 includes documentation fixes and a Windows build system.
+          Source code is available from the <a href="downloads/older.shtml">archived downloads page</a>.</p>
       </div>
    </li>
 
@@ -53,7 +66,7 @@ Opus can handle a wide range of audio applications, including Voice over IP, vid
       <h3>Release Candidates for Opus 1.0.0 and 1.0.1</h3>
       <p class="submitdate">8 August, 2012</p>
       <div class="description">
-         <p>Release candidates for the upcoming 1.0.0 and 1.0.1 releases are now available. Expect the final 1.0.0 release in the next few weeks along with the final Opus RFC. Version 1.0.1 will be released at the same time and includes minor fixes that did not make it to the RFC. Source code is available from the <a href="downloads/">downloads page</a>.</p>
+         <p>Release candidates for the upcoming 1.0.0 and 1.0.1 releases are now available. Expect the final 1.0.0 release in the next few weeks along with the final Opus RFC. Version 1.0.1 will be released at the same time and includes minor fixes that did not make it to the RFC. Source code is available from the <a href="http://downloads.xiph.org/releases/opus/">downloads page</a>.</p>
       </div>
    </li>
 
