@@ -13,8 +13,6 @@
 <p>These samples demonstrate the quality achievable with Opus. They are have been encoded with 
 Opus and then decoded back to wav so that any browser can play them.</p>
 
-<h3>Speech</h3>
-
 
 <div class="caption">
       <div class="demowrapper" style="position: relative; z-index:10">
@@ -27,20 +25,16 @@ Opus and then decoded back to wav so that any browser can play them.</p>
       <a style="background: none repeat scroll 0% 0% transparent;" value="samples/speech_12kbps_mb.wav">12 kb/s (mb)</a> <b>|</b>
       <a style="background: none repeat scroll 0% 0% transparent;" value="samples/speech_16kbps_wb.wav">16 kb/s (wb)</a> <b>|</b>
       <a style="background: none repeat scroll 0% 0% transparent;" value="samples/speech_24kbps_swb.wav">24 kb/s (swb)</a> <b>|</b>
-      <a style="background: none repeat scroll 0% 0% transparent;" value="samples/speech_32kbps_fb.wav">32 kb/s (fb)</a> <b>|</b>
+      <a style="background: none repeat scroll 0% 0% transparent;" value="samples/speech_32kbps_fb.wav">32 kb/s (fb)</a> <b>]</b>
       </p><p><b>Download: [</b>
       <a style="background: none repeat scroll 0% 0% transparent;" href="samples/speech_orig.wav">uncompressed</a> <b>|</b>
       <a style="background: none repeat scroll 0% 0% transparent;" href="samples/speech_8kbps_nb.wav">8 kb/s (nb)</a> <b>|</b>
       <a style="background: none repeat scroll 0% 0% transparent;" href="samples/speech_12kbps_mb.wav">12 kb/s (mb)</a> <b>|</b>
       <a style="background: none repeat scroll 0% 0% transparent;" href="samples/speech_16kbps_wb.wav">16 kb/s (wb)</a> <b>|</b>
       <a style="background: none repeat scroll 0% 0% transparent;" href="samples/speech_24kbps_swb.wav">24 kb/s (swb)</a> <b>|</b>
-      <a style="background: none repeat scroll 0% 0% transparent;" href="samples/speech_32kbps_fb.wav">32 kb/s (fb)</a> <b>|</b>
+      <a style="background: none repeat scroll 0% 0% transparent;" href="samples/speech_32kbps_fb.wav">32 kb/s (fb)</a> <b>]</b>
       </p></div>
-</div>
-
-<h2>Music</h3>
-
-<div class="caption">
+      <hr>
       <div class="demowrapper" style="position: relative; z-index:10">
       <b>Opus stereo music samples, various bitrates </b>
       <p></p><div class="audiowrapper"><audio src="samples/music_orig.wav" tabindex="0" controls="true"></audio></div><p></p>

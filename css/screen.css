@@ -113,7 +113,7 @@ li {
   line-height: 1.4;
 }
 
-      .caption {
+.caption {
       color: #000000;
       background-color: #CCCCFF;
       margin: 2em;
@@ -121,7 +121,8 @@ li {
       margin-right: 0em;
       padding: 2em;
       padding-bottom: 1em;
-      }
+      border-radius: 15px;
+}
 
 blockquote.code {
   padding: 0.5em;
@@ -135,8 +136,8 @@ tr.underline td {
 
 #copyright {
   margin-top: 30px;
-  line-height: 1.5em;
-  text-align: center;
+line-height: 1.5em;
+text-align: center;
   font-size: .6em;
   color: #888888;
   clear: both;
