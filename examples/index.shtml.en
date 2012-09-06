@@ -54,16 +54,16 @@ Opus and then decoded back to wav so that any browser can play them.</p>
       </p></div>
       <hr>
       <div class="demowrapper" style="position: relative; z-index:10">
-      <b>Packet loss robustness at 24 kb/s wideband</b>
+      <b>Packet loss robustness at 24 kb/s wideband, 30% loss</b>
       <p></p><div class="audiowrapper"><audio src="samples/music_orig.wav" tabindex="0" controls="true"></audio></div><p></p>
 
       <p><b>Playback: [</b>
-      <a style="background: none repeat scroll 0% 0% rgb(255, 224, 128);" value="samples/plc_orig.wav">uncompressed, no loss</a> <b>|</b>
+      <a style="background: none repeat scroll 0% 0% rgb(255, 224, 128);" value="samples/plc_orig.wav">no loss</a> <b>|</b>
       <a style="background: none repeat scroll 0% 0% transparent;" value="samples/plc30_opus.wav">Opus 30% loss</a> <b>|</b>
       <a style="background: none repeat scroll 0% 0% transparent;" value="samples/plc30_opus_fec.wav">Opus 30% loss with FEC</a> <b>|</b>
       <a style="background: none repeat scroll 0% 0% transparent;" value="samples/plc30_amrwb.wav">AMR-WB 30 % loss</a> <b>]</b>
       </p><p><b>Download: [</b>
-      <a style="background: none repeat scroll 0% 0% transparent;" href="samples/plc_orig.wav">uncompressed, no loss</a> <b>|</b>
+      <a style="background: none repeat scroll 0% 0% transparent;" href="samples/plc_orig.wav">no loss</a> <b>|</b>
       <a style="background: none repeat scroll 0% 0% transparent;" href="samples/plc30_opus.wav">Opus 30% loss</a> <b>|</b>
       <a style="background: none repeat scroll 0% 0% transparent;" href="samples/plc30_opus_fec.wav">Opus 30% loss with FEC</a> <b>|</b>
       <a style="background: none repeat scroll 0% 0% transparent;" href="samples/plc30_amrwb.wav">AMR-WB 30 % loss</a> <b>]</b>
