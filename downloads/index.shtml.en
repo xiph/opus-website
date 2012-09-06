@@ -3,8 +3,10 @@
 
 <h1>Downloads</h1>
 <p>
-   The codec is still under <a href="../development/">development</a>,
-   in the final stages preparing the first production release.
+Even though Opus is now approved by the IETF, this Opus implementation will keep
+improving in the future. Of course, all future versions will still be fully compliant
+with the Opus IETF specification. See <a href="../development/">development</a> page
+for the latest development information.
 <p>
 
 <img src="mozilla-small.png" width=145 height=100 alt="Mozilla logo" style="float:right;padding:0;"/>
