@@ -13,7 +13,7 @@ Opus is freely licensed</a>.</p>
 <br/>
 <div style="background-color: #CCCCFF;-moz-border-radius: 15px;border-radius: 15px;padding:1em;max-width:550px;margin-left:auto; margin-right:auto;">
 <table style="list-style-type: none;font-size:125%;border:0;text-align:justify;">
-<tr><td colspan=2 style="border-bottom:solid 1px;"><b>In brief:</b><div style="text-align:right;float:right;">&nbsp;&nbsp;<small><i>(see <a href="#details">below</a> for details)</i></small></span></td></tr>
+<tr><td colspan=2 style="border-bottom:solid 1px;"><b>In brief:</b><span style="text-align:right;float:right;">&nbsp;&nbsp;<small><i>(see <a href="#details">below</a> for details)</i></small></span></td></tr>
 <tr><td><span style="color:green;font-size:150%"><img src="32px-check.png" alt="&#x2714;" width=32 height=32/></span></td><td><b>You can encode or decode Opus-compatible streams for any purpose at no cost.</b></td></tr>
 <tr><td><span style="color:green;font-size:150%"><img src="32px-check.png" alt="&#x2714;" width=32 height=32/></span></td><td><b>You can integrate the reference Opus encoder and decoder in any application, program, or product, even commercially, at no cost.</b></td></tr>
 <tr><td><span style="color:green;font-size:150%"><img src="32px-check.png" alt="&#x2714;" width=32 height=32/></span></td><td><b>You can create your own compatible implementations of the Opus specification and give them away or sell them.</b></td></tr>
