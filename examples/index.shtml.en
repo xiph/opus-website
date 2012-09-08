@@ -71,6 +71,27 @@ Opus and then decoded back to wav so that any browser can play them.</p>
 
 </div>
 
+<h2>
+<h2>Example of use in a web page</h2>
+<p>Opus works with the &lt;audio&gt; element just like any other audio format.</p>
+<p>For example, this code in a web page:</p>
+<pre> &lt;audio src="ehren-paper_lights-64.opus" controls&gt;</pre>
+<p>displays an embedded player that can play an Opus file.</p>
+<div class="player" style="margin-left: 4em">
+
+<!-- Artiss Code Embed v2.0.2 | http://www.artiss.co.uk/code-embed -->
+<audio tabindex="0" src="http://people.xiph.org/~giles/2012/opus/ehren-paper_lights-64.opus" controls="">
+         <!-- fallback content for browsers which don't support the audio element -->
+         Looks like your browser doesn't support HTML &lt;audio&gt;.
+      </audio>
+<!-- End of Artiss Code Embed code -->
+<br>
+<em>Paper Lights</em> by <a href="http://magnatune.com/artists/ehren">Ehren Starks</a>, encoded at 64 kb/s <a href="http://creativecommons.org/licenses/by-nc-sa/1.0/" rel="license"> <img src="http://i.creativecommons.org/l/by-nc-sa/1.0/80x15.png" alt="Creative Commons License"> </a>
+</div>
+<p>
+For now, this only works with Firefox 15 or later.</p>
+
+
 <h2>Live HTTP streams</h2>
 
 These streams can be played in using Firefox, foobar2000, Gstreamer/Totem (in Linux), or using opusdec from the command-line.<br/><br/>
