@@ -75,11 +75,11 @@ Opus and then decoded back to wav so that any browser can play them.</p>
 <h2>Example of use in a web page</h2>
 <p>Opus works with the &lt;audio&gt; element just like any other audio format.</p>
 <p>For example, this code in a web page:</p>
-<pre> &lt;audio src="ehren-paper_lights-64.opus" controls&gt;</pre>
+<pre> &lt;audio src="ehren-paper_lights-96.opus" controls&gt;</pre>
 <p>displays an embedded player that can play an Opus file.</p>
 <div class="player" style="margin-left: 4em">
 
-<audio tabindex="0" src="http://people.xiph.org/~giles/2012/opus/ehren-paper_lights-64.opus" controls="">
+<audio tabindex="0" src="http://people.xiph.org/~giles/2012/opus/ehren-paper_lights-96.opus" controls="">
          <!-- fallback content for browsers which don't support the audio element -->
          Looks like your browser doesn't support HTML &lt;audio&gt;.
       </audio>
