@@ -1,10 +1,8 @@
 <!--#include virtual="/ssi/header.include" -->
 <!--#include virtual="/ssi/contentheader.include" -->
 
-<head>
     <script type="text/javascript" src="../jquery.js"></script>
     <script type="text/javascript" src="../audiodemo.js"></script>
-</head>
 
 <h1>Opus Examples</h1>
 
@@ -71,7 +69,6 @@ Opus and then decoded back to wav so that any browser can play them.</p>
 
 </div>
 
-<h2>
 <h2>Example of use in a web page</h2>
 <p>Opus works with the &lt;audio&gt; element just like any other audio format.</p>
 <p>For example, this code in a web page:</p>

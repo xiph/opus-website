@@ -36,10 +36,10 @@
 <blockquote>
 <table style="border-spacing: 0">
 <tr class="underline">
-    <td style="padding-right:0.5em;"><b>Latest Opus codec draft</b><br/><span style="float:right;"><small><i>(draft-ietf-codec-opus)</i></small></span></td>
-    <td><a href="http://tools.ietf.org/html/draft-ietf-codec-opus">HTML</a>, </td>
-    <td><a href="http://tools.ietf.org/pdf/draft-ietf-codec-opus.pdf">PDF</a>, </td>
-    <td><a href="http://tools.ietf.org/id/draft-ietf-codec-opus.txt">TXT</a></td>
+    <td style="padding-right:0.5em;"><b>Official Opus codec RFC</b><br/><span style="float:right;"><small><i>(rfc6716)</i></small></span></td>
+    <td><a href="http://tools.ietf.org/html/rfc6716">HTML</a>, </td>
+    <td><a href="http://tools.ietf.org/pdf/rfc6716.pdf">PDF</a>, </td>
+    <td><a href="http://tools.ietf.org/id/rfc6716.txt">TXT</a></td>
 </tr>
 <tr class="underline">
     <td style="padding-right:0.5em;"><b>Latest Opus RTP draft</b><br/><span style="float:right;"><small><i>(draft-spittka-payload-rtp-opus)</i></small></span></td>
