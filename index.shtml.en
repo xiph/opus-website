@@ -8,15 +8,15 @@
 <p>
 Opus is a totally open, royalty-free, highly versatile audio codec. It is primarily
 designed for interactive speech and music transmission over the Internet,
-but is also applicable to storage and streaming applications. It is being
-standardized by the Internet Engineering Task Force (IETF) and incorporates
-technology from Skype's SILK codec and Xiph.Org's CELT codec.
+but is also applicable to storage and streaming applications. It is
+standardized by the Internet Engineering Task Force (IETF) as <a href="http://tools.ietf.org/html/rfc6716">RFC 6716</a>
+and incorporates technology from Skype's SILK codec and Xiph.Org's CELT codec.
 </p>
 
 <h2>Technology</h2>
 
 <p>
-Opus can handle a wide range of audio applications, including Voice over IP, videoconferencing, in-game chat, and even remote live music performances. It can scale from low bit-rate narrowband speech to very high quality stereo music. The current features are:
+Opus can handle a wide range of audio applications, including Voice over IP, videoconferencing, in-game chat, and even remote live music performances. It can scale from low bit-rate narrowband speech to very high quality stereo music. Supported features are:
 </p>
 <ul>
 <li>Bit-rates from 6 kb/s to 510 kb/s</li>
@@ -33,8 +33,9 @@ Opus can handle a wide range of audio applications, including Voice over IP, vid
 </ul>
 
 <p>
-   You can read the specification in the latest
-    <a href="http://tools.ietf.org/html/draft-ietf-codec-opus">Internet Draft</a>.
+   You can read the full specification, including the reference implementation, in 
+   <a href="http://tools.ietf.org/html/rfc6716">RFC 6716</a>. An up-to-date implementation of the
+   Opus standard is also available from the <a href="downloads/">downloads page</a>.
 </p>
 
 <h2 id="news">News</h2>
