@@ -43,6 +43,19 @@ Opus can handle a wide range of audio applications, including Voice over IP, vid
 <ul class="descriptivelist">
 
    <li>
+      <h3>Opus Standardized as RFC6716, Versions 1.0.0 and 1.0.1 Are Available</h3>
+      <p class="submitdate">28 August, 2012</p>
+      <div class="description">
+         <p>It's official, Opus has now been standardized by the IETF as 
+         <a href="http://tools.ietf.org/html/rfc6716">RFC 6716</a>. Along with the RFC are
+         the first stable releases. Version 1.0.0 includes exactly the same
+         source code as the reference implementation in the RFC. Version 1.0.1 also includes minor fixes
+         that were made after the RFC was "frozen". Both releases are available from the 
+         <a href="downloads/">downloads page</a>.</p>
+      </div>
+   </li>
+
+   <li>
       <h3>Third Release Candidate for Opus 1.0.1</h3>
       <p class="submitdate">4 September, 2012</p>
       <div class="description">
