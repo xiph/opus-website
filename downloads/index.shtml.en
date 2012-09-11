@@ -3,7 +3,7 @@
 
 <h1>Downloads</h1>
 <p>
-Even though Opus is now approved by the IETF, this Opus implementation will keep
+Even though Opus is now standardized by the IETF, this Opus implementation will keep
 improving in the future. Of course, all future versions will still be fully compliant
 with the Opus IETF specification. See <a href="../development/">development</a> page
 for the latest development information.
@@ -47,30 +47,26 @@ In addition to <a href="https://developer.mozilla.org/En/Media_formats_supported
 
 <h3>Latest <strong style='font-style: italic;'>stable</strong> release</h3>
 
-<p>Coming soon</p>
+<h4 id='one.0.1'>libopus 1.0.1</h4>
+<p>
+This release includes minor updates (mostly related to the the build system) that
+did not make it to the final RFC. It is full compliant with the Opus specification.
+</p>
+<ul>
+<li>Source code: <a href="http://downloads.xiph.org/releases/opus/opus-1.0.1.tar.gz">opus-1.0.1.tar.gz</a></li>
+</ul>
+
+
+<h4 id='one.0.0'>libopus 1.0.0</h4>
+<p>
+This release is identical to the final Opus reference implementation included in RFC6716.
+</p>
+<ul>
+<li>Source code: <a href="http://downloads.xiph.org/releases/opus/opus-1.0.0.tar.gz">opus-1.0.0.tar.gz</a></li>
+</ul>
+
 
 <h3>Latest <strong style='font-style: italic;'>development</strong> release</h3>
-
-<h4 id='one.0.1'>libopus 1.0.1-RC3</h4>
-<p>
-This is a third release candidate for the upcoming 1.0.1 release.
-This release includes documentation fixes, portability improvements,
-and build file fixes, including a generic Makefile.unix.
-</p>
-
-<ul>
-<li>Source code: <a href="http://downloads.xiph.org/releases/opus/opus-1.0.1-rc3.tar.gz">opus-1.0.1-rc3.tar.gz</a></li>
-</ul>
-
-<h4 id='one.0.0'>libopus 1.0.0-RC</h4>
-<p>
-This is a release candidate for the final 1.0 release. Other than the RFC number in the comments,
-this code is expected to be the same as the final RFC and 1.0 release.
-</p>
-
-<ul>
-<li>Source code: <a href="http://downloads.xiph.org/releases/opus/opus-1.0.0-rc.tar.gz">opus-1.0.0-rc.tar.gz</a></li>
-</ul>
 
 <h4 id='ot-0.1.5'>opus-tools 0.1.5</h4>
 <p>
