@@ -39,12 +39,14 @@ overview of the MDCT layer of Opus.</p>
           <li><a href="http://git.xiph.org/?p=opus.git;a=snapshot;h=ietf-draft;sf=tgz">opus-ietf-draft-branch.tar.gz</a></li>
           <li><a href="http://git.xiph.org/?p=opus.git;a=snapshot;h=exp_analysis7;sf=tgz">opus-exp_analysis7-branch.tar.gz</a></li>
        </ul></li>
+<!--
     <li><b>Developer personal trees:</b>
       <ul>
          <li><a href="http://git.xiph.org/?p=users/jm/opus.git">Jean-Marc Valin</a></li>
          <li><a href="http://git.xiph.org/?p=users/greg/opus.git">Greg Maxwell</a></li>
          <li><a href="http://git.xiph.org/?p=users/giles/opus.git">Ralph Giles</a></li>
       </ul></li>
+-->
 </ul>
 
 <p>See the <a href="/docs/">documentation</a> for an API reference
