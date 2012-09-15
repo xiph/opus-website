@@ -5,7 +5,7 @@
 
 <h2>Quality vs Bit-rate</h2>
 
-The figure below illustrates the quality of various codecs as a funciton of the bit-rate. It attempts to summarize results from a collection of listening tests and (when no data exists) show annecdotal evidence. It is overall fairly representative, but attempting to extract any exact value at a particular bitrate is certainly not recommended (<a href="quality.svg">svg version</a>).
+The figure below illustrates the quality of various codecs as a function of the bit-rate. It attempts to summarize results from a collection of listening tests and (when no data exists) show anecdotal evidence. It is overall fairly representative, but attempting to extract any exact value at a particular bitrate is certainly not recommended (<a href="quality.svg">svg version</a>).
 
 <div style="text-align:center;"><a href="quality.png"><img src="quality.png" alt="Illustration of the quality of different codecs" width="640" height="474"></a></div>
 
