@@ -6,10 +6,15 @@
 <h2>Opus API reference (doxygen)</h2>
 <blockquote>
 <table style="border-spacing: 0;">
-<tr class="underline">
-    <td style="padding-right:0.5em;"><b>libopus API documentation</b></td>
-    <td style="border-bottom: 1px solid;"><a href="https://mf4.xiph.org/jenkins/view/opus/job/opus/ws/doc/html/index.html">HTML</a>,</td>
-    <td style="border-bottom: 1px solid;"><a href="https://mf4.xiph.org/jenkins/view/opus/job/opus/ws/doc/latex/refman.pdf">PDF</a></td>
+<tr>
+    <td style="padding-right:0.5em;"><b>libopus 1.0.1 release</b></td>
+    <td><a href="html_api-1.0.1/index.html">HTML</a>,</td>
+    <td><a href="opus_api-1.0.1.pdf">PDF</a></td>
+</tr>
+<tr>
+    <td style="padding-right:0.5em;"><b>libopus development version</b></td>
+    <td><a href="https://mf4.xiph.org/jenkins/view/opus/job/opus/ws/doc/html/index.html">HTML</a>,</td>
+    <td><a href="https://mf4.xiph.org/jenkins/view/opus/job/opus/ws/doc/latex/refman.pdf">PDF</a></td>
 </tr>
 </table>
 </blockquote>
@@ -17,15 +22,15 @@
 <h2>Opus-tools man-pages</h2>
 <blockquote>
 <table style="border-spacing: 0;">
-<tr class="underline">
+<tr>
     <td style="padding-right:0.5em;"><b>opusenc</b> (.wav->.opus)
 </td>
     <td><a href="https://mf4.xiph.org/jenkins/view/opus/job/opus-tools/ws/man/opusenc.html">HTML</a></td></tr>
-<tr class="underline">
+<tr>
     <td><b>opusdec</b> (.opus->.wav)</td>
     <td><a href="https://mf4.xiph.org/jenkins/view/opus/job/opus-tools/ws/man/opusdec.html">HTML</a></td>
 </tr>
-<tr class="underline">
+<tr>
     <td style="padding-right:0.5em;"><b>opusinfo</b> (.opus file info)</td>
     <td><a href="https://mf4.xiph.org/jenkins/view/opus/job/opus-tools/ws/man/opusinfo.html">HTML</a></td>
 </tr>
@@ -59,7 +64,7 @@
 <h2>Tutorials</h2>
 <blockquote>
 <table style="border-spacing: 0;">
-<tr class="underline">
+<tr>
     <td style="padding-right:0.5em;"><a href="http://www.saunalahti.fi/~cse/Opus/">Encoding Opus from foobar2000</a>
 </td>
     <td><img src="ico-win.png" width=16 height=16 alt="Windows"/></td></tr>
