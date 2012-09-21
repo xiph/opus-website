@@ -1,9 +1,11 @@
 <!--#include virtual="/ssi/header.include" -->
 <!--#include virtual="/ssi/contentheader.include" -->
 
+    <link rel="stylesheet" href="jgauge.css" type="text/css" />
     <script type="text/javascript" src="../jquery.js"></script>
     <script type="text/javascript" src="../audiodemo.js"></script>
-
+    <script language="javascript" type="text/javascript" src="js/jQueryRotate.min.js"></script>
+    <script language="javascript" type="text/javascript" src="js/jgauge-0.3.0.a3.js"></script> 
 <h1>Opus Examples</h1>
 
 <h2>Audio samples</h2>
@@ -68,6 +70,133 @@ Opus and then decoded back to wav so that any browser can play them.</p>
       </p></div>
 
 </div>
+
+<h2>Bitrate scalability</h2>
+
+<p>
+The following example demonstrates what happens when grdually varying the
+bitrate from 8 kb/s to 64 kb/s. It's an extreme example, but it shows how Opus
+can change bandwidth and bitrate seamlessly without any glitch. In practical
+applications, bitrate changes are expected to occur much more slowly.
+</p>
+
+
+<table border="0">
+<tr>
+<td>
+	
+	<div id="gauge" class="jgauge"></div><br style="clear:both"/>
+	<center>Bitrate</center>
+</td>
+<td style="width:120px">
+	<center>
+		<span id="mono" style="display:none;font-family:serif;font-size:16pt;"><img src="img/mono.png" style="height:20px;vertical-align:middle;margin:5px;margin-right:20px;"/>Mono</span>
+		<span id="stereo" style="display:none;font-size:16pt;"><img src="img/stereo.png" style="height:20px;vertical-align:middle;margin:5px"/>Stereo</span>
+	</center>
+</td>
+<td>
+
+	<div id="gauge2" class="jgauge"></div><br style="clear:both"/> 
+	<center>Audio bandwidth</center>
+</td>
+<tr>
+<td colspan="3">
+	<br/>
+	<center><audio id="sweepaudio" src="sweep.ogg" controls style="width:400px"></audio></center>
+</td>
+</tr>
+</table>
+
+
+<script type="text/javascript">
+
+	var bitrateStart = 8;
+	var bitrateEnd = 64;
+
+
+	var bitrateGauge = new jGauge();
+	bitrateGauge.id = 'gauge';
+
+	var bandwidthGauge = new jGauge();
+	bandwidthGauge.id = 'gauge2';
+ 
+	// ugly, stupid way to update things. Welcome to 1997!
+	updateGauge = function() {
+		var audio = document.getElementById("sweepaudio");
+
+		if(audio.duration) {
+			var time = audio.currentTime;
+			var progress = time / audio.duration;
+			var bitrate = (bitrateEnd - bitrateStart) * progress + bitrateStart;
+			bitrateGauge.setValue(bitrate);
+
+			var stereo = document.getElementById("stereo");
+			var mono = document.getElementById("mono");
+
+			if(time < 8.3) {
+				stereo.style.display = "none";
+				mono.style.display = "";
+			} else {
+				stereo.style.display = "";
+				mono.style.display = "none";
+
+			}
+
+			var bandwidth = 4;
+			if(time > 1.4) {
+				bandwidth = 6;
+			}
+			if(time > 3.8) {
+				bandwidth = 8;
+			}
+			if(time > 6.2) {
+				bandwidth = 12;
+			}
+			if(time > 10.6) {
+				bandwidth = 20;
+			}
+			bandwidthGauge.setValue(bandwidth);
+
+		}
+
+		window.setTimeout(updateGauge, 100);
+	};
+
+
+	// This function is called by jQuery once the page has finished loading.
+	$(document).ready(function(){
+		bitrateGauge.init(); // Put the jGauge on the page by initialising it.
+
+		bitrateGauge.label.suffix = "kbps";
+		bitrateGauge.label.precision = 0;
+
+		bitrateGauge.ticks.count = 8;
+		bitrateGauge.ticks.start = 8;
+		bitrateGauge.ticks.end = bitrateEnd;
+
+		bitrateGauge.range.radius = 0;
+
+		bitrateGauge.updateRange();
+		bitrateGauge.updateTicks();
+
+		bandwidthGauge.init(); // Put the jGauge on the page by initialising it.
+
+		bandwidthGauge.label.suffix = "kHz";
+		bandwidthGauge.label.precision = 0;
+
+		bandwidthGauge.ticks.count = 5;
+		bandwidthGauge.ticks.start = 4;
+		bandwidthGauge.ticks.end = 20;
+
+		bandwidthGauge.range.radius = 0;
+
+		bandwidthGauge.updateRange();
+		bandwidthGauge.updateTicks();	
+
+		window.setTimeout(updateGauge, 10);
+	});
+</script> 
+
 
 <h2>Example of use in a web page</h2>
 <p>Opus works with the &lt;audio&gt; element just like any other audio format.</p>
