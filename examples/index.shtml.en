@@ -199,7 +199,7 @@ applications, bitrate changes are expected to occur much more slowly.
 
 
 <h2>Example of use in a web page</h2>
-<p>Opus works with the &lt;audio&gt; element just like any other audio format.</p>
+<p>Opus works with the &lt;audio&gt; element just like vorbis.</p>
 <p>For example, this code in a web page:</p>
 <pre> &lt;audio src="ehren-paper_lights-96.opus" controls&gt;</pre>
 <p>displays an embedded player that can play an Opus file.</p>
