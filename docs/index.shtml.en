@@ -16,6 +16,10 @@
     <td><a href="https://mf4.xiph.org/jenkins/view/opus/job/opus/ws/doc/html/index.html">HTML</a>,</td>
     <td><a href="https://mf4.xiph.org/jenkins/view/opus/job/opus/ws/doc/latex/refman.pdf">PDF</a></td>
 </tr>
+<tr>
+    <td style="padding-right:0.5em;"><b>libopusfile development version</b></td>
+    <td><a href="https://mf4.xiph.org/jenkins/view/opus/job/opusfile/ws/doc/html/index.html">HTML</a>,</td>
+    <td><a href="https://mf4.xiph.org/jenkins/view/opus/job/opusfile/ws/doc/latex/refman.pdf">PDF</a></td>
 </table>
 </blockquote>
 
