@@ -18,8 +18,8 @@
 </tr>
 <tr>
     <td style="padding-right:0.5em;"><b>libopusfile development version</b></td>
-    <td><a href="https://mf4.xiph.org/jenkins/view/opus/job/opusfile/ws/doc/html/index.html">HTML</a>,</td>
-    <td><a href="https://mf4.xiph.org/jenkins/view/opus/job/opusfile/ws/doc/latex/refman.pdf">PDF</a></td>
+    <td><a href="https://mf4.xiph.org/jenkins/view/opus/job/opusfile-unix/ws/doc/html/index.html">HTML</a>,</td>
+    <td><a href="https://mf4.xiph.org/jenkins/view/opus/job/opusfile-unix/ws/doc/latex/refman.pdf">PDF</a></td>
 </table>
 </blockquote>
 
