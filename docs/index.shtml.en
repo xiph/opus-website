@@ -16,6 +16,12 @@
     <td><a href="https://mf4.xiph.org/jenkins/view/opus/job/opus/ws/doc/html/index.html">HTML</a>,</td>
     <td><a href="https://mf4.xiph.org/jenkins/view/opus/job/opus/ws/doc/latex/refman.pdf">PDF</a></td>
 </tr>
+</table>
+</blockquote>
+
+<h2>Opusfile API reference (doxygen)</h2>
+<blockquote>
+<table style="border-spacing: 0;">
 <tr>
     <td style="padding-right:0.5em;"><b>libopusfile development version</b></td>
     <td><a href="https://mf4.xiph.org/jenkins/view/opus/job/opusfile-unix/ws/doc/html/index.html">HTML</a>,</td>
