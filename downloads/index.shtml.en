@@ -21,6 +21,7 @@ In addition to <a href="https://developer.mozilla.org/En/Media_formats_supported
     <th style="text-align:left;">Download&nbsp;link</th>
     <th style="text-align:right;">Size</th>
 </tr>
+
 <tr class="vbottoml">
     <td rowspan=3 class="vbottom">opus-tools</td>
     <td rowspan=2>0.1.5</td>
@@ -39,6 +40,22 @@ In addition to <a href="https://developer.mozilla.org/En/Media_formats_supported
      <a href="https://mf4.xiph.org/jenkins/view/opus/job/opus-tools/ws/man/opusinfo.html">inspect</a>, and
      <a href="https://mf4.xiph.org/jenkins/view/opus/job/opus-tools/ws/man/opusdec.html">decode</a> <b>.</b>opus files.</td>
 </tr>
+
+<tr class="vbottoml">
+    <td rowspan=2 class="vbottom">opusfile</td>
+    <td rowspan=1>0.1</td>
+    <td>Windows</td>
+    <td style="text-align:left;"><a href="https://ftp.mozilla.org/pub/mozilla.org/opus/win32/opusfile-0.1-win32.zip">opusfile-0.1-win32.zip</a></td>
+    <td style="text-align:right;">1049KiB</td>
+</tr>
+<tr class="vbottom">
+    <td colspan=4 style="padding-left:1em;text-align:justify;">Opusfile
+     provides application developers with a high-level API for decoding and
+     seeking in <b>.</b>opus files.
+    DLLs for the required libraries, libogg 1.3.0 and libopus 1.0.1, are also
+     included.</td>
+</tr>
+
 </tbody>
 </table>
 </div>
@@ -66,7 +83,7 @@ This release is identical to the final Opus reference implementation included in
 </ul>
 
 
-<h3>Latest <strong style='font-style: italic;'>development</strong> release</h3>
+<h3>Latest <strong style='font-style: italic;'>development</strong> releases</h3>
 
 <h4 id='ot-0.1.5'>opus-tools 0.1.5</h4>
 <p>
@@ -76,6 +93,15 @@ This release removes the confusing and ineffective '--speech' and
 
 <ul>
 <li>Source code: <a href="http://downloads.xiph.org/releases/opus/opus-tools-0.1.5.tar.gz">opus-tools-0.1.5.tar.gz</a></li>
+</ul>
+
+<h4 id='ot-0.1'>opusfile 0.1</h4>
+<p>
+This release provides a high-level decoding and seeking API for .opus files.
+</p>
+
+<ul>
+<li>Source code: <a href="http://downloads.xiph.org/releases/opus/opusfile-0.1.tar.gz">opusfile-0.1.tar.gz</a></li>
 </ul>
 
 
