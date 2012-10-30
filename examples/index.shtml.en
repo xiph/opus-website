@@ -74,7 +74,7 @@ Opus and then decoded back to wav so that any browser can play them.</p>
 <h2>Bitrate scalability</h2>
 
 <p>
-The following example demonstrates what happens when grdually varying the
+The following example demonstrates what happens when gradually varying the
 bitrate from 8 kb/s to 64 kb/s. It's an extreme example, but it shows how Opus
 can change bandwidth and bitrate seamlessly without any glitch. In practical
 applications, bitrate changes are expected to occur much more slowly.
@@ -218,9 +218,8 @@ For now, this only works with Firefox 15 or later.</p>
 
 <h2>Live HTTP streams</h2>
 
-These streams can be played in using Firefox, foobar2000, Gstreamer/Totem (in Linux), or using opusdec from the command-line.<br/><br/>
+These streams can be played in using <a href="http://www.mozilla.org/en-US/firefox/new/">Firefox</a> (version 15 or higher), foobar2000, Gstreamer/Totem (in Linux), or using opusdec from the command-line.<br/><br/>
 
-To play these streams in a browser install <a href="http://www.mozilla.org/en-US/firefox/new/">Firefox 15</a> or higher.
 <br/>
 <center>
 <table style="margin:20px;width:75%;">
@@ -250,10 +249,10 @@ this stream produces an endless stream of peaceful droning. The stream is synthe
 <a href="http://europa.kradradio.com:8200/"><img align="right" width=388 height=461 alt="krad console thumbnail" src="krad-compressed2.png"/></a>
 <a href="http://kradradio.com/">KRAD Radio</a> is an open source audio/video mixing and streaming platform currently in active development.
 <ul>
-  <li><a href="http://europa.kradradio.com:8200/">Demo station— Opuscentauri</a></li>
-  <li><a href="http://europa.kradradio.com:8000/">Demo station— Opusprime</a></li>
+  <li><a href="http://europa.kradradio.com:8200/">Demo station — Opuscentauri</a></li>
+  <li><a href="http://europa.kradradio.com:8000/">Demo station — Opusprime</a></li>
 </ul>
-Requires browser opus support and websockets (e.g. firefox)<br/>
+Requires browser Opus and WebSockets support (e.g. Firefox)<br/>
 (The latency is high due to buffering in the browser's audio tag and doesn't represent Opus' low latency.)
 <br style="clear:both;"/>
 

@@ -3,7 +3,7 @@
 
 <h1>Opus licensing</h1>
 
-<p>Opus has a freely available specification, a BSD licensed, high-quality reference
+<p>Opus has a freely available specification, a BSD-licensed, high-quality reference
 encoder and decoder, and protective, royalty-free licenses for the required patents.
 The copyright and patent licenses for Opus are automatically granted to everyone and
 do not require application or approval. The Opus FAQ has
@@ -76,10 +76,10 @@ copy code from the opusinfo tool to build their applications.</p>
 <h2>Patents</h2>
 
 <p>Opus is covered by several patents. These
-patents are available under open-source compatible, royalty-free licenses. If you are not trying to attack Opus
+patents are available under open-source-compatible, royalty-free licenses. If you are not trying to attack Opus
 with your patents, you will not have problems with these licenses.</p>
 
-<h2>Xiph.Org Foundation</h2>
+<h3>Xiph.Org Foundation</h3>
 
 <p>The Xiph.Org foundation has several patent applications on techniques used in Opus. When issued, these patents will be automatically available under the terms provided in the below license. The license
 covers the listed patent applications, along with any other patent or application covering Opus that is owned by Xiph.Org.</p>
@@ -137,10 +137,10 @@ Standard as a whole.</p>
 
 </div>
 This license is also filed on the
-<a href="https://datatracker.ietf.org/ipr/1524/">IETF site</a>
+<a href="https://datatracker.ietf.org/ipr/1524/">IETF site</a>.
 </blockquote>
 
-<h2>Broadcom</h2>
+<h3>Broadcom</h3>
 
 <p>Broadcom has both issued patents and outstanding applications covering Opus. These are available under the same license as the Xiph.Org patents. The license
 covers the listed patents and patent applications, along with any other patent or application covering Opus that is owned by Broadcom.</p>
@@ -197,10 +197,10 @@ with the Standard as a whole.</p>
 
 </div>
 This license is also filed on the
-<a href="https://datatracker.ietf.org/ipr/1526/">IETF site</a>
+<a href="https://datatracker.ietf.org/ipr/1526/">IETF site</a>.
 </blockquote>
 
-<h2>Microsoft</h2>
+<h3>Microsoft</h3>
 
 <p>Microsoft acquired patents and applications related to Opus through their purchase of Skype. These patents (and any other Microsoft might have had) are available
 under a different, but still royalty-free, license detailed below. The license
@@ -397,7 +397,7 @@ http://www.openwebfoundation.org/legal/the-0-9-agreements---necessary-claims/agr
 </p>
 </div>
 This license is also filed on the
-<a href="https://datatracker.ietf.org/ipr/1670/">IETF site</a>
+<a href="https://datatracker.ietf.org/ipr/1670/">IETF site</a>.
 </blockquote>
 
 <!--#include virtual="/ssi/footer.include" -->

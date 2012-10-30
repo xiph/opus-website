@@ -54,13 +54,13 @@ There is no change to the bit-stream.
 <li>Internet-Draft: <a href="http://tools.ietf.org/id/draft-ietf-codec-opus-14.txt">draft-ietf-codec-opus-14.txt</a>
 </ul>
 
-<p>Libopus versions 11-13 were skipped to synchronize release and draft numbering.</p>
+<p>Libopus versions 0.9.11-0.9.13 were skipped to synchronize release and draft numbering.</p>
 
 <h4 id='ot-0.1.4'>opus-tools 0.1.4</h4>
 <p>
 This release fixes several resampling bugs and greatly increases
-resampler performance. It also provides working unicode filename
-and tag support for Windows (Unicode worked for mac and *nix
+resampler performance. It also provides working Unicode filename
+and tag support for Windows (Unicode worked for Mac and *nix
 previously).
 </p>
 
@@ -71,7 +71,7 @@ previously).
 <h4 id='ot-0.1.3'>opus-tools 0.1.3</h4>
 <p>
 This release adds proper multichannel WAV output from opusdec,
-disables the non-working --stereo and --mono mixdown switches,
+disables the non-working '--stereo' and '--mono' mixdown switches,
 and uses linear predictive coding to generate padding on
 the final frame to reduce the risk of clicking with
 gapless playback.
@@ -123,7 +123,7 @@ See the <a href="https://mf4.xiph.org/jenkins/view/opus/">Jenkins build system</
 <a href="https://mf4.xiph.org/jenkins/job/opus-coverage/ws/coverage/index.html">floating-point coverage</a>
 and <a href="https://mf4.xiph.org/jenkins/job/opus-coverage-fixed/ws/coverage/index.html">fixed-point coverage</a>.
 Now that the analysis and documentation of the code has been completed, further changes to the
-bit-stream unfil the final freeze are unlikely.
+bit-stream until the final freeze are unlikely.
 </p>
 
 <ul>
@@ -145,7 +145,7 @@ tentatively frozen.
 <h4 id='zero.9.5'>libopus 0.9.5</h4>
 <p>
 This is a cleanup release for version -07 of the draft. The bit-stream is
-tentatively frozen. It will not change unless an major issue is found or
+tentatively frozen. It will not change unless a major issue is found or
 if for some reason the Working Group decides something needs to be change.
 </p>
 

@@ -8,7 +8,7 @@
 <p>
 Opus is a totally open, royalty-free, highly versatile audio codec. Opus is
 unmatched for interactive speech and music transmission over the Internet,
-but also intended for storage and streaming applications. It is
+but is also intended for storage and streaming applications. It is
 standardized by the Internet Engineering Task Force (IETF) as <a href="http://tools.ietf.org/html/rfc6716">RFC 6716</a>
 which incorporated technology from Skype's SILK codec and Xiph.Org's CELT codec.
 </p>
@@ -23,7 +23,7 @@ Opus can handle a wide range of audio applications, including Voice over IP, vid
 <li>Sampling rates from 8 kHz (narrowband) to 48 kHz (fullband)</li>
 <li>Frame sizes from 2.5 ms to 60 ms</li>
 <li>Support for both constant bit-rate (CBR) and variable bit-rate (VBR)</li>
-<li>Audio bandwidth from narrowband to full-band</li>
+<li>Audio bandwidth from narrowband to fullband</li>
 <li>Support for speech and music</li>
 <li>Support for mono and stereo</li>
 <li>Support for up to 255 channels (multistream frames)</li>
