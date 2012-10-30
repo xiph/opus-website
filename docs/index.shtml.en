@@ -23,9 +23,15 @@
 <blockquote>
 <table style="border-spacing: 0;">
 <tr>
+    <td style="padding-right:0.5em;"><b>libopusfile 0.1 release</b></td>
+    <td><a href="opusfile_api-0.1/index.html">HTML</a>,</td>
+    <td><a href="opusfile_api-0.1.pdf">PDF</a></td>
+</tr>
+<tr>
     <td style="padding-right:0.5em;"><b>libopusfile development version</b></td>
     <td><a href="https://mf4.xiph.org/jenkins/view/opus/job/opusfile-unix/ws/doc/html/index.html">HTML</a>,</td>
     <td><a href="https://mf4.xiph.org/jenkins/view/opus/job/opusfile-unix/ws/doc/latex/refman.pdf">PDF</a></td>
+</tr>
 </table>
 </blockquote>
 
