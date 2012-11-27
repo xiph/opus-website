@@ -43,10 +43,10 @@ In addition to <a href="https://developer.mozilla.org/En/Media_formats_supported
 
 <tr class="vbottoml">
     <td rowspan=2 class="vbottom">opusfile</td>
-    <td rowspan=1>0.1</td>
+    <td rowspan=1>0.2</td>
     <td>Windows</td>
-    <td style="text-align:left;"><a href="https://ftp.mozilla.org/pub/mozilla.org/opus/win32/opusfile-0.1-win32.zip">opusfile-0.1-win32.zip</a></td>
-    <td style="text-align:right;">1049KiB</td>
+    <td style="text-align:left;"><a href="https://ftp.mozilla.org/pub/mozilla.org/opus/win32/opusfile-0.2-win32.zip">opusfile-0.2-win32.zip</a></td>
+    <td style="text-align:right;">554KiB</td>
 </tr>
 <tr class="vbottom">
     <td colspan=4 style="padding-left:1em;text-align:justify;">Opusfile
@@ -84,6 +84,17 @@ This release is identical to the final Opus reference implementation included in
 
 
 <h3>Latest <strong style='font-style: italic;'>development</strong> releases</h3>
+
+<h4 id='of-0.2'>opusfile 0.2</h4>
+<p>
+The opusfile library provides seeking, decode, and playback of Opus
+streams in the Ogg container (.opus files) including over http on
+posix systems.
+</p>
+<p>
+This release accepts valid ssl certificates, and improves some
+build and packaging issues.
+</p>
 
 <h4 id='ot-0.1.5'>opus-tools 0.1.5</h4>
 <p>
