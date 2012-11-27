@@ -95,6 +95,9 @@ posix systems.
 This release accepts valid ssl certificates, and improves some
 build and packaging issues.
 </p>
+<ul>
+<li>Source code: <a href="http://downloads.xiph.org/releases/opus/opusfile-0.2.tar.gz">opusfile-0.2.tar.gz</a></li>
+</ul>
 
 <h4 id='ot-0.1.5'>opus-tools 0.1.5</h4>
 <p>
