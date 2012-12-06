@@ -64,6 +64,20 @@ In addition to <a href="https://developer.mozilla.org/En/Media_formats_supported
 
 <h3>Latest <strong style='font-style: italic;'>stable</strong> release</h3>
 
+<h4 id='one.0.2'>libopus 1.0.2</h4>
+<p>
+Opus 1.0.2 fixes an out-of-bounds read that could be triggered by a malicious
+Opus packet causing an integer wrap-around in the padding code. Considering
+that the packet would have to be at least 16 MB in size and that no
+out-of-bounds write is possible, the severity is very low. Other changes include fixes
+and improvements to the PLC and hybrid mode quality improvements. As usual, this 
+release is fully compliant with the Opus specification.
+</p>
+<ul>
+<li>Source code: <a href="http://downloads.xiph.org/releases/opus/opus-1.0.2.tar.gz">opus-1.0.2.tar.gz</a></li>
+</ul>
+
+
 <h4 id='one.0.1'>libopus 1.0.1</h4>
 <p>
 This release includes minor updates (mostly related to the the build system) that

@@ -43,6 +43,20 @@ Opus can handle a wide range of audio applications, including Voice over IP, vid
 <ul class="descriptivelist">
 
    <li>
+      <h3>Versions 1.0.2 released</h3>
+      <p class="submitdate">6 December, 2012</p>
+      <div class="description">
+         <p>Opus 1.0.2 fixes an out-of-bounds read that could be triggered by a malicious
+         Opus packet causing an integer wrap-around in the padding code. Considering
+         that the packet would have to be at least 16 MB in size and that no
+         out-of-bounds write is possible, the severity is very low. Other changes include fixes
+         and improvements to the PLC and hybrid mode quality improvements. As usual, this 
+         release is fully compliant with the Opus specification.
+         The code is available from the <a href="downloads/">downloads page</a>.</p>
+      </div>
+   </li>
+
+   <li>
       <h3>Opus Standardized as RFC6716, Versions 1.0.0 and 1.0.1 Are Available</h3>
       <p class="submitdate">11 September, 2012</p>
       <div class="description">
