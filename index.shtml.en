@@ -43,7 +43,7 @@ Opus can handle a wide range of audio applications, including Voice over IP, vid
 <ul class="descriptivelist">
 
    <li>
-      <h3>Versions 1.0.2 released</h3>
+      <h3>Version 1.0.2 released</h3>
       <p class="submitdate">6 December, 2012</p>
       <div class="description">
          <p>Opus 1.0.2 fixes an out-of-bounds read that could be triggered by a malicious
