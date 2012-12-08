@@ -31,10 +31,12 @@ overview of the MDCT layer of Opus.</p>
 <b>Master git repository</b>: &nbsp;&nbsp;&nbsp;<span style="white-space: pre;font-family: monospace;">$ git clone <a href="http://git.xiph.org/?p=opus.git">git://git.opus-codec.org/opus.git</a></span>
 <ul style="margin-top:0;list-style-type: none;background-image:url('tree.png');background-repeat:no-repeat;padding-left:26px">
    <li>Branch <a href="http://git.xiph.org/?p=opus.git;a=shortlog;h=refs/heads/exp_analysis">exp_analysis</a> has experimental encoder perceptual tuning.</li>
+   <li>Branch <a href="http://git.xiph.org/?p=opus.git;a=shortlog;h=refs/heads/1.0.x">1.0.x</a> has the stable 1.0.x releases after master started working on 1.1</li>
    <li><b>Snapshots:</b>
        <ul>
           <li><a href="http://git.xiph.org/?p=opus.git;a=snapshot;h=HEAD;sf=tgz">opus-master.tar.gz</a></li>
           <li><a href="http://git.xiph.org/?p=opus.git;a=snapshot;h=exp_analysis;sf=tgz">opus-exp_analysis-branch.tar.gz</a></li>
+          <li><a href="http://git.xiph.org/?p=opus.git;a=snapshot;h=1.0.x;sf=tgz">opus-1.0.x-branch.tar.gz</a></li>
        </ul></li>
 <!--
     <li><b>Developer personal trees:</b>
