@@ -99,6 +99,26 @@ This release is identical to the final Opus reference implementation included in
 
 <h3>Latest <strong style='font-style: italic;'>development</strong> releases</h3>
 
+<h4 id='ot-0.1.6'>opus-tools 0.1.6</h4>
+<p>
+This release includes many build fixes, especially for Windows,
+as well as some minor correctness improvements.
+The opusenc --uncoupled switch is not longer advertised
+because this debugging option was being mistaken for a quality
+enhancement.
+</p>
+<p>
+An experiemental <tt>opusrtp</tt> tool is new in this release.
+It is not installed by default because it's of limited usefulness,
+mostly for debugging other RTP implementations. It can send an Opus
+file over RTP or record a packet stream to an Opus file, on POSIX
+systems.
+</p>
+
+<ul>
+<li>Source code: <a href="http://downloads.xiph.org/releases/opus/opus-tools-0.1.6.tar.gz">opus-tools-0.1.6.tar.gz</a></li>
+</ul>
+
 <h4 id='of-0.2'>opusfile 0.2</h4>
 <p>
 The opusfile library provides seeking, decode, and playback of Opus
