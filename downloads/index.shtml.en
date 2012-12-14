@@ -103,7 +103,7 @@ This release is identical to the final Opus reference implementation included in
 <p>
 This release includes many build fixes, especially for Windows,
 as well as some minor correctness improvements.
-The opusenc --uncoupled switch is not longer advertised
+The opusenc --uncoupled switch is no longer advertised
 because this debugging option was being mistaken for a quality
 enhancement.
 </p>
