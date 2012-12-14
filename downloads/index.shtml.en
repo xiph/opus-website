@@ -24,15 +24,15 @@ In addition to <a href="https://developer.mozilla.org/En/Media_formats_supported
 
 <tr class="vbottoml">
     <td rowspan=3 class="vbottom">opus-tools</td>
-    <td rowspan=2>0.1.5</td>
+    <td rowspan=2>0.1.6</td>
     <td>Windows</td>
-    <td style="text-align:left;"><a href="https://ftp.mozilla.org/pub/mozilla.org/opus/win32/opus-tools-0.1.5-win32.zip">opus-tools-0.1.5-win32.zip</a></td>
-    <td style="text-align:right;">425KiB</td>
+    <td style="text-align:left;"><a href="https://ftp.mozilla.org/pub/mozilla.org/opus/win32/opus-tools-0.1.6-win32.zip">opus-tools-0.1.6-win32.zip</a></td>
+    <td style="text-align:right;">427KiB</td>
 </tr>
 <tr class="vbottoml">
     <td>Mac OS X</td>
-    <td style="text-align:left;"><a href="https://ftp.mozilla.org/pub/mozilla.org/opus/macos/opus-tools-0.1.5-macos.tar.gz">opus-tools-0.1.5-macos.tar.gz</a></td>
-    <td style="text-align:right;">336KiB</td>
+    <td style="text-align:left;"><a href="https://ftp.mozilla.org/pub/mozilla.org/opus/macos/opus-tools-0.1.6-macos.tar.gz">opus-tools-0.1.6-macos.tar.gz</a></td>
+    <td style="text-align:right;">334KiB</td>
 </tr>
 <tr class="vbottom">
     <td colspan=4 style="padding-left:1em;text-align:justify;">Opus-tools provides command-line utilities to
