@@ -246,10 +246,10 @@ this stream produces an endless stream of peaceful droning. The stream is synthe
 </center>
 
 <h2>Interactive Demos</h2>
-<a href="http://europa.kradradio.com:8200/"><img align="right" width=388 height=461 alt="krad console thumbnail" src="krad-compressed2.png"/></a>
+<a href="http://europa.kradradio.com/"><img align="right" width=388 height=461 alt="krad console thumbnail" src="krad-compressed2.png"/></a>
 <a href="http://kradradio.com/">KRAD Radio</a> is an open source audio/video mixing and streaming platform currently in active development.
 <ul>
-  <li><a href="http://europa.kradradio.com:8200/">Demo station — Opuscentauri</a></li>
+  <li><a href="http://europa.kradradio.com/">Demo station — Opuscentauri</a></li>
   <li><a href="http://europa.kradradio.com:8000/">Demo station — Opusprime</a></li>
 </ul>
 Requires browser Opus and WebSockets support (e.g. Firefox)<br/>
