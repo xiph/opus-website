@@ -4,8 +4,8 @@
 <h1>Downloads</h1>
 <p>
 Even though Opus is now standardized by the IETF, this Opus implementation will keep
-improving in the future. Of course, all future versions will still be fully compliant
-with the Opus IETF specification. See the <a href="../development/">development</a> page
+improving in the future. Of course, <b>all future versions will still be fully compliant
+with the Opus IETF specification</b>. See the <a href="../development/">development</a> page
 for the latest development information.
 <p>
 
@@ -98,6 +98,19 @@ This release is identical to the final Opus reference implementation included in
 
 
 <h3>Latest <strong style='font-style: italic;'>development</strong> releases</h3>
+
+<h4 id='one.1-alpha'>libopus 1.1-alpha</h4>
+<p>
+This is an alpha release for the upcoming 1.1 version. Compared to 1.0.2,
+it includes quality improvements, optimizations, bug fixes, as well as an
+experimental speech/music detector for mode decisions. All the fixes and
+improvements from 1.0.2 are also in this release. Quality improvements
+include unconstrained VBR, a bitrate boost for tonal frames, and improvements
+to tf estimation, transient detection and dynamic allocation.
+</p>
+<ul>
+<li>Source code: <a href="http://downloads.xiph.org/releases/opus/opus-1.1-alpha.tar.gz">opus-1.1-alpha.tar.gz</a></li>
+</ul>
 
 <h4 id='ot-0.1.6'>opus-tools 0.1.6</h4>
 <p>

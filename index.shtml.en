@@ -43,6 +43,20 @@ Opus can handle a wide range of audio applications, including Voice over IP, vid
 <ul class="descriptivelist">
 
    <li>
+      <h3>Version 1.1-alpha released</h3>
+      <p class="submitdate">21 December, 2012</p>
+      <div class="description">
+         <p>This is an alpha release for the upcoming 1.1 version. Compared to 1.0.2,
+         it includes quality improvements, optimizations, bug fixes, as well as an
+         experimental speech/music detector for mode decisions. All the fixes and
+         improvements from 1.0.2 are also in this release. Quality improvements
+         include unconstrained VBR, a bitrate boost for tonal frames, and improvements
+         to tf estimation, transient detection and dynamic allocation.
+         The code is available from the <a href="downloads/">downloads page</a>.</p>
+      </div>
+   </li>
+
+   <li>
       <h3>Version 1.0.2 released</h3>
       <p class="submitdate">6 December, 2012</p>
       <div class="description">
