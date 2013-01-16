@@ -5,7 +5,7 @@
  <link rel="stylesheet" title="Default"
        href="/css/screen.css" type="text/css">
  <link rel="shortcut icon" href="favicon.ico" />
- <link rel="logo" href="/images/opus.svg" />
+ <link rel="logo" type="image/svg" href="/images/opus.svg" />
  <title>Opus Codec</title>
 </head>
 <body>
