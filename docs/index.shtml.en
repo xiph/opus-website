@@ -3,7 +3,8 @@
 
 <h1>Documentation</h1>
 
-<h2>Opus API reference (Doxygen)</h2>
+<h2>Developing with libopus (API reference)</h2>
+Libopus is the reference implementation of the Opus codec.
 <blockquote>
 <table style="border-spacing: 0;">
 <tr>
@@ -12,14 +13,16 @@
     <td><a href="opus_api-1.0.2.pdf">PDF</a></td>
 </tr>
 <tr>
-    <td style="padding-right:0.5em;"><b>libopus development version</b></td>
+    <td style="padding-right:0.5em;"><b>pre-release version</b></td>
     <td><a href="https://mf4.xiph.org/jenkins/view/opus/job/opus/ws/doc/html/index.html">HTML</a>,</td>
     <td><a href="https://mf4.xiph.org/jenkins/view/opus/job/opus/ws/doc/latex/refman.pdf">PDF</a></td>
 </tr>
 </table>
 </blockquote>
 
-<h2>Opusfile API reference (doxygen)</h2>
+<h2>Developing with Opusfile (API reference)</h2>
+Opusfile is a easy to use library that encapsulates everything you need beyond
+libopus to correctly and completely support the playback of ".opus" (OggOpus) files.
 <blockquote>
 <table style="border-spacing: 0;">
 <tr>
@@ -28,7 +31,7 @@
     <td><a href="opusfile_api-0.2.pdf">PDF</a></td>
 </tr>
 <tr>
-    <td style="padding-right:0.5em;"><b>libopusfile development version</b></td>
+    <td style="padding-right:0.5em;"><b>pre-release version</b></td>
     <td><a href="https://mf4.xiph.org/jenkins/view/opus/job/opusfile-unix/ws/doc/html/index.html">HTML</a>,</td>
     <td><a href="https://mf4.xiph.org/jenkins/view/opus/job/opusfile-unix/ws/doc/latex/refman.pdf">PDF</a></td>
 </tr>
