@@ -43,6 +43,17 @@ Opus can handle a wide range of audio applications, including Voice over IP, vid
 <ul class="descriptivelist">
 
    <li>
+      <h3>Versions 1.1-beta and 1.0.3 released</h3>
+      <p class="submitdate">11 July, 2013</p>
+      <div class="description">
+         <p>Following up on the alpha, here's now the beta release for version 1.1. Monty wrote
+         a nice <a href="http://people.xiph.org/~xiphmont/demo/opus/demo3.shtml">demo page</a> showing off all the improvements in 1.1. As for version 1.0.3 it includes a backport of the new 1.1 surround API (see the demo)
+         as well as some minor bugfixes.
+         The code is available from the <a href="downloads/">downloads page</a>.</p>
+      </div>
+   </li>
+
+   <li>
       <h3>Version 1.1-alpha released</h3>
       <p class="submitdate">21 December, 2012</p>
       <div class="description">

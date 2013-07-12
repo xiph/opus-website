@@ -64,6 +64,16 @@ In addition to <a href="https://developer.mozilla.org/En/Media_formats_supported
 
 <h3>Latest <strong style='font-style: italic;'>stable</strong> release</h3>
 
+<h4 id='one.0.3'>libopus 1.0.3</h4>
+<p>
+Opus 1.0.3 includes a backport of the new 1.1 surround API. Aside from that, it includes fixes for a
+few minor glitches during mode switching, some minor fixed-point fixes, and fixes a regression in the FEC
+code introduced in 1.0.2.
+</p>
+<ul>
+<li>Source code: <a href="http://downloads.xiph.org/releases/opus/opus-1.0.3.tar.gz">opus-1.0.3.tar.gz</a></li>
+</ul>
+
 <h4 id='one.0.2'>libopus 1.0.2</h4>
 <p>
 Opus 1.0.2 fixes an out-of-bounds read that could be triggered by a malicious
@@ -98,6 +108,15 @@ This release is identical to the final Opus reference implementation included in
 
 
 <h3>Latest <strong style='font-style: italic;'>development</strong> releases</h3>
+
+<h4 id='one.1-alpha'>libopus 1.1-beta</h4>
+<p>
+This is a beta release for the upcoming 1.1 version. The improvements are listed in 
+<a href="http://people.xiph.org/~xiphmont/demo/opus/demo3.shtml">Monty's Opus 1.1-beta demo.</a>
+</p>
+<ul>
+<li>Source code: <a href="http://downloads.xiph.org/releases/opus/opus-1.1-beta.tar.gz">opus-1.1-beta.tar.gz</a></li>
+</ul>
 
 <h4 id='one.1-alpha'>libopus 1.1-alpha</h4>
 <p>
