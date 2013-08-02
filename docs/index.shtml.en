@@ -90,27 +90,6 @@ libopus to correctly and completely support the playback of ".opus" (OggOpus) fi
 </table>
 </blockquote>
 
-
-<h2 id="testvectors">Test Vectors</h2>
-<p>
-  Test files to verify that the Opus decoders are operating properly.
-</p>
-<blockquote>
-<p><a href="/testvectors/opus_testvectors.tar.gz">Bitstream conformance set</a> for the codec.<br/>
-    This set of bitstreams is used to measure codec implementations for conformance with the specification.
-<br>Also available from
- <a href="http://downloads.xiph.org/releases/opus/opus_testvectors.tar.gz">Xiph.Org</a> and 
- <a href="https://ftp.mozilla.org/pub/mozilla.org/opus/opus_testvectors.tar.gz">Mozilla</a>.</p>
-</blockquote>
-<blockquote><a href="http://people.xiph.org/~greg/opus_testvectors/">The .opus test set</a> is an in-development larger test suite for .opus files.<br/>
-  These are suitable for testing opusdec and other media-player software.<br/>
-  Files prefixed with 'broken' and 'failure' are intentionally malformed and at least the latter should be rejected.
-</blockquote>
-<p>
-  Note that these files are designed to exercise all aspects of an
-  implementation, the fact that they sound terrible is an intended consequence.
-</p>
-
 <h2>Inside Opus</h2>
 
 <p>
@@ -151,5 +130,25 @@ were published on CELT:
 <p>Paper 1 describes CELT version 0.3.2, while paper 2 applies to 0.5.2. The main things that
 changed since these papers were written are the pitch prediction/filtering and the
 birdie avoidance method.</p> 
+
+<h2 id="testvectors">Test Vectors</h2>
+<p>
+  Test files to verify that the Opus decoders are operating properly.
+</p>
+<blockquote>
+<p><a href="/testvectors/opus_testvectors.tar.gz">Bitstream conformance set</a> for the codec.<br/>
+    This set of bitstreams is used to measure codec implementations for conformance with the specification.
+<br>Also available from
+ <a href="http://downloads.xiph.org/releases/opus/opus_testvectors.tar.gz">Xiph.Org</a> and 
+ <a href="https://ftp.mozilla.org/pub/mozilla.org/opus/opus_testvectors.tar.gz">Mozilla</a>.</p>
+</blockquote>
+<blockquote><a href="http://people.xiph.org/~greg/opus_testvectors/">The .opus test set</a> is an in-development larger test suite for .opus files.<br/>
+  These are suitable for testing opusdec and other media-player software.<br/>
+  Files prefixed with 'broken' and 'failure' are intentionally malformed and at least the latter should be rejected.
+</blockquote>
+<p>
+  Note that these files are designed to exercise all aspects of an
+  implementation, the fact that they sound terrible is an intended consequence.
+</p>
 
 <!--#include virtual="/ssi/footer.include" -->
