@@ -122,7 +122,7 @@ those who want to understand how Opus works. For an overview of the codec, see t
 
 <ul>
 <li>J.-M. Valin, T. B. Terriberry, K. Vos, <a href="http://jmvalin.ca/papers/aes135_opus_celt.pdf">High-Quality, Low-Delay Music Coding in the Opus Codec</a>, <i>Accepted for the 135th AES Convention, 2013.</i></li>
-<li>K. Vos, K. V. Sorensen, S. S. Jensen, <u>Voice Coding with Opus</u>, <i>Accepted for the 135th AES Convention, 2013.</i></li>
+<li>K. Vos, K. V. Sorensen, S. S. Jensen, <a href="http://jmvalin.ca/papers/aes135_opus_silk.pdf">Voice Coding with Opus</a>, <i>Accepted for the 135th AES Convention, 2013.</i></li>
 </ul>
 
 <p>
@@ -131,8 +131,8 @@ For historical reasons, some of the information on the algorithmic details is sp
 
 <h3>SILK</h3>
 
-<p>For information on SILK, see the <a href="https://www.ietf.org/proceedings/79/slides/codec-4.pdf">slides</a>
-by Koen Vos from the 79th IETF meeting. See also the <a href="https://developer.skype.com/silk/">original SILK codec page</a>.</p>
+<p>For more information on SILK, see the <a href="https://www.ietf.org/proceedings/79/slides/codec-4.pdf">slides</a>
+by Koen Vos from the 79th IETF meeting.</p>
 
 <h3>CELT</h3>
 
