@@ -99,24 +99,27 @@ those who want to understand how Opus works. For an overview of the codec, see t
 <a href="http://www.opus-codec.org/presentations/">linux.conf.au 2012 Opus presentation</a>.
 </p>
 
+<p>The most accessible descriptions of Opus are probaly Monty's
+<a href="http://people.xiph.org/~xiphmont/demo/">demos</a>. 
+We have also written two papers describing the algorithm in details:
+</p>
+
 <ul>
 <li>J.-M. Valin, T. B. Terriberry, K. Vos, <a href="http://jmvalin.ca/papers/aes135_opus_celt.pdf">High-Quality, Low-Delay Music Coding in the Opus Codec</a>, <i>Accepted for the 135th AES Convention, 2013.</i></li>
-<li>K. Vos, K. V. Sorensen, S. S. Jensen, <a href="http://jmvalin.ca/papers/aes135_opus_silk.pdf">Voice Coding with Opus</a>, <i>Accepted for the 135th AES Convention, 2013.</i></li>
+<li>K. Vos, K. V. Sorensen, S. S. Jensen, J.-M. Valin, <a href="http://jmvalin.ca/papers/aes135_opus_silk.pdf">Voice Coding with Opus</a>, <i>Accepted for the 135th AES Convention, 2013.</i></li>
 </ul>
+
+<h3>Older contents</h3>
 
 <p>
 For historical reasons, some of the information on the algorithmic details is specific to either SILK or CELT.
 </p>
 
-<h3>SILK</h3>
 
 <p>For more information on SILK, see the <a href="https://www.ietf.org/proceedings/79/slides/codec-4.pdf">slides</a>
 by Koen Vos from the 79th IETF meeting.</p>
 
-<h3>CELT</h3>
-
-<p>The most accessible descriptions of CELT are probaly Monty's
-<a href="http://people.xiph.org/~xiphmont/demo/celt/demo.html">CELT demo</a>. You can also see
+<p>You can see
 Tim Terriberry's <a href="http://celt-codec.org/presentations/">linux.conf.au 2009 CELT
 presentation</a>. Those with a signal processing background can also read two papers that
 were published on CELT:
