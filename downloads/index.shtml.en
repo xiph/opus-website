@@ -109,6 +109,24 @@ This release is identical to the final Opus reference implementation included in
 
 <h3>Latest <strong style='font-style: italic;'>development</strong> releases</h3>
 
+<h4 id='of-0.4'>opusfile 0.4</h4>
+<p>
+The opusfile library provides seeking, decode, and playback of Opus
+streams in the Ogg container (.opus files) including over http on
+posix and windows systems.
+</p>
+<p>
+This release accepts valid ssl certificates, and improves some
+build and packaging issues.
+</p>
+<ul>
+<li>Source code:
+  <a href="http://downloads.xiph.org/releases/opus/opusfile-0.4.tar.gz">opusfile-0.4.tar.gz</a>
+  <a href="http://downloads.xiph.org/releases/opus/opusfile-0.4.zip">opusfile-0.4.zip</a>
+</li>
+</ul>
+
+<
 <h4 id='one.1-alpha'>libopus 1.1-beta</h4>
 <p>
 This is a beta release for the upcoming 1.1 version. The improvements are listed in 
