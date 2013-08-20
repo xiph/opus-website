@@ -45,15 +45,15 @@ In addition to <a href="https://developer.mozilla.org/En/Media_formats_supported
     <td rowspan=2 class="vbottom">opusfile</td>
     <td rowspan=1>0.2</td>
     <td>Windows</td>
-    <td style="text-align:left;"><a href="https://ftp.mozilla.org/pub/mozilla.org/opus/win32/opusfile-0.2-win32.zip">opusfile-0.2-win32.zip</a></td>
-    <td style="text-align:right;">554KiB</td>
+    <td style="text-align:left;"><a href="https://ftp.mozilla.org/pub/mozilla.org/opus/win32/opusfile-0.4-win32.zip">opusfile-0.4-win32.zip</a></td>
+    <td style="text-align:right;">2.2MiB</td>
 </tr>
 <tr class="vbottom">
     <td colspan=4 style="padding-left:1em;text-align:justify;">Opusfile
      provides application developers with a high-level API for decoding and
      seeking in <b>.</b>opus files.
-    DLLs for the required libraries, libogg 1.3.0 and libopus 1.0.1, are also
-     included.</td>
+    DLLs for the required libraries, libogg 1.3.1 and libopus 1.1 beta and
+     openssl, are also included.</td>
 </tr>
 
 </tbody>
@@ -116,8 +116,9 @@ streams in the Ogg container (.opus files) including over http on
 posix and windows systems.
 </p>
 <p>
-This release accepts valid ssl certificates, and improves some
-build and packaging issues.
+This release includes Microsoft Visual Studio project files, supports
+HTTPS urls on Windows, and includes new API calls for gain control
+and picture metadata as well as numerous bug fixes.
 </p>
 <ul>
 <li>Source code:
