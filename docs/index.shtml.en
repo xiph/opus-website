@@ -26,9 +26,9 @@ libopus to correctly and completely support the playback of ".opus" (OggOpus) fi
 <blockquote>
 <table style="border-spacing: 0;">
 <tr>
-    <td style="padding-right:0.5em;"><b>libopusfile 0.2 release</b></td>
-    <td><a href="opusfile_api-0.2/index.html">HTML</a>,</td>
-    <td><a href="opusfile_api-0.2.pdf">PDF</a></td>
+    <td style="padding-right:0.5em;"><b>libopusfile 0.4 release</b></td>
+    <td><a href="opusfile_api-0.4/index.html">HTML</a>,</td>
+    <td><a href="opusfile_api-0.4.pdf">PDF</a></td>
 </tr>
 <tr>
     <td style="padding-right:0.5em;"><b>pre-release version</b></td>
