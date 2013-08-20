@@ -43,7 +43,7 @@ In addition to <a href="https://developer.mozilla.org/En/Media_formats_supported
 
 <tr class="vbottoml">
     <td rowspan=2 class="vbottom">opusfile</td>
-    <td rowspan=1>0.2</td>
+    <td rowspan=1>0.4</td>
     <td>Windows</td>
     <td style="text-align:left;"><a href="https://ftp.mozilla.org/pub/mozilla.org/opus/win32/opusfile-0.4-win32.zip">opusfile-0.4-win32.zip</a></td>
     <td style="text-align:right;">2.2MiB</td>
