@@ -109,6 +109,21 @@ This release is identical to the final Opus reference implementation included in
 
 <h3>Latest <strong style='font-style: italic;'>development</strong> releases</h3>
 
+<h4 id='ot-0.1.7'>opus-tools 0.1.7</h4>
+<p>
+This release has numerious build fixes, including updated Visual Studio
+ project files to match similar changes in the opus package.
+Support encoding from FLAC files.
+Metadata tag support, including album art.
+Use the new surround encoder API in opus 1.0.3.
+The opusenc --uncoupled switch no longer works.
+</p>
+
+<ul>
+<li>Source code: <a href="http://downloads.xiph.org/releases/opus/opus-tools-0.1.7.tar.gz">opus-tools-0.1.7.tar.gz</a></li>
+</ul>
+
+
 <h4 id='of-0.4'>opusfile 0.4</h4>
 <p>
 The opusfile library provides seeking, decode, and playback of Opus
