@@ -105,7 +105,7 @@ We have also written some papers describing the algorithm in details:
 </p>
 
 <ul>
-<li>J.-M. Valin, T. B. Terriberry, K. Vos, <a href="http://jmvalin.ca/papers/aes135_opus_celt.pdf">High-Quality, Low-Delay Music Coding in the Opus Codec</a>, <i>Accepted for the 135th AES Convention</i>, 2013.</li>
+<li>J.-M. Valin, G. Maxwell, T. B. Terriberry, K. Vos, <a href="http://jmvalin.ca/papers/aes135_opus_celt.pdf">High-Quality, Low-Delay Music Coding in the Opus Codec</a>, <i>Accepted for the 135th AES Convention</i>, 2013.</li>
 <li>K. Vos, K. V. Sorensen, S. S. Jensen, J.-M. Valin, <a href="http://jmvalin.ca/papers/aes135_opus_silk.pdf">Voice Coding with Opus</a>, <i>Accepted for the 135th AES Convention</i>, 2013.</li>
 <li>K. Vos, <a href="vos_fastburg.pdf">A Fast Implementation of Burg's Method</a>, 2013.</li>
 </ul>
