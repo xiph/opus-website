@@ -25,6 +25,7 @@ vlcActiveX = (IsObject(CreateObject("VideoLAN.VLCPlugin.2")))
 <h1>Presentations</h1>
 
 <h2><a href="http://www.aes.org/events/135/">135th AES Convention</a> 2013 &mdash; Koen Vos</h2>
+   <a href="opus_voice_aes135.pdf">Slides</a> <small>(PDF; 1394 KiB)</small>
 
 <h2><a href="http://www.aes.org/events/135/">135th AES Convention</a> 2013 &mdash; Jean-Marc Valin</h2>
    <a href="opus_celt_aes135.pdf">Slides</a> <small>(PDF; 881 KiB)</small>
