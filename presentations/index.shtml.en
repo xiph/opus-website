@@ -23,6 +23,7 @@ vlcActiveX = (IsObject(CreateObject("VideoLAN.VLCPlugin.2")))
 <!--#include virtual="/ssi/contentheader.include" -->
 
 <h1>Presentations</h1>
+<h2><a href="opus_celt_aes135.pdf">Audio Engineering Society (AES)</a> 2013 &mdash; J.-M. Valin, G. Maxwell, K. Vos, T. B. Terriberry</h2>
 <h2><a href="http://linux.conf.au/">linux.conf.au</a> 2012 &mdash; Jean-Marc Valin</h2>
 <p>Also <a href="https://www.youtube.com/watch?v=iaAD71h9gDU">available on YouTube</a></p>
   <table style="border:0; width:496px;"><tr><td><video id="lcaopusvideo" width="496" height="372"
