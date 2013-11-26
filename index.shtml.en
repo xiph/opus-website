@@ -43,6 +43,19 @@ Opus can handle a wide range of audio applications, including Voice over IP, vid
 <ul class="descriptivelist">
 
    <li>
+      <h3>Versions 1.1-rc released</h3>
+      <p class="submitdate">11 July, 2013</p>
+      <div class="description">
+         <p>We're getting closer to the final 1.1 with this new release that further 
+         improves surround encoding quality. 
+         It also includes better tuning of surround and stereo for lower
+         bitrates. The complexity has been reduced on all CPUs, but especially ARM,
+         which now has Neon assembly for the encoder. At last, there are a few bugfixes.
+         The code is available from the <a href="downloads/">downloads page</a>.</p>
+      </div>
+   </li>
+
+   <li>
       <h3>Versions 1.1-beta and 1.0.3 released</h3>
       <p class="submitdate">11 July, 2013</p>
       <div class="description">
@@ -94,60 +107,9 @@ Opus can handle a wide range of audio applications, including Voice over IP, vid
       </div>
    </li>
 
-   <li>
-      <h3>Third Release Candidate for Opus 1.0.1</h3>
-      <p class="submitdate">4 September, 2012</p>
-      <div class="description">
-         <p>This third release candidate for 1.0.1 has documenation and
-         minor portability fixes as part of the final polish before
-         release.
-         Source code is available from the <a href="downloads/">downloads page</a>.</p>
-      </div>
-   </li>
-
-
-   <li>
-      <h3>Second Release Candidate for Opus 1.0.1</h3>
-      <p class="submitdate">15 August, 2012</p>
-      <div class="description">
-         <p>This second release candidate for 1.0.1 includes documentation fixes and a Windows build system.
-          Source code is available from the <a href="downloads/older.shtml">archived downloads page</a>.</p>
-      </div>
-   </li>
-
-   <li>
-      <h3>Release Candidates for Opus 1.0.0 and 1.0.1</h3>
-      <p class="submitdate">8 August, 2012</p>
-      <div class="description">
-         <p>Release candidates for the upcoming 1.0.0 and 1.0.1 releases are now available. Expect the final 1.0.0 release in the next few weeks along with the final Opus RFC. Version 1.0.1 will be released at the same time and includes minor fixes that did not make it to the RFC. Source code is available from the <a href="http://downloads.xiph.org/releases/opus/">downloads page</a>.</p>
-      </div>
-   </li>
-
-   <li>
-      <h3>WebRTC Adopts Opus as MTI Codec</h3>
-      <p class="submitdate">27 July, 2012</p>
-      <div class="description">
-         <p>Participants to the IETF rtcweb working group have accepted (through typical IETF strong consensus) a <a href="http://www.ietf.org/proceedings/84/slides/slides-84-rtcweb-6.pdf">proposal</a> to select both Opus and G.711 as mandatory-to-implement (MTI) audio codecs. This means that all browsers that implement that standard will have to ship Opus support.</p>
-      </div>
-   </li>
-
-   <li>
-      <h3>Opus Ships in Firefox 15 (beta)</h3>
-      <p class="submitdate">19 July, 2012</p>
-      <div class="description">
-         <p>The latest Firefox beta <a href="https://hacks.mozilla.org/2012/07/firefox-beta-15-supports-the-new-opus-audio-format/">now ships with support for Opus</a>.</p>
-      </div>
-   </li>
-
-   <li>
-      <h3>Opus Approved by the IETF</h3>
-      <p class="submitdate">2 July, 2012</p>
-      <div class="description">
-         <p>The IETF has just <a href="http://www.ietf.org/mail-archive/web/codec/current/msg02880.html">approved</a> Opus for publication as an RFC. This should happen in the next few weeks, along with release 1.0.</p>
-      </div>
-   </li>
 </ul>
 
+<h2 id="news"><a href="older_news.shtml.en">Older News</a></h2>
 
 
 <!--#include virtual="/ssi/footer.include" -->

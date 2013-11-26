@@ -3,6 +3,114 @@
 
 <h1>Older/Historic Releases</h1>
 
+<h4 id='one.1-beta'>libopus 1.1-beta</h4>
+<p>
+This is a beta release for the upcoming 1.1 version. The improvements are listed in 
+<a href="http://people.xiph.org/~xiphmont/demo/opus/demo3.shtml">Monty's Opus 1.1-beta demo.</a>
+</p>
+<ul>
+<li>Source code: <a href="http://downloads.xiph.org/releases/opus/opus-1.1-beta.tar.gz">opus-1.1-beta.tar.gz</a></li>
+</ul>
+
+<h4 id='one.1-alpha'>libopus 1.1-alpha</h4>
+<p>
+This is an alpha release for the upcoming 1.1 version. Compared to 1.0.2,
+it includes quality improvements, optimizations, bug fixes, as well as an
+experimental speech/music detector for mode decisions. All the fixes and
+improvements from 1.0.2 are also in this release. Quality improvements
+include unconstrained VBR, a bitrate boost for tonal frames, and improvements
+to tf estimation, transient detection and dynamic allocation.
+</p>
+<ul>
+<li>Source code: <a href="http://downloads.xiph.org/releases/opus/opus-1.1-alpha.tar.gz">opus-1.1-alpha.tar.gz</a></li>
+</ul>
+
+<h4 id='ot-0.1.6'>opus-tools 0.1.6</h4>
+<p>
+This release includes many build fixes, especially for Windows,
+as well as some minor correctness improvements.
+The opusenc --uncoupled switch is no longer advertised
+because this debugging option was being mistaken for a quality
+enhancement.
+</p>
+<p>
+An experiemental <tt>opusrtp</tt> tool is new in this release.
+It is not installed by default because it's of limited usefulness,
+mostly for debugging other RTP implementations. It can send an Opus
+file over RTP or record a packet stream to an Opus file, on POSIX
+systems.
+</p>
+
+<ul>
+<li>Source code: <a href="http://downloads.xiph.org/releases/opus/opus-tools-0.1.6.tar.gz">opus-tools-0.1.6.tar.gz</a></li>
+</ul>
+
+<h4 id='of-0.2'>opusfile 0.2</h4>
+<p>
+The opusfile library provides seeking, decode, and playback of Opus
+streams in the Ogg container (.opus files) including over http on
+posix systems.
+</p>
+<p>
+This release accepts valid ssl certificates, and improves some
+build and packaging issues.
+</p>
+<ul>
+<li>Source code: <a href="http://downloads.xiph.org/releases/opus/opusfile-0.2.tar.gz">opusfile-0.2.tar.gz</a></li>
+</ul>
+
+<h4 id='ot-0.1.5'>opus-tools 0.1.5</h4>
+<p>
+This release removes the confusing and ineffective '--speech' and
+'--music' options to opusenc, and improves build system support.
+</p>
+
+<ul>
+<li>Source code: <a href="http://downloads.xiph.org/releases/opus/opus-tools-0.1.5.tar.gz">opus-tools-0.1.5.tar.gz</a></li>
+</ul>
+
+<h4 id='ot-0.1'>opusfile 0.1</h4>
+<p>
+This release provides a high-level decoding and seeking API for .opus files.
+</p>
+
+<ul>
+<li>Source code: <a href="http://downloads.xiph.org/releases/opus/opusfile-0.1.tar.gz">opusfile-0.1.tar.gz</a></li>
+</ul>
+
+<h4 id='one.0.2'>libopus 1.0.2</h4>
+<p>
+Opus 1.0.2 fixes an out-of-bounds read that could be triggered by a malicious
+Opus packet causing an integer wrap-around in the padding code. Considering
+that the packet would have to be at least 16 MB in size and that no
+out-of-bounds write is possible, the severity is very low. Other changes include fixes
+and improvements to the PLC and hybrid mode quality improvements. As usual, this 
+release is fully compliant with the Opus specification.
+</p>
+<ul>
+<li>Source code: <a href="http://downloads.xiph.org/releases/opus/opus-1.0.2.tar.gz">opus-1.0.2.tar.gz</a></li>
+</ul>
+
+
+<h4 id='one.0.1'>libopus 1.0.1</h4>
+<p>
+This release includes minor updates (mostly related to the the build system) that
+did not make it to the final RFC. It is fully compliant with the Opus specification.
+</p>
+<ul>
+<li>Source code: <a href="http://downloads.xiph.org/releases/opus/opus-1.0.1.tar.gz">opus-1.0.1.tar.gz</a></li>
+</ul>
+
+
+<h4 id='one.0.0'>libopus 1.0.0</h4>
+<p>
+This release is identical to the final Opus reference implementation included in RFC6716.
+</p>
+<ul>
+<li>Source code: <a href="http://downloads.xiph.org/releases/opus/opus-1.0.0.tar.gz">opus-1.0.0.tar.gz</a></li>
+</ul>
+
+
 <h4 id="one.0.1">libopus 1.0.1-RC3</h4>
 <p>
 This is a third release candidate for the upcoming 1.0.1 release.
