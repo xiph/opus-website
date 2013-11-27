@@ -43,6 +43,16 @@ Opus can handle a wide range of audio applications, including Voice over IP, vid
 <ul class="descriptivelist">
 
    <li>
+      <h3>Versions 1.1-rc2 released</h3>
+      <p class="submitdate">27 November, 2013</p>
+      <div class="description">
+         <p>This second release candidate fixes an alignment issue on ARMv5E and improves
+         the Neon optimizations. Other platforms are unaffected.
+         The code is available from the <a href="downloads/">downloads page</a>.</p>
+      </div>
+   </li>
+
+   <li>
       <h3>Versions 1.1-rc released</h3>
       <p class="submitdate">26 November, 2013</p>
       <div class="description">

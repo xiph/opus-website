@@ -88,6 +88,15 @@ code introduced in 1.0.2.
 
 <h3>Latest <strong style='font-style: italic;'>development</strong> releases</h3>
 
+<h4 id='one.1-rc2'>libopus 1.1-rc2</h4>
+<p>
+This second release candidate fixes an alignment issue on ARMv5E and improves
+the Neon optimizations. Other platforms are unaffected.
+</p>
+<ul>
+<li>Source code: <a href="http://downloads.xiph.org/releases/opus/opus-1.1-rc2.tar.gz">opus-1.1-rc2.tar.gz</a></li>
+</ul>
+
 <h4 id='one.1-rc'>libopus 1.1-rc</h4>
 <p>
 Compared to 1.1-beta, this new release further improves surround encoding
