@@ -102,7 +102,7 @@ applications, bitrate changes are expected to occur much more slowly.
 <tr>
 <td colspan="3">
 	<br/>
-	<center><audio id="sweepaudio" src="sweep.ogg" controls style="width:400px"></audio></center>
+	<center><audio id="sweepaudio" src="sweep.wav" controls style="width:400px"></audio></center>
 </td>
 </tr>
 </table>
@@ -133,7 +133,7 @@ applications, bitrate changes are expected to occur much more slowly.
 			var stereo = document.getElementById("stereo");
 			var mono = document.getElementById("mono");
 
-			if(time < 8.3) {
+			if(time < 6.14) {
 				stereo.style.display = "none";
 				mono.style.display = "";
 			} else {
@@ -143,16 +143,16 @@ applications, bitrate changes are expected to occur much more slowly.
 			}
 
 			var bandwidth = 4;
-			if(time > 1.4) {
+			if(time > 1.06) {
 				bandwidth = 6;
 			}
-			if(time > 3.8) {
+			if(time > 3.24) {
 				bandwidth = 8;
 			}
-			if(time > 6.2) {
+			if(time > 4) {
 				bandwidth = 12;
 			}
-			if(time > 10.6) {
+			if(time > 6.4) {
 				bandwidth = 20;
 			}
 			bandwidthGauge.setValue(bandwidth);
