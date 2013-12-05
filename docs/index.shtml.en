@@ -8,7 +8,7 @@ Libopus is the reference implementation of the Opus codec.
 <blockquote>
 <table style="border-spacing: 0;">
 <tr>
-    <td style="padding-right:0.5em;"><b>libopus 1.1.0 release</b></td>
+    <td style="padding-right:0.5em;"><b>libopus 1.1 release</b></td>
     <td><a href="html_api-1.1.0/index.html">HTML</a>,</td>
     <td><a href="opus_api-1.1.0.pdf">PDF</a></td>
 </tr>
@@ -18,9 +18,9 @@ Libopus is the reference implementation of the Opus codec.
     <td><a href="https://mf4.xiph.org/jenkins/view/opus/job/opus/ws/doc/latex/refman.pdf">PDF</a></td>
 </tr>
 <tr>
-    <td style="padding-right:0.5em;"><b>libopus 1.0.2 release</b></td>
-    <td><a href="html_api-1.0.2/index.html">HTML</a>,</td>
-    <td><a href="opus_api-1.0.2.pdf">PDF</a></td>
+    <td style="padding-right:0.5em;"><b>libopus 1.0.3 release</b></td>
+    <td><a href="html_api-1.0.3/index.html">HTML</a>,</td>
+    <td><a href="opus_api-1.0.3.pdf">PDF</a></td>
 </tr>
 </table>
 </blockquote>
