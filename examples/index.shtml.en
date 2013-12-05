@@ -11,7 +11,8 @@
 <h2>Audio samples</h2>
 
 <p>These samples demonstrate the quality achievable with Opus. They are have been encoded with 
-Opus and then decoded back to wav so that any browser can play them.</p>
+Opus and then decoded back to wav so that any browser can play them. The bitrates indicated are
+<i>target bitrates</i>, i.e. the average that would be achieved on a large audio collection.</p>
 
 
 <div class="caption">
