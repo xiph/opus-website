@@ -80,9 +80,9 @@ In addition to <a href="https://developer.mozilla.org/En/Media_formats_supported
 <p>
 Opus 1.1 includes:
 <ul>
-         <li>new analysis code and tuning that significantly improves encoding quality, especially for variable-bitrate (VBR)</li>
-         <li>automatic detection of speech or music to decide which encoding mode to use.</li>
-         <li>surround with good quality at 128 kbps for 5.1 and usable down to 48 kbps.</li>
+         <li>new analysis code and tuning that significantly improves encoding quality, especially for variable-bitrate (VBR),</li>
+         <li>automatic detection of speech or music to decide which encoding mode to use,</li>
+         <li>surround with good quality at 128 kbps for 5.1 and usable down to 48 kbps, and</li>
          <li>speed improvements on all architectures, especially ARM, where decoding uses around 40% less CPU and encoding uses around 30% less CPU.</li> 
 </ul>
 These improvements are explained in more details in
