@@ -24,22 +24,23 @@ In addition to <a href="https://developer.mozilla.org/En/Media_formats_supported
 
 <tr class="vbottoml">
     <td rowspan=3 class="vbottom">opus-tools</td>
-    <td rowspan=3>0.1.7</td>
+    <td rowspan=3>0.1.8</td>
     <td>Windows</td>
-    <td style="text-align:left;"><a href="https://ftp.mozilla.org/pub/mozilla.org/opus/win32/opus-tools-0.1.7-win32.zip">opus-tools-0.1.7-win32.zip</a></td>
-    <td style="text-align:right;">388KiB</td>
+    <td style="text-align:left;"><a href="https://ftp.mozilla.org/pub/mozilla.org/opus/win32/opus-tools-0.1.8-win32.zip">opus-tools-0.1.8-win32.zip</a></td>
+    <td style="text-align:right;">411KiB</td>
 </tr>
 <tr class="vbottoml">
     <td>Mac OS X</td>
-    <td style="text-align:left;"><a href="https://ftp.mozilla.org/pub/mozilla.org/opus/macos/opus-tools-0.1.7-macos.tar.gz">opus-tools-0.1.7-macos.tar.gz</a></td>
-    <td style="text-align:right;">346KiB</td>
+    <td style="text-align:left;"><a href="https://ftp.mozilla.org/pub/mozilla.org/opus/macos/opus-tools-0.1.8-macos.tar.gz">opus-tools-0.1.8-macos.tar.gz</a></td>
+    <td style="text-align:right;">399KiB</td>
 </tr>
+<!--
 <tr class="vbottoml">
     <td>Source</td>
     <td style="text-align:left;"><a href="https://ftp.mozilla.org/pub/mozilla.org/opus/opus-tools-0.1.7.tar.gz">opus-tools-0.1.7.tar.gz</a></td>
     <td style="text-align:right;">376KiB</td>
 </tr>
-
+-->
 <tr class="vbottom">
     <td colspan=4 style="padding-left:1em;text-align:justify;">Opus-tools provides command-line utilities to
      <a href="https://mf4.xiph.org/jenkins/view/opus/job/opus-tools/ws/man/opusenc.html">encode</a>,
@@ -75,6 +76,23 @@ In addition to <a href="https://developer.mozilla.org/En/Media_formats_supported
 
 <h3>Latest <strong style='font-style: italic;'>stable</strong> release</h3>
 
+<h4 id='one.1'>libopus 1.1</h4>
+<p>
+Opus 1.1 includes:
+<ul>
+         <li>new analysis code and tuning that significantly improves encoding quality, especially for variable-bitrate (VBR)</li>
+         <li>automatic detection of speech or music to decide which encoding mode to use.</li>
+         <li>surround with good quality at 128 kbps for 5.1 and usable down to 48 kbps.</li>
+         <li>speed improvements on all architectures, especially ARM, where decoding uses around 40% less CPU and encoding uses around 30% less CPU.</li> 
+</ul>
+These improvements are explained in more details in
+<a href="http://people.xiph.org/~xiphmont/demo/opus/demo3.shtml">Monty's demo</a> 
+(updated from the 1.1 beta demo).
+</p>
+<ul>
+<li>Source code: <a href="http://downloads.xiph.org/releases/opus/opus-1.1.tar.gz">opus-1.1.tar.gz</a></li>
+</ul>
+
 <h4 id='one.0.3'>libopus 1.0.3</h4>
 <p>
 Opus 1.0.3 includes a backport of the new 1.1 surround API. Aside from that, it includes fixes for a
@@ -87,6 +105,15 @@ code introduced in 1.0.2.
 
 
 <h3>Latest <strong style='font-style: italic;'>development</strong> releases</h3>
+
+<h4 id='ot-0.1.8'>opus-tools 0.1.8</h4>
+<p>
+This release fixes a memory corruption bug with FLAC album art handling.
+</p>
+
+<ul>
+<li>Source code: <a href="http://downloads.xiph.org/releases/opus/opus-tools-0.1.8.tar.gz">opus-tools-0.1.8.tar.gz</a></li>
+</ul>
 
 <h4 id='one.1-rc3'>libopus 1.1-rc3</h4>
 <p>
