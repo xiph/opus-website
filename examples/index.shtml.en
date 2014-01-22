@@ -246,6 +246,9 @@ this stream produces an endless stream of peaceful droning. The stream is synthe
 </table>
 </center>
 
+There is also a list of Opus internet radio streams on the <a href="http://dir.xiph.org/by_format/Opus">icecast directory</a>.
+
+<!--
 <h2>Interactive Demos</h2>
 <a href="http://europa.kradradio.com/"><img align="right" width=388 height=461 alt="krad console thumbnail" src="krad-compressed2.png"/></a>
 <a href="http://kradradio.com/">KRAD Radio</a> is an open source audio/video mixing and streaming platform currently in active development.
@@ -256,7 +259,7 @@ this stream produces an endless stream of peaceful droning. The stream is synthe
 Requires browser Opus and WebSockets support (e.g. Firefox)<br/>
 (The latency is high due to buffering in the browser's audio tag and doesn't represent Opus' low latency.)
 <br style="clear:both;"/>
-
+-->
 
 
 
