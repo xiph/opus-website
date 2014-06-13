@@ -34,13 +34,11 @@ In addition to <a href="https://developer.mozilla.org/En/Media_formats_supported
     <td style="text-align:left;"><a href="https://ftp.mozilla.org/pub/mozilla.org/opus/macos/opus-tools-0.1.9-macos.tar.gz">opus-tools-0.1.9-macos.tar.gz</a></td>
     <td style="text-align:right;">399KiB</td>
 </tr>
-<!--
 <tr class="vbottoml">
     <td>Source</td>
     <td style="text-align:left;"><a href="https://ftp.mozilla.org/pub/mozilla.org/opus/opus-tools-0.1.9.tar.gz">opus-tools-0.1.9.tar.gz</a></td>
     <td style="text-align:right;">376KiB</td>
 </tr>
--->
 <tr class="vbottom">
     <td colspan=4 style="padding-left:1em;text-align:justify;">Opus-tools provides command-line utilities to
      <a href="https://mf4.xiph.org/jenkins/view/opus/job/opus-tools/ws/man/opusenc.html">encode</a>,
@@ -106,7 +104,7 @@ code introduced in 1.0.2.
 
 <h3>Latest <strong style='font-style: italic;'>development</strong> releases</h3>
 
-<h4 id='ot-0.1.9'>opus-tools 0.1.8</h4>
+<h4 id='ot-0.1.9'>opus-tools 0.1.9</h4>
 <p>
 This release adds support for 32-bit floating point WAV output and
 fixes a number of minor issues.
