@@ -24,21 +24,21 @@ In addition to <a href="https://developer.mozilla.org/En/Media_formats_supported
 
 <tr class="vbottoml">
     <td rowspan=2 class="vbottom">opus-tools</td>
-    <td rowspan=2>0.1.8</td>
+    <td rowspan=2>0.1.9</td>
     <td>Windows</td>
-    <td style="text-align:left;"><a href="https://ftp.mozilla.org/pub/mozilla.org/opus/win32/opus-tools-0.1.8-win32.zip">opus-tools-0.1.8-win32.zip</a></td>
-    <td style="text-align:right;">411KiB</td>
+    <td style="text-align:left;"><a href="https://ftp.mozilla.org/pub/mozilla.org/opus/win32/opus-tools-0.1.9-win32.zip">opus-tools-0.1.9-win32.zip</a></td>
+    <td style="text-align:right;">403KiB</td>
 </tr>
 <tr class="vbottoml">
     <td>Mac OS X</td>
-    <td style="text-align:left;"><a href="https://ftp.mozilla.org/pub/mozilla.org/opus/macos/opus-tools-0.1.8-macos.tar.gz">opus-tools-0.1.8-macos.tar.gz</a></td>
+    <td style="text-align:left;"><a href="https://ftp.mozilla.org/pub/mozilla.org/opus/macos/opus-tools-0.1.9-macos.tar.gz">opus-tools-0.1.9-macos.tar.gz</a></td>
     <td style="text-align:right;">399KiB</td>
 </tr>
 <!--
 <tr class="vbottoml">
     <td>Source</td>
-    <td style="text-align:left;"><a href="https://ftp.mozilla.org/pub/mozilla.org/opus/opus-tools-0.1.8.tar.gz">opus-tools-0.1.8.tar.gz</a></td>
-    <td style="text-align:right;">380KiB</td>
+    <td style="text-align:left;"><a href="https://ftp.mozilla.org/pub/mozilla.org/opus/opus-tools-0.1.9.tar.gz">opus-tools-0.1.9.tar.gz</a></td>
+    <td style="text-align:right;">376KiB</td>
 </tr>
 -->
 <tr class="vbottom">
@@ -105,6 +105,16 @@ code introduced in 1.0.2.
 
 
 <h3>Latest <strong style='font-style: italic;'>development</strong> releases</h3>
+
+<h4 id='ot-0.1.9'>opus-tools 0.1.8</h4>
+<p>
+This release adds support for 32-bit floating point WAV output and
+fixes a number of minor issues.
+</p>
+
+<ul>
+<li>Source code: <a href="http://downloads.xiph.org/releases/opus/opus-tools-0.1.9.tar.gz">opus-tools-0.1.9.tar.gz</a></li>
+</ul>
 
 <h4 id='of-0.6'>opusfile 0.6</h4>
 <p>
