@@ -290,7 +290,7 @@ This license is also filed on the <a href="https://datatracker.ietf.org/ipr/1914
 <p>
 While Xiph.Org, Broadcom, and Microsoft filed IPR disclosures giving
  royalty-free licenses to their patents used in Opus, three companies that did
- not directly participate in the development of Opus, Qualcomm, Huawei, and France Telecom,
+ not directly participate in the development of Opus, Qualcomm, Huawei, France Telecom, and Ericsson,
  filed IPR disclosures with potentially royalty-bearing terms.
 The IETF allows <i>anyone</i> (and their dog) to file an IPR disclosures if
  they <i>think</i> that their patents "covers or <i>may</i> ultimately cover"
@@ -313,7 +313,7 @@ When it comes to patents, it is difficult to say much without
  making lawyers nervous.
 However, we can say something quite direct: <b>external counsel Dergosits & Noah has advised us that Opus can be
  implemented without the need to license the patents disclosed by Qualcomm,
- Huawei, or France Telecom</b>.
+ Huawei, France Telecom, or Ericsson</b>.
 We can also say that Mozilla is confident enough in Opus to ship it to hundreds
  of millions of Firefox users.
 Similarly, Cisco and Google are also supporting Opus in some products.
