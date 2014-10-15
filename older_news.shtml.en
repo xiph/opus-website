@@ -6,6 +6,47 @@
 <ul class="descriptivelist">
 
    <li>
+      <h3>Version 1.1-alpha released</h3>
+      <p class="submitdate">21 December, 2012</p>
+      <div class="description">
+         <p>This is an alpha release for the upcoming 1.1 version. Compared to 1.0.2,
+         it includes quality improvements, optimizations, bug fixes, as well as an
+         experimental speech/music detector for mode decisions. All the fixes and
+         improvements from 1.0.2 are also in this release. Quality improvements
+         include unconstrained VBR, a bitrate boost for tonal frames, and improvements
+         to tf estimation, transient detection and dynamic allocation.
+         The code is available from the <a href="downloads/">downloads page</a>.</p>
+      </div>
+   </li>
+
+   <li>
+      <h3>Version 1.0.2 released</h3>
+      <p class="submitdate">6 December, 2012</p>
+      <div class="description">
+         <p>Opus 1.0.2 fixes an out-of-bounds read that could be triggered by a malicious
+         Opus packet causing an integer wrap-around in the padding code. Considering
+         that the packet would have to be at least 16 MB in size and that no
+         out-of-bounds write is possible, the severity is very low. Other changes include fixes
+         and improvements to the PLC and hybrid mode quality improvements. As usual, this 
+         release is fully compliant with the Opus specification.
+         The code is available from the <a href="downloads/">downloads page</a>.</p>
+      </div>
+   </li>
+
+   <li>
+      <h3>Opus Standardized as RFC6716, Versions 1.0.0 and 1.0.1 Are Available</h3>
+      <p class="submitdate">11 September, 2012</p>
+      <div class="description">
+         <p>It's official, Opus has now been standardized by the IETF as 
+         <a href="http://tools.ietf.org/html/rfc6716">RFC 6716</a>. Along with the RFC are
+         the first stable releases. Version 1.0.0 includes exactly the same
+         source code as the reference implementation in the RFC. Version 1.0.1 also includes minor fixes
+         that were made after the RFC was "frozen". Both releases are available from the 
+         <a href="downloads/">downloads page</a>.</p>
+      </div>
+   </li>
+
+   <li>
       <h3>Third Release Candidate for Opus 1.0.1</h3>
       <p class="submitdate">4 September, 2012</p>
       <div class="description">

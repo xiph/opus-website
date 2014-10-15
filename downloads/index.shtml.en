@@ -104,6 +104,15 @@ code introduced in 1.0.2.
 
 <h3>Latest <strong style='font-style: italic;'>development</strong> releases</h3>
 
+<h4 id='one.1'>libopus 1.1.1-beta</h4>
+<p>
+This is a beta release for the upcoming 1.1.1 version. Compared to 1.1, it mostly includes optimizations
+for x86, MIPS and ARM.
+</p>
+<ul>
+<li>Source code: <a href="http://downloads.xiph.org/releases/opus/opus-1.1.1-beta.tar.gz">opus-1.1.1-beta.tar.gz</a></li>
+</ul>
+
 <h4 id='ot-0.1.9'>opus-tools 0.1.9</h4>
 <p>
 This release adds support for 32-bit floating point WAV output and
@@ -140,104 +149,6 @@ Some of these bugs kept basic functionality of the APIs from
 working at all, so we recommend all users upgrade.
 </p>
 
-<h4 id='of-0.5'>opusfile 0.5</h4>
-<p>
-The opusfile library provides seeking, decode, and playback of Opus
-streams in the Ogg container (.opus files) including over http(s) on
-posix and windows systems.
-</p>
-
-<ul>
-<li>Source code:
-  <a href="http://downloads.xiph.org/releases/opus/opusfile-0.5.tar.gz">opusfile-0.5.tar.gz</a>
-  <a href="http://downloads.xiph.org/releases/opus/opusfile-0.5.zip">opusfile-0.5.zip</a>
-</li>
-</ul>
-
-<p>Changes since the v0.4 release:</p>
-<ul>
-<li>Report HTTP (ICY) headers to client</li>
-<li>New tag comparison and copy functions</li>
-<li>New application decoding callback API for advanced clients</li>
-<li>New dither disable function for advanced clients</li>
-<li>constify API</li>
-<li>Avoid clipping downmixing from a fixed-point decoder</li>
-<li>Better practices for dual stack IPv6</li>
-<li>Documentation improvements</li>
-<li>Fix a unicode bug on Windows</li>
-<li>Fix proxy user/password macros</li>
-<li>Fix HTTP pipelining support detection</li>
-</ul>
-
-<h4 id='ot-0.1.8'>opus-tools 0.1.8</h4>
-<p>
-This release fixes a memory corruption bug with FLAC album art handling.
-</p>
-
-<ul>
-<li>Source code: <a href="http://downloads.xiph.org/releases/opus/opus-tools-0.1.8.tar.gz">opus-tools-0.1.8.tar.gz</a></li>
-</ul>
-
-<h4 id='one.1-rc3'>libopus 1.1-rc3</h4>
-<p>
-This third release candidate fixes some issues with the fixed-point build. Floating-point is unaffected.
-</p>
-<ul>
-<li>Source code: <a href="http://downloads.xiph.org/releases/opus/opus-1.1-rc3.tar.gz">opus-1.1-rc3.tar.gz</a></li>
-</ul>
-
-<h4 id='one.1-rc2'>libopus 1.1-rc2</h4>
-<p>
-This second release candidate fixes an alignment issue on ARMv5E and improves
-the Neon optimizations. Other platforms are unaffected.
-</p>
-<ul>
-<li>Source code: <a href="http://downloads.xiph.org/releases/opus/opus-1.1-rc2.tar.gz">opus-1.1-rc2.tar.gz</a></li>
-</ul>
-
-<h4 id='one.1-rc'>libopus 1.1-rc</h4>
-<p>
-Compared to 1.1-beta, this new release further improves surround encoding
-quality. It also includes better tuning of surround and stereo for lower
-bitrates. The complexity has been reduced on all CPUs, but especially ARM,
-which now has Neon assembly for the encoder. At last, there are a few bugfixes.
-</p>
-<ul>
-<li>Source code: <a href="http://downloads.xiph.org/releases/opus/opus-1.1-rc.tar.gz">opus-1.1-rc.tar.gz</a></li>
-</ul>
-
-<h4 id='ot-0.1.7'>opus-tools 0.1.7</h4>
-<p>
-This release has numerious build fixes, including updated Visual Studio
- project files to match similar changes in the opus package.
-Support encoding from FLAC files.
-Metadata tag support, including album art.
-Use the new surround encoder API in opus 1.0.3.
-The opusenc --uncoupled switch no longer works.
-</p>
-
-<ul>
-<li>Source code: <a href="http://downloads.xiph.org/releases/opus/opus-tools-0.1.7.tar.gz">opus-tools-0.1.7.tar.gz</a></li>
-</ul>
-
-
-<h4 id='of-0.4'>opusfile 0.4</h4>
-<p>
-The opusfile library provides seeking, decode, and playback of Opus
-streams in the Ogg container (.opus files) including over http on
-posix and windows systems.
-</p>
-<p>
-This release includes Microsoft Visual Studio project files, supports
-HTTPS urls on Windows, and includes new API calls for gain control
-and picture metadata as well as numerous bug fixes.
-</p>
-<ul>
-<li>Source code:
-  <a href="http://downloads.xiph.org/releases/opus/opusfile-0.4.tar.gz">opusfile-0.4.tar.gz</a>
-  <a href="http://downloads.xiph.org/releases/opus/opusfile-0.4.zip">opusfile-0.4.zip</a>
-</li>
-</ul>
 
 
 
