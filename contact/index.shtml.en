@@ -24,12 +24,13 @@ You can join the chat room through a <a href="" onclick="document.getElementById
 
 <p>If you find a bug, please report it in <a href="https://trac.xiph.org/newticket?component=Opus">trac</a>.
 
-<p>For confidential enquiries, you can contact one of the following developers:</p>
+<p>For <b>confidential</b> enquiries, you can contact one of the following developers directly:</p>
 <ul>
    <li><a href="mailto:jmvalin@jmvalin.ca">Jean-Marc Valin</a> (Mozilla/Xiph.Org)</li>
-   <li><a href="mailto:kovos@microsoft.com">Koen Vos</a> (vocTone)</li>
+   <li><a href="mailto:koenvos74@gmail.com">Koen Vos</a> (vocTone)</li>
    <li><a href="mailto:tterribe@xiph.org">Timothy B. Terriberry</a> (Mozilla/Xiph.Org)</li>
 </ul>
+<p>For anything non-confidential, please use one of the mailing lists above.</p>
 
 
 <!--#include virtual="/ssi/footer.include" -->
