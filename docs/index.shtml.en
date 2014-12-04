@@ -88,11 +88,11 @@ libopus to correctly and completely support the playback of ".opus" (OggOpus) fi
 <h2>Other specifications</h2>
 <blockquote>
 <table style="border-spacing: 0">
-<tr>
+<tr class="underline">
   <td style="padding-right:0.5em;"><b>Opus in ISO Base Media Format</b><br/><span style="float:right;"<small><i>(mp4 encapsulation)</i></small></span></td>
   <td><a href="opus_in_isobmff.html">HTML</a></td>
 </tr>
-<tr>
+<tr class="underline">
   <td style="padding-right:0.5em;"><b>Opus in Webm</b><br/><span style="float:right;"<small><i>(Matroska encapsulation)</i></small></span></td>
   <td><a href="https://wiki.xiph.org/MatroskaOpus">HTML</a></td>
 </tr>
