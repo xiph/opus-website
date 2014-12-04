@@ -66,21 +66,21 @@ libopus to correctly and completely support the playback of ".opus" (OggOpus) fi
 <table style="border-spacing: 0">
 <tr class="underline">
     <td style="padding-right:0.5em;"><b>Official Opus codec RFC</b><br/><span style="float:right;"><small><i>(rfc6716)</i></small></span></td>
-    <td><a href="http://tools.ietf.org/html/rfc6716">HTML</a>, </td>
-    <td><a href="http://tools.ietf.org/pdf/rfc6716">PDF</a>, </td>
-    <td><a href="http://tools.ietf.org/rfc/rfc6716.txt">TXT</a></td>
+    <td><a href="https://tools.ietf.org/html/rfc6716">HTML</a>, </td>
+    <td><a href="https://tools.ietf.org/pdf/rfc6716">PDF</a>, </td>
+    <td><a href="https://tools.ietf.org/rfc/rfc6716.txt">TXT</a></td>
 </tr>
 <tr class="underline">
     <td style="padding-right:0.5em;"><b>Latest Opus RTP draft</b><br/><span style="float:right;"><small><i>(draft-ietf-payload-rtp-opus)</i></small></span></td>
-    <td><a href="http://tools.ietf.org/html/draft-ietf-payload-rtp-opus">HTML</a>, </td>
-    <td><a href="http://tools.ietf.org/pdf/draft-ietf-payload-rtp-opus.pdf">PDF</a>, </td>
-    <td><a href="http://tools.ietf.org/id/draft-ietf-payload-rtp-opus.txt">TXT</a></td>
+    <td><a href="https://tools.ietf.org/html/draft-ietf-payload-rtp-opus">HTML</a>, </td>
+    <td><a href="https://tools.ietf.org/pdf/draft-ietf-payload-rtp-opus.pdf">PDF</a>, </td>
+    <td><a href="https://tools.ietf.org/id/draft-ietf-payload-rtp-opus.txt">TXT</a></td>
 </tr>
 <tr class="underline">
     <td style="padding-right:0.5em;"><b>Latest OggOpus container draft</b><br/><span style="float:right;"><small><i>(draft-ietf-codec-oggopus)</i></small></span></td>
-    <td><a href="http://tools.ietf.org/html/draft-ietf-codec-oggopus">HTML</a>, </td>
-    <td><a href="http://tools.ietf.org/pdf/draft-ietf-codec-oggopus.pdf">PDF</a>, </td>
-    <td><a href="http://tools.ietf.org/id/draft-ietf-codec-oggopus.txt">TXT</a></td>
+    <td><a href="https://tools.ietf.org/html/draft-ietf-codec-oggopus">HTML</a>, </td>
+    <td><a href="https://tools.ietf.org/pdf/draft-ietf-codec-oggopus.pdf">PDF</a>, </td>
+    <td><a href="https://tools.ietf.org/id/draft-ietf-codec-oggopus.txt">TXT</a></td>
 </tr>
 </table>
 </blockquote>
