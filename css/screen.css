@@ -131,7 +131,7 @@ blockquote.code {
 }
 
 tr.underline td {
-  border-bottom: 1px solid;
+  border-bottom: 1px solid lightgray;
 }
 
 td.emph {
