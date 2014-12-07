@@ -65,19 +65,22 @@ libopus to correctly and completely support the playback of ".opus" (OggOpus) fi
 <blockquote>
 <table style="border-spacing: 0">
 <tr class="underline">
-    <td class=emph>Official Opus codec RFC<br/><span style="float:right;"><small><i>(rfc6716)</i></small></span></td>
+    <td class=emph>Official Opus codec RFC<br/>
+      <span class=subtitle>RFC 6716</span></td>
     <td><a href="https://tools.ietf.org/html/rfc6716">HTML</a>, </td>
     <td><a href="https://tools.ietf.org/pdf/rfc6716">PDF</a>, </td>
     <td><a href="https://tools.ietf.org/rfc/rfc6716.txt">TXT</a></td>
 </tr>
 <tr class="underline">
-    <td class=emph>Latest Opus RTP draft<br/><span style="float:right;"><small><i>(draft-ietf-payload-rtp-opus)</i></small></span></td>
+    <td class=emph>Latest Opus RTP draft<br/>
+      <span class=subtitle>draft-ietf-payload-rtp-opus</span></td>
     <td><a href="https://tools.ietf.org/html/draft-ietf-payload-rtp-opus">HTML</a>, </td>
     <td><a href="https://tools.ietf.org/pdf/draft-ietf-payload-rtp-opus.pdf">PDF</a>, </td>
     <td><a href="https://tools.ietf.org/id/draft-ietf-payload-rtp-opus.txt">TXT</a></td>
 </tr>
 <tr class="underline">
-    <td class=emph>Latest OggOpus container draft<br/><span style="float:right;"><small><i>(draft-ietf-codec-oggopus)</i></small></span></td>
+    <td class=emph>Latest OggOpus container draft<br/>
+      <span class=subtitle>draft-ietf-codec-oggopus</span></td>
     <td><a href="https://tools.ietf.org/html/draft-ietf-codec-oggopus">HTML</a>, </td>
     <td><a href="https://tools.ietf.org/pdf/draft-ietf-codec-oggopus.pdf">PDF</a>, </td>
     <td><a href="https://tools.ietf.org/id/draft-ietf-codec-oggopus.txt">TXT</a></td>
@@ -89,11 +92,13 @@ libopus to correctly and completely support the playback of ".opus" (OggOpus) fi
 <blockquote>
 <table style="border-spacing: 0">
 <tr class="underline">
-  <td class=emph>Opus in ISO Base Media Format<br/><span style="float:right;"<small><i>(mp4 encapsulation)</i></small></span></td>
+  <td class=emph>Opus in ISO Base Media Format<br/>
+    <span class=subtitle>(mp4 encapsulation)</span></td>
   <td><a href="opus_in_isobmff.html">HTML</a></td>
 </tr>
 <tr class="underline">
-  <td class=emph>Opus in Webm<br/><span style="float:right;"<small><i>(Matroska encapsulation)</i></small></span></td>
+  <td class=emph>Opus in Webm<br/>
+    <span class=subtitle>Matroska encapsulation</span></td>
   <td><a href="https://wiki.xiph.org/MatroskaOpus">HTML</a></td>
 </tr>
 </table>

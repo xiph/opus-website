@@ -143,6 +143,11 @@ td.emph span {
   font-weight: normal;
 }
 
+span.subtitle {
+  font-size: small;
+  font-style: italic;
+}
+
 #copyright {
   margin-top: 30px;
 line-height: 1.5em;
