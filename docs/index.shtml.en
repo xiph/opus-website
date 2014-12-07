@@ -93,7 +93,7 @@ libopus to correctly and completely support the playback of ".opus" (OggOpus) fi
 <table style="border-spacing: 0">
 <tr class="underline">
   <td class=emph>Opus in ISO Base Media Format<br/>
-    <span class=subtitle>(mp4 encapsulation)</span></td>
+    <span class=subtitle>mp4 encapsulation</span></td>
   <td><a href="opus_in_isobmff.html">HTML</a></td>
 </tr>
 <tr class="underline">
