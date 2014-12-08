@@ -206,12 +206,12 @@ applications, bitrate changes are expected to occur much more slowly.
 <p>displays an embedded player that can play an Opus file.</p>
 <div class="player" style="margin-left: 4em">
 
-<audio tabindex="0" src="http://people.xiph.org/~giles/2012/opus/ehren-paper_lights-96.opus" controls="">
+<audio tabindex="0" src="//people.xiph.org/~giles/2012/opus/ehren-paper_lights-96.opus" controls="">
          <!-- fallback content for browsers which don't support the audio element -->
          Looks like your browser doesn't support HTML &lt;audio&gt;.
       </audio>
 <br>
-<em>Paper Lights</em> by <a href="http://magnatune.com/artists/ehren">Ehren Starks</a>, encoded at 96 kb/s <a href="http://creativecommons.org/licenses/by-nc-sa/1.0/" rel="license"> <img src="http://i.creativecommons.org/l/by-nc-sa/1.0/80x15.png" alt="Creative Commons License"> </a>
+<em>Paper Lights</em> by <a href="http://magnatune.com/artists/ehren">Ehren Starks</a>, encoded at 96 kb/s <a href="//creativecommons.org/licenses/by-nc-sa/1.0/" rel="license"> <img src="//i.creativecommons.org/l/by-nc-sa/1.0/80x15.png" alt="Creative Commons License"> </a>
 </div>
 <p>
 Playback should work in Firefox of Chrome.</p>
