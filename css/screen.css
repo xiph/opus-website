@@ -130,6 +130,10 @@ blockquote.code {
   background-color: #eee;
 }
 
+td {
+  vertical-align: top;
+}
+
 tr.underline td {
   border-bottom: 1px solid lightgray;
 }
@@ -144,8 +148,7 @@ td.emph span {
 }
 
 span.subtitle {
-  font-size: smaller;
-  font-style: italic;
+  font-size: small;
 }
 
 #copyright {
