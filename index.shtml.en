@@ -16,13 +16,13 @@ which incorporated technology from Skype's SILK codec and Xiph.Org's CELT codec.
 <h2>Technology</h2>
 
 <p>
-Opus can handle a wide range of audio applications, including Voice over IP, videoconferencing, in-game chat, and even remote live music performances. It can scale from low bit-rate narrowband speech to very high quality stereo music. Supported features are:
+Opus can handle a wide range of audio applications, including Voice over IP, videoconferencing, in-game chat, and even remote live music performances. It can scale from low bitrate narrowband speech to very high quality stereo music. Supported features are:
 </p>
 <ul>
-<li>Bit-rates from 6 kb/s to 510 kb/s</li>
+<li>Bitrates from 6 kb/s to 510 kb/s</li>
 <li>Sampling rates from 8 kHz (narrowband) to 48 kHz (fullband)</li>
 <li>Frame sizes from 2.5 ms to 60 ms</li>
-<li>Support for both constant bit-rate (CBR) and variable bit-rate (VBR)</li>
+<li>Support for both constant bitrate (CBR) and variable bitrate (VBR)</li>
 <li>Audio bandwidth from narrowband to fullband</li>
 <li>Support for speech and music</li>
 <li>Support for mono and stereo</li>

@@ -3,9 +3,9 @@
 
 <h1>Codec Landscape</h1>
 
-<h2>Quality vs Bit-rate</h2>
+<h2>Quality vs Bitrate</h2>
 
-The figure below illustrates the quality of various codecs as a function of the bit-rate. It attempts to summarize results from a collection of listening tests and (when no data exists) show anecdotal evidence. It is overall fairly representative, but attempting to extract any exact value at a particular bitrate is certainly not recommended (<a href="quality.svg">SVG version</a>).
+The figure below illustrates the quality of various codecs as a function of the bitrate. It attempts to summarize results from a collection of listening tests and (when no data exists) show anecdotal evidence. It is overall fairly representative, but attempting to extract any exact value at a particular bitrate is certainly not recommended (<a href="quality.svg">SVG version</a>).
 
 <div style="text-align:center;"><a href="quality.png"><img src="quality.png" alt="Illustration of the quality of different codecs" width="640" height="474"></a></div>
 
@@ -19,13 +19,23 @@ The figure below illustrates the quality of various codecs as a function of the 
 give a good idea of the quality of Opus at the time of its standardization (and 1.0 release), we are hoping that newer and more advanced
 encoders will reach even better quality.</p>
 
-<h2>HydrogenAudio</h2>
+<h2>HydrogenAudio (64 kb/s)</h2>
 
 <p> These are the results of MUSHRA tests comparing Opus with Vorbis and HE-AAC on 48 kHz stereo music at 64 kb/s. For
 the full details, see <a href="http://listening-tests.hydrogenaudio.org/igorc/results.html">the official results page</a>
 and <a href="http://people.xiph.org/~greg/opus/ha2011/">Greg Maxwell's analysis/listening page</a>.</p>
 
 <div style="text-align:center;"><a href="http://people.xiph.org/~greg/opus/ha2011/"><img src="opus_ha_results.png" width="240" height="200" alt="Bar chart showing Opus outperforming two AAC-HE encoders and libvorbis."></a></div>
+
+<h2>HydrogenAudio (96 kb/s)</h2>
+
+<p> These are the results of a second set of ABC/HR tests on 48&nbsp;kHz stereo
+ music comparing Opus with Vorbis and LC-AAC at 96 kb/s and MP3 at 136 kb/s.
+For the full details, see
+ <a href="http://listening-test.coresv.net/results.htm">the official results
+ page</a>.</p>
+
+<div style="text-align:center;"><a href="http://listening-test.coresv.net/results.htm"><img src="opus_ha_results_96kbps.png" width="275" height="255" alt="Scatter plots showing Opus outperforming two LC-AAC encoders, libvorbis, and a 136 kb/s MP3 encoder."></a></div>
 
 <h2>Google listening tests</h2>
 
@@ -39,6 +49,6 @@ and <a href="http://people.xiph.org/~greg/opus/ha2011/">Greg Maxwell's analysis/
 
 <ul><li><p>Anssi Ramo and Henri Toukomaa, <a href="http://research.nokia.com/files/public/%5B16%5D_InterSpeech2011_Voice_Quality_Characterization_of_IETF_Opus_Codec.pdf">Voice Quality Characterization of IETF Opus Codec</a>, <i>Proc. Interspeech 2011</i>, Florence, Italy, August 2011.</p></li></ul>
 
-<p>In this paper, the Opus "hybrid" and "MDCT" curves measure the constant bit-rate (CBR) quality, which is not as good as the quality Opus achieves with variable bit-rate (VBR).</p>
+<p>In this paper, the Opus "hybrid" and "MDCT" curves measure the constant bitrate (CBR) quality, which is not as good as the quality Opus achieves with variable bitrate (VBR).</p>
 
 <!--#include virtual="/ssi/footer.include" -->
