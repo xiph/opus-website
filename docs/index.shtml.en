@@ -72,8 +72,8 @@ libopus to correctly and completely support the playback of ".opus" (OggOpus) fi
     <td><a href="https://tools.ietf.org/rfc/rfc6716.txt">TXT</a></td>
 </tr>
 <tr class="underline">
-    <td class=emph>Latest Opus RTP draft<br/>
-      <span class=subtitle>draft-ietf-payload-rtp-opus</span></td>
+    <td class=emph>Official Opus RTP specification<br/>
+      <span class=subtitle>RFC 7587</span></td>
     <td><a href="https://tools.ietf.org/html/rfc7587">HTML</a>, </td>
     <td><a href="https://tools.ietf.org/pdf/rfc7587">PDF</a>, </td>
     <td><a href="https://tools.ietf.org/rfc/rfc7587.txt">TXT</a></td>
