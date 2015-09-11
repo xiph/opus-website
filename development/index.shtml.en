@@ -6,7 +6,6 @@
        href="/css/screen.css" type="text/css">
  <link rel="stylesheet" type="text/css" href="dashboard.css" />
  <script type="text/javascript" src="js/jquery.min.js"></script>
- <script type="text/javascript" src="js/jquery.jsonp-2.1.4.min.js"></script>
  <title>Opus Codec</title>
 </head>
 <body>
@@ -118,25 +117,25 @@ $(document).ready(function(){
 	var lastData = null;
 	var monitor = function(){
 	 counter++;
-	 $.jsonp({
-	        url: ci_url + "?format=json&jsonp=?",
-	        dataType: "jsonp",
-	        // callbackParameter: "jsonp",
-	        timeout: 10000,
-	        beforeSend: function(xhr) {
-	        	if(counter == 1){
-	        	        $("#CIcontent").html("<h2 id='loading'>Opus CI monitor loading...</h2>");
-	        	};  	
-	        },
-	        success: function(data, status){
-	        	jenkinsDashboard.updateBuildStatus(data);
-	        },
-	        error: function(XHR, textStatus, errorThrown){
-	        	if($("#error_loading").length <= 0){
-	        		$("#CIcontent").html('<h1 id="error_loading"> Connection failed, reloading Retrying........</h1>');
-	        	}
-	        }
-	    });
+	 $.ajax({
+           url: ci_url,
+           dataType: 'json',
+           jsonp: false,
+	   timeout: 10000,
+	   beforeSend: function(xhr) {
+	     if(counter == 1){
+	       $("#CIcontent").html("<h2 id='loading'>Opus CI monitor loading...</h2>");
+	     };  	
+	   },
+	   success: function(data, status){
+	     jenkinsDashboard.updateBuildStatus(data);
+	   },
+	   error: function(XHR, textStatus, errorThrown){
+	     if($("#error_loading").length <= 0){
+	       $("#CIcontent").html('<h1 id="error_loading"> Connection failed, reloading Retrying........</h1>');
+	     }
+	   }
+	 });
 	};
 	monitor();
         var auto_refresh = setInterval(monitor, 30000);
