@@ -26,17 +26,17 @@ In addition to <a href="https://developer.mozilla.org/En/Media_formats_supported
     <td rowspan=2 class="vbottom">opus-tools</td>
     <td rowspan=2>0.1.9</td>
     <td>Windows</td>
-    <td style="text-align:left;"><a href="https://ftp.mozilla.org/pub/mozilla.org/opus/win32/opus-tools-0.1.9-win32.zip">opus-tools-0.1.9-win32.zip</a></td>
+    <td style="text-align:left;"><a href="https://archive.mozilla.org/pub/opus/win32/opus-tools-0.1.9-win32.zip">opus-tools-0.1.9-win32.zip</a></td>
     <td style="text-align:right;">403KiB</td>
 </tr>
 <tr class="vbottoml">
     <td>Mac OS X</td>
-    <td style="text-align:left;"><a href="https://ftp.mozilla.org/pub/mozilla.org/opus/macos/opus-tools-0.1.9-macos.tar.gz">opus-tools-0.1.9-macos.tar.gz</a></td>
+    <td style="text-align:left;"><a href="https://archive.mozilla.org/pub/opus/macos/opus-tools-0.1.9-macos.tar.gz">opus-tools-0.1.9-macos.tar.gz</a></td>
     <td style="text-align:right;">399KiB</td>
 </tr>
 <tr class="vbottoml">
     <td>Source</td>
-    <td style="text-align:left;"><a href="https://ftp.mozilla.org/pub/mozilla.org/opus/opus-tools-0.1.9.tar.gz">opus-tools-0.1.9.tar.gz</a></td>
+    <td style="text-align:left;"><a href="https://archive.mozilla.org/pub/opus/opus-tools-0.1.9.tar.gz">opus-tools-0.1.9.tar.gz</a></td>
     <td style="text-align:right;">376KiB</td>
 </tr>
 <tr class="vbottom">
@@ -50,12 +50,12 @@ In addition to <a href="https://developer.mozilla.org/En/Media_formats_supported
     <td rowspan=2 class="vbottom">opusfile</td>
     <td rowspan=2>0.6</td>
     <td>Windows</td>
-    <td style="text-align:left;"><a href="https://ftp.mozilla.org/pub/mozilla.org/opus/win32/opusfile-0.6-win32.zip">opusfile-0.6-win32.zip</a></td>
+    <td style="text-align:left;"><a href="https://archive.mozilla.org/pub/opus/win32/opusfile-0.6-win32.zip">opusfile-0.6-win32.zip</a></td>
     <td style="text-align:right;">1.5MiB</td>
 </tr>
 <tr class="vbottoml">
     <td>Source</td>
-    <td style="text-align:left;"><a href="https://ftp.mozilla.org/pub/mozilla.org/opus/opusfile-0.6.tar.gz">opusfile-0.6.tar.gz</a></td>
+    <td style="text-align:left;"><a href="https://archive.mozilla.org/pub/opus/opusfile-0.6.tar.gz">opusfile-0.6.tar.gz</a></td>
     <td style="text-align:right;">428KiB</td>
 </tr>
 <tr class="vbottom">
