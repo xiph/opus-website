@@ -160,6 +160,24 @@ text-align: center;
   clear: both;
 }
 
+.descriptivelist {
+  padding-left: 0;
+}
+
+.descriptivelist > li {
+  list-style-type: none;
+}
+
+.descriptivelist .submitdate {
+  font-size: .75em;
+  margin-left: 20px;
+  border-bottom: 1px solid #000000;
+}
+
+.descriptivelist .description {
+  margin-left: 20px;
+}
+
 tr.vbottom td { border-bottom: thin solid;}
 tr.vbottoml td { border-bottom: thin solid;}
 td.vbottom { border-bottom: thin solid; border-right: thin solid;padding-right:0.75em;}
