@@ -104,13 +104,12 @@ code introduced in 1.0.2.
 
 <h3>Latest <strong style='font-style: italic;'>development</strong> releases</h3>
 
-<h4 id='one.1'>libopus 1.1.1-beta</h4>
+<h4 id='one.1'>libopus 1.1.1-rc</h4>
 <p>
-This is a beta release for the upcoming 1.1.1 version. Compared to 1.1, it mostly includes optimizations
-for x86, MIPS and ARM.
+This is a release candidate for the upcoming 1.1.1 version. This release includes further ARM optimizations.
 </p>
 <ul>
-<li>Source code: <a href="http://downloads.xiph.org/releases/opus/opus-1.1.1-beta.tar.gz">opus-1.1.1-beta.tar.gz</a></li>
+<li>Source code: <a href="http://downloads.xiph.org/releases/opus/opus-1.1.1-rc.tar.gz">opus-1.1.1-rc.tar.gz</a></li>
 </ul>
 
 <h4 id='ot-0.1.9'>opus-tools 0.1.9</h4>

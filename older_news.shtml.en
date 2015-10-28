@@ -6,6 +6,50 @@
 <ul class="descriptivelist">
 
    <li>
+      <h3>Version 1.1-rc3 released</h3>
+      <p class="submitdate">3 December, 2013</p>
+      <div class="description">
+         <p>This is the third and likely last release candidate for 1.1. It fixes several bugs
+         in the fixed-point build. Floating point is unaffected.
+         The code is available from the <a href="downloads/">downloads page</a>.</p>
+      </div>
+   </li>
+
+   <li>
+      <h3>Version 1.1-rc2 released</h3>
+      <p class="submitdate">27 November, 2013</p>
+      <div class="description">
+         <p>This second release candidate fixes an alignment issue on ARMv5E and improves
+         the Neon optimizations. Other platforms are unaffected.
+         The code is available from the <a href="downloads/">downloads page</a>.</p>
+      </div>
+   </li>
+
+   <li>
+      <h3>Version 1.1-rc released</h3>
+      <p class="submitdate">26 November, 2013</p>
+      <div class="description">
+         <p>We're getting closer to the final 1.1 with this new release that further 
+         improves surround encoding quality. 
+         It also includes better tuning of surround and stereo for lower
+         bitrates. The complexity has been reduced on all CPUs, but especially ARM,
+         which now has Neon assembly for the encoder. At last, there are a few bugfixes.
+         The code is available from the <a href="downloads/">downloads page</a>.</p>
+      </div>
+   </li>
+
+   <li>
+      <h3>Versions 1.1-beta and 1.0.3 released</h3>
+      <p class="submitdate">11 July, 2013</p>
+      <div class="description">
+         <p>Following up on the alpha, here's now the beta release for version 1.1. Monty wrote
+         a nice <a href="http://people.xiph.org/~xiphmont/demo/opus/demo3.shtml">demo page</a> showing off all the improvements in 1.1. As for version 1.0.3 it includes a backport of the new 1.1 surround API (see the demo)
+         as well as some minor bugfixes.
+         The code is available from the <a href="downloads/">downloads page</a>.</p>
+      </div>
+   </li>
+
+   <li>
       <h3>Version 1.1-alpha released</h3>
       <p class="submitdate">21 December, 2012</p>
       <div class="description">
