@@ -43,6 +43,23 @@ Opus can handle a wide range of audio applications, including Voice over IP, vid
 <ul class="descriptivelist">
 
    <li>
+      <h3>Version 1.1.1 released</h3>
+      <p class="submitdate">26 November, 2015</p>
+      <div class="description">
+         <p>This <a href="http://downloads.xiph.org/releases/opus/opus-1.1.1.tar.gz">Opus 1.1.1</a> release brings many optimizations to the encoder and decoder, including:
+         <ul>
+         <li>x86 SSE, SSE2 and SSE4.1 intrinsics optimizations with run-time CPU detection contributed by <a href="http://www.cisco.com/">Cisco Systems</a>,</li>
+         <li>MIPS intrinsics optimizations contributed by <a href="http://imgtec.com/">Imagination Technologies</a>,</li>
+         <li>ARM Neon optimizations contributed by <a href="https://www.linaro.org/">Linaro</a> and <a href="https://www.arm.com/">ARM</a>,</li>
+         <li>many architecture-independent optimizations and memory footprint reductions that should improve performance on all platforms, and</li>
+         <li>several minor bug fixes.</li>
+         </ul>
+         The quality of the encoder should be mostly unchanged compare to version 1.1.
+         The code is available from the <a href="downloads/">downloads page</a>.</p>
+      </div>
+   </li>
+
+   <li>
       <h3>Version 1.1.1-rc released</h3>
       <p class="submitdate">28 October, 2015</p>
       <div class="description">
