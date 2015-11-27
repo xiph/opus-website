@@ -33,7 +33,7 @@ overview of the MDCT layer of Opus.</p>
    <li><b>Snapshots:</b>
        <ul>
           <li><a href="http://git.xiph.org/?p=opus.git;a=snapshot;h=HEAD;sf=tgz">opus-master.tar.gz</a></li>
-          <li><a href="http://git.xiph.org/?p=opus.git;a=snapshot;h=1.0.x;sf=tgz">opus-1.0.x-branch.tar.gz</a></li>
+          <li><a href="http://git.xiph.org/?p=opus.git;a=snapshot;h=exp_lbr_tune;sf=tgz">opus-exp_lbr_tune-branch.tar.gz</a> (experimental low bitrate quality improvements)</li>
        </ul></li>
 <!--
     <li><b>Developer personal trees:</b>
