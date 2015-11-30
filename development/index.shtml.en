@@ -27,7 +27,7 @@ overview of the MDCT layer of Opus.</p>
 
 <h2>Source code repository</h2>
 
-<b>Master git repository</b>: &nbsp;&nbsp;&nbsp;<span style="white-space: pre;font-family: monospace;">$ git clone <a href="http://git.xiph.org/?p=opus.git">git://git.opus-codec.org/opus.git</a></span>
+<b>Master git repository</b>: &nbsp;&nbsp;&nbsp;<span style="white-space: pre;font-family: monospace;">$ git clone <a href="https://git.xiph.org/?p=opus.git">https://git.opus-codec.org/opus.git</a></span>
 <ul style="margin-top:0;list-style-type: none;background-image:url('tree.png');background-repeat:no-repeat;padding-left:26px">
    <li>Branch <a href="http://git.xiph.org/?p=opus.git;a=shortlog;h=refs/heads/exp_lbr_tune">exp_lbr_tune</a> has experimental low bitrate quality improvements</li>
    <li><b>Snapshots:</b>
@@ -53,7 +53,7 @@ and test vectors for verifying your implementation.</p>
 The files the tools produce are suitable for distribution with support for seeking, metadata, and multichannel. 
 See also: the <a href="//wiki.xiph.org/OggOpus">OggOpus mapping</a>.</p>
 
-<blockquote><span style="white-space: pre;font-family: monospace;">$ git clone <a href="http://git.xiph.org/?p=opus-tools.git">git://git.xiph.org/opus-tools.git</a></span></blockquote>
+<blockquote><span style="white-space: pre;font-family: monospace;">$ git clone <a href="https://git.xiph.org/?p=opus-tools.git">https://git.xiph.org/opus-tools.git</a></span></blockquote>
 
 <p>Manpages: <a href="https://mf4.xiph.org/jenkins/view/opus/job/opus-tools/ws/man/opusenc.html">opusenc</a>, <a href="https://mf4.xiph.org/jenkins/view/opus/job/opus-tools/ws/man/opusdec.html">opusdec</a>, <a href="https://mf4.xiph.org/jenkins/view/opus/job/opus-tools/ws/man/opusinfo.html">opusinfo</a></p>
 
@@ -61,7 +61,7 @@ See also: the <a href="//wiki.xiph.org/OggOpus">OggOpus mapping</a>.</p>
 <p>Opusfile provides a high-level API for decoding and seeking within .opus files similar to what
 libvorbisfile provides for Vorbis.
 
-<blockquote><span style="white-space: pre;font-family: monospace;">$ git clone <a href="http://git.xiph.org/?p=opusfile.git">git://git.xiph.org/opusfile.git</a></span></blockquote>
+<blockquote><span style="white-space: pre;font-family: monospace;">$ git clone <a href="https://git.xiph.org/?p=opusfile.git">https://git.xiph.org/opusfile.git</a></span></blockquote>
 
 <h2>Continuous integration</h2>
 
