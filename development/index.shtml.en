@@ -27,7 +27,7 @@ overview of the MDCT layer of Opus.</p>
 
 <h2>Source code repository</h2>
 
-<b>Master git repository</b>: &nbsp;&nbsp;&nbsp;<span style="white-space: pre;font-family: monospace;">$ git clone <a href="https://git.xiph.org/?p=opus.git">https://git.opus-codec.org/opus.git</a></span>
+<b>Master git repository</b>: &nbsp;&nbsp;&nbsp;<span style="white-space: pre;font-family: monospace;">$ git clone <a href="https://git.xiph.org/?p=opus.git">https://git.xiph.org/opus.git</a></span>
 <ul style="margin-top:0;list-style-type: none;background-image:url('tree.png');background-repeat:no-repeat;padding-left:26px">
    <li>Branch <a href="http://git.xiph.org/?p=opus.git;a=shortlog;h=refs/heads/exp_lbr_tune">exp_lbr_tune</a> has experimental low bitrate quality improvements</li>
    <li><b>Snapshots:</b>
