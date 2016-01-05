@@ -48,21 +48,21 @@ In addition to <a href="https://developer.mozilla.org/En/Media_formats_supported
 
 <tr class="vbottoml">
     <td rowspan=2 class="vbottom">opusfile</td>
-    <td rowspan=2>0.6</td>
+    <td rowspan=2>0.7</td>
     <td>Windows</td>
-    <td style="text-align:left;"><a href="https://archive.mozilla.org/pub/opus/win32/opusfile-0.6-win32.zip">opusfile-0.6-win32.zip</a></td>
-    <td style="text-align:right;">1.5MiB</td>
+    <td style="text-align:left;"><a href="https://archive.mozilla.org/pub/opus/win32/opusfile-0.7-win32.zip">opusfile-0.7-win32.zip</a></td>
+    <td style="text-align:right;">1.6MiB</td>
 </tr>
 <tr class="vbottoml">
     <td>Source</td>
-    <td style="text-align:left;"><a href="https://archive.mozilla.org/pub/opus/opusfile-0.6.tar.gz">opusfile-0.6.tar.gz</a></td>
-    <td style="text-align:right;">428KiB</td>
+    <td style="text-align:left;"><a href="https://archive.mozilla.org/pub/opus/opusfile-0.7.tar.gz">opusfile-0.7.tar.gz</a></td>
+    <td style="text-align:right;">452KiB</td>
 </tr>
 <tr class="vbottom">
     <td colspan=4 style="padding-left:1em;text-align:justify;">Opusfile
      provides application developers with a high-level API for decoding and
      seeking in <b>.</b>opus files.
-    DLLs for the required libraries libogg 1.3.2, libopus 1.1 and
+    DLLs for the required libraries libogg 1.3.2, libopus 1.1.1 and
      openssl, are also included in the binary package.</td>
 </tr>
 
@@ -94,6 +94,34 @@ Opus 1.1.1 includes:
 
 <h3>Latest <strong style='font-style: italic;'>development</strong> releases</h3>
 
+<h4 id='of-0.7'>opusfile 0.7</h4>
+<p>
+The opusfile library provides seeking, decode, and playback of Opus
+streams in the Ogg container (.opus files) including over http(s) on
+posix and windows systems.
+</p>
+
+<ul>
+<li>Source code:
+  <a href="http://downloads.xiph.org/releases/opus/opusfile-0.7.tar.gz">opusfile-0.7.tar.gz</a>
+  <a href="http://downloads.xiph.org/releases/opus/opusfile-0.7.zip">opusfile-0.7.zip</a>
+</li>
+</ul>
+
+<p>Changes since the v0.6 release:</p>
+<ul>
+<li>Add API to access and preserve binary metadata.</li>
+<li>Add support for R128_ALBUM_GAIN metadata tag.</li>
+<li>Better seeking with continued packets and multiplexed streams.</li>
+<li>Portability and build fixes.</li>
+</ul>
+
+<p>
+This release is backward-compatible with the previous
+release but contains updates to conform with the latest
+IETF Ogg Opus draft, important performance enhancements,
+and bug fixes. We recommend all users upgrade.
+</p>
 
 <h4 id='of-0.6'>opusfile 0.6</h4>
 <p>
