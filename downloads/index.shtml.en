@@ -74,20 +74,17 @@ In addition to <a href="https://developer.mozilla.org/En/Media_formats_supported
 
 <h3>Latest <strong style='font-style: italic;'>stable</strong> release</h3>
 
-<h4 id='one.1.1'>libopus 1.1.1</h4>
+<h4 id='one.1.2'>libopus 1.1.2</h4>
 <p>
-Opus 1.1.1 includes:
+Opus 1.1.2 includes:
          <ul>
-         <li>x86 SSE, SSE2 and SSE4.1 intrinsics optimizations with run-time CPU detection contributed by <a href="http://www.cisco.com/">Cisco Systems</a>,</li>
-         <li>MIPS intrinsics optimizations contributed by <a href="http://imgtec.com/">Imagination Technologies</a>,</li>
-         <li>ARM Neon optimizations contributed by <a href="https://www.linaro.org/">Linaro</a> and <a href="https://www.arm.com/">ARM</a>,</li>
-         <li>many architecture-independent optimizations and memory footprint reductions that should improve performance on all platforms, and</li>
-         <li>several minor bug fixes.</li>
+         <li>Fixes encoder or decoder state reset, which would previously disable some run-time selected architecture-specific optimizations; and</li>
+         <li>Fixes hybrid mode discontinuous transmission (DTX) operation, where the comfort noise above 8&nbsp;kHz was incorrectly estimated and could oscillate in time.</li>
          </ul>
-         The quality of the encoder should be mostly unchanged compared to version 1.1.
+         None of these bugs were regressions over previous releases.
 </p>
 <ul>
-<li>Source code: <a href="http://downloads.xiph.org/releases/opus/opus-1.1.1.tar.gz">opus-1.1.1.tar.gz</a></li>
+<li>Source code: <a href="http://downloads.xiph.org/releases/opus/opus-1.1.2.tar.gz">opus-1.1.2.tar.gz</a></li>
 </ul>
 
 

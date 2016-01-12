@@ -43,6 +43,20 @@ Opus can handle a wide range of audio applications, including Voice over IP, vid
 <ul class="descriptivelist">
 
    <li>
+      <h3>Version 1.1.2 released</h3>
+      <p class="submitdate">12 January, 2016</p>
+      <div class="description">
+         <p>This <a href="http://downloads.xiph.org/releases/opus/opus-1.1.2.tar.gz">Opus 1.1.2</a> release fixes two bugs:
+         <ul>
+         <li>Resetting the encoder or decoder state with OPUS_RESET_STATE would disable some run-time selected architecture-specific optimizations; and</li>
+         <li>In hybrid mode discontinuous transmission (DTX) operation, the comfort noise above 8&nbsp;kHz was incorrectly estimated and could oscillate in time.</li>
+         </ul>
+         None of these bugs were regressions over previous releases.
+         The code is available from the <a href="downloads/">downloads page</a>.</p>
+      </div>
+   </li>
+
+   <li>
       <h3>Version 1.1.1 released</h3>
       <p class="submitdate">26 November, 2015</p>
       <div class="description">
