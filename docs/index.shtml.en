@@ -8,9 +8,9 @@ Libopus is the reference implementation of the Opus codec.
 <blockquote>
 <table style="border-spacing: 0;">
 <tr>
-    <td class=emph>libopus 1.1 release</td>
-    <td><a href="html_api-1.1.0/index.html">HTML</a>,</td>
-    <td><a href="opus_api-1.1.0.pdf">PDF</a></td>
+    <td class=emph>libopus 1.1.2 release</td>
+    <td><a href="opus_api-1.1.2/index.html">HTML</a>,</td>
+    <td><a href="opus_api-1.1.2.pdf">PDF</a></td>
 </tr>
 <tr>
     <td class=emph>pre-release version</td>
