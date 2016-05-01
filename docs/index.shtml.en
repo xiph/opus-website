@@ -79,11 +79,11 @@ libopus to correctly and completely support the playback of ".opus" (OggOpus) fi
     <td><a href="https://tools.ietf.org/rfc/rfc7587.txt">TXT</a></td>
 </tr>
 <tr class="underline">
-    <td class=emph>Latest OggOpus container draft<br/>
-      <span class=subtitle>draft-ietf-codec-oggopus</span></td>
-    <td><a href="https://tools.ietf.org/html/draft-ietf-codec-oggopus">HTML</a>, </td>
-    <td><a href="https://tools.ietf.org/pdf/draft-ietf-codec-oggopus.pdf">PDF</a>, </td>
-    <td><a href="https://tools.ietf.org/id/draft-ietf-codec-oggopus.txt">TXT</a></td>
+    <td class=emph>Official Opus file format specification<br/>
+      <span class=subtitle>RFC 7845</span></td>
+    <td><a href="https://tools.ietf.org/html/rfc7845.html">HTML</a>, </td>
+    <td><a href="https://tools.ietf.org/pdf/rfc7845.pdf">PDF</a>, </td>
+    <td><a href="https://tools.ietf.org/id/rfc7845.txt">TXT</a></td>
 </tr>
 </table>
 </blockquote>
