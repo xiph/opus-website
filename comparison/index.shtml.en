@@ -21,7 +21,7 @@ encoders will reach even better quality.</p>
 
 <h2>HydrogenAudio (64 kb/s)</h2>
 
-<p> These are the results of MUSHRA tests comparing Opus with Vorbis and HE-AAC on 48 kHz stereo music at 64 kb/s. For
+<p> These are the results of ABC/HR tests comparing Opus with Vorbis and HE-AAC on 48 kHz stereo music at 64 kb/s. For
 the full details, see <a href="http://listening-tests.hydrogenaud.io/igorc/results.html">the official results page</a>
 and <a href="http://people.xiph.org/~greg/opus/ha2011/">Greg Maxwell's analysis/listening page</a>.</p>
 
@@ -47,7 +47,7 @@ For the full details, see
 
 <p>Anssi Ramo and Henri Toukomaa from Nokia measured the Opus speech quality at various rates and published their results in this conference paper:</p>
 
-<ul><li><p>Anssi Ramo and Henri Toukomaa, <a href="http://research.nokia.com/files/public/%5B16%5D_InterSpeech2011_Voice_Quality_Characterization_of_IETF_Opus_Codec.pdf">Voice Quality Characterization of IETF Opus Codec</a>, <i>Proc. Interspeech 2011</i>, Florence, Italy, August 2011.</p></li></ul>
+<ul><li><p>Anssi Ramo and Henri Toukomaa, <a href="https://pdfs.semanticscholar.org/064c/d1c023b658aaa2ee8259286fc9998801e77b.pdf">Voice Quality Characterization of IETF Opus Codec</a>, <i>Proc. Interspeech 2011</i>, Florence, Italy, August 2011.</p></li></ul>
 
 <p>In this paper, the Opus "hybrid" and "MDCT" curves measure the constant bitrate (CBR) quality, which is not as good as the quality Opus achieves with variable bitrate (VBR).</p>
 
