@@ -43,6 +43,22 @@ Opus can handle a wide range of audio applications, including Voice over IP, vid
 <ul class="descriptivelist">
 
    <li>
+      <h3>Version 1.1.3 released</h3>
+      <p class="submitdate">15 July, 2016</p>
+      <div class="description">
+         <p>This <a href="http://downloads.xiph.org/releases/opus/opus-1.1.3.tar.gz">Opus 1.1.3</a> release focuses mainly on optimizations and bug fixes. Changes include:
+         <ul>
+         <li>Neon optimizations inproving performance on ARMv7 and ARMv8 by up to 15%</li>
+         <li>Fixes some issues with 16-bit platforms (e.g. TI C55x)
+         <li>Fixes to comfort noise generation (CNG)
+         <li>Documenting that PLC packets can also be 2 bytes
+         <li>Includes experimental ambisonics work (--enable-ambisonics)
+         </ul>
+         The code is available from the <a href="downloads/">downloads page</a>.</p>
+      </div>
+   </li>
+
+   <li>
       <h3>Version 1.1.2 released</h3>
       <p class="submitdate">12 January, 2016</p>
       <div class="description">
@@ -72,46 +88,6 @@ Opus can handle a wide range of audio applications, including Voice over IP, vid
          The code is available from the <a href="downloads/">downloads page</a>.</p>
       </div>
    </li>
-
-   <li>
-      <h3>Version 1.1.1-rc released</h3>
-      <p class="submitdate">28 October, 2015</p>
-      <div class="description">
-         <p>The is a release candidate for the upcoming 1.1.1. This release
-         includes further ARM optimizations. The quality should again be unchanged.
-         <a href="downloads/">downloads page</a>.</p>
-      </div>
-   </li>
-
-   <li>
-      <h3>Version 1.1.1-beta released</h3>
-      <p class="submitdate">15 October, 2014</p>
-      <div class="description">
-         <p>The is a beta release for the upcoming 1.1.1. This release focuses on code optimizations,
-         especially on x86, MIPS and ARM. The quality should be unchanged.
-         <a href="downloads/">downloads page</a>.</p>
-      </div>
-   </li>
-
-   <li>
-      <h3>Version 1.1 released</h3>
-      <p class="submitdate">5 December, 2013</p>
-      <div class="description">
-         <p>
-         After more than two years of development, we have released <a href="http://downloads.xiph.org/releases/opus/opus-1.1.tar.gz">Opus 1.1</a>. This includes:
-         <ul>
-         <li>new analysis code and tuning that significantly improves encoding quality, especially for variable-bitrate (VBR),</li>
-         <li>automatic detection of speech or music to decide which encoding mode to use,</li>
-         <li>surround with good quality at 128 kbps for 5.1 and usable down to 48 kbps, and</li>
-         <li>speed improvements on all architectures, especially ARM, where decoding uses around 40% less CPU and encoding uses around 30% less CPU.</li> 
-         </ul>
-         These improvements are explained in more details in
-         <a href="http://people.xiph.org/~xiphmont/demo/opus/demo3.shtml">Monty's demo</a> 
-         (updated from the 1.1 beta demo).
-      </div>
-   </li>
-
-
 
    <li>
       <h3><a href="older_news.shtml.en">Older News</a></h3>

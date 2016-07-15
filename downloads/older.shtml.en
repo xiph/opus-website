@@ -3,6 +3,19 @@
 
 <h1>Older/Historic Releases</h1>
 
+<h4 id='one.1.2'>libopus 1.1.2</h4>
+<p>
+Opus 1.1.2 includes:
+         <ul>
+         <li>Fixes encoder or decoder state reset, which would previously disable some run-time selected architecture-specific optimizations; and</li>
+         <li>Fixes hybrid mode discontinuous transmission (DTX) operation, where the comfort noise above 8&nbsp;kHz was incorrectly estimated and could oscillate in time.</li>
+         </ul>
+         None of these bugs were regressions over previous releases.
+</p>
+<ul>
+<li>Source code: <a href="http://downloads.xiph.org/releases/opus/opus-1.1.2.tar.gz">opus-1.1.2.tar.gz</a></li>
+</ul>
+
 <h4 id='one.1.1'>libopus 1.1.1</h4>
 <p>
 Opus 1.1.1 includes:

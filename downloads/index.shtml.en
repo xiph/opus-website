@@ -74,19 +74,21 @@ In addition to <a href="https://developer.mozilla.org/En/Media_formats_supported
 
 <h3>Latest <strong style='font-style: italic;'>stable</strong> release</h3>
 
-<h4 id='one.1.2'>libopus 1.1.2</h4>
+<h4 id='one.1.3'>libopus 1.1.3</h4>
 <p>
-Opus 1.1.2 includes:
+Opus 1.1.3 includes:
          <ul>
-         <li>Fixes encoder or decoder state reset, which would previously disable some run-time selected architecture-specific optimizations; and</li>
-         <li>Fixes hybrid mode discontinuous transmission (DTX) operation, where the comfort noise above 8&nbsp;kHz was incorrectly estimated and could oscillate in time.</li>
+         <li>Neon optimizations inproving performance on ARMv7 and ARMv8 by up to 15%</li>
+         <li>Fixes some issues with 16-bit platforms (e.g. TI C55x)
+         <li>Fixes to comfort noise generation (CNG)
+         <li>Documenting that PLC packets can also be 2 bytes
+         <li>Includes experimental ambisonics work (--enable-ambisonics)
          </ul>
-         None of these bugs were regressions over previous releases.
+         None of the bugs that were fixed were regressions over previous releases.
 </p>
 <ul>
-<li>Source code: <a href="http://downloads.xiph.org/releases/opus/opus-1.1.2.tar.gz">opus-1.1.2.tar.gz</a></li>
+<li>Source code: <a href="http://downloads.xiph.org/releases/opus/opus-1.1.3.tar.gz">opus-1.1.3.tar.gz</a></li>
 </ul>
-
 
 
 <h3>Latest <strong style='font-style: italic;'>development</strong> releases</h3>
