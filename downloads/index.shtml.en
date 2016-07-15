@@ -78,7 +78,7 @@ In addition to <a href="https://developer.mozilla.org/En/Media_formats_supported
 <p>
 Opus 1.1.3 includes:
          <ul>
-         <li>Neon optimizations inproving performance on ARMv7 and ARMv8 by up to 15%</li>
+         <li>Neon optimizations improving performance on ARMv7 and ARMv8 by up to 15%</li>
          <li>Fixes some issues with 16-bit platforms (e.g. TI C55x)
          <li>Fixes to comfort noise generation (CNG)
          <li>Documenting that PLC packets can also be 2 bytes
