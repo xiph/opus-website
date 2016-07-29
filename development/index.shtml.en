@@ -31,6 +31,13 @@ for more information.</p>
 
 <h2>Source code repository</h2>
 
+<div class=CIbadge>
+  <p>
+    <a href=https://travis-ci.org/xiph/opus><img src=https://travis-ci.org/xiph/opus.svg?branch=master alt="travis-ci.org build status for opus"></a>
+    <a href=https://ci.appveyor.com/project/rillian/opus><img src=https://ci.appveyor.com/api/projects/status/github/xiph/opus?svg=true&branch=master alt="appveyor (windows) build status for opus"></a>
+  </p>
+</div>
+
 <b>Master git repository</b>: &nbsp;&nbsp;&nbsp;<span style="white-space: pre;font-family: monospace;">$ git clone <a href="https://git.xiph.org/?p=opus.git">https://git.xiph.org/opus.git</a></span>
 <ul style="margin-top:0;list-style-type: none;background-image:url('tree.png');background-repeat:no-repeat;padding-left:26px">
    <li>Branch <a href="http://git.xiph.org/?p=opus.git;a=shortlog;h=refs/heads/exp_lbr_tune">exp_lbr_tune</a> has experimental low bitrate quality improvements</li>
@@ -53,6 +60,14 @@ for more information.</p>
 and test vectors for verifying your implementation.</p>
 
 <h2>Opus-tools</h2>
+
+<div class=CIbadge>
+  <p>
+    <a href=https://travis-ci.org/xiph/opus-tools><img src=https://travis-ci.org/xiph/opus-tools.svg?branch=master alt="travis-ci.org build status for opus-tools"></a>
+    <a href=https://ci.appveyor.com/project/rillian/opus-tools-enbto><img src=https://ci.appveyor.com/api/projects/status/github/xiph/opus-tools?svg=true&branch=master alt="appveyor (windows) build status for opus-tools"></a>
+  </p>
+</div>
+
 <p>Opus-tools includes a set of tools for encoding/decoding Opus to and from wav. 
 The files the tools produce are suitable for distribution with support for seeking, metadata, and multichannel. 
 See also: the <a href="//wiki.xiph.org/OggOpus">OggOpus mapping</a>.</p>
@@ -62,6 +77,14 @@ See also: the <a href="//wiki.xiph.org/OggOpus">OggOpus mapping</a>.</p>
 <p>Manpages: <a href="https://mf4.xiph.org/jenkins/view/opus/job/opus-tools/ws/man/opusenc.html">opusenc</a>, <a href="https://mf4.xiph.org/jenkins/view/opus/job/opus-tools/ws/man/opusdec.html">opusdec</a>, <a href="https://mf4.xiph.org/jenkins/view/opus/job/opus-tools/ws/man/opusinfo.html">opusinfo</a></p>
 
 <h2>Opusfile</h2>
+
+<div class=CIbadge>
+  <p>
+    <a href=https://travis-ci.org/xiph/opusfile><img src=https://travis-ci.org/xiph/opusfile.svg?branch=master alt="travis-ci.org build status for opusfile"></a>
+    <a href=https://ci.appveyor.com/project/rillian/opusfile-y8nqv><img src=https://ci.appveyor.com/api/projects/status/github/xiph/opusfile?svg=true&branch=master alt="appveyor (windows) build status for opusfile"></a>
+  </p>
+</div>
+
 <p>Opusfile provides a high-level API for decoding and seeking within .opus files similar to what
 libvorbisfile provides for Vorbis.
 
@@ -73,6 +96,10 @@ libvorbisfile provides for Vorbis.
 performs automated builds and tests of Opus on many platforms and configurations.<br/>
 Some of the builds run on remote systems and may fail from time to time due to connectivity problems.
 The console output is available and usually very informative when builds fail.</p>
+
+<p>Build status for the github mirrors and test results for pull requests there
+are provided by <a href="https://travis-ci.org/">Travis</a> and
+<a href="https://appveyor.com">AppVeyor</a>.</p>
 
 <ul>
   <li>Test coverage reports: <a href="https://mf4.xiph.org/jenkins/job/opus-coverage/ws/coverage/index.html">
