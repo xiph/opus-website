@@ -97,9 +97,10 @@ performs automated builds and tests of Opus on many platforms and configurations
 Some of the builds run on remote systems and may fail from time to time due to connectivity problems.
 The console output is available and usually very informative when builds fail.</p>
 
-<p>Build status for the github mirrors and test results for pull requests there
-are provided by <a href="https://travis-ci.org/">Travis</a> and
-<a href="https://appveyor.com">AppVeyor</a>.</p>
+<p>Build status for the <a href="https://github.com/xiph/">github mirrors</a>
+and test results for pull requests there are provided by
+<a href="https://travis-ci.org/">Travis</a>
+and <a href="https://appveyor.com">AppVeyor</a>.</p>
 
 <ul>
   <li>Test coverage reports: <a href="https://mf4.xiph.org/jenkins/job/opus-coverage/ws/coverage/index.html">
