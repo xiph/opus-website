@@ -3,7 +3,12 @@ permalink: .htaccess
 layout: null
 ---
 # Redirects
-# Redirect permanent /example.php /example
+Redirect permanent /comparison/quality.png /static/comparison/quality.png
+Redirect permanent /comparison/opus_comparison.png /static/comparison/opus_comparison.png
+Redirect permanent /comparison/opus_ha_results.png /static/comparison/opus_ha_results.png
+Redirect permanent /comparison/opus_ha_results_96kbps.png /static/comparison/opus_ha_results_96kbps.png
+Redirect permanent /comparison/GoogleTest1.pdf /static/comparison/GoogleTest1.pdf
+Redirect permanent /comparison/GoogleTest2.pdf /static/comparison/GoogleTest2.pdf
 
 # Caching
 <ifmodule mod_expires.c>
