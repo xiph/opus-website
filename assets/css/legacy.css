@@ -1,0 +1,21 @@
+/* Compat CSS for legacy browser support */
+/* Uses fixed widths */
+
+body {
+    width: 950px;
+    display: inline;
+}
+
+div#sidebar {
+    float: left;
+}
+
+/* Main content */
+div#main {
+    margin-left: -1px;
+    width: 700px;
+    float: left;
+    border-left: 1px solid #CCCCCC;
+    min-width: 0;
+    max-width: none;
+}

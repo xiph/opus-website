@@ -1,0 +1,18 @@
+---
+permalink: .htaccess
+layout: null
+---
+# Redirects
+# Redirect permanent /example.php /example
+
+# Caching
+<ifmodule mod_expires.c>
+    ExpiresActive on
+    ExpiresDefault "access plus 5 minutes"
+    ExpiresByType image/x-icon "access plus 1 month"
+    ExpiresByType application/x-gzip "access plus 1 month"
+    ExpiresByType audio/ogg "access plus 1 week"
+    ExpiresByType image/png "access plus 1 week"
+    ExpiresByType image/jpeg "access plus 1 week"
+    ExpiresByType image/gif "access plus 1 week"
+</ifmodule>

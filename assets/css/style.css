@@ -1,0 +1,406 @@
+/* Browser Version independent styling */
+
+/* Font */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(../fonts/Open_Sans/OpenSans-Light.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(../fonts/Open_Sans/OpenSans-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(../fonts/Open_Sans/OpenSans-Bold.ttf) format('truetype');
+}
+
+/* Icon Font */
+@font-face {
+  font-family: 'fontawesome-subset';
+  src: url('../fonts/Fontawesome/fontawesome-subset.eot?74602347');
+  src: url('../fonts/Fontawesome/fontawesome-subset.eot?74602347#iefix') format('embedded-opentype'),
+       url('../fonts/Fontawesome/fontawesome-subset.woff?74602347') format('woff'),
+       url('../fonts/Fontawesome/fontawesome-subset.ttf?74602347') format('truetype'),
+       url('../fonts/Fontawesome/fontawesome-subset.svg?74602347#fontawesome-subset') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.i-html:before, .i-pdf:before, .i-txt:before {
+    font-family: "fontawesome-subset";
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    speak: none;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: .2em;
+}
+
+.i-html:before {
+    content: '\e815';
+}
+
+.i-pdf:before {
+    content: '\e80d';
+}
+
+.i-txt:before {
+    content: "\e81d";
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 2em auto 0 auto;
+    display: table;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* HTML5 compatibility */
+nav, article {
+    display: block;
+}
+
+/* Sidebar */
+div#sidebar {
+    width: 155px;
+    padding-right: 20px;
+    text-align: right;
+    border-right: 1px solid #CCCCCC;
+}
+
+/* Sidebar Logo */
+div#sidebar #site-logo img {
+    width: 140px;
+}
+
+/* Sidebar Menu List */
+div#sidebar ul#main-nav {
+    list-style: none;
+}
+
+/* Sidebar Menu Item */
+div#sidebar ul#main-nav li {
+    padding-bottom: 2pt;
+}
+
+/* Sidebar active Menu Item */
+div#sidebar ul#main-nav li a.active {
+    font-weight: bold;
+    color: #0398D1;
+}
+
+/* Align main content and sidebar along each other */
+div#sidebar, div#main {
+    display: table-cell;
+    vertical-align: top;
+}
+
+/* License box */
+div.licensebox {
+    display: block;
+    width: 90%;
+    border-left: 5px solid #109CD2;
+    background: #F1F1F1;
+    padding: 4px 10px;
+    overflow: visible;
+    word-wrap: break-word;
+}
+
+div.licensebox span {
+    font-weight: normal;
+    font-size: 0.8em;
+}
+
+span.right {
+    float: right;
+    text-align: right;
+}
+
+div.licensebox ul {
+    padding: 0;
+    list-style: none;
+}
+
+div.licensebox p {
+    font-size: 1.1em;
+    margin: 0;
+    font-weight: bold;
+}
+
+div.licensebox ul li.yes {
+    padding: 0.5em 0 0.5em 1.5em;
+    padding-left: 1.5em;
+    background: url('/assets/img/check.png') no-repeat left center/16px;
+}
+
+div.licensebox ul li.no {
+    padding: 0.5em 0 0.5em 1.5em;
+    padding-left: 1.5em;
+    background: url('/assets/img/xmark.png') no-repeat left center/16px;
+}
+
+/* Main content */
+div#main {
+    padding: 0 25px 0 25px;
+    min-width: 420px;
+    max-width: 825px;
+}
+
+div#main > h1:first-of-type {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+/* Downloads List */
+ul.download-list {
+    padding-left: 0;
+    list-style: none;
+    font-weight: bold;
+    width: 70%;
+}
+
+ul.download-list > li {
+    padding: 0.25em 0 0.25em 1em;
+    border-bottom: 1px solid #CCC;
+    overflow: hidden;
+}
+
+ul.download-list > li > span {
+    font-weight: normal;
+}
+
+ul.download-list > li:last-of-type {
+    border-bottom: none;
+}
+
+ul.download-list > li > ul {
+    float: right;
+    list-style: none;
+    padding: 0;
+    width: 63%;
+    min-width: 245px;
+}
+
+ul.download-list > li > ul > li {
+    float: left;
+    margin-left: 1.5em;
+}
+
+/* Post list */
+ul.post-list {
+    list-style: none;
+}
+
+.post-head {
+    margin-bottom: 0;
+}
+
+span.post-meta {
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* Example Box */
+.example {
+    display: block;
+    width: 90%;
+    border-left: 5px solid #109CD2;
+    background: #F1F1F1;
+    padding: 4px 10px;
+    /*overflow: auto;*/
+    overflow: visible;
+    word-wrap: break-word;
+}
+
+/* General Styling */
+h1 {
+    font-weight: bold;
+    font-size: 2em;
+}
+
+h2 {
+    font-weight: normal;
+    font-size: 1.75em;
+    margin-bottom: 0.5em;
+}
+
+h3 {
+    font-weight: normal;
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+h4 {
+    font-weight: normal;
+    font-size: 1.25em;
+    margin-bottom: 0.5em;
+}
+
+h5 {
+    font-weight: bold;
+    font-size: 1em;
+    text-transform: uppercase;
+    margin-bottom: 0.5em;
+}
+
+h1 small, h2 small, h3 small, h4 small {
+    font-size: 0.65em;
+}
+
+hr {
+    width: 80%;
+    border: none;
+    border-bottom: 1px solid #CCC;
+}
+
+blockquote {
+    padding: 10px 15px;
+    position: relative;
+    width: 80%
+}
+
+blockquote:after, blockquote:before {
+    color: #CCC;
+    font-size: 1.75em;
+    position: absolute;
+}
+
+blockquote:before {
+    top: 0;
+    left: 10px;
+    content: '\201C';
+}
+
+blockquote:after {
+    bottom: 0;
+    right: 15px;
+    content: '\201D';
+}
+
+q:before {
+    content: '\201C';
+}
+
+q:after {
+    content: '\201D';
+}
+
+code {
+    font-family: "Fira Mono" "Menlo" Courier "Lucida Console" monospace;
+}
+
+samp {
+    font-family: "Lucida Console" Courier monospace;
+}
+
+pre {
+    display: block;
+    width: 90%;
+    border-left: 5px solid #30BCF2;
+    background: #E3E3E3;
+    padding: 4px 10px;
+    word-wrap: break-word;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+}
+
+#nav-trigger, #nav-label {
+    display: none;
+}
+
+/* Media Querie Mobile */
+@media (max-width: 650px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Top menu style */
+    div#sidebar, div#main {
+        display: block;
+        border-right: none;
+        width: auto;
+        min-width: 200px;
+    }
+
+    div#sidebar {
+        text-align: center;
+        margin-top: 1em;
+        max-height: 999px;
+        transition: max-height 0.5s;
+    }
+
+    div#sidebar ul {
+        padding: 1em 0 0 0;
+        margin: 0;
+    }
+
+    #nav-label {
+        display: inline-block;
+        height: 30px;
+        width: 30px;
+        cursor: pointer;
+        background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' width='30px' height='30px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><rect width='30' height='6'/><rect y='24' width='30' height='6'/><rect y='12' width='30' height='6'/></svg>");
+        background-size: contain;
+        float: right;
+        line-height: 1em;
+        margin: 0.35em 15px 0 0;
+        vertical-align: middle;
+    }
+
+    #nav-trigger:not(:checked) + #sidebar {
+        overflow: hidden;
+        max-height: 0;
+    }
+
+    ul.download-list {
+        width: auto;
+    }
+
+    ul.download-list > li > ul {
+        float: none;
+        width: auto;
+        padding-left: 1em;
+    }
+}
+
+/* Site specific colors */
+a {
+    color: #30BCF2;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #09ADEC;
+}
+
+a:hover {
+    color: #0398D1;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+/* Video player size */
+video {
+    max-width: 100%;
+    max-height: 500px;
+}
+
+/* Image size */
+img {
+    max-width: 100%;
+}

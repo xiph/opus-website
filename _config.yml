@@ -1,0 +1,23 @@
+# This is the Opus Website Jekyll config file!
+#
+# You should rarely need to change anything!
+# Changes will not reload automatically (when using `jekyll server`)
+
+# Site settings
+title: Opus Codec
+email: webmaster@xiph.org
+description: >
+  Opus, the open standard, high quality codec. Presentation, documentation,
+  comparison with other formats, download links, source code repository.
+baseurl: ""
+url: "http://opus-codec.org" # the base hostname & protocol for your site
+
+#twitter_username: jekyllrb
+#github_username:  jekyll
+
+# Build settings
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge

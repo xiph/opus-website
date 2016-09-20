@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+    <!-- Omit input checkbox below to always show menu -->
+    <input type="checkbox" id="nav-trigger" />
+
+    {% include menu.html %}
+
+    <div id="main" role="main">
+      <!-- Omit line below if menu is always shown -->
+      <label id="nav-label" for="nav-trigger"></label>
+
+      {{ content }}
+
+      {% include footer.html %}
+
+    </div>
+
+  </body>
+
+</html>
