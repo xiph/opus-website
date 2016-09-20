@@ -50,10 +50,10 @@ LC-AAC at 96 kb/s and MP3 at 136 kb/s. For the full details, see the [official r
 
 ### Google listening tests
 
-Jan Skoglund from Google organized two sets of listening tests. The [first set of listening tests](/static/comparison/GoogleTest1.pdf)
+Jan Skoglund from Google organized two sets of listening tests. The [first set of listening tests][google_1]
 includes a narrowband speech test, a wideband-fullband speech test, and a stereo music test.
 
-The [second set of listening tests](/static/comparison/GoogleTest2.pdf) measures the narrowband and wideband/fullband speech quality on
+The [second set of listening tests][google_2] measures the narrowband and wideband/fullband speech quality on
 Mandarin and the transcoding quality in narrowband and wideband.
 
 ### Nokia listening test
