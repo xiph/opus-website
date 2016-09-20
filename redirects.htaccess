@@ -3,6 +3,8 @@ permalink: .htaccess
 layout: null
 ---
 # Redirects
+
+# Comparison files
 Redirect permanent /comparison/quality.png /static/comparison/quality.png
 Redirect permanent /comparison/opus_comparison.png /static/comparison/opus_comparison.png
 Redirect permanent /comparison/opus_ha_results.png /static/comparison/opus_ha_results.png

@@ -70,6 +70,6 @@ good as the quality Opus achieves with variable bitrate (VBR).
 [hydro64]: http://listening-tests.hydrogenaud.io/igorc/results.html
 [maxwell]: http://people.xiph.org/~greg/opus/ha2011/
 [hydro96]: http://listening-test.coresv.net/results.htm
-[google_1]: /static/comparison/comparison/GoogleTest1.pdf
-[google_2]: /static/comparison/comparison/GoogleTest2.pdf
+[google_1]: /static/comparison/GoogleTest1.pdf
+[google_2]: /static/comparison/GoogleTest2.pdf
 [nokia]: https://pdfs.semanticscholar.org/064c/d1c023b658aaa2ee8259286fc9998801e77b.pdf
