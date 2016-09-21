@@ -14,7 +14,7 @@ function updateTargets(e, pseudo_this) {
     if (t.tagName.toLowerCase() === "audio") {
       var playing = !(t.paused);
       var position = t.currentTime;
-      t.src= "/examples/samples/" + sender.value + ".wav";
+      t.src= "/static/examples/samples/" + sender.value + ".wav";
 
       // We can't set the playback time on the new audio to match where
       // the old audio left off until metadata has successfully loaded;
@@ -30,7 +30,7 @@ function updateTargets(e, pseudo_this) {
       }, true);
       t.load();
     } else if (t.tagName.toLowerCase() === "a") {
-      t.href = "/examples/samples/" + sender.value + ".wav";
+      t.href = "/static/examples/samples/" + sender.value + ".wav";
     }
   };
 }
