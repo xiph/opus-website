@@ -12,7 +12,7 @@ Redirect permanent /comparison/opus_ha_results_96kbps.png /static/comparison/opu
 Redirect permanent /comparison/GoogleTest1.pdf /static/comparison/GoogleTest1.pdf
 Redirect permanent /comparison/GoogleTest2.pdf /static/comparison/GoogleTest2.pdf
 
-# Caching
+# Caching stuff
 <ifmodule mod_expires.c>
     ExpiresActive on
     ExpiresDefault "access plus 5 minutes"
