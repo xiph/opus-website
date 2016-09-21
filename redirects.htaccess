@@ -6,11 +6,28 @@ layout: null
 
 # Comparison files
 Redirect permanent /comparison/quality.png /static/comparison/quality.png
-Redirect permanent /comparison/opus_comparison.png /static/comparison/opus_comparison.png
+Redirect permanent /comparison/quality.svg /static/comparison/quality.svg
 Redirect permanent /comparison/opus_ha_results.png /static/comparison/opus_ha_results.png
 Redirect permanent /comparison/opus_ha_results_96kbps.png /static/comparison/opus_ha_results_96kbps.png
+Redirect permanent /comparison/opus_comparison.png /static/comparison/opus_comparison.png
+Redirect permanent /comparison/opus_comparison.odg /static/comparison/opus_comparison.odg
 Redirect permanent /comparison/GoogleTest1.pdf /static/comparison/GoogleTest1.pdf
 Redirect permanent /comparison/GoogleTest2.pdf /static/comparison/GoogleTest2.pdf
+
+# Presentation files
+Redirect permanent /presentations/opus_ccbe2013.pdf /static/presentations/opus_ccbe2013.pdf
+Redirect permanent /presentations/opus_celt_aes135.pdf /static/presentations/opus_celt_aes135.pdf
+Redirect permanent /presentations/opus_voice_aes135.pdf /static/presentations/opus_voice_aes135.pdf
+Redirect permanent /presentations/LCA-opus-video-thumb.png /static/presentations/LCA-opus-video-thumb.png
+Redirect permanent /presentations/misc/lca-opus-audio.tar.gz /static/presentations/misc/lca-opus-audio.tar.gz
+Redirect permanent /presentations/misc/lca-opus.odp /static/presentations/misc/lca-opus.odp
+Redirect permanent /presentations/misc/lca-opus.pdf /static/presentations/misc/lca-opus.pdf
+
+# Example files
+Redirect permanent /ehren-paper_lights-96.opus /static/examples/ehren-paper_lights-96.opus
+Redirect permanent /examples/sweep.ogg /static/examples/sweep.ogg
+Redirect permanent /examples/sweep.wav /static/examples/sweep.wav
+Redirect permanent /examples/samples /static/examples/samples
 
 # Caching stuff
 <ifmodule mod_expires.c>
