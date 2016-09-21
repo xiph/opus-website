@@ -404,3 +404,9 @@ video {
 img {
     max-width: 100%;
 }
+
+footer {
+    padding-top: 1.5em;
+    text-align: center;
+    font-size: 0.7em;
+}
