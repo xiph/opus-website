@@ -4,6 +4,8 @@ title: License
 permalink: /license/
 ---
 
+# License
+
 Opus has a freely available specification, a BSD-licensed, high-quality reference encoder and decoder,
 and protective, royalty-free licenses for the required patents. The copyright and patent licenses for
 Opus are automatically granted to everyone and do not require application or approval. The Opus FAQ has

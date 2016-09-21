@@ -4,17 +4,27 @@ title: Presentations
 permalink: /presentations/
 ---
 
+# Presentations
+
 #### [135th AES Convention][135aes_conv] 2013 – Koen Vos
 [Slides]({{ "/static/presentations/opus_voice_aes135.pdf" | prepend: site.baseurl }}) (PDF, 1394 KiB)
+
+---
 
 #### [135th AES Convention][135aes_conv] 2013 – Jean-Marc Valin
 [Slides]({{ "/static/presentations/opus_celt_aes135.pdf" | prepend: site.baseurl }}) (PDF, 881 KiB)
 
+---
+
 #### [CCBE][ccbe] 2013 – Jean-Marc Valin
 [Slides]({{ "/static/presentations/opus_ccbe2013.pdf" | prepend: site.baseurl }}) (PDF, 436 KiB)
 
+---
+
 #### [IETF 87 Technical Plenary][ietf] 2013 – J.-M. Valin, G. Maxwell, P. St-Andre, T.B. Terriberry, E. Ivov, L. Miniero, J. Uberti
 [Slides](http://www.ietf.org/proceedings/87/slides/slides-87-iab-techplenary-5.pdf) (PDF, 646 KiB)
+
+---
 
 #### [linux.conf.au][linuxconfau] 2012 – Jean-Marc Valin
 Also [available on YouTube](https://www.youtube.com/watch?v=iaAD71h9gDU).
