@@ -29,6 +29,16 @@ Redirect permanent /examples/sweep.ogg /static/examples/sweep.ogg
 Redirect permanent /examples/sweep.wav /static/examples/sweep.wav
 Redirect permanent /examples/samples /static/examples/samples
 
+# Testvector files
+Redirect permanent /docs/opus_testvectors.tar.gz /static/testvectors/opus_testvectors.tar.gz
+Redirect permanent /testvectors/opus_testvectors.tar.gz /static/testvectors/opus_testvectors.tar.gz
+Redirect permanent /testvectors/opus_testvectors-draft11.tar.gz /static/testvectors/opus_testvectors-draft11.tar.gz
+Redirect permanent /testvectors/opus_testvectors-draft10.tar.gz /static/testvectors/opus_testvectors-draft10.tar.gz
+Redirect permanent /testvectors/opus_testvectors-draft09.tar.gz /static/testvectors/opus_testvectors-draft09.tar.gz
+
+# Misc redirects
+Redirect seeother /older_news.shtml.en /news
+
 # Caching stuff
 <ifmodule mod_expires.c>
     ExpiresActive on
