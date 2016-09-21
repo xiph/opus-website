@@ -22,4 +22,5 @@ kramdown:
   input: GFM
   syntax_highlighter: rouge
   syntax_highlighter_opts:
-    line_numbers: false
+    block:
+      line_numbers: false
