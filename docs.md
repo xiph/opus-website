@@ -122,6 +122,8 @@ completely support the playback of .opus (OggOpus) files.
 -  [Encoding Opus from foobar2000 (Windows)](http://www.saunalahti.fi/~cse/Opus/)
 -  Amit Ashara, [Implementing OPUS Voice Code for TM4C129x Device](http://www.ti.com/lit/an/spma076/spma076.pdf), Application
    Report, Texas Instruments, June 2016.
+-  Amit Ashara, [Audio Communication With Power Over Ethernet (PoE)](http://www.ti.com/lit/ug/tiduc16/tiduc16.pdf), Reference Design,
+   Texas Instruments, August 2016.
 
 
 ## Inside Opus
