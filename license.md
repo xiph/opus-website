@@ -314,20 +314,20 @@ Microsoft Patents/Applications covered:
 > non-compliance, because of non-compliance with any other term or
 > condition of this Agreement.
 >
-> 2. Patent License Commitment. On behalf of me and my successors in
+> 2\. Patent License Commitment. On behalf of me and my successors in
 >    interest and assigns, I agree to offer alternative reasonable and
 >    non-discriminatory royalty-bearing licensing terms 1) to my
 >    Necessary Decoder Claims solely for your Specification
 >    Implementation and 2) to my Necessary Reference Implementations
 >    Claims solely for your Code Implementation.
 >
-> 3. Past Skype Declarations. You may, at your option, continue to rely
+> 3\. Past Skype Declarations. You may, at your option, continue to rely
 >    on the terms set forth in Skype’s past declarations made to the
 >    IETF for the Opus Audio Codec, subject to the terms of those
 >    declarations and in lieu of the terms of this Agreement solely for
 >    the patents set forth in those declarations.
 >
-> 4. Good Faith Obligations. I agree that I have not and will not
+> 4\. Good Faith Obligations. I agree that I have not and will not
 >    knowingly take any action for the purpose of circumventing my
 >    obligations under this Agreement. In addition, I will not 1) seek
 >    an injunction or exclusion order against a) Code Implementations
@@ -340,7 +340,7 @@ Microsoft Patents/Applications covered:
 >    Decoder Claims unless the transferee is subject to these
 >    obligations.
 >
-> 5. Disclaimers. I expressly disclaim any warranties (express, implied,
+> 5\. Disclaimers. I expressly disclaim any warranties (express, implied,
 >    or otherwise), including implied warranties of merchantability,
 >    non-infringement, fitness for a particular purpose, or title,
 >    related to the Specification or Reference Implementation. The
@@ -355,7 +355,7 @@ Microsoft Patents/Applications covered:
 >    PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. Nothing
 >    in this Agreement requires me to undertake a patent search.
 >
-> 6. Definitions.
+> 6\. Definitions.
 >
 > 6.1. Agreement. “Agreement” means this document, which sets forth the
 > rights, grants, limitations, conditions, obligations, and disclaimers
