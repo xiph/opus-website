@@ -101,7 +101,9 @@ Xiph.Org Patents/Applications covered:
 - US 61/450,060
 - and any other applicable
 
-> License Grant. Xiph.Org Foundation (“Xiph”) hereby grants to you a perpetual, worldwide, non-exclusive, no-charge,royalty-free, irrevocable (except as stated in this license) license under Licensed Patents to make, have made, use, offer to sell, sell, import, transfer, and otherwise run, modify (in a way that still complies with the Specification), and reproduce any Implementation.
+##### License Grant
+
+> Xiph.Org Foundation (“Xiph”) hereby grants to you a perpetual, worldwide, non-exclusive, no-charge,royalty-free, irrevocable (except as stated in this license) license under Licensed Patents to make, have made, use, offer to sell, sell, import, transfer, and otherwise run, modify (in a way that still complies with the Specification), and reproduce any Implementation.
 >
 > Definitions. Specification means, and includes the following, both individually and collectively, (a) any standard specification of the Opus codec adopted by the IETF Codec Working Group (“Standard”) and (b) any reference implementation (each, a “Reference Implementation”) published by the IETF Codec Working Group in the request for comments (“RFC”) issued by the IETF for the Specification draft for which this License is issued, or any RFC that is issued as an update or new version thereof. An Implementation means any Reference Implementation, or another implementation that complies with the Specification. Licensed Patents means all patents currently owned by Xiph or acquired hereafter that Xiph has the right to license as set forth above and that are necessarily infringed by the Specification, where “necessarily infringed” means: in the case of (a) above, there is no commercially viable means of implementing the Specification without infringing such patent; in the case of (b) above, use of the reference implementation to the extent it infringes such patent.
 >
@@ -122,7 +124,8 @@ Broadcom Patents/Applications covered:
 - US 7,353,168
 - and any other applicable
 
-> License Grant. Broadcom Corporation (“Broadcom”) hereby grants to you a perpetual, worldwide, non-exclusive, no-charge, royalty-free, irrevocable (except as stated in this license) license under Licensed Patents to make, have made, use, offer to sell, sell, import, transfer, and otherwise run, modify (in a way that still complies with the Specification), and reproduce any Implementation.
+##### License Grant
+> Broadcom Corporation (“Broadcom”) hereby grants to you a perpetual, worldwide, non-exclusive, no-charge, royalty-free, irrevocable (except as stated in this license) license under Licensed Patents to make, have made, use, offer to sell, sell, import, transfer, and otherwise run, modify (in a way that still complies with the Specification), and reproduce any Implementation.
 >
 > Definitions. Specification means, and includes the following, both individually and collectively, (a) any standard specification of the Opus codec adopted by the IETF Codec Working Group (“Standard”) and (b) any reference implementation (each, a “Reference Implementation”) published by the IETF Codec Working Group in the request for comments (“RFC”) issued by the IETF for the Specification draft for which this License is issued, or any RFC that is issued as an update or new version thereof. An Implementation means any Reference Implementation, or another implementation that complies with the Specification. Licensed Patents means all patents currently owned by Broadcom or acquired hereafter that Broadcom has the right to license as set forth above and that are necessarily infringed by the Specification, where “necessarily infringed” means: in the case of (a) above, there is no commercially viable means of implementing the Specification without infringing such patent; in the case of (b) above, use of the reference implementation to the extent it infringes such patent.
 >
@@ -153,11 +156,11 @@ Microsoft Patents/Applications covered:
 - US-2011-0077940-A1
 - and any other applicable
 
-> Microsoft Opus Patent Terms
->
-> 11-7-2012
->
-> 1. Patent Terms.
+##### Microsoft Opus Patent Terms
+
+11-7-2012
+
+> 1\. Patent Terms.
 >
 > 1.1. Specification License. Subject to all the terms and conditions of this Agreement, I, on behalf of myself and my successors in interest and assigns, hereby grant you a non-sublicensable, perpetual, worldwide, non-exclusive, no-charge, royalty-free, irrevocable license to my Necessary Decoder Claims for your Specification Implementation.
 >
