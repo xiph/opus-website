@@ -1,6 +1,6 @@
 ---
 title: libopus 1.2-alpha
-categories: ["release", "unstable"]
+categories: ["release", "dev"]
 date: 2016-11-03
 layout: post
 ---
