@@ -22,13 +22,14 @@ IRC client.
 
 If you find a bug, please report it in [trac][trac].
 
+For anything non-confidential (e.g. general questions about Opus), please use
+one of the mailing lists above.
 For __confidential__ enquiries, you can contact one of the following developers directly:
 
 -  [Jean-Marc Valin][j_m_valin] (Mozilla/Xiph.Org)
 -  [Koen Vos][k_vos] (vocTone)
 -  [Timothy B. Terriberry][t_terriberry] (Mozilla/Xiph.Org)
 
-For anything non-confidential, please use one of the mailing lists above.
 
 [ml_xiph]: http://lists.xiph.org/mailman/listinfo/opus
 [ml_xiph_mail]: opus@xiph.org
