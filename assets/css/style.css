@@ -123,6 +123,10 @@ div.licensebox span {
     font-size: 0.8em;
 }
 
+div.mono {
+    font-family: "Fira Mono" "Menlo" Courier "Lucida Console" monospace;
+}
+
 span.right {
     float: right;
     text-align: right;
@@ -133,7 +137,7 @@ div.licensebox ul {
     list-style: none;
 }
 
-div.licensebox p {
+div.licensebox p.heading {
     font-size: 1.1em;
     margin: 0;
     font-weight: bold;
