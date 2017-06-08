@@ -622,7 +622,7 @@
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="casc" />
     <path
-       style="fill:none;stroke:#d40000;stroke-width:6.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       style="fill:none;stroke:#008000;stroke-width:6.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
        d="m 771.0113,475.38017 c 0,0 71.82567,-66.35467 115.05855,-87.73544 17.32221,-8.56668 55.91885,-15.30053 55.91885,-15.30053"
        id="path5166-3-5-2-0-8-5"
        inkscape:connector-curvature="0"
@@ -638,6 +638,6 @@
          id="tspan5360-5"
          x="858.14062"
          y="435.56824"
-         style="font-size:32px;fill:#d40000;stroke:#d40000">MP3</tspan></text>
+         style="font-size:32px;fill:#008000;stroke:#008000">MP3</tspan></text>
   </g>
 </svg>
