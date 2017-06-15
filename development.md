@@ -57,6 +57,13 @@ provides for Vorbis.
 
 <pre><code>$ git clone <a href="https://git.xiph.org/?p=opusfile.git">https://git.xiph.org/opusfile.git</a></code></pre>
 
+## libopusenc
+
+[![travis-ci.org build status for libopusenc](https://travis-ci.org/xiph/libopusenc.svg?branch=master)](https://travis-ci.org/xiph/libopusenc)
+
+Libopusenc provides a high-level API for creating .opus files and streams.
+
+<pre><code>$ git clone <a href="https://git.xiph.org/?p=libopusenc.git">https://git.xiph.org/libopusenc.git</a></code></pre>
 
 ## Continuous integration
 
