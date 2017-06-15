@@ -28,11 +28,7 @@ Master git repository:
 
 <pre><code>$ git clone <a href="https://git.xiph.org/?p=opus.git">https://git.xiph.org/opus.git</a></code></pre>
 
-There is also a [Gitweb frontend][git-web].
-
-### Snapshots
-
--  opus-master.tar.gz
+There is also a [Gitweb frontend][git-web] and a mirror at [GitHub](https://github.com/xiph/opus).
 
 See the [documentation][docs] for an API reference and test vectors for verifying your implementation.
 
