@@ -28,13 +28,11 @@ Master git repository:
 
 <pre><code>$ git clone <a href="https://git.xiph.org/?p=opus.git">https://git.xiph.org/opus.git</a></code></pre>
 
-There is also a [Gitweb frontend][git-web]. Branch [exp_lbr_tune][exp_lbr_tune-branch] has experimental low
-bitrate quality improvements.
+There is also a [Gitweb frontend][git-web].
 
 ### Snapshots
 
 -  opus-master.tar.gz
--  opus-exp_lbr_tune-branch.tar.gz
 
 See the [documentation][docs] for an API reference and test vectors for verifying your implementation.
 
