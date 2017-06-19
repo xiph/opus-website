@@ -11,6 +11,12 @@ permalink: /docs/
 Libopus is the reference implementation of the Opus Codec.
 
 <ul class="download-list">
+   <li>libopus 1.2 release
+      <ul>
+         <li><a class="i-html" href="/docs/opus_api-1.2/index.html">HTML</a></li>
+         <li><a class="i-pdf" href="/docs/opus_api-1.2.pdf">PDF</a></li>
+      </ul>
+   </li>
    <li>libopus 1.1.3 release
       <ul>
          <li><a class="i-html" href="/docs/opus_api-1.1.3/index.html">HTML</a></li>
