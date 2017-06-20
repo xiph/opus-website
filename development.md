@@ -36,7 +36,7 @@ See the [documentation][docs] for an API reference and test vectors for verifyin
 ## Opus-tools
 
 [![travis-ci.org build status for opus-tools](https://travis-ci.org/xiph/opus-tools.svg?branch=master)](https://travis-ci.org/xiph/opus-tools)
-[![appveyor (windows) build status for opus-tools](https://ci.appveyor.com/api/projects/status/github/xiph/opus-tools?svg=true&branch=master)](https://ci.appveyor.com/project/rillian/opus-tools-enbto)
+[![appveyor (windows) build status for opus-tools](https://ci.appveyor.com/api/projects/status/github/xiph/opus-tools?svg=true&branch=master)](https://ci.appveyor.com/project/rillian/opus-tools)
 
 Opus-tools includes a set of tools for encoding/decoding Opus to and from wav. The files the tools produce
 are suitable for distribution with support for seeking, metadata, and multichannel.
@@ -50,7 +50,7 @@ Manpages: [opusenc][opusenc], [opusdec][opusdec], [opusinfo][opusinfo]
 ## Opusfile
 
 [![travis-ci.org build status for opusfile](https://travis-ci.org/xiph/opusfile.svg?branch=master)](https://travis-ci.org/xiph/opusfile)
-[![appveyor (windows) build status for opusfile](https://ci.appveyor.com/api/projects/status/github/xiph/opusfile?svg=true&branch=master)](https://ci.appveyor.com/project/rillian/opusfile-y8nqv)
+[![appveyor (windows) build status for opusfile](https://ci.appveyor.com/api/projects/status/github/xiph/opusfile?svg=true&branch=master)](https://ci.appveyor.com/project/rillian/opusfile)
 
 Opusfile provides a high-level API for decoding and seeking within .opus files similar to what libvorbisfile
 provides for Vorbis.
