@@ -22,15 +22,15 @@ In addition to [support in Firefox][ff_opus], Mozilla provides binary builds of 
       <li><a href="https://archive.mozilla.org/pub/opus/macos/opus-tools-0.1.9-macos.tar.gz">OS X (older)</a></li>
     </ul>
   </li>
-  <li>opusfile <span>0.7</span>
+  <li>opusfile <span>0.9</span>
     <ul>
-      <li><a href="https://archive.mozilla.org/pub/opus/opusfile-0.7.tar.gz">Source</a></li>
-      <li><a href="https://archive.mozilla.org/pub/opus/win32/opusfile-0.7-win32.zip">Windows</a></li>
+      <li><a href="https://archive.mozilla.org/pub/opus/opusfile-0.9.tar.gz">Source</a></li>
+      <li><a href="https://archive.mozilla.org/pub/opus/win32/opusfile-v0.9-win32.zip">Windows</a></li>
     </ul>
   </li>
 </ul>
 
-Opus-tools provides command-line utilities to encode, inspect, and decode .opus files.  
+Opus-tools provides command-line utilities to encode, inspect, and decode .opus files.
 Opusfile provides application developers with a high-level API for decoding and seeking in .opus files. DLLs for the
 required libraries libogg 1.3.2, libopus 1.1.1 and openssl, are also included in the binary package.
 
