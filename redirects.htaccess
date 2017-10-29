@@ -30,6 +30,7 @@ Redirect permanent /examples/sweep.wav /static/examples/sweep.wav
 Redirect permanent /examples/samples /static/examples/samples
 
 # Testvector files
+Redirect permanent /docs/opus_testvectors-rfc8251.tar.gz /static/testvectors/opus_testvectors-rfc8251.tar.gz
 Redirect permanent /docs/opus_testvectors.tar.gz /static/testvectors/opus_testvectors.tar.gz
 Redirect permanent /testvectors/opus_testvectors.tar.gz /static/testvectors/opus_testvectors.tar.gz
 Redirect permanent /testvectors/opus_testvectors-draft11.tar.gz /static/testvectors/opus_testvectors-draft11.tar.gz
