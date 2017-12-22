@@ -18,4 +18,4 @@ built with 1.3-beta. These binaries are based on libopusenc, which means opusenc
 to make use of the Opus delayed-decision feature to make better speech/music transitions.
 
 Source code: [opus-1.3-beta.tar.gz](https://archive.mozilla.org/pub/opus/opus-1.3-beta.tar.gz)  
-Win32 binaries: [opus-tools-test1.zip](https://archive.mozilla.org/pub/opus/win32/opus-tools-test1.zip)
+Win32 binaries (experimental): [opus-tools-test1.zip](https://archive.mozilla.org/pub/opus/win32/opus-tools-test1.zip)
