@@ -39,34 +39,52 @@ required libraries libogg 1.3.2, libopus 1.1.1 and openssl, are also included in
 ## Source code (stable release)
 
 <ul class="post-list">
-  {% for post in site.categories.stable limit: 1 %}
-  <li>
-    <article>
-      <header>
-        <h3 class="post-head"><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-      </header>
-      {{ post.content }}
-    </article>
+  {% assign components = site.categories.stable | group_by:"component" %}
+  {% for component in components %}
+    <!-- {{ component.name }} -->
+    {% if component.name == '' %}
+      {% continue %}
+    {% endif %}
+
+    {% for post in site.categories.stable limit: 1 %}
+    <li>
+      <article>
+        <header>
+          <h3 class="post-head"><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        </header>
+        {{ post.content }}
+      </article>
+      {% if forloop.last == false %}<hr />{% endif %}
+    </li>
+    {% endfor %}
     {% if forloop.last == false %}<hr />{% endif %}
-  </li>
   {% endfor %}
 </ul>
 
 ## Source code (development releases)
 
 <ul class="post-list">
-  {% for post in site.categories.dev limit: 2 %}
-  <li>
-    <article>
-      <header>
-        <h3 class="post-head"><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-      </header>
-      {{ post.content }}
-    </article>
-    <hr />
-  </li>
+  {% assign components = site.categories.dev | group_by:"component" %}
+  {% for component in components %}
+    <!-- {{ component.name }} -->
+    {% if component.name == '' %}
+      {% continue %}
+    {% endif %}
+
+    {% for post in component.items limit: 1 %}
+      <li>
+        <article>
+          <header>
+            <h3 class="post-head"><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+            <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+          </header>
+          {{ post.content }}
+        </article>
+        {% if forloop.last == false %}<hr />{% endif %}
+      </li>
+    {% endfor %}
+    {% if forloop.last == false %}<hr />{% endif %}
   {% endfor %}
 </ul>
 
