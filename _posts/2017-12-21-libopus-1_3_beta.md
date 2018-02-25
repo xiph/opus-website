@@ -3,6 +3,7 @@ title: libopus 1.3-beta
 categories: ["release", "dev"]
 date: 2017-12-21
 layout: post
+component: libopus
 ---
 
 This [Opus 1.3-beta](https://archive.mozilla.org/pub/opus/opus-1.3-beta.tar.gz) beta release

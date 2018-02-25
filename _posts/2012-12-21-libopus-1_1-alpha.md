@@ -3,6 +3,7 @@ title: libopus 1.1-alpha
 categories: ["release", "dev"]
 date: 2012-12-21
 layout: post
+component: libopus
 ---
 
 This is an alpha release for the upcoming 1.1 version. Compared to 1.0.2, it includes

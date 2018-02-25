@@ -3,6 +3,7 @@ title: libopus 1.2-alpha
 categories: ["release", "dev"]
 date: 2016-11-03
 layout: post
+component: libopus
 ---
 
 This [Opus 1.2-alpha](http://downloads.xiph.org/releases/opus/opus-1.2-alpha.tar.gz) alpha release
