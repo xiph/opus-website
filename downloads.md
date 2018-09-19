@@ -90,5 +90,5 @@ required libraries libogg 1.3.2, libopus 1.1.1 and openssl, are also included in
 
 <p>See the <a href="{{ "/news" | prepend: site.baseurl }}">news archive</a> for all releases</p>
 
-[ff_opus]: https://developer.mozilla.org/En/Media_formats_supported_by_the_audio_and_video_elements#Ogg_Opus
+[ff_opus]: https://developer.mozilla.org/en/Media_formats_supported_by_the_audio_and_video_elements#Ogg_Opus
 [dev]: {{ "/development" | prepend: site.baseurl }}

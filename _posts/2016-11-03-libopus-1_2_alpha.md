@@ -16,7 +16,7 @@ of the upcoming Opus 1.2 brings many quality improvements, new features, and bug
 - Support for directly encoding packets up to 120 ms
 - DTX support for CELT mode
 - SILK CBR improvements
-- Support for all of the fixes in draft-ietf-codec-opus-update-04 (the mono downmix and the folding fixes need --enable-update-draft)
+- Support for all of the fixes in draft-ietf-codec-opus-update-04 (the mono downmix and the folding fixes need `--enable-update-draft`)
 - Many bug fixes, including integer overflows discovered through fuzzing (no security implications)
 
 Please test it and and report any problems. There are no known regressions compared to the
