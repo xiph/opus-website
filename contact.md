@@ -20,7 +20,7 @@ Informal development chat and support happens in [#opus on irc.freenode.net][irc
 You can join the chat room through a [web interface][irc_opus_web] if you don't have an
 IRC client.
 
-If you find a bug, please report it in [trac][trac].
+If you find a bug, please report it in [gitlab][gitlab].
 
 For anything non-confidential (e.g. general questions about Opus), please use
 one of the mailing lists above.
@@ -40,7 +40,7 @@ For __confidential__ enquiries, you can contact one of the following developers 
 [meeting_min]: http://tools.ietf.org/wg/codec/minutes
 [irc_opus]: irc://irc.freenode.net/opus
 [irc_opus_web]: http://webchat.freenode.net/?channels=opus
-[trac]: https://trac.xiph.org/newticket?component=Opus
+[gitlab]: https://gitlab.xiph.org/xiph/opus/issues
 [j_m_valin]: mailto:jmvalin@jmvalin.ca
 [k_vos]: mailto:koenvos74@gmail.com
 [t_terriberry]: mailto:tterribe@xiph.org
