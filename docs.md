@@ -178,13 +178,13 @@ intentionally malformed and at least the latter should be rejected.
 Note that these files are designed to exercise all aspects of an implementation, the fact that they sound terrible
 is an intended consequence.
 
-[aes135_opus_celt]: http://jmvalin.ca/papers/aes135_opus_celt.pdf
-[aes135_opus_silk]: http://jmvalin.ca/papers/aes135_opus_silk.pdf
+[aes135_opus_celt]: https://jmvalin.ca/papers/aes135_opus_celt.pdf
+[aes135_opus_silk]: https://jmvalin.ca/papers/aes135_opus_silk.pdf
 [vos_fastburg]: /docs/vos_fastburg.pdf
 [79_ietf_slides]: https://www.ietf.org/proceedings/79/slides/codec-4.pdf
 [celt_presentations]: http://celt-codec.org/presentations/
-[celt_tasl]: http://jmvalin.ca/papers/celt_tasl.pdf
-[celt_eusipco2009]: http://jmvalin.ca/papers/celt_eusipco2009.pdf
+[celt_tasl]: https://jmvalin.ca/papers/celt_tasl.pdf
+[celt_eusipco2009]: https://jmvalin.ca/papers/celt_eusipco2009.pdf
 [opus_testvectors]: /docs/opus_testvectors.tar.gz
 [opus_testvectors_xiph]: http://downloads.xiph.org/releases/opus/opus_testvectors.tar.gz
 [opus_testvectors_moz]: https://archive.mozilla.org/pub/opus/opus_testvectors.tar.gz

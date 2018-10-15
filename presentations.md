@@ -29,7 +29,7 @@ permalink: /presentations/
 #### [linux.conf.au][linuxconfau] 2012 – Jean-Marc Valin
 Also [available on YouTube](https://www.youtube.com/watch?v=iaAD71h9gDU).
 
-<video controls="controls" src="http://jmvalin.ca/jmvalin_Opus_codec.ogv" poster="https://opus-codec.org/presentations/LCA-opus-video-thumb.png">
+<video controls="controls" src="https://jmvalin.ca/jmvalin_Opus_codec.ogv" poster="https://opus-codec.org/presentations/LCA-opus-video-thumb.png">
   Sorry, your browser doesn't support embedded videos! Check the download links below.
 </video>
 
@@ -46,7 +46,7 @@ Downloads:
 [ietf]: http://www.ietf.org/
 [linuxconfau]: http://linux.conf.au/
 
-[jmvalin_opus_codec]: http://jmvalin.ca/jmvalin_Opus_codec.ogv
+[jmvalin_opus_codec]: https://jmvalin.ca/jmvalin_Opus_codec.ogv
 [lca_opus_audio]: /static/presentations/misc/lca-opus-audio.tar.gz
 [lca_opus_odp]: /static/presentations/misc/lca-opus.odp
 [lca_opus_pdf]: /static/presentations/misc/lca-opus.pdf
