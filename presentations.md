@@ -22,7 +22,7 @@ permalink: /presentations/
 ---
 
 #### [IETF 87 Technical Plenary][ietf] 2013 – J.-M. Valin, G. Maxwell, P. St-Andre, T.B. Terriberry, E. Ivov, L. Miniero, J. Uberti
-[Slides](http://www.ietf.org/proceedings/87/slides/slides-87-iab-techplenary-5.pdf) (PDF, 646 KiB)
+[Slides](https://www.ietf.org/proceedings/87/slides/slides-87-iab-techplenary-5.pdf) (PDF, 646 KiB)
 
 ---
 
@@ -42,9 +42,9 @@ Downloads:
 
 
 [135aes_conv]: http://www.aes.org/events/135/
-[ccbe]: http://ccbe.ca/
-[ietf]: http://www.ietf.org/
-[linuxconfau]: http://linux.conf.au/
+[ccbe]: https://ccbe.ca/
+[ietf]: https://www.ietf.org/
+[linuxconfau]: https://linux.conf.au/
 
 [jmvalin_opus_codec]: https://jmvalin.ca/jmvalin_Opus_codec.ogv
 [lca_opus_audio]: /static/presentations/misc/lca-opus-audio.tar.gz

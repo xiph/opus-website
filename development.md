@@ -103,14 +103,14 @@ Build status for the [Github mirrors](https://github.com/xiph/) and test results
 </ul>
 
 [irc]: irc://irc.freenode.net:6667/opus
-[irc-web]: http://webchat.freenode.net/?channels=opus
+[irc-web]: https://webchat.freenode.net/?channels=opus
 [opus-todo]: https://wiki.xiph.org/OPUS_TODO
-[ietf-wg]: http://tools.ietf.org/wg/codec/
-[monty-celt]: http://people.xiph.org/~xiphmont/demo/celt/demo.html
+[ietf-wg]: https://tools.ietf.org/wg/codec/
+[monty-celt]: https://people.xiph.org/~xiphmont/demo/celt/demo.html
 [git-web]: https://git.xiph.org/?p=opus.git
-[exp_lbr_tune-branch]: http://git.xiph.org/?p=opus.git;a=shortlog;h=refs/heads/exp_lbr_tune
-[opus-master.tar.gz]: http://git.xiph.org/?p=opus.git;a=snapshot;h=HEAD;sf=tgz
-[opus-exp_lbr_tune-branch.tar.gz]: http://git.xiph.org/?p=opus.git;a=snapshot;h=exp_lbr_tune;sf=tgz
+[exp_lbr_tune-branch]: https://git.xiph.org/?p=opus.git;a=shortlog;h=refs/heads/exp_lbr_tune
+[opus-master.tar.gz]: https://git.xiph.org/?p=opus.git;a=snapshot;h=HEAD;sf=tgz
+[opus-exp_lbr_tune-branch.tar.gz]: https://git.xiph.org/?p=opus.git;a=snapshot;h=exp_lbr_tune;sf=tgz
 [oggopus]: https://wiki.xiph.org/OggOpus
 [opusenc]: https://mf4.xiph.org/jenkins/view/opus/job/opus-tools/ws/man/opusenc.html
 [opusdec]: https://mf4.xiph.org/jenkins/view/opus/job/opus-tools/ws/man/opusdec.html

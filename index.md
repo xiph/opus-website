@@ -33,7 +33,7 @@ speech to very high quality stereo music. Supported features are:
 You can read the full specification, including the reference implementation, in [RFC 6716][rfc6716].
 An up-to-date implementation of the Opus standard is also available from the [downloads] page.
 
-[rfc6716]: http://tools.ietf.org/html/rfc6716
+[rfc6716]: https://tools.ietf.org/html/rfc6716
 [downloads]: {{ "/downloads" | prepend: site.baseurl }}
 
 

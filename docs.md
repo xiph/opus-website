@@ -126,9 +126,9 @@ completely support the playback of .opus (OggOpus) files.
 ## Tutorials
 
 -  [Encoding Opus from foobar2000 (Windows)](http://www.saunalahti.fi/~cse/Opus/)
--  Amit Ashara, [Implementing OPUS Voice Code for TM4C129x Device](http://www.ti.com/lit/an/spma076/spma076.pdf), Application
+-  Amit Ashara, [Implementing OPUS Voice Code for TM4C129x Device](https://www.ti.com/lit/an/spma076/spma076.pdf), Application
    Report, Texas Instruments, June 2016.
--  Amit Ashara, [Audio Communication With Power Over Ethernet (PoE)](http://www.ti.com/lit/ug/tiduc16/tiduc16.pdf), Reference Design,
+-  Amit Ashara, [Audio Communication With Power Over Ethernet (PoE)](https://www.ti.com/lit/ug/tiduc16/tiduc16.pdf), Reference Design,
    Texas Instruments, August 2016.
 
 
@@ -186,9 +186,9 @@ is an intended consequence.
 [celt_tasl]: https://jmvalin.ca/papers/celt_tasl.pdf
 [celt_eusipco2009]: https://jmvalin.ca/papers/celt_eusipco2009.pdf
 [opus_testvectors]: /docs/opus_testvectors.tar.gz
-[opus_testvectors_xiph]: http://downloads.xiph.org/releases/opus/opus_testvectors.tar.gz
+[opus_testvectors_xiph]: https://downloads.xiph.org/releases/opus/opus_testvectors.tar.gz
 [opus_testvectors_moz]: https://archive.mozilla.org/pub/opus/opus_testvectors.tar.gz
-[opus_testvectors_large]: http://people.xiph.org/~greg/opus_testvectors/
+[opus_testvectors_large]: https://people.xiph.org/~greg/opus_testvectors/
 [opus_testvectors_ietf]: https://www.ietf.org/proceedings/83/slides/slides-83-codec-0.gz
 [presentations]: {{ "/presentations" | prepend: site.baseurl }}
 

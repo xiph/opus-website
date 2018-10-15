@@ -109,12 +109,12 @@ These streams can be played in using [Firefox][firefox]
 	<hr />
 	<p><a href="http://repeater.xiph.org:8000/clock.opus">Endless drone</a> (Stereo 64kbit/sec)</p>
 	<audio src="http://repeater.xiph.org:8000/clock.opus" controls="controls"></audio>
-	<p>A simulation of an <a href="http://en.wikipedia.org/wiki/FM3">FM3 Buddha Machine</a>, this stream produces an
+	<p>A simulation of an <a href="https://en.wikipedia.org/wiki/FM3">FM3 Buddha Machine</a>, this stream produces an
 		endless stream of peaceful droning. The stream is synthesized in real-time using
 		<a href="http://boodler.org/">boodler</a> and encoded using opusenc and streamed using oggfwd and Icecast.</p>
 </div>
 
 There is also a list of Opus internet radio streams on the [Icecast directory][icecast_dir].
 
-[firefox]: http://www.mozilla.org/en-US/firefox/new/
+[firefox]: https://www.mozilla.org/en-US/firefox/new/
 [icecast_dir]: http://dir.xiph.org/by_format/Opus

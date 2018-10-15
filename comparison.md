@@ -35,7 +35,7 @@ we are hoping that newer and more advanced encoders will reach even better quali
 These are the results of ABC/HR tests comparing Opus with Vorbis and HE-AAC on 48 kHz stereo music at 64 kb/s.
 For the full details, see the [official results page][hydro64] and [Greg Maxwell's analysis/listening page][maxwell].
 
-<a href="http://people.xiph.org/~greg/opus/ha2011/">
+<a href="https://people.xiph.org/~greg/opus/ha2011/">
 	<img src="/static/comparison/opus_ha_results.png" alt="Bar chart showing Opus outperforming two AAC-HE encoders and libvorbis." />
 </a>
 
@@ -44,7 +44,7 @@ For the full details, see the [official results page][hydro64] and [Greg Maxwell
 These are the results of a second set of ABC/HR tests on 48 kHz stereo music comparing Opus with Vorbis and
 LC-AAC at 96 kb/s and MP3 at 136 kb/s. For the full details, see the [official results page][hydro96].
 
-<a href="http://listening-test.coresv.net/results.htm">
+<a href="https://listening-test.coresv.net/results.htm">
 	<img src="/static/comparison/opus_ha_results_96kbps.png" alt="Scatter plots showing Opus outperforming two LC-AAC encoders, libvorbis, and a 136 kb/s MP3 encoder." />
 </a>
 
@@ -68,8 +68,8 @@ good as the quality Opus achieves with variable bitrate (VBR).
 
 
 [hydro64]: http://listening-tests.hydrogenaud.io/igorc/results.html
-[maxwell]: http://people.xiph.org/~greg/opus/ha2011/
-[hydro96]: http://listening-test.coresv.net/results.htm
+[maxwell]: https://people.xiph.org/~greg/opus/ha2011/
+[hydro96]: https://listening-test.coresv.net/results.htm
 [google_1]: /static/comparison/GoogleTest1.pdf
 [google_2]: /static/comparison/GoogleTest2.pdf
 [nokia]: https://pdfs.semanticscholar.org/064c/d1c023b658aaa2ee8259286fc9998801e77b.pdf

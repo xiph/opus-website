@@ -33,13 +33,13 @@ For __confidential__ enquiries, you can contact one of the following developers 
 
 [ml_xiph]: http://lists.xiph.org/mailman/listinfo/opus
 [ml_xiph_mail]: opus@xiph.org
-[ml_ietf]: http://tools.ietf.org/wg/codec/
+[ml_ietf]: https://tools.ietf.org/wg/codec/
 [ml_ietf_mail]: codec@ietf.org
 [ml_xiph_archive]: http://lists.xiph.org/pipermail/opus/
-[ml_ietf_archive]: http://www.ietf.org/mail-archive/web/codec/current/maillist.html
-[meeting_min]: http://tools.ietf.org/wg/codec/minutes
+[ml_ietf_archive]: https://www.ietf.org/mail-archive/web/codec/current/maillist.html
+[meeting_min]: https://tools.ietf.org/wg/codec/minutes
 [irc_opus]: irc://irc.freenode.net/opus
-[irc_opus_web]: http://webchat.freenode.net/?channels=opus
+[irc_opus_web]: https://webchat.freenode.net/?channels=opus
 [gitlab]: https://gitlab.xiph.org/xiph/opus/issues
 [j_m_valin]: mailto:jmvalin@jmvalin.ca
 [k_vos]: mailto:koenvos74@gmail.com
