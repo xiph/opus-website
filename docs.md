@@ -189,7 +189,7 @@ is an intended consequence.
 [celt_eusipco2009]: https://jmvalin.ca/papers/celt_eusipco2009.pdf
 [opus_testvectors]: /docs/opus_testvectors-rfc8251.tar.gz
 [opus_testvectors_old]: /docs/opus_testvectors.tar.gz
-[opus_testvectors_xiph]: https://downloads.xiph.org/releases/opus/opus_testvectors.tar.gz
+[opus_testvectors_xiph_old]: https://downloads.xiph.org/releases/opus/opus_testvectors.tar.gz
 [opus_testvectors_moz]: https://archive.mozilla.org/pub/opus/opus_testvectors-rfc8251.tar.gz
 [opus_testvectors_moz_old]: https://archive.mozilla.org/pub/opus/opus_testvectors.tar.gz
 [opus_testvectors_large]: https://people.xiph.org/~greg/opus_testvectors/
