@@ -164,12 +164,14 @@ were written are the pitch prediction/filtering and the birdie avoidance method.
 
 ## Test Vectors
 
-Test files to verify that the Opus decoders are operating properly.
+Test files to verify that the Opus decoders are operating properly (updated for RFC 8251).
 
 [Bitstream conformance set][opus_testvectors] for the codec.
 
 This set of bitstreams is used to measure codec implementations for conformance with the specification.
-Also available from [Xiph.Org][opus_testvectors_xiph], [Mozilla][opus_testvectors_moz] and the [IETF][opus_testvectors_ietf].
+Also available from [Mozilla][opus_testvectors_moz] and the [IETF][opus_testvectors_ietf].
+
+The old test vectors [are stll available][opus_testvectors_old] ([Xiph.Org][opus_testvectors_xiph_old], [Mozilla][opus_testvectors_moz_old], [IETF][opus_testvectors_ietf_old])
 
 [The .opus test set][opus_testvectors_large] is an in-development larger test suite for .opus files. These are
 suitable for testing opusdec and other media-player software. Files prefixed with 'broken' and 'failure' are
@@ -185,10 +187,13 @@ is an intended consequence.
 [celt_presentations]: http://celt-codec.org/presentations/
 [celt_tasl]: https://jmvalin.ca/papers/celt_tasl.pdf
 [celt_eusipco2009]: https://jmvalin.ca/papers/celt_eusipco2009.pdf
-[opus_testvectors]: /docs/opus_testvectors.tar.gz
+[opus_testvectors]: /docs/opus_testvectors-rfc8251.tar.gz
+[opus_testvectors_old]: /docs/opus_testvectors.tar.gz
 [opus_testvectors_xiph]: https://downloads.xiph.org/releases/opus/opus_testvectors.tar.gz
-[opus_testvectors_moz]: https://archive.mozilla.org/pub/opus/opus_testvectors.tar.gz
+[opus_testvectors_moz]: https://archive.mozilla.org/pub/opus/opus_testvectors-rfc8251.tar.gz
+[opus_testvectors_moz_old]: https://archive.mozilla.org/pub/opus/opus_testvectors.tar.gz
 [opus_testvectors_large]: https://people.xiph.org/~greg/opus_testvectors/
-[opus_testvectors_ietf]: https://www.ietf.org/proceedings/83/slides/slides-83-codec-0.gz
+[opus_testvectors_ietf]: https://www.ietf.org/proceedings/98/slides/materials-98-codec-opus-newvectors-00.tar.gz
+[opus_testvectors_ietf_old]: https://www.ietf.org/proceedings/83/slides/slides-83-codec-0.gz
 [presentations]: {{ "/presentations" | prepend: site.baseurl }}
 
