@@ -15,7 +15,7 @@ See the [development][dev] page for the latest development information.
 In addition to [support in Firefox][ff_opus], Mozilla provides binary builds of Opus utilities.
 
 <ul class="download-list">
-  <li>opus-tools <span>0.2</span><br /><span>(Opus 1.3-rc2)</span>
+  <li>opus-tools <span>0.2</span><br /><span>(Opus 1.3)</span>
     <ul>
       <li><a href="https://archive.mozilla.org/pub/opus/opus-tools-0.2.tar.gz">Source</a></li>
       <li><a href="https://archive.mozilla.org/pub/opus/win32/opus-tools-0.2-opus-1.3.zip">Windows</a></li>
