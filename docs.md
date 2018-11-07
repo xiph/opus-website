@@ -101,7 +101,21 @@ completely support the playback of .opus (OggOpus) files.
         <ul>
             <li><a class="i-html" href="https://tools.ietf.org/html/rfc7845.html">HTML</a></li>
             <li><a class="i-pdf" href="https://tools.ietf.org/pdf/rfc7845.pdf">PDF</a></li>
-            <li><a class="i-txt" href="https://tools.ietf.org/id/rfc7845.txt">TXT</a></li>
+            <li><a class="i-txt" href="https://tools.ietf.org/rfc/rfc7845.txt">TXT</a></li>
+        </ul>
+    </li>
+    <li>Updates to the Opus Audio Codec<br /><span>RFC 8251</span>
+        <ul>
+            <li><a class="i-html" href="https://tools.ietf.org/html/rfc8251.html">HTML</a></li>
+            <li><a class="i-pdf" href="https://tools.ietf.org/pdf/rfc8251.pdf">PDF</a></li>
+            <li><a class="i-txt" href="https://tools.ietf.org/rfc/rfc8251.txt">TXT</a></li>
+        </ul>
+    </li>
+    <li>Ambisonics in an Ogg Opus Container<br /><span>RFC 8486</span>
+        <ul>
+            <li><a class="i-html" href="https://tools.ietf.org/html/rfc8486.html">HTML</a></li>
+            <li><a class="i-pdf" href="https://tools.ietf.org/pdf/rfc8486.pdf">PDF</a></li>
+            <li><a class="i-txt" href="https://tools.ietf.org/rfc/rfc8486.txt">TXT</a></li>
         </ul>
     </li>
 </ul>
