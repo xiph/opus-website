@@ -155,7 +155,7 @@ Opus works. For an overview of the codec, see the [linux.conf.au 2012 Opus prese
 The most accessible descriptions of Opus are probaly Monty's demos. We have also written some papers describing the
 algorithm in details:
 
--  J.-M. Valin, G. Maxwell, T. B. Terriberry, K. Vos, [High-Quality, Low-Delay Music Coding in the OpusCodec][aes135_opus_celt], Accepted for the 135th AES Convention, 2013.
+-  J.-M. Valin, G. Maxwell, T. B. Terriberry, K. Vos, [High-Quality, Low-Delay Music Coding in the Opus Codec][aes135_opus_celt], Accepted for the 135th AES Convention, 2013.
 -  K. Vos, K. V. Sorensen, S. S. Jensen, J.-M. Valin, [Voice Coding with Opus][aes135_opus_silk], Accepted for the 135th AES Convention, 2013.
 -  K. Vos, [A Fast Implementation of Burg's Method][vos_fastburg], 2013.
 
